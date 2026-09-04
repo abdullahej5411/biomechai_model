@@ -1,0 +1,23 @@
+[
+  {
+    "exercise": "squat",
+    "video_id": "01",
+    "clip": "04",
+    "reason": "frozen_identical_frames",
+    "fname": "squat_01_clip04.json"
+  },
+  {
+    "exercise": "squat",
+    "video_id": "02",
+    "clip": "04",
+    "reason": "frozen_identical_frames",
+    "fname": "squat_02_clip04.json"
+  },
+  {
+    "exercise": "squat",
+    "video_id": "06",
+    "clip": "04",
+    "reason": "frozen_identical_frames",
+    "fname": "squat_06_clip04.json"
+  }
+]

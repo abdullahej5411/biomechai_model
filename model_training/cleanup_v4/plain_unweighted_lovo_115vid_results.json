@@ -1,0 +1,2670 @@
+{
+  "total_clips": 444,
+  "total_folds": 115,
+  "fold_results": [
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_03",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_03",
+      "true": "bicep_curl",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_03",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_08",
+      "true": "bicep_curl",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_08",
+      "true": "bicep_curl",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_11",
+      "true": "bicep_curl",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_11",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_11",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_11",
+      "true": "bicep_curl",
+      "pred": "squat"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_11",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_11",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_13",
+      "true": "bicep_curl",
+      "pred": "squat"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_13",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_13",
+      "true": "bicep_curl",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_13",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_13",
+      "true": "bicep_curl",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_13",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_13",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_13",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_13",
+      "true": "bicep_curl",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_14",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_14",
+      "true": "bicep_curl",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_01_14",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_04_07",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_04_07",
+      "true": "bicep_curl",
+      "pred": "plank"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_04_10",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_04_10",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_04_10",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_06_02",
+      "true": "bicep_curl",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_06_02",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_06_02",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_08_07",
+      "true": "bicep_curl",
+      "pred": "squat"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_08_07",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_08_07",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_08_07",
+      "true": "bicep_curl",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_08_07",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_08_07",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_08_07",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_08_07",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_08_07",
+      "true": "bicep_curl",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_08_07",
+      "true": "bicep_curl",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_10_14",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_10_14",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_10_14",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_02",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_02",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_02",
+      "true": "bicep_curl",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_02",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_04",
+      "true": "bicep_curl",
+      "pred": "plank"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_04",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_04",
+      "true": "bicep_curl",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_05",
+      "true": "bicep_curl",
+      "pred": "squat"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_05",
+      "true": "bicep_curl",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_05",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_05",
+      "true": "bicep_curl",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_07",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_07",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_07",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_07",
+      "true": "bicep_curl",
+      "pred": "squat"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_07",
+      "true": "bicep_curl",
+      "pred": "squat"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_08",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_08",
+      "true": "bicep_curl",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_08",
+      "true": "bicep_curl",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_08",
+      "true": "bicep_curl",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_08",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_09",
+      "true": "bicep_curl",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_09",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_09",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_09",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_09",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_11",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_12",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "bicep_curl",
+      "video_id": "bicep_curl_b2_12",
+      "true": "bicep_curl",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_01_03",
+      "true": "high_knees",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_01_03",
+      "true": "high_knees",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_01_04",
+      "true": "high_knees",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_01_04",
+      "true": "high_knees",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_01_04",
+      "true": "high_knees",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_01_05",
+      "true": "high_knees",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_01_05",
+      "true": "high_knees",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_01_05",
+      "true": "high_knees",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_01_06",
+      "true": "high_knees",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_01_06",
+      "true": "high_knees",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_01_06",
+      "true": "high_knees",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_01_08",
+      "true": "high_knees",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_01_08",
+      "true": "high_knees",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_01_08",
+      "true": "high_knees",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_01_14",
+      "true": "high_knees",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_01_14",
+      "true": "high_knees",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_01_14",
+      "true": "high_knees",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_03_02",
+      "true": "high_knees",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_03_02",
+      "true": "high_knees",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_03_02",
+      "true": "high_knees",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_03_05",
+      "true": "high_knees",
+      "pred": "squat"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_03_05",
+      "true": "high_knees",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_04_13",
+      "true": "high_knees",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_04_13",
+      "true": "high_knees",
+      "pred": "squat"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_04_13",
+      "true": "high_knees",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_04_13",
+      "true": "high_knees",
+      "pred": "squat"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_04_13",
+      "true": "high_knees",
+      "pred": "plank"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_04_13",
+      "true": "high_knees",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_04_13",
+      "true": "high_knees",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_04_13",
+      "true": "high_knees",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_04_15",
+      "true": "high_knees",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_04_15",
+      "true": "high_knees",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_05_12",
+      "true": "high_knees",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_b2_02",
+      "true": "high_knees",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_b2_02",
+      "true": "high_knees",
+      "pred": "squat"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_b2_02",
+      "true": "high_knees",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_b2_03",
+      "true": "high_knees",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_b2_03",
+      "true": "high_knees",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_b2_03",
+      "true": "high_knees",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_b2_03",
+      "true": "high_knees",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "high_knees",
+      "video_id": "high_knees_b2_03",
+      "true": "high_knees",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_01_02",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_01_02",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_01_02",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_01_09",
+      "true": "jumping_jack",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_01_09",
+      "true": "jumping_jack",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_01_09",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_01_09",
+      "true": "jumping_jack",
+      "pred": "plank"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_01_09",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_01_09",
+      "true": "jumping_jack",
+      "pred": "plank"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_01_09",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_01_09",
+      "true": "jumping_jack",
+      "pred": "plank"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_01_12",
+      "true": "jumping_jack",
+      "pred": "plank"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_01_12",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_01_12",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_02_10",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_02_10",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_02_10",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_02_14",
+      "true": "jumping_jack",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_02_14",
+      "true": "jumping_jack",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_02_14",
+      "true": "jumping_jack",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_02_14",
+      "true": "jumping_jack",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_02_14",
+      "true": "jumping_jack",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_03_10",
+      "true": "jumping_jack",
+      "pred": "squat"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_03_10",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_03_10",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_03_12",
+      "true": "jumping_jack",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_03_12",
+      "true": "jumping_jack",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_03_12",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_03_14",
+      "true": "jumping_jack",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_03_14",
+      "true": "jumping_jack",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_03_14",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_03_14",
+      "true": "jumping_jack",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_03_14",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_03_14",
+      "true": "jumping_jack",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_05_15",
+      "true": "jumping_jack",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_05_15",
+      "true": "jumping_jack",
+      "pred": "plank"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_05_15",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_05_15",
+      "true": "jumping_jack",
+      "pred": "plank"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_05_15",
+      "true": "jumping_jack",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_05_15",
+      "true": "jumping_jack",
+      "pred": "squat"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_05_15",
+      "true": "jumping_jack",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_07_07",
+      "true": "jumping_jack",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_07_07",
+      "true": "jumping_jack",
+      "pred": "squat"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_07_07",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_08_07",
+      "true": "jumping_jack",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_08_07",
+      "true": "jumping_jack",
+      "pred": "plank"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_08_13",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_08_13",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_08_13",
+      "true": "jumping_jack",
+      "pred": "plank"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_09_12",
+      "true": "jumping_jack",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_09_12",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_09_12",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_09_12",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_09_12",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_09_12",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_09_12",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_b2_03",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_b2_03",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_b2_03",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_b2_03",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_b2_09",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_b2_09",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_b2_09",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_b2_09",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_b2_09",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_b2_10",
+      "true": "jumping_jack",
+      "pred": "squat"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_b2_10",
+      "true": "jumping_jack",
+      "pred": "squat"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_b2_10",
+      "true": "jumping_jack",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_b2_10",
+      "true": "jumping_jack",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_b2_16",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_b2_16",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_b2_16",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_b2_16",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_b2_17",
+      "true": "jumping_jack",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_b2_17",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "jumping_jack",
+      "video_id": "jumping_jack_b2_17",
+      "true": "jumping_jack",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_01_14",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_01_14",
+      "true": "lunge",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_03_06",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_03_06",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_03_10",
+      "true": "lunge",
+      "pred": "squat"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_03_10",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_03_11",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_03_11",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_03_11",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_04",
+      "true": "lunge",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_04",
+      "true": "lunge",
+      "pred": "squat"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_04",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_04",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_04",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_05_07",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_05_07",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_05_07",
+      "true": "lunge",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_06_06",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_06_06",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_06_06",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_06_06",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_06_06",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_06_06",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_06_06",
+      "true": "lunge",
+      "pred": "plank"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_06_14",
+      "true": "lunge",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_06_14",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_06_14",
+      "true": "lunge",
+      "pred": "plank"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_06_14",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_06_14",
+      "true": "lunge",
+      "pred": "squat"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_06_14",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_06_14",
+      "true": "lunge",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_06_14",
+      "true": "lunge",
+      "pred": "plank"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_07_03",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_07_03",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_07_10",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_07_10",
+      "true": "lunge",
+      "pred": "squat"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_07_10",
+      "true": "lunge",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_07_10",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_07_10",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_07_10",
+      "true": "lunge",
+      "pred": "plank"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_07_10",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_07_10",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_07_10",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_07_10",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_07_10",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_07_10",
+      "true": "lunge",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_07_10",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_07_10",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_08_07",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_08_07",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_08_10",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_08_10",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_08_10",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_08_14",
+      "true": "lunge",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_08_14",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_08_14",
+      "true": "lunge",
+      "pred": "squat"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_09_02",
+      "true": "lunge",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_09_02",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_09_05",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_10_03",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_10_03",
+      "true": "lunge",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_10_03",
+      "true": "lunge",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_10_08",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_10_08",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_b2_10",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_b2_10",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_b2_10",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "lunge",
+      "video_id": "lunge_b2_10",
+      "true": "lunge",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_01_03",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_01_03",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_01_07",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_01_07",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_01_07",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_01_08",
+      "true": "plank",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_01_08",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_01_08",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_03",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_03",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_03",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_03_10",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_03_10",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_03_10",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_03_13",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_03_13",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_03_13",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_03_14",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_03_14",
+      "true": "plank",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_03_14",
+      "true": "plank",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_03_14",
+      "true": "plank",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_04_07",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_04_07",
+      "true": "plank",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_04_11",
+      "true": "plank",
+      "pred": "squat"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_04_11",
+      "true": "plank",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_04_11",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_01",
+      "true": "plank",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_01",
+      "true": "plank",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_01",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_01",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_01",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_01",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_01",
+      "true": "plank",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_01",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_04",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_04",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_04",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_04",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_04",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_04",
+      "true": "plank",
+      "pred": "squat"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_04",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_04",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_04",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_04",
+      "true": "plank",
+      "pred": "squat"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_04",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_04",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_05_04",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_08_07",
+      "true": "plank",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_08_07",
+      "true": "plank",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_08_07",
+      "true": "plank",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_10_08",
+      "true": "plank",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_b2_09",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_b2_09",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_b2_09",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_b2_13",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_b2_13",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_b2_13",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_b2_13",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_b2_13",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_b2_15",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_b2_15",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_b2_15",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_b2_15",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "plank",
+      "video_id": "plank_b2_15",
+      "true": "plank",
+      "pred": "plank"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_01_02",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_01_02",
+      "true": "pushup",
+      "pred": "plank"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_01_02",
+      "true": "pushup",
+      "pred": "plank"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_02_06",
+      "true": "pushup",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_02_06",
+      "true": "pushup",
+      "pred": "squat"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_02_06",
+      "true": "pushup",
+      "pred": "squat"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_03_13",
+      "true": "pushup",
+      "pred": "squat"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_03_13",
+      "true": "pushup",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_03_13",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_04_02",
+      "true": "pushup",
+      "pred": "squat"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_04_02",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_04_02",
+      "true": "pushup",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_04_07",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_04_07",
+      "true": "pushup",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_04_07",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_05_05",
+      "true": "pushup",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_05_05",
+      "true": "pushup",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_05_05",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_05_09",
+      "true": "pushup",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_05_09",
+      "true": "pushup",
+      "pred": "squat"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_05_09",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_05_09",
+      "true": "pushup",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_05_09",
+      "true": "pushup",
+      "pred": "squat"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_06_03",
+      "true": "pushup",
+      "pred": "squat"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_06_03",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_06_03",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_06_03",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_06_03",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_06_03",
+      "true": "pushup",
+      "pred": "plank"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_06_03",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_06_03",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_06_03",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_06_03",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_06_03",
+      "true": "pushup",
+      "pred": "plank"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_08",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_08",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_08",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_08",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_08",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_08_11",
+      "true": "pushup",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_08_11",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_08_11",
+      "true": "pushup",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_08_11",
+      "true": "pushup",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_08_13",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_08_13",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_08_13",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_10_03",
+      "true": "pushup",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_10_03",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "pushup",
+      "video_id": "pushup_10_03",
+      "true": "pushup",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_03_05",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_03_05",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_03_09",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_03_09",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_03_09",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_03_11",
+      "true": "squat",
+      "pred": "plank"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_03_11",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_03_12",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_04_13",
+      "true": "squat",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_04_13",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_04_13",
+      "true": "squat",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_05_03",
+      "true": "squat",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_05_03",
+      "true": "squat",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_06_09",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_06_09",
+      "true": "squat",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_06_09",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_06_09",
+      "true": "squat",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_06_11",
+      "true": "squat",
+      "pred": "high_knees"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_06_11",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_06_11",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_07",
+      "true": "squat",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_07",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_07",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_07",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_07",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_07",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_07",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_07",
+      "true": "squat",
+      "pred": "plank"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_07",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_07",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_07",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_07",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_07",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_07",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_07",
+      "true": "squat",
+      "pred": "plank"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_08",
+      "true": "squat",
+      "pred": "jumping_jack"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_08",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_08",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_08",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_08",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_08",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_07_08",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_08",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_08",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_08",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_08_05",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_08_05",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_08_05",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_08_08",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_08_08",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_10_05",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_10_08",
+      "true": "squat",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_10_08",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_10_08",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_10_10",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_10_10",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_10_10",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_10_15",
+      "true": "squat",
+      "pred": "pushup"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_10_15",
+      "true": "squat",
+      "pred": "plank"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_10_15",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_b2_05",
+      "true": "squat",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_b2_05",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_b2_05",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_b2_05",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_b2_05",
+      "true": "squat",
+      "pred": "lunge"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_b2_06",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_b2_06",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_b2_06",
+      "true": "squat",
+      "pred": "plank"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_b2_06",
+      "true": "squat",
+      "pred": "squat"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_b2_08",
+      "true": "squat",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_b2_08",
+      "true": "squat",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_b2_08",
+      "true": "squat",
+      "pred": "bicep_curl"
+    },
+    {
+      "exercise": "squat",
+      "video_id": "squat_b2_08",
+      "true": "squat",
+      "pred": "lunge"
+    }
+  ]
+}

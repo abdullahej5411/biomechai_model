@@ -1,0 +1,2480 @@
+{
+  "jumping_jack": {
+    "videos_processed": 14,
+    "clips_extracted": 59,
+    "clips_skipped": 11,
+    "median_motion": 0.019983279684884385,
+    "threshold": 0.003996655936976877,
+    "extracted_list": [
+      {
+        "video": "jumping_jack_b2_01.mp4",
+        "clip_filename": "jumping_jack_b2_01_clip00.json",
+        "clip_index": 0,
+        "motion": 0.013584055446427717
+      },
+      {
+        "video": "jumping_jack_b2_01.mp4",
+        "clip_filename": "jumping_jack_b2_01_clip01.json",
+        "clip_index": 1,
+        "motion": 0.011857590707067218
+      },
+      {
+        "video": "jumping_jack_b2_01.mp4",
+        "clip_filename": "jumping_jack_b2_01_clip02.json",
+        "clip_index": 2,
+        "motion": 0.004836838534194089
+      },
+      {
+        "video": "jumping_jack_b2_01.mp4",
+        "clip_filename": "jumping_jack_b2_01_clip03.json",
+        "clip_index": 3,
+        "motion": 0.006014599707276877
+      },
+      {
+        "video": "jumping_jack_b2_01.mp4",
+        "clip_filename": "jumping_jack_b2_01_clip04.json",
+        "clip_index": 4,
+        "motion": 0.006626768147582409
+      },
+      {
+        "video": "jumping_jack_b2_02.mp4",
+        "clip_filename": "jumping_jack_b2_02_clip00.json",
+        "clip_index": 0,
+        "motion": 0.014208100485651888
+      },
+      {
+        "video": "jumping_jack_b2_02.mp4",
+        "clip_filename": "jumping_jack_b2_02_clip01.json",
+        "clip_index": 1,
+        "motion": 0.04641192720382578
+      },
+      {
+        "video": "jumping_jack_b2_02.mp4",
+        "clip_filename": "jumping_jack_b2_02_clip03.json",
+        "clip_index": 3,
+        "motion": 0.01160305216041988
+      },
+      {
+        "video": "jumping_jack_b2_02.mp4",
+        "clip_filename": "jumping_jack_b2_02_clip04.json",
+        "clip_index": 4,
+        "motion": 0.018969247210023757
+      },
+      {
+        "video": "jumping_jack_b2_03.mp4",
+        "clip_filename": "jumping_jack_b2_03_clip01.json",
+        "clip_index": 1,
+        "motion": 0.020112285112703385
+      },
+      {
+        "video": "jumping_jack_b2_03.mp4",
+        "clip_filename": "jumping_jack_b2_03_clip02.json",
+        "clip_index": 2,
+        "motion": 0.020068117423019324
+      },
+      {
+        "video": "jumping_jack_b2_03.mp4",
+        "clip_filename": "jumping_jack_b2_03_clip03.json",
+        "clip_index": 3,
+        "motion": 0.019974876041044004
+      },
+      {
+        "video": "jumping_jack_b2_03.mp4",
+        "clip_filename": "jumping_jack_b2_03_clip04.json",
+        "clip_index": 4,
+        "motion": 0.01990539473910018
+      },
+      {
+        "video": "jumping_jack_b2_04.mp4",
+        "clip_filename": "jumping_jack_b2_04_clip00.json",
+        "clip_index": 0,
+        "motion": 0.012691557061676897
+      },
+      {
+        "video": "jumping_jack_b2_04.mp4",
+        "clip_filename": "jumping_jack_b2_04_clip01.json",
+        "clip_index": 1,
+        "motion": 0.027110748064024567
+      },
+      {
+        "video": "jumping_jack_b2_04.mp4",
+        "clip_filename": "jumping_jack_b2_04_clip02.json",
+        "clip_index": 2,
+        "motion": 0.006313157073249721
+      },
+      {
+        "video": "jumping_jack_b2_04.mp4",
+        "clip_filename": "jumping_jack_b2_04_clip03.json",
+        "clip_index": 3,
+        "motion": 0.018021706961860506
+      },
+      {
+        "video": "jumping_jack_b2_04.mp4",
+        "clip_filename": "jumping_jack_b2_04_clip04.json",
+        "clip_index": 4,
+        "motion": 0.021621823656958205
+      },
+      {
+        "video": "jumping_jack_b2_05.mp4",
+        "clip_filename": "jumping_jack_b2_05_clip00.json",
+        "clip_index": 0,
+        "motion": 0.010839997013880139
+      },
+      {
+        "video": "jumping_jack_b2_05.mp4",
+        "clip_filename": "jumping_jack_b2_05_clip01.json",
+        "clip_index": 1,
+        "motion": 0.019850615997392164
+      },
+      {
+        "video": "jumping_jack_b2_05.mp4",
+        "clip_filename": "jumping_jack_b2_05_clip02.json",
+        "clip_index": 2,
+        "motion": 0.023961524393931576
+      },
+      {
+        "video": "jumping_jack_b2_05.mp4",
+        "clip_filename": "jumping_jack_b2_05_clip03.json",
+        "clip_index": 3,
+        "motion": 0.019653393877277832
+      },
+      {
+        "video": "jumping_jack_b2_05.mp4",
+        "clip_filename": "jumping_jack_b2_05_clip04.json",
+        "clip_index": 4,
+        "motion": 0.01799117601935736
+      },
+      {
+        "video": "jumping_jack_b2_07.mp4",
+        "clip_filename": "jumping_jack_b2_07_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0041312455271812435
+      },
+      {
+        "video": "jumping_jack_b2_07.mp4",
+        "clip_filename": "jumping_jack_b2_07_clip01.json",
+        "clip_index": 1,
+        "motion": 0.02318792171498772
+      },
+      {
+        "video": "jumping_jack_b2_07.mp4",
+        "clip_filename": "jumping_jack_b2_07_clip02.json",
+        "clip_index": 2,
+        "motion": 0.024087792815677782
+      },
+      {
+        "video": "jumping_jack_b2_07.mp4",
+        "clip_filename": "jumping_jack_b2_07_clip03.json",
+        "clip_index": 3,
+        "motion": 0.02319099430922655
+      },
+      {
+        "video": "jumping_jack_b2_09.mp4",
+        "clip_filename": "jumping_jack_b2_09_clip00.json",
+        "clip_index": 0,
+        "motion": 0.01926774995628294
+      },
+      {
+        "video": "jumping_jack_b2_09.mp4",
+        "clip_filename": "jumping_jack_b2_09_clip01.json",
+        "clip_index": 1,
+        "motion": 0.03073625521356687
+      },
+      {
+        "video": "jumping_jack_b2_09.mp4",
+        "clip_filename": "jumping_jack_b2_09_clip02.json",
+        "clip_index": 2,
+        "motion": 0.045263103472858196
+      },
+      {
+        "video": "jumping_jack_b2_09.mp4",
+        "clip_filename": "jumping_jack_b2_09_clip03.json",
+        "clip_index": 3,
+        "motion": 0.040126354075174
+      },
+      {
+        "video": "jumping_jack_b2_09.mp4",
+        "clip_filename": "jumping_jack_b2_09_clip04.json",
+        "clip_index": 4,
+        "motion": 0.02650808766029999
+      },
+      {
+        "video": "jumping_jack_b2_10.mp4",
+        "clip_filename": "jumping_jack_b2_10_clip00.json",
+        "clip_index": 0,
+        "motion": 0.011159941496932195
+      },
+      {
+        "video": "jumping_jack_b2_10.mp4",
+        "clip_filename": "jumping_jack_b2_10_clip01.json",
+        "clip_index": 1,
+        "motion": 0.005714852903830832
+      },
+      {
+        "video": "jumping_jack_b2_10.mp4",
+        "clip_filename": "jumping_jack_b2_10_clip02.json",
+        "clip_index": 2,
+        "motion": 0.004050043222682699
+      },
+      {
+        "video": "jumping_jack_b2_10.mp4",
+        "clip_filename": "jumping_jack_b2_10_clip04.json",
+        "clip_index": 4,
+        "motion": 0.01176529644881821
+      },
+      {
+        "video": "jumping_jack_b2_11.mp4",
+        "clip_filename": "jumping_jack_b2_11_clip00.json",
+        "clip_index": 0,
+        "motion": 0.020140405663478866
+      },
+      {
+        "video": "jumping_jack_b2_11.mp4",
+        "clip_filename": "jumping_jack_b2_11_clip01.json",
+        "clip_index": 1,
+        "motion": 0.019497562628435276
+      },
+      {
+        "video": "jumping_jack_b2_11.mp4",
+        "clip_filename": "jumping_jack_b2_11_clip03.json",
+        "clip_index": 3,
+        "motion": 0.024339457752714268
+      },
+      {
+        "video": "jumping_jack_b2_11.mp4",
+        "clip_filename": "jumping_jack_b2_11_clip04.json",
+        "clip_index": 4,
+        "motion": 0.01012000492599111
+      },
+      {
+        "video": "jumping_jack_b2_12.mp4",
+        "clip_filename": "jumping_jack_b2_12_clip01.json",
+        "clip_index": 1,
+        "motion": 0.0042991407810367335
+      },
+      {
+        "video": "jumping_jack_b2_12.mp4",
+        "clip_filename": "jumping_jack_b2_12_clip03.json",
+        "clip_index": 3,
+        "motion": 0.008490683175347206
+      },
+      {
+        "video": "jumping_jack_b2_12.mp4",
+        "clip_filename": "jumping_jack_b2_12_clip04.json",
+        "clip_index": 4,
+        "motion": 0.006697067863344044
+      },
+      {
+        "video": "jumping_jack_b2_15.mp4",
+        "clip_filename": "jumping_jack_b2_15_clip00.json",
+        "clip_index": 0,
+        "motion": 0.07807085744650434
+      },
+      {
+        "video": "jumping_jack_b2_15.mp4",
+        "clip_filename": "jumping_jack_b2_15_clip01.json",
+        "clip_index": 1,
+        "motion": 0.013351963859310041
+      },
+      {
+        "video": "jumping_jack_b2_15.mp4",
+        "clip_filename": "jumping_jack_b2_15_clip02.json",
+        "clip_index": 2,
+        "motion": 0.04786238056922783
+      },
+      {
+        "video": "jumping_jack_b2_15.mp4",
+        "clip_filename": "jumping_jack_b2_15_clip03.json",
+        "clip_index": 3,
+        "motion": 0.03566016022188486
+      },
+      {
+        "video": "jumping_jack_b2_15.mp4",
+        "clip_filename": "jumping_jack_b2_15_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0487985550727097
+      },
+      {
+        "video": "jumping_jack_b2_16.mp4",
+        "clip_filename": "jumping_jack_b2_16_clip00.json",
+        "clip_index": 0,
+        "motion": 0.009116458269403804
+      },
+      {
+        "video": "jumping_jack_b2_16.mp4",
+        "clip_filename": "jumping_jack_b2_16_clip02.json",
+        "clip_index": 2,
+        "motion": 0.00406623709930355
+      },
+      {
+        "video": "jumping_jack_b2_16.mp4",
+        "clip_filename": "jumping_jack_b2_16_clip03.json",
+        "clip_index": 3,
+        "motion": 0.07058748139695134
+      },
+      {
+        "video": "jumping_jack_b2_16.mp4",
+        "clip_filename": "jumping_jack_b2_16_clip04.json",
+        "clip_index": 4,
+        "motion": 0.04817704710947817
+      },
+      {
+        "video": "jumping_jack_b2_17.mp4",
+        "clip_filename": "jumping_jack_b2_17_clip00.json",
+        "clip_index": 0,
+        "motion": 0.016368556824658098
+      },
+      {
+        "video": "jumping_jack_b2_17.mp4",
+        "clip_filename": "jumping_jack_b2_17_clip01.json",
+        "clip_index": 1,
+        "motion": 0.04833654188350808
+      },
+      {
+        "video": "jumping_jack_b2_17.mp4",
+        "clip_filename": "jumping_jack_b2_17_clip04.json",
+        "clip_index": 4,
+        "motion": 0.023093357936619024
+      },
+      {
+        "video": "jumping_jack_b2_18.mp4",
+        "clip_filename": "jumping_jack_b2_18_clip01.json",
+        "clip_index": 1,
+        "motion": 0.008409813836707261
+      },
+      {
+        "video": "jumping_jack_b2_18.mp4",
+        "clip_filename": "jumping_jack_b2_18_clip02.json",
+        "clip_index": 2,
+        "motion": 0.019854822051305676
+      },
+      {
+        "video": "jumping_jack_b2_18.mp4",
+        "clip_filename": "jumping_jack_b2_18_clip03.json",
+        "clip_index": 3,
+        "motion": 0.016647376735825562
+      },
+      {
+        "video": "jumping_jack_b2_18.mp4",
+        "clip_filename": "jumping_jack_b2_18_clip04.json",
+        "clip_index": 4,
+        "motion": 0.007984484991417112
+      }
+    ],
+    "skipped_list": [
+      {
+        "video": "jumping_jack_b2_02.mp4",
+        "clip_filename": "jumping_jack_b2_02_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0030762637498027985,
+        "reason": "motion 0.00308 (15.4% of median) < 20% threshold 0.00400"
+      },
+      {
+        "video": "jumping_jack_b2_03.mp4",
+        "clip_filename": "jumping_jack_b2_03_clip00.json",
+        "clip_index": 0,
+        "motion": 9.558438400180049e-05,
+        "reason": "motion 0.00010 (0.5% of median) < 20% threshold 0.00400"
+      },
+      {
+        "video": "jumping_jack_b2_07.mp4",
+        "clip_filename": "jumping_jack_b2_07_clip04.json",
+        "clip_index": 4,
+        "motion": 0.001277291357849103,
+        "reason": "motion 0.00128 (6.4% of median) < 20% threshold 0.00400"
+      },
+      {
+        "video": "jumping_jack_b2_10.mp4",
+        "clip_filename": "jumping_jack_b2_10_clip03.json",
+        "clip_index": 3,
+        "motion": 0.002460750483563182,
+        "reason": "motion 0.00246 (12.3% of median) < 20% threshold 0.00400"
+      },
+      {
+        "video": "jumping_jack_b2_11.mp4",
+        "clip_filename": "jumping_jack_b2_11_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0017588405803639227,
+        "reason": "motion 0.00176 (8.8% of median) < 20% threshold 0.00400"
+      },
+      {
+        "video": "jumping_jack_b2_12.mp4",
+        "clip_filename": "jumping_jack_b2_12_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0032309652606468692,
+        "reason": "motion 0.00323 (16.2% of median) < 20% threshold 0.00400"
+      },
+      {
+        "video": "jumping_jack_b2_12.mp4",
+        "clip_filename": "jumping_jack_b2_12_clip02.json",
+        "clip_index": 2,
+        "motion": 0.003090122854903503,
+        "reason": "motion 0.00309 (15.5% of median) < 20% threshold 0.00400"
+      },
+      {
+        "video": "jumping_jack_b2_16.mp4",
+        "clip_filename": "jumping_jack_b2_16_clip01.json",
+        "clip_index": 1,
+        "motion": 0.00025619675612438336,
+        "reason": "motion 0.00026 (1.3% of median) < 20% threshold 0.00400"
+      },
+      {
+        "video": "jumping_jack_b2_17.mp4",
+        "clip_filename": "jumping_jack_b2_17_clip02.json",
+        "clip_index": 2,
+        "motion": 0.003029293388111304,
+        "reason": "motion 0.00303 (15.2% of median) < 20% threshold 0.00400"
+      },
+      {
+        "video": "jumping_jack_b2_17.mp4",
+        "clip_filename": "jumping_jack_b2_17_clip03.json",
+        "clip_index": 3,
+        "motion": 0.00031918244978347186,
+        "reason": "motion 0.00032 (1.6% of median) < 20% threshold 0.00400"
+      },
+      {
+        "video": "jumping_jack_b2_18.mp4",
+        "clip_filename": "jumping_jack_b2_18_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00400"
+      }
+    ]
+  },
+  "plank": {
+    "videos_processed": 12,
+    "clips_extracted": 48,
+    "clips_skipped": 12,
+    "median_motion": 0.0031057422430439846,
+    "threshold": 0.000621148448608797,
+    "extracted_list": [
+      {
+        "video": "plank_b2_01.mp4",
+        "clip_filename": "plank_b2_01_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0039011952543770573
+      },
+      {
+        "video": "plank_b2_01.mp4",
+        "clip_filename": "plank_b2_01_clip03.json",
+        "clip_index": 3,
+        "motion": 0.008091663302717983
+      },
+      {
+        "video": "plank_b2_01.mp4",
+        "clip_filename": "plank_b2_01_clip04.json",
+        "clip_index": 4,
+        "motion": 0.004055686050487662
+      },
+      {
+        "video": "plank_b2_02.mp4",
+        "clip_filename": "plank_b2_02_clip00.json",
+        "clip_index": 0,
+        "motion": 0.00670233583749954
+      },
+      {
+        "video": "plank_b2_02.mp4",
+        "clip_filename": "plank_b2_02_clip01.json",
+        "clip_index": 1,
+        "motion": 0.003501403770571908
+      },
+      {
+        "video": "plank_b2_02.mp4",
+        "clip_filename": "plank_b2_02_clip02.json",
+        "clip_index": 2,
+        "motion": 0.005726480397661994
+      },
+      {
+        "video": "plank_b2_02.mp4",
+        "clip_filename": "plank_b2_02_clip03.json",
+        "clip_index": 3,
+        "motion": 0.004128311224149249
+      },
+      {
+        "video": "plank_b2_02.mp4",
+        "clip_filename": "plank_b2_02_clip04.json",
+        "clip_index": 4,
+        "motion": 0.009871376470569227
+      },
+      {
+        "video": "plank_b2_04.mp4",
+        "clip_filename": "plank_b2_04_clip00.json",
+        "clip_index": 0,
+        "motion": 0.007984863298834518
+      },
+      {
+        "video": "plank_b2_04.mp4",
+        "clip_filename": "plank_b2_04_clip01.json",
+        "clip_index": 1,
+        "motion": 0.02714678721137672
+      },
+      {
+        "video": "plank_b2_04.mp4",
+        "clip_filename": "plank_b2_04_clip02.json",
+        "clip_index": 2,
+        "motion": 0.010813220622642877
+      },
+      {
+        "video": "plank_b2_04.mp4",
+        "clip_filename": "plank_b2_04_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0123172748162022
+      },
+      {
+        "video": "plank_b2_04.mp4",
+        "clip_filename": "plank_b2_04_clip04.json",
+        "clip_index": 4,
+        "motion": 0.016037081506799604
+      },
+      {
+        "video": "plank_b2_05.mp4",
+        "clip_filename": "plank_b2_05_clip00.json",
+        "clip_index": 0,
+        "motion": 0.004120192008209596
+      },
+      {
+        "video": "plank_b2_05.mp4",
+        "clip_filename": "plank_b2_05_clip01.json",
+        "clip_index": 1,
+        "motion": 0.009893533168932734
+      },
+      {
+        "video": "plank_b2_05.mp4",
+        "clip_filename": "plank_b2_05_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0010187934120423016
+      },
+      {
+        "video": "plank_b2_06.mp4",
+        "clip_filename": "plank_b2_06_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0161857165601699
+      },
+      {
+        "video": "plank_b2_06.mp4",
+        "clip_filename": "plank_b2_06_clip01.json",
+        "clip_index": 1,
+        "motion": 0.0044373600530924675
+      },
+      {
+        "video": "plank_b2_06.mp4",
+        "clip_filename": "plank_b2_06_clip02.json",
+        "clip_index": 2,
+        "motion": 0.013328042852016388
+      },
+      {
+        "video": "plank_b2_06.mp4",
+        "clip_filename": "plank_b2_06_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0046884743372927655
+      },
+      {
+        "video": "plank_b2_06.mp4",
+        "clip_filename": "plank_b2_06_clip04.json",
+        "clip_index": 4,
+        "motion": 0.000713247722631119
+      },
+      {
+        "video": "plank_b2_08.mp4",
+        "clip_filename": "plank_b2_08_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0018549759949540508
+      },
+      {
+        "video": "plank_b2_08.mp4",
+        "clip_filename": "plank_b2_08_clip01.json",
+        "clip_index": 1,
+        "motion": 0.0006947680987046348
+      },
+      {
+        "video": "plank_b2_08.mp4",
+        "clip_filename": "plank_b2_08_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0028767382735326486
+      },
+      {
+        "video": "plank_b2_08.mp4",
+        "clip_filename": "plank_b2_08_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0012568663130903452
+      },
+      {
+        "video": "plank_b2_09.mp4",
+        "clip_filename": "plank_b2_09_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0046132877501648736
+      },
+      {
+        "video": "plank_b2_09.mp4",
+        "clip_filename": "plank_b2_09_clip01.json",
+        "clip_index": 1,
+        "motion": 0.0014180028441929389
+      },
+      {
+        "video": "plank_b2_09.mp4",
+        "clip_filename": "plank_b2_09_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0023390220593069756
+      },
+      {
+        "video": "plank_b2_11.mp4",
+        "clip_filename": "plank_b2_11_clip00.json",
+        "clip_index": 0,
+        "motion": 0.011220063308337058
+      },
+      {
+        "video": "plank_b2_11.mp4",
+        "clip_filename": "plank_b2_11_clip01.json",
+        "clip_index": 1,
+        "motion": 0.014240889904548713
+      },
+      {
+        "video": "plank_b2_11.mp4",
+        "clip_filename": "plank_b2_11_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0008140069118137799
+      },
+      {
+        "video": "plank_b2_11.mp4",
+        "clip_filename": "plank_b2_11_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0014881187484797923
+      },
+      {
+        "video": "plank_b2_11.mp4",
+        "clip_filename": "plank_b2_11_clip04.json",
+        "clip_index": 4,
+        "motion": 0.013540771415343527
+      },
+      {
+        "video": "plank_b2_13.mp4",
+        "clip_filename": "plank_b2_13_clip00.json",
+        "clip_index": 0,
+        "motion": 0.03274890003319887
+      },
+      {
+        "video": "plank_b2_13.mp4",
+        "clip_filename": "plank_b2_13_clip01.json",
+        "clip_index": 1,
+        "motion": 0.003950280591735185
+      },
+      {
+        "video": "plank_b2_13.mp4",
+        "clip_filename": "plank_b2_13_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0028300332633197224
+      },
+      {
+        "video": "plank_b2_13.mp4",
+        "clip_filename": "plank_b2_13_clip03.json",
+        "clip_index": 3,
+        "motion": 0.002300214667580075
+      },
+      {
+        "video": "plank_b2_13.mp4",
+        "clip_filename": "plank_b2_13_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0037227082366104985
+      },
+      {
+        "video": "plank_b2_14.mp4",
+        "clip_filename": "plank_b2_14_clip00.json",
+        "clip_index": 0,
+        "motion": 0.012322793948877855
+      },
+      {
+        "video": "plank_b2_14.mp4",
+        "clip_filename": "plank_b2_14_clip01.json",
+        "clip_index": 1,
+        "motion": 0.003979029581674564
+      },
+      {
+        "video": "plank_b2_14.mp4",
+        "clip_filename": "plank_b2_14_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0009243262621467155
+      },
+      {
+        "video": "plank_b2_14.mp4",
+        "clip_filename": "plank_b2_14_clip03.json",
+        "clip_index": 3,
+        "motion": 0.020588569258072707
+      },
+      {
+        "video": "plank_b2_14.mp4",
+        "clip_filename": "plank_b2_14_clip04.json",
+        "clip_index": 4,
+        "motion": 0.005883482435909448
+      },
+      {
+        "video": "plank_b2_15.mp4",
+        "clip_filename": "plank_b2_15_clip00.json",
+        "clip_index": 0,
+        "motion": 0.00287401417468257
+      },
+      {
+        "video": "plank_b2_15.mp4",
+        "clip_filename": "plank_b2_15_clip01.json",
+        "clip_index": 1,
+        "motion": 0.0026125701044154995
+      },
+      {
+        "video": "plank_b2_15.mp4",
+        "clip_filename": "plank_b2_15_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0023384198208458882
+      },
+      {
+        "video": "plank_b2_15.mp4",
+        "clip_filename": "plank_b2_15_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0022270489138955067
+      },
+      {
+        "video": "plank_b2_15.mp4",
+        "clip_filename": "plank_b2_15_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0025192512113260926
+      }
+    ],
+    "skipped_list": [
+      {
+        "video": "plank_b2_01.mp4",
+        "clip_filename": "plank_b2_01_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_01.mp4",
+        "clip_filename": "plank_b2_01_clip01.json",
+        "clip_index": 1,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_03.mp4",
+        "clip_filename": "plank_b2_03_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_03.mp4",
+        "clip_filename": "plank_b2_03_clip01.json",
+        "clip_index": 1,
+        "motion": 0.00015913124424380177,
+        "reason": "motion 0.00016 (5.1% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_03.mp4",
+        "clip_filename": "plank_b2_03_clip02.json",
+        "clip_index": 2,
+        "motion": 0.00015368741640496716,
+        "reason": "motion 0.00015 (4.9% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_03.mp4",
+        "clip_filename": "plank_b2_03_clip03.json",
+        "clip_index": 3,
+        "motion": 0.00014572904830743378,
+        "reason": "motion 0.00015 (4.7% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_03.mp4",
+        "clip_filename": "plank_b2_03_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0001410524833556971,
+        "reason": "motion 0.00014 (4.5% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_05.mp4",
+        "clip_filename": "plank_b2_05_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_05.mp4",
+        "clip_filename": "plank_b2_05_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0005294958984010527,
+        "reason": "motion 0.00053 (17.0% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_08.mp4",
+        "clip_filename": "plank_b2_08_clip03.json",
+        "clip_index": 3,
+        "motion": 0.00041661920041867505,
+        "reason": "motion 0.00042 (13.4% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_09.mp4",
+        "clip_filename": "plank_b2_09_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0005722634201584948,
+        "reason": "motion 0.00057 (18.4% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_09.mp4",
+        "clip_filename": "plank_b2_09_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0003520377659705938,
+        "reason": "motion 0.00035 (11.3% of median) < 20% threshold 0.00062"
+      }
+    ]
+  },
+  "lunge": {
+    "videos_processed": 12,
+    "clips_extracted": 57,
+    "clips_skipped": 3,
+    "median_motion": 0.007871210122653152,
+    "threshold": 0.0015742420245306304,
+    "extracted_list": [
+      {
+        "video": "lunge_b2_01.mp4",
+        "clip_filename": "lunge_b2_01_clip00.json",
+        "clip_index": 0,
+        "motion": 0.009064331717392382
+      },
+      {
+        "video": "lunge_b2_01.mp4",
+        "clip_filename": "lunge_b2_01_clip01.json",
+        "clip_index": 1,
+        "motion": 0.015254697647979888
+      },
+      {
+        "video": "lunge_b2_01.mp4",
+        "clip_filename": "lunge_b2_01_clip02.json",
+        "clip_index": 2,
+        "motion": 0.029148078275483682
+      },
+      {
+        "video": "lunge_b2_01.mp4",
+        "clip_filename": "lunge_b2_01_clip03.json",
+        "clip_index": 3,
+        "motion": 0.015402387885241366
+      },
+      {
+        "video": "lunge_b2_01.mp4",
+        "clip_filename": "lunge_b2_01_clip04.json",
+        "clip_index": 4,
+        "motion": 0.011526028640964211
+      },
+      {
+        "video": "lunge_b2_02.mp4",
+        "clip_filename": "lunge_b2_02_clip00.json",
+        "clip_index": 0,
+        "motion": 0.018708437230001988
+      },
+      {
+        "video": "lunge_b2_02.mp4",
+        "clip_filename": "lunge_b2_02_clip01.json",
+        "clip_index": 1,
+        "motion": 0.01660332037484264
+      },
+      {
+        "video": "lunge_b2_02.mp4",
+        "clip_filename": "lunge_b2_02_clip02.json",
+        "clip_index": 2,
+        "motion": 0.005408689095915285
+      },
+      {
+        "video": "lunge_b2_02.mp4",
+        "clip_filename": "lunge_b2_02_clip03.json",
+        "clip_index": 3,
+        "motion": 0.028384219558023747
+      },
+      {
+        "video": "lunge_b2_02.mp4",
+        "clip_filename": "lunge_b2_02_clip04.json",
+        "clip_index": 4,
+        "motion": 0.013073153450567246
+      },
+      {
+        "video": "lunge_b2_03.mp4",
+        "clip_filename": "lunge_b2_03_clip01.json",
+        "clip_index": 1,
+        "motion": 0.0037288451044995606
+      },
+      {
+        "video": "lunge_b2_03.mp4",
+        "clip_filename": "lunge_b2_03_clip02.json",
+        "clip_index": 2,
+        "motion": 0.00856060904703273
+      },
+      {
+        "video": "lunge_b2_03.mp4",
+        "clip_filename": "lunge_b2_03_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0027295860220994954
+      },
+      {
+        "video": "lunge_b2_03.mp4",
+        "clip_filename": "lunge_b2_03_clip04.json",
+        "clip_index": 4,
+        "motion": 0.014502710705372976
+      },
+      {
+        "video": "lunge_b2_04.mp4",
+        "clip_filename": "lunge_b2_04_clip00.json",
+        "clip_index": 0,
+        "motion": 0.02052406403490001
+      },
+      {
+        "video": "lunge_b2_04.mp4",
+        "clip_filename": "lunge_b2_04_clip01.json",
+        "clip_index": 1,
+        "motion": 0.01706694432244449
+      },
+      {
+        "video": "lunge_b2_04.mp4",
+        "clip_filename": "lunge_b2_04_clip02.json",
+        "clip_index": 2,
+        "motion": 0.021185733911780122
+      },
+      {
+        "video": "lunge_b2_04.mp4",
+        "clip_filename": "lunge_b2_04_clip03.json",
+        "clip_index": 3,
+        "motion": 0.031677265984191516
+      },
+      {
+        "video": "lunge_b2_04.mp4",
+        "clip_filename": "lunge_b2_04_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0054804012980001595
+      },
+      {
+        "video": "lunge_b2_05.mp4",
+        "clip_filename": "lunge_b2_05_clip00.json",
+        "clip_index": 0,
+        "motion": 0.008630032893323215
+      },
+      {
+        "video": "lunge_b2_05.mp4",
+        "clip_filename": "lunge_b2_05_clip01.json",
+        "clip_index": 1,
+        "motion": 0.011188868443544775
+      },
+      {
+        "video": "lunge_b2_05.mp4",
+        "clip_filename": "lunge_b2_05_clip02.json",
+        "clip_index": 2,
+        "motion": 0.023764702735255282
+      },
+      {
+        "video": "lunge_b2_05.mp4",
+        "clip_filename": "lunge_b2_05_clip03.json",
+        "clip_index": 3,
+        "motion": 0.020068867486962117
+      },
+      {
+        "video": "lunge_b2_05.mp4",
+        "clip_filename": "lunge_b2_05_clip04.json",
+        "clip_index": 4,
+        "motion": 0.012420205382312486
+      },
+      {
+        "video": "lunge_b2_06.mp4",
+        "clip_filename": "lunge_b2_06_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0029940194432788248
+      },
+      {
+        "video": "lunge_b2_06.mp4",
+        "clip_filename": "lunge_b2_06_clip01.json",
+        "clip_index": 1,
+        "motion": 0.00353171656415502
+      },
+      {
+        "video": "lunge_b2_06.mp4",
+        "clip_filename": "lunge_b2_06_clip02.json",
+        "clip_index": 2,
+        "motion": 0.005632079692727019
+      },
+      {
+        "video": "lunge_b2_06.mp4",
+        "clip_filename": "lunge_b2_06_clip03.json",
+        "clip_index": 3,
+        "motion": 0.006043417739486367
+      },
+      {
+        "video": "lunge_b2_06.mp4",
+        "clip_filename": "lunge_b2_06_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0059640558621715176
+      },
+      {
+        "video": "lunge_b2_09.mp4",
+        "clip_filename": "lunge_b2_09_clip00.json",
+        "clip_index": 0,
+        "motion": 0.00661391134314685
+      },
+      {
+        "video": "lunge_b2_09.mp4",
+        "clip_filename": "lunge_b2_09_clip01.json",
+        "clip_index": 1,
+        "motion": 0.009574748671364519
+      },
+      {
+        "video": "lunge_b2_09.mp4",
+        "clip_filename": "lunge_b2_09_clip02.json",
+        "clip_index": 2,
+        "motion": 0.011080563508138673
+      },
+      {
+        "video": "lunge_b2_09.mp4",
+        "clip_filename": "lunge_b2_09_clip03.json",
+        "clip_index": 3,
+        "motion": 0.022701774137875493
+      },
+      {
+        "video": "lunge_b2_09.mp4",
+        "clip_filename": "lunge_b2_09_clip04.json",
+        "clip_index": 4,
+        "motion": 0.020359972819117635
+      },
+      {
+        "video": "lunge_b2_10.mp4",
+        "clip_filename": "lunge_b2_10_clip01.json",
+        "clip_index": 1,
+        "motion": 0.008922631687182355
+      },
+      {
+        "video": "lunge_b2_10.mp4",
+        "clip_filename": "lunge_b2_10_clip02.json",
+        "clip_index": 2,
+        "motion": 0.004874022659433157
+      },
+      {
+        "video": "lunge_b2_10.mp4",
+        "clip_filename": "lunge_b2_10_clip03.json",
+        "clip_index": 3,
+        "motion": 0.00823542493715235
+      },
+      {
+        "video": "lunge_b2_10.mp4",
+        "clip_filename": "lunge_b2_10_clip04.json",
+        "clip_index": 4,
+        "motion": 0.007845799798157853
+      },
+      {
+        "video": "lunge_b2_11.mp4",
+        "clip_filename": "lunge_b2_11_clip00.json",
+        "clip_index": 0,
+        "motion": 0.021095957340945288
+      },
+      {
+        "video": "lunge_b2_11.mp4",
+        "clip_filename": "lunge_b2_11_clip01.json",
+        "clip_index": 1,
+        "motion": 0.004038463652512186
+      },
+      {
+        "video": "lunge_b2_11.mp4",
+        "clip_filename": "lunge_b2_11_clip02.json",
+        "clip_index": 2,
+        "motion": 0.009690686029084699
+      },
+      {
+        "video": "lunge_b2_11.mp4",
+        "clip_filename": "lunge_b2_11_clip03.json",
+        "clip_index": 3,
+        "motion": 0.012876109015406876
+      },
+      {
+        "video": "lunge_b2_11.mp4",
+        "clip_filename": "lunge_b2_11_clip04.json",
+        "clip_index": 4,
+        "motion": 0.008220625446035953
+      },
+      {
+        "video": "lunge_b2_12.mp4",
+        "clip_filename": "lunge_b2_12_clip00.json",
+        "clip_index": 0,
+        "motion": 0.00857224210243228
+      },
+      {
+        "video": "lunge_b2_12.mp4",
+        "clip_filename": "lunge_b2_12_clip01.json",
+        "clip_index": 1,
+        "motion": 0.002808211587019925
+      },
+      {
+        "video": "lunge_b2_12.mp4",
+        "clip_filename": "lunge_b2_12_clip02.json",
+        "clip_index": 2,
+        "motion": 0.002152023375226978
+      },
+      {
+        "video": "lunge_b2_12.mp4",
+        "clip_filename": "lunge_b2_12_clip03.json",
+        "clip_index": 3,
+        "motion": 0.003803422812786739
+      },
+      {
+        "video": "lunge_b2_12.mp4",
+        "clip_filename": "lunge_b2_12_clip04.json",
+        "clip_index": 4,
+        "motion": 0.008581886726594988
+      },
+      {
+        "video": "lunge_b2_13.mp4",
+        "clip_filename": "lunge_b2_13_clip01.json",
+        "clip_index": 1,
+        "motion": 0.008149977750057331
+      },
+      {
+        "video": "lunge_b2_13.mp4",
+        "clip_filename": "lunge_b2_13_clip02.json",
+        "clip_index": 2,
+        "motion": 0.008294787307325226
+      },
+      {
+        "video": "lunge_b2_13.mp4",
+        "clip_filename": "lunge_b2_13_clip03.json",
+        "clip_index": 3,
+        "motion": 0.00641411156778948
+      },
+      {
+        "video": "lunge_b2_13.mp4",
+        "clip_filename": "lunge_b2_13_clip04.json",
+        "clip_index": 4,
+        "motion": 0.003145576903145271
+      },
+      {
+        "video": "lunge_b2_14.mp4",
+        "clip_filename": "lunge_b2_14_clip00.json",
+        "clip_index": 0,
+        "motion": 0.010886318930625387
+      },
+      {
+        "video": "lunge_b2_14.mp4",
+        "clip_filename": "lunge_b2_14_clip01.json",
+        "clip_index": 1,
+        "motion": 0.008480331409005625
+      },
+      {
+        "video": "lunge_b2_14.mp4",
+        "clip_filename": "lunge_b2_14_clip02.json",
+        "clip_index": 2,
+        "motion": 0.005288666368395156
+      },
+      {
+        "video": "lunge_b2_14.mp4",
+        "clip_filename": "lunge_b2_14_clip03.json",
+        "clip_index": 3,
+        "motion": 0.009494319301253398
+      },
+      {
+        "video": "lunge_b2_14.mp4",
+        "clip_filename": "lunge_b2_14_clip04.json",
+        "clip_index": 4,
+        "motion": 0.010659302043116664
+      }
+    ],
+    "skipped_list": [
+      {
+        "video": "lunge_b2_03.mp4",
+        "clip_filename": "lunge_b2_03_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00157"
+      },
+      {
+        "video": "lunge_b2_10.mp4",
+        "clip_filename": "lunge_b2_10_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00157"
+      },
+      {
+        "video": "lunge_b2_13.mp4",
+        "clip_filename": "lunge_b2_13_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00157"
+      }
+    ]
+  },
+  "bicep_curl": {
+    "videos_processed": 11,
+    "clips_extracted": 42,
+    "clips_skipped": 13,
+    "median_motion": 0.010508969495443258,
+    "threshold": 0.0021017938990886514,
+    "extracted_list": [
+      {
+        "video": "bicep_curl_b2_01.mp4",
+        "clip_filename": "bicep_curl_b2_01_clip02.json",
+        "clip_index": 2,
+        "motion": 0.016301223183467464
+      },
+      {
+        "video": "bicep_curl_b2_01.mp4",
+        "clip_filename": "bicep_curl_b2_01_clip03.json",
+        "clip_index": 3,
+        "motion": 0.07605916997447938
+      },
+      {
+        "video": "bicep_curl_b2_01.mp4",
+        "clip_filename": "bicep_curl_b2_01_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0305569781163739
+      },
+      {
+        "video": "bicep_curl_b2_02.mp4",
+        "clip_filename": "bicep_curl_b2_02_clip00.json",
+        "clip_index": 0,
+        "motion": 0.033543543522988016
+      },
+      {
+        "video": "bicep_curl_b2_02.mp4",
+        "clip_filename": "bicep_curl_b2_02_clip01.json",
+        "clip_index": 1,
+        "motion": 0.005297101015713639
+      },
+      {
+        "video": "bicep_curl_b2_02.mp4",
+        "clip_filename": "bicep_curl_b2_02_clip02.json",
+        "clip_index": 2,
+        "motion": 0.013807189410432812
+      },
+      {
+        "video": "bicep_curl_b2_02.mp4",
+        "clip_filename": "bicep_curl_b2_02_clip03.json",
+        "clip_index": 3,
+        "motion": 0.005616075228859924
+      },
+      {
+        "video": "bicep_curl_b2_03.mp4",
+        "clip_filename": "bicep_curl_b2_03_clip00.json",
+        "clip_index": 0,
+        "motion": 0.012024980395662988
+      },
+      {
+        "video": "bicep_curl_b2_03.mp4",
+        "clip_filename": "bicep_curl_b2_03_clip01.json",
+        "clip_index": 1,
+        "motion": 0.027556053575810042
+      },
+      {
+        "video": "bicep_curl_b2_03.mp4",
+        "clip_filename": "bicep_curl_b2_03_clip02.json",
+        "clip_index": 2,
+        "motion": 0.015069868484511695
+      },
+      {
+        "video": "bicep_curl_b2_03.mp4",
+        "clip_filename": "bicep_curl_b2_03_clip03.json",
+        "clip_index": 3,
+        "motion": 0.008326270498904274
+      },
+      {
+        "video": "bicep_curl_b2_03.mp4",
+        "clip_filename": "bicep_curl_b2_03_clip04.json",
+        "clip_index": 4,
+        "motion": 0.008708130634334644
+      },
+      {
+        "video": "bicep_curl_b2_04.mp4",
+        "clip_filename": "bicep_curl_b2_04_clip00.json",
+        "clip_index": 0,
+        "motion": 0.007940699156173745
+      },
+      {
+        "video": "bicep_curl_b2_04.mp4",
+        "clip_filename": "bicep_curl_b2_04_clip01.json",
+        "clip_index": 1,
+        "motion": 0.004769035447317044
+      },
+      {
+        "video": "bicep_curl_b2_04.mp4",
+        "clip_filename": "bicep_curl_b2_04_clip02.json",
+        "clip_index": 2,
+        "motion": 0.005488230066264595
+      },
+      {
+        "video": "bicep_curl_b2_05.mp4",
+        "clip_filename": "bicep_curl_b2_05_clip00.json",
+        "clip_index": 0,
+        "motion": 0.004148284914165642
+      },
+      {
+        "video": "bicep_curl_b2_05.mp4",
+        "clip_filename": "bicep_curl_b2_05_clip01.json",
+        "clip_index": 1,
+        "motion": 0.0043693305880380656
+      },
+      {
+        "video": "bicep_curl_b2_05.mp4",
+        "clip_filename": "bicep_curl_b2_05_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0026786396250060023
+      },
+      {
+        "video": "bicep_curl_b2_05.mp4",
+        "clip_filename": "bicep_curl_b2_05_clip04.json",
+        "clip_index": 4,
+        "motion": 0.007010706799117509
+      },
+      {
+        "video": "bicep_curl_b2_06.mp4",
+        "clip_filename": "bicep_curl_b2_06_clip00.json",
+        "clip_index": 0,
+        "motion": 0.007947649157102507
+      },
+      {
+        "video": "bicep_curl_b2_06.mp4",
+        "clip_filename": "bicep_curl_b2_06_clip01.json",
+        "clip_index": 1,
+        "motion": 0.007069539003049975
+      },
+      {
+        "video": "bicep_curl_b2_06.mp4",
+        "clip_filename": "bicep_curl_b2_06_clip02.json",
+        "clip_index": 2,
+        "motion": 0.005268970702383092
+      },
+      {
+        "video": "bicep_curl_b2_06.mp4",
+        "clip_filename": "bicep_curl_b2_06_clip03.json",
+        "clip_index": 3,
+        "motion": 0.003881470033245246
+      },
+      {
+        "video": "bicep_curl_b2_06.mp4",
+        "clip_filename": "bicep_curl_b2_06_clip04.json",
+        "clip_index": 4,
+        "motion": 0.003799592672878079
+      },
+      {
+        "video": "bicep_curl_b2_07.mp4",
+        "clip_filename": "bicep_curl_b2_07_clip00.json",
+        "clip_index": 0,
+        "motion": 0.015427882040799307
+      },
+      {
+        "video": "bicep_curl_b2_07.mp4",
+        "clip_filename": "bicep_curl_b2_07_clip01.json",
+        "clip_index": 1,
+        "motion": 0.04681902911131718
+      },
+      {
+        "video": "bicep_curl_b2_07.mp4",
+        "clip_filename": "bicep_curl_b2_07_clip02.json",
+        "clip_index": 2,
+        "motion": 0.016199865836065887
+      },
+      {
+        "video": "bicep_curl_b2_07.mp4",
+        "clip_filename": "bicep_curl_b2_07_clip03.json",
+        "clip_index": 3,
+        "motion": 0.027945433898211927
+      },
+      {
+        "video": "bicep_curl_b2_07.mp4",
+        "clip_filename": "bicep_curl_b2_07_clip04.json",
+        "clip_index": 4,
+        "motion": 0.015193314099306103
+      },
+      {
+        "video": "bicep_curl_b2_08.mp4",
+        "clip_filename": "bicep_curl_b2_08_clip00.json",
+        "clip_index": 0,
+        "motion": 0.03521480934975636
+      },
+      {
+        "video": "bicep_curl_b2_08.mp4",
+        "clip_filename": "bicep_curl_b2_08_clip01.json",
+        "clip_index": 1,
+        "motion": 0.04031405574968117
+      },
+      {
+        "video": "bicep_curl_b2_08.mp4",
+        "clip_filename": "bicep_curl_b2_08_clip02.json",
+        "clip_index": 2,
+        "motion": 0.024906377795452947
+      },
+      {
+        "video": "bicep_curl_b2_08.mp4",
+        "clip_filename": "bicep_curl_b2_08_clip03.json",
+        "clip_index": 3,
+        "motion": 0.04084298280615627
+      },
+      {
+        "video": "bicep_curl_b2_08.mp4",
+        "clip_filename": "bicep_curl_b2_08_clip04.json",
+        "clip_index": 4,
+        "motion": 0.02597164738448522
+      },
+      {
+        "video": "bicep_curl_b2_09.mp4",
+        "clip_filename": "bicep_curl_b2_09_clip00.json",
+        "clip_index": 0,
+        "motion": 0.041888648817458546
+      },
+      {
+        "video": "bicep_curl_b2_09.mp4",
+        "clip_filename": "bicep_curl_b2_09_clip01.json",
+        "clip_index": 1,
+        "motion": 0.005338911317463726
+      },
+      {
+        "video": "bicep_curl_b2_09.mp4",
+        "clip_filename": "bicep_curl_b2_09_clip02.json",
+        "clip_index": 2,
+        "motion": 0.004948388304425384
+      },
+      {
+        "video": "bicep_curl_b2_09.mp4",
+        "clip_filename": "bicep_curl_b2_09_clip03.json",
+        "clip_index": 3,
+        "motion": 0.004422759541151204
+      },
+      {
+        "video": "bicep_curl_b2_09.mp4",
+        "clip_filename": "bicep_curl_b2_09_clip04.json",
+        "clip_index": 4,
+        "motion": 0.007539776514644709
+      },
+      {
+        "video": "bicep_curl_b2_11.mp4",
+        "clip_filename": "bicep_curl_b2_11_clip01.json",
+        "clip_index": 1,
+        "motion": 0.0034182995907178506
+      },
+      {
+        "video": "bicep_curl_b2_12.mp4",
+        "clip_filename": "bicep_curl_b2_12_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0038793472560478843
+      },
+      {
+        "video": "bicep_curl_b2_12.mp4",
+        "clip_filename": "bicep_curl_b2_12_clip01.json",
+        "clip_index": 1,
+        "motion": 0.0026804260943173136
+      }
+    ],
+    "skipped_list": [
+      {
+        "video": "bicep_curl_b2_01.mp4",
+        "clip_filename": "bicep_curl_b2_01_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_01.mp4",
+        "clip_filename": "bicep_curl_b2_01_clip01.json",
+        "clip_index": 1,
+        "motion": 0.0007132637570939862,
+        "reason": "motion 0.00071 (6.8% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_02.mp4",
+        "clip_filename": "bicep_curl_b2_02_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_04.mp4",
+        "clip_filename": "bicep_curl_b2_04_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0010665265866288507,
+        "reason": "motion 0.00107 (10.1% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_04.mp4",
+        "clip_filename": "bicep_curl_b2_04_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0010173199481488065,
+        "reason": "motion 0.00102 (9.7% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_05.mp4",
+        "clip_filename": "bicep_curl_b2_05_clip02.json",
+        "clip_index": 2,
+        "motion": 0.002101315671571396,
+        "reason": "motion 0.00210 (20.0% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_11.mp4",
+        "clip_filename": "bicep_curl_b2_11_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_11.mp4",
+        "clip_filename": "bicep_curl_b2_11_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0019677491485526784,
+        "reason": "motion 0.00197 (18.7% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_11.mp4",
+        "clip_filename": "bicep_curl_b2_11_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0014234305485873286,
+        "reason": "motion 0.00142 (13.5% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_11.mp4",
+        "clip_filename": "bicep_curl_b2_11_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0019231278336475208,
+        "reason": "motion 0.00192 (18.3% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_12.mp4",
+        "clip_filename": "bicep_curl_b2_12_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0013847882987178496,
+        "reason": "motion 0.00138 (13.2% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_12.mp4",
+        "clip_filename": "bicep_curl_b2_12_clip03.json",
+        "clip_index": 3,
+        "motion": 0.001003291008282643,
+        "reason": "motion 0.00100 (9.5% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_12.mp4",
+        "clip_filename": "bicep_curl_b2_12_clip04.json",
+        "clip_index": 4,
+        "motion": 0.002059343573033439,
+        "reason": "motion 0.00206 (19.6% of median) < 20% threshold 0.00210"
+      }
+    ]
+  },
+  "pushup": {
+    "videos_processed": 11,
+    "clips_extracted": 45,
+    "clips_skipped": 10,
+    "median_motion": 0.006011156123853018,
+    "threshold": 0.0012022312247706038,
+    "extracted_list": [
+      {
+        "video": "pushup_b2_01.mp4",
+        "clip_filename": "pushup_b2_01_clip00.json",
+        "clip_index": 0,
+        "motion": 0.006578663351884594
+      },
+      {
+        "video": "pushup_b2_01.mp4",
+        "clip_filename": "pushup_b2_01_clip01.json",
+        "clip_index": 1,
+        "motion": 0.007850794915162468
+      },
+      {
+        "video": "pushup_b2_01.mp4",
+        "clip_filename": "pushup_b2_01_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0059126544278153385
+      },
+      {
+        "video": "pushup_b2_01.mp4",
+        "clip_filename": "pushup_b2_01_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0068530161288569685
+      },
+      {
+        "video": "pushup_b2_01.mp4",
+        "clip_filename": "pushup_b2_01_clip04.json",
+        "clip_index": 4,
+        "motion": 0.009115761199649788
+      },
+      {
+        "video": "pushup_b2_02.mp4",
+        "clip_filename": "pushup_b2_02_clip00.json",
+        "clip_index": 0,
+        "motion": 0.002176532564652558
+      },
+      {
+        "video": "pushup_b2_02.mp4",
+        "clip_filename": "pushup_b2_02_clip01.json",
+        "clip_index": 1,
+        "motion": 0.003985281733826247
+      },
+      {
+        "video": "pushup_b2_02.mp4",
+        "clip_filename": "pushup_b2_02_clip03.json",
+        "clip_index": 3,
+        "motion": 0.004690533065804466
+      },
+      {
+        "video": "pushup_b2_02.mp4",
+        "clip_filename": "pushup_b2_02_clip04.json",
+        "clip_index": 4,
+        "motion": 0.004655136838782426
+      },
+      {
+        "video": "pushup_b2_03.mp4",
+        "clip_filename": "pushup_b2_03_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0066820969849482065
+      },
+      {
+        "video": "pushup_b2_03.mp4",
+        "clip_filename": "pushup_b2_03_clip01.json",
+        "clip_index": 1,
+        "motion": 0.002640248440338338
+      },
+      {
+        "video": "pushup_b2_03.mp4",
+        "clip_filename": "pushup_b2_03_clip02.json",
+        "clip_index": 2,
+        "motion": 0.027818676219417797
+      },
+      {
+        "video": "pushup_b2_04.mp4",
+        "clip_filename": "pushup_b2_04_clip00.json",
+        "clip_index": 0,
+        "motion": 0.017752453970723114
+      },
+      {
+        "video": "pushup_b2_04.mp4",
+        "clip_filename": "pushup_b2_04_clip01.json",
+        "clip_index": 1,
+        "motion": 0.004347906694864847
+      },
+      {
+        "video": "pushup_b2_04.mp4",
+        "clip_filename": "pushup_b2_04_clip02.json",
+        "clip_index": 2,
+        "motion": 0.003874168604416676
+      },
+      {
+        "video": "pushup_b2_04.mp4",
+        "clip_filename": "pushup_b2_04_clip03.json",
+        "clip_index": 3,
+        "motion": 0.014235924817669877
+      },
+      {
+        "video": "pushup_b2_04.mp4",
+        "clip_filename": "pushup_b2_04_clip04.json",
+        "clip_index": 4,
+        "motion": 0.012788905074813488
+      },
+      {
+        "video": "pushup_b2_05.mp4",
+        "clip_filename": "pushup_b2_05_clip00.json",
+        "clip_index": 0,
+        "motion": 0.016235627137683877
+      },
+      {
+        "video": "pushup_b2_05.mp4",
+        "clip_filename": "pushup_b2_05_clip01.json",
+        "clip_index": 1,
+        "motion": 0.00900805630214496
+      },
+      {
+        "video": "pushup_b2_05.mp4",
+        "clip_filename": "pushup_b2_05_clip02.json",
+        "clip_index": 2,
+        "motion": 0.01246043482046863
+      },
+      {
+        "video": "pushup_b2_05.mp4",
+        "clip_filename": "pushup_b2_05_clip03.json",
+        "clip_index": 3,
+        "motion": 0.012957415843266245
+      },
+      {
+        "video": "pushup_b2_05.mp4",
+        "clip_filename": "pushup_b2_05_clip04.json",
+        "clip_index": 4,
+        "motion": 0.00781654706246983
+      },
+      {
+        "video": "pushup_b2_06.mp4",
+        "clip_filename": "pushup_b2_06_clip00.json",
+        "clip_index": 0,
+        "motion": 0.002970432843980049
+      },
+      {
+        "video": "pushup_b2_06.mp4",
+        "clip_filename": "pushup_b2_06_clip01.json",
+        "clip_index": 1,
+        "motion": 0.003945739509238394
+      },
+      {
+        "video": "pushup_b2_06.mp4",
+        "clip_filename": "pushup_b2_06_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0045747594720165
+      },
+      {
+        "video": "pushup_b2_06.mp4",
+        "clip_filename": "pushup_b2_06_clip04.json",
+        "clip_index": 4,
+        "motion": 0.003832724850013792
+      },
+      {
+        "video": "pushup_b2_07.mp4",
+        "clip_filename": "pushup_b2_07_clip00.json",
+        "clip_index": 0,
+        "motion": 0.014131765391272378
+      },
+      {
+        "video": "pushup_b2_07.mp4",
+        "clip_filename": "pushup_b2_07_clip01.json",
+        "clip_index": 1,
+        "motion": 0.02168912856482962
+      },
+      {
+        "video": "pushup_b2_07.mp4",
+        "clip_filename": "pushup_b2_07_clip03.json",
+        "clip_index": 3,
+        "motion": 0.01971346914392643
+      },
+      {
+        "video": "pushup_b2_07.mp4",
+        "clip_filename": "pushup_b2_07_clip04.json",
+        "clip_index": 4,
+        "motion": 0.009019080830340904
+      },
+      {
+        "video": "pushup_b2_08.mp4",
+        "clip_filename": "pushup_b2_08_clip00.json",
+        "clip_index": 0,
+        "motion": 0.01505161924614038
+      },
+      {
+        "video": "pushup_b2_08.mp4",
+        "clip_filename": "pushup_b2_08_clip01.json",
+        "clip_index": 1,
+        "motion": 0.0032160212425393206
+      },
+      {
+        "video": "pushup_b2_08.mp4",
+        "clip_filename": "pushup_b2_08_clip03.json",
+        "clip_index": 3,
+        "motion": 0.00898904611731234
+      },
+      {
+        "video": "pushup_b2_08.mp4",
+        "clip_filename": "pushup_b2_08_clip04.json",
+        "clip_index": 4,
+        "motion": 0.04517370265539953
+      },
+      {
+        "video": "pushup_b2_09.mp4",
+        "clip_filename": "pushup_b2_09_clip00.json",
+        "clip_index": 0,
+        "motion": 0.013181175017760964
+      },
+      {
+        "video": "pushup_b2_09.mp4",
+        "clip_filename": "pushup_b2_09_clip01.json",
+        "clip_index": 1,
+        "motion": 0.011477248650819562
+      },
+      {
+        "video": "pushup_b2_09.mp4",
+        "clip_filename": "pushup_b2_09_clip02.json",
+        "clip_index": 2,
+        "motion": 0.01088951268957306
+      },
+      {
+        "video": "pushup_b2_09.mp4",
+        "clip_filename": "pushup_b2_09_clip03.json",
+        "clip_index": 3,
+        "motion": 0.023116317506726446
+      },
+      {
+        "video": "pushup_b2_09.mp4",
+        "clip_filename": "pushup_b2_09_clip04.json",
+        "clip_index": 4,
+        "motion": 0.007511945858380086
+      },
+      {
+        "video": "pushup_b2_10.mp4",
+        "clip_filename": "pushup_b2_10_clip00.json",
+        "clip_index": 0,
+        "motion": 0.003536097523935562
+      },
+      {
+        "video": "pushup_b2_10.mp4",
+        "clip_filename": "pushup_b2_10_clip01.json",
+        "clip_index": 1,
+        "motion": 0.01282319610556549
+      },
+      {
+        "video": "pushup_b2_10.mp4",
+        "clip_filename": "pushup_b2_10_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0019792952696508037
+      },
+      {
+        "video": "pushup_b2_11.mp4",
+        "clip_filename": "pushup_b2_11_clip00.json",
+        "clip_index": 0,
+        "motion": 0.01048950978853941
+      },
+      {
+        "video": "pushup_b2_11.mp4",
+        "clip_filename": "pushup_b2_11_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0029452294627219057
+      },
+      {
+        "video": "pushup_b2_11.mp4",
+        "clip_filename": "pushup_b2_11_clip03.json",
+        "clip_index": 3,
+        "motion": 0.012664232133051519
+      }
+    ],
+    "skipped_list": [
+      {
+        "video": "pushup_b2_02.mp4",
+        "clip_filename": "pushup_b2_02_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0009477598191858243,
+        "reason": "motion 0.00095 (15.8% of median) < 20% threshold 0.00120"
+      },
+      {
+        "video": "pushup_b2_03.mp4",
+        "clip_filename": "pushup_b2_03_clip03.json",
+        "clip_index": 3,
+        "motion": 0.000449495976145151,
+        "reason": "motion 0.00045 (7.5% of median) < 20% threshold 0.00120"
+      },
+      {
+        "video": "pushup_b2_03.mp4",
+        "clip_filename": "pushup_b2_03_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0011934890782534769,
+        "reason": "motion 0.00119 (19.9% of median) < 20% threshold 0.00120"
+      },
+      {
+        "video": "pushup_b2_06.mp4",
+        "clip_filename": "pushup_b2_06_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0009482483526098813,
+        "reason": "motion 0.00095 (15.8% of median) < 20% threshold 0.00120"
+      },
+      {
+        "video": "pushup_b2_07.mp4",
+        "clip_filename": "pushup_b2_07_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00120"
+      },
+      {
+        "video": "pushup_b2_08.mp4",
+        "clip_filename": "pushup_b2_08_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00120"
+      },
+      {
+        "video": "pushup_b2_10.mp4",
+        "clip_filename": "pushup_b2_10_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0006861243340441544,
+        "reason": "motion 0.00069 (11.4% of median) < 20% threshold 0.00120"
+      },
+      {
+        "video": "pushup_b2_10.mp4",
+        "clip_filename": "pushup_b2_10_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0004199135433315032,
+        "reason": "motion 0.00042 (7.0% of median) < 20% threshold 0.00120"
+      },
+      {
+        "video": "pushup_b2_11.mp4",
+        "clip_filename": "pushup_b2_11_clip01.json",
+        "clip_index": 1,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00120"
+      },
+      {
+        "video": "pushup_b2_11.mp4",
+        "clip_filename": "pushup_b2_11_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0008491862394293276,
+        "reason": "motion 0.00085 (14.1% of median) < 20% threshold 0.00120"
+      }
+    ]
+  },
+  "squat": {
+    "videos_processed": 9,
+    "clips_extracted": 37,
+    "clips_skipped": 8,
+    "median_motion": 0.004981728287904538,
+    "threshold": 0.0009963456575809077,
+    "extracted_list": [
+      {
+        "video": "squat_b2_01.mp4",
+        "clip_filename": "squat_b2_01_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0012540492085525506
+      },
+      {
+        "video": "squat_b2_01.mp4",
+        "clip_filename": "squat_b2_01_clip01.json",
+        "clip_index": 1,
+        "motion": 0.01078849537075669
+      },
+      {
+        "video": "squat_b2_01.mp4",
+        "clip_filename": "squat_b2_01_clip04.json",
+        "clip_index": 4,
+        "motion": 0.019314394155588475
+      },
+      {
+        "video": "squat_b2_02.mp4",
+        "clip_filename": "squat_b2_02_clip00.json",
+        "clip_index": 0,
+        "motion": 0.004791970088018418
+      },
+      {
+        "video": "squat_b2_02.mp4",
+        "clip_filename": "squat_b2_02_clip01.json",
+        "clip_index": 1,
+        "motion": 0.004987771433348453
+      },
+      {
+        "video": "squat_b2_02.mp4",
+        "clip_filename": "squat_b2_02_clip02.json",
+        "clip_index": 2,
+        "motion": 0.010123365223054183
+      },
+      {
+        "video": "squat_b2_02.mp4",
+        "clip_filename": "squat_b2_02_clip03.json",
+        "clip_index": 3,
+        "motion": 0.023762786603509226
+      },
+      {
+        "video": "squat_b2_02.mp4",
+        "clip_filename": "squat_b2_02_clip04.json",
+        "clip_index": 4,
+        "motion": 0.03293865688207531
+      },
+      {
+        "video": "squat_b2_03.mp4",
+        "clip_filename": "squat_b2_03_clip00.json",
+        "clip_index": 0,
+        "motion": 0.020052724229365243
+      },
+      {
+        "video": "squat_b2_03.mp4",
+        "clip_filename": "squat_b2_03_clip01.json",
+        "clip_index": 1,
+        "motion": 0.02687615154612817
+      },
+      {
+        "video": "squat_b2_03.mp4",
+        "clip_filename": "squat_b2_03_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0315844043327123
+      },
+      {
+        "video": "squat_b2_03.mp4",
+        "clip_filename": "squat_b2_03_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0206251964681448
+      },
+      {
+        "video": "squat_b2_03.mp4",
+        "clip_filename": "squat_b2_03_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0036656951770453624
+      },
+      {
+        "video": "squat_b2_04.mp4",
+        "clip_filename": "squat_b2_04_clip00.json",
+        "clip_index": 0,
+        "motion": 0.009374113516668798
+      },
+      {
+        "video": "squat_b2_04.mp4",
+        "clip_filename": "squat_b2_04_clip01.json",
+        "clip_index": 1,
+        "motion": 0.0019699383331662807
+      },
+      {
+        "video": "squat_b2_04.mp4",
+        "clip_filename": "squat_b2_04_clip02.json",
+        "clip_index": 2,
+        "motion": 0.004038284619863197
+      },
+      {
+        "video": "squat_b2_04.mp4",
+        "clip_filename": "squat_b2_04_clip03.json",
+        "clip_index": 3,
+        "motion": 0.005444189559967725
+      },
+      {
+        "video": "squat_b2_04.mp4",
+        "clip_filename": "squat_b2_04_clip04.json",
+        "clip_index": 4,
+        "motion": 0.006910674193839839
+      },
+      {
+        "video": "squat_b2_05.mp4",
+        "clip_filename": "squat_b2_05_clip00.json",
+        "clip_index": 0,
+        "motion": 0.037953416877694705
+      },
+      {
+        "video": "squat_b2_05.mp4",
+        "clip_filename": "squat_b2_05_clip01.json",
+        "clip_index": 1,
+        "motion": 0.013073395928160097
+      },
+      {
+        "video": "squat_b2_05.mp4",
+        "clip_filename": "squat_b2_05_clip02.json",
+        "clip_index": 2,
+        "motion": 0.00566336616749034
+      },
+      {
+        "video": "squat_b2_05.mp4",
+        "clip_filename": "squat_b2_05_clip03.json",
+        "clip_index": 3,
+        "motion": 0.002322386119010578
+      },
+      {
+        "video": "squat_b2_05.mp4",
+        "clip_filename": "squat_b2_05_clip04.json",
+        "clip_index": 4,
+        "motion": 0.007615195259813848
+      },
+      {
+        "video": "squat_b2_06.mp4",
+        "clip_filename": "squat_b2_06_clip00.json",
+        "clip_index": 0,
+        "motion": 0.010044736460832468
+      },
+      {
+        "video": "squat_b2_06.mp4",
+        "clip_filename": "squat_b2_06_clip01.json",
+        "clip_index": 1,
+        "motion": 0.02461861031367154
+      },
+      {
+        "video": "squat_b2_06.mp4",
+        "clip_filename": "squat_b2_06_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0013094935598605018
+      },
+      {
+        "video": "squat_b2_06.mp4",
+        "clip_filename": "squat_b2_06_clip03.json",
+        "clip_index": 3,
+        "motion": 0.005028292519545134
+      },
+      {
+        "video": "squat_b2_06.mp4",
+        "clip_filename": "squat_b2_06_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0024333983474395656
+      },
+      {
+        "video": "squat_b2_07.mp4",
+        "clip_filename": "squat_b2_07_clip01.json",
+        "clip_index": 1,
+        "motion": 0.008004335167662462
+      },
+      {
+        "video": "squat_b2_07.mp4",
+        "clip_filename": "squat_b2_07_clip04.json",
+        "clip_index": 4,
+        "motion": 0.014474410765238453
+      },
+      {
+        "video": "squat_b2_08.mp4",
+        "clip_filename": "squat_b2_08_clip01.json",
+        "clip_index": 1,
+        "motion": 0.0022378347295619627
+      },
+      {
+        "video": "squat_b2_08.mp4",
+        "clip_filename": "squat_b2_08_clip02.json",
+        "clip_index": 2,
+        "motion": 0.001399564017323529
+      },
+      {
+        "video": "squat_b2_08.mp4",
+        "clip_filename": "squat_b2_08_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0027063533299080153
+      },
+      {
+        "video": "squat_b2_08.mp4",
+        "clip_filename": "squat_b2_08_clip04.json",
+        "clip_index": 4,
+        "motion": 0.007344798937836986
+      },
+      {
+        "video": "squat_b2_09.mp4",
+        "clip_filename": "squat_b2_09_clip02.json",
+        "clip_index": 2,
+        "motion": 0.004485158127518476
+      },
+      {
+        "video": "squat_b2_09.mp4",
+        "clip_filename": "squat_b2_09_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0072814443838103
+      },
+      {
+        "video": "squat_b2_09.mp4",
+        "clip_filename": "squat_b2_09_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0024995485914443842
+      }
+    ],
+    "skipped_list": [
+      {
+        "video": "squat_b2_01.mp4",
+        "clip_filename": "squat_b2_01_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0007868579629125714,
+        "reason": "motion 0.00079 (15.8% of median) < 20% threshold 0.00100"
+      },
+      {
+        "video": "squat_b2_01.mp4",
+        "clip_filename": "squat_b2_01_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0008830930453501727,
+        "reason": "motion 0.00088 (17.7% of median) < 20% threshold 0.00100"
+      },
+      {
+        "video": "squat_b2_07.mp4",
+        "clip_filename": "squat_b2_07_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00100"
+      },
+      {
+        "video": "squat_b2_07.mp4",
+        "clip_filename": "squat_b2_07_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0005615882063864532,
+        "reason": "motion 0.00056 (11.3% of median) < 20% threshold 0.00100"
+      },
+      {
+        "video": "squat_b2_07.mp4",
+        "clip_filename": "squat_b2_07_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0008011995192704586,
+        "reason": "motion 0.00080 (16.1% of median) < 20% threshold 0.00100"
+      },
+      {
+        "video": "squat_b2_08.mp4",
+        "clip_filename": "squat_b2_08_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00100"
+      },
+      {
+        "video": "squat_b2_09.mp4",
+        "clip_filename": "squat_b2_09_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0005219909683565581,
+        "reason": "motion 0.00052 (10.5% of median) < 20% threshold 0.00100"
+      },
+      {
+        "video": "squat_b2_09.mp4",
+        "clip_filename": "squat_b2_09_clip01.json",
+        "clip_index": 1,
+        "motion": 0.0007012911571139296,
+        "reason": "motion 0.00070 (14.1% of median) < 20% threshold 0.00100"
+      }
+    ]
+  },
+  "high_knees": {
+    "videos_processed": 9,
+    "clips_extracted": 41,
+    "clips_skipped": 4,
+    "median_motion": 0.008637514407643244,
+    "threshold": 0.001727502881528649,
+    "extracted_list": [
+      {
+        "video": "high_knees_b2_01.mp4",
+        "clip_filename": "high_knees_b2_01_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0033568167359863802
+      },
+      {
+        "video": "high_knees_b2_01.mp4",
+        "clip_filename": "high_knees_b2_01_clip01.json",
+        "clip_index": 1,
+        "motion": 0.04621104276897799
+      },
+      {
+        "video": "high_knees_b2_01.mp4",
+        "clip_filename": "high_knees_b2_01_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0028004857120131387
+      },
+      {
+        "video": "high_knees_b2_01.mp4",
+        "clip_filename": "high_knees_b2_01_clip03.json",
+        "clip_index": 3,
+        "motion": 0.015689279395743657
+      },
+      {
+        "video": "high_knees_b2_01.mp4",
+        "clip_filename": "high_knees_b2_01_clip04.json",
+        "clip_index": 4,
+        "motion": 0.039568759855290146
+      },
+      {
+        "video": "high_knees_b2_02.mp4",
+        "clip_filename": "high_knees_b2_02_clip02.json",
+        "clip_index": 2,
+        "motion": 0.006522734148938911
+      },
+      {
+        "video": "high_knees_b2_02.mp4",
+        "clip_filename": "high_knees_b2_02_clip03.json",
+        "clip_index": 3,
+        "motion": 0.003338104444459931
+      },
+      {
+        "video": "high_knees_b2_02.mp4",
+        "clip_filename": "high_knees_b2_02_clip04.json",
+        "clip_index": 4,
+        "motion": 0.013649184202754369
+      },
+      {
+        "video": "high_knees_b2_03.mp4",
+        "clip_filename": "high_knees_b2_03_clip00.json",
+        "clip_index": 0,
+        "motion": 0.010318006316361967
+      },
+      {
+        "video": "high_knees_b2_03.mp4",
+        "clip_filename": "high_knees_b2_03_clip01.json",
+        "clip_index": 1,
+        "motion": 0.007588830660214701
+      },
+      {
+        "video": "high_knees_b2_03.mp4",
+        "clip_filename": "high_knees_b2_03_clip02.json",
+        "clip_index": 2,
+        "motion": 0.1040048900766553
+      },
+      {
+        "video": "high_knees_b2_03.mp4",
+        "clip_filename": "high_knees_b2_03_clip03.json",
+        "clip_index": 3,
+        "motion": 0.06599914810403461
+      },
+      {
+        "video": "high_knees_b2_03.mp4",
+        "clip_filename": "high_knees_b2_03_clip04.json",
+        "clip_index": 4,
+        "motion": 0.04702341700754462
+      },
+      {
+        "video": "high_knees_b2_04.mp4",
+        "clip_filename": "high_knees_b2_04_clip01.json",
+        "clip_index": 1,
+        "motion": 0.011785520726433473
+      },
+      {
+        "video": "high_knees_b2_04.mp4",
+        "clip_filename": "high_knees_b2_04_clip02.json",
+        "clip_index": 2,
+        "motion": 0.011821134611712459
+      },
+      {
+        "video": "high_knees_b2_04.mp4",
+        "clip_filename": "high_knees_b2_04_clip03.json",
+        "clip_index": 3,
+        "motion": 0.01194727178670371
+      },
+      {
+        "video": "high_knees_b2_04.mp4",
+        "clip_filename": "high_knees_b2_04_clip04.json",
+        "clip_index": 4,
+        "motion": 0.011653531678288868
+      },
+      {
+        "video": "high_knees_b2_05.mp4",
+        "clip_filename": "high_knees_b2_05_clip01.json",
+        "clip_index": 1,
+        "motion": 0.008003565061593913
+      },
+      {
+        "video": "high_knees_b2_05.mp4",
+        "clip_filename": "high_knees_b2_05_clip02.json",
+        "clip_index": 2,
+        "motion": 0.004501391647592205
+      },
+      {
+        "video": "high_knees_b2_05.mp4",
+        "clip_filename": "high_knees_b2_05_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0177013457338742
+      },
+      {
+        "video": "high_knees_b2_05.mp4",
+        "clip_filename": "high_knees_b2_05_clip04.json",
+        "clip_index": 4,
+        "motion": 0.015589898457275646
+      },
+      {
+        "video": "high_knees_b2_06.mp4",
+        "clip_filename": "high_knees_b2_06_clip00.json",
+        "clip_index": 0,
+        "motion": 0.018769726971452932
+      },
+      {
+        "video": "high_knees_b2_06.mp4",
+        "clip_filename": "high_knees_b2_06_clip01.json",
+        "clip_index": 1,
+        "motion": 0.022063619747674502
+      },
+      {
+        "video": "high_knees_b2_06.mp4",
+        "clip_filename": "high_knees_b2_06_clip02.json",
+        "clip_index": 2,
+        "motion": 0.022250362072190916
+      },
+      {
+        "video": "high_knees_b2_06.mp4",
+        "clip_filename": "high_knees_b2_06_clip03.json",
+        "clip_index": 3,
+        "motion": 0.02207948125343923
+      },
+      {
+        "video": "high_knees_b2_06.mp4",
+        "clip_filename": "high_knees_b2_06_clip04.json",
+        "clip_index": 4,
+        "motion": 0.02195091134176057
+      },
+      {
+        "video": "high_knees_b2_07.mp4",
+        "clip_filename": "high_knees_b2_07_clip00.json",
+        "clip_index": 0,
+        "motion": 0.014618835263523769
+      },
+      {
+        "video": "high_knees_b2_07.mp4",
+        "clip_filename": "high_knees_b2_07_clip01.json",
+        "clip_index": 1,
+        "motion": 0.016174305716687723
+      },
+      {
+        "video": "high_knees_b2_07.mp4",
+        "clip_filename": "high_knees_b2_07_clip02.json",
+        "clip_index": 2,
+        "motion": 0.01613711764979923
+      },
+      {
+        "video": "high_knees_b2_07.mp4",
+        "clip_filename": "high_knees_b2_07_clip03.json",
+        "clip_index": 3,
+        "motion": 0.015827276482788925
+      },
+      {
+        "video": "high_knees_b2_07.mp4",
+        "clip_filename": "high_knees_b2_07_clip04.json",
+        "clip_index": 4,
+        "motion": 0.015458592342255422
+      },
+      {
+        "video": "high_knees_b2_08.mp4",
+        "clip_filename": "high_knees_b2_08_clip00.json",
+        "clip_index": 0,
+        "motion": 0.02128499557823892
+      },
+      {
+        "video": "high_knees_b2_08.mp4",
+        "clip_filename": "high_knees_b2_08_clip01.json",
+        "clip_index": 1,
+        "motion": 0.020013284948853207
+      },
+      {
+        "video": "high_knees_b2_08.mp4",
+        "clip_filename": "high_knees_b2_08_clip02.json",
+        "clip_index": 2,
+        "motion": 0.023268952817109854
+      },
+      {
+        "video": "high_knees_b2_08.mp4",
+        "clip_filename": "high_knees_b2_08_clip03.json",
+        "clip_index": 3,
+        "motion": 0.02226179411434207
+      },
+      {
+        "video": "high_knees_b2_08.mp4",
+        "clip_filename": "high_knees_b2_08_clip04.json",
+        "clip_index": 4,
+        "motion": 0.015379358380972218
+      },
+      {
+        "video": "high_knees_b2_09.mp4",
+        "clip_filename": "high_knees_b2_09_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0023610720279505126
+      },
+      {
+        "video": "high_knees_b2_09.mp4",
+        "clip_filename": "high_knees_b2_09_clip01.json",
+        "clip_index": 1,
+        "motion": 0.03176781242215289
+      },
+      {
+        "video": "high_knees_b2_09.mp4",
+        "clip_filename": "high_knees_b2_09_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0020359923714561487
+      },
+      {
+        "video": "high_knees_b2_09.mp4",
+        "clip_filename": "high_knees_b2_09_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0028399747915152074
+      },
+      {
+        "video": "high_knees_b2_09.mp4",
+        "clip_filename": "high_knees_b2_09_clip04.json",
+        "clip_index": 4,
+        "motion": 0.03462183110258257
+      }
+    ],
+    "skipped_list": [
+      {
+        "video": "high_knees_b2_02.mp4",
+        "clip_filename": "high_knees_b2_02_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0011511828301021298,
+        "reason": "motion 0.00115 (13.3% of median) < 20% threshold 0.00173"
+      },
+      {
+        "video": "high_knees_b2_02.mp4",
+        "clip_filename": "high_knees_b2_02_clip01.json",
+        "clip_index": 1,
+        "motion": 0.001109072016783878,
+        "reason": "motion 0.00111 (12.8% of median) < 20% threshold 0.00173"
+      },
+      {
+        "video": "high_knees_b2_04.mp4",
+        "clip_filename": "high_knees_b2_04_clip00.json",
+        "clip_index": 0,
+        "motion": 6.639041669132213e-05,
+        "reason": "motion 0.00007 (0.8% of median) < 20% threshold 0.00173"
+      },
+      {
+        "video": "high_knees_b2_05.mp4",
+        "clip_filename": "high_knees_b2_05_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00173"
+      }
+    ]
+  }
+}

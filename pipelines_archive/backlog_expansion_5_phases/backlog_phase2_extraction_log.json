@@ -1,0 +1,1140 @@
+{
+  "summary": {
+    "squat": {
+      "candidates_processed": 73,
+      "total_clips_extracted": 272,
+      "total_clips_discarded": 38
+    },
+    "lunge": {
+      "candidates_processed": 87,
+      "total_clips_extracted": 315,
+      "total_clips_discarded": 73
+    }
+  },
+  "details": {
+    "squat": [
+      {
+        "filename": "squat_01_03.mp4",
+        "duration_seconds": 457.79,
+        "target_clips": 5,
+        "clips_extracted": 5,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_01_05.mp4",
+        "duration_seconds": 55.24,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "squat_01_07.mp4",
+        "duration_seconds": 164.17,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "squat_01_08.mp4",
+        "duration_seconds": 120.16,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "squat_01_09.mp4",
+        "duration_seconds": 724.44,
+        "target_clips": 8,
+        "clips_extracted": 8,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_01_10.mp4",
+        "duration_seconds": 172.42,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "squat_01_11.mp4",
+        "duration_seconds": 27.59,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "squat_01_12.mp4",
+        "duration_seconds": 46.72,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "squat_01_13.mp4",
+        "duration_seconds": 16.48,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_01_14.mp4",
+        "duration_seconds": 177.57,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_01_15.mp4",
+        "duration_seconds": 24.57,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_02_06.mp4",
+        "duration_seconds": 197.97,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_02_10.mp4",
+        "duration_seconds": 221.86,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_02_11.mp4",
+        "duration_seconds": 304.68,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_02_12.mp4",
+        "duration_seconds": 371.5,
+        "target_clips": 4,
+        "clips_extracted": 4,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_02_13.mp4",
+        "duration_seconds": 75.16,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_02_14.mp4",
+        "duration_seconds": 468.34,
+        "target_clips": 5,
+        "clips_extracted": 2,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "squat_03_04.mp4",
+        "duration_seconds": 74.13,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_03_05.mp4",
+        "duration_seconds": 18.05,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "squat_03_07.mp4",
+        "duration_seconds": 81.48,
+        "target_clips": 3,
+        "clips_extracted": 0,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "squat_03_09.mp4",
+        "duration_seconds": 13.67,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_03_11.mp4",
+        "duration_seconds": 40.28,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "squat_03_12.mp4",
+        "duration_seconds": 138.64,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "squat_03_13.mp4",
+        "duration_seconds": 19.42,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_03_14.mp4",
+        "duration_seconds": 173.94,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "squat_04_04.mp4",
+        "duration_seconds": 69.74,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "squat_04_05.mp4",
+        "duration_seconds": 54.82,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "squat_04_07.mp4",
+        "duration_seconds": 37.0,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_04_13.mp4",
+        "duration_seconds": 243.0,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_04_15.mp4",
+        "duration_seconds": 251.85,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "squat_05_03.mp4",
+        "duration_seconds": 197.53,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "squat_05_06.mp4",
+        "duration_seconds": 591.96,
+        "target_clips": 7,
+        "clips_extracted": 7,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_05_07.mp4",
+        "duration_seconds": 654.6,
+        "target_clips": 7,
+        "clips_extracted": 5,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "squat_05_10.mp4",
+        "duration_seconds": 375.23,
+        "target_clips": 4,
+        "clips_extracted": 4,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_05_11.mp4",
+        "duration_seconds": 42.1,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_05_12.mp4",
+        "duration_seconds": 340.61,
+        "target_clips": 4,
+        "clips_extracted": 4,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_05_13.mp4",
+        "duration_seconds": 58.39,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_05_15.mp4",
+        "duration_seconds": 924.73,
+        "target_clips": 10,
+        "clips_extracted": 8,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "squat_06_09.mp4",
+        "duration_seconds": 387.01,
+        "target_clips": 4,
+        "clips_extracted": 4,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_06_11.mp4",
+        "duration_seconds": 60.0,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_07_01.mp4",
+        "duration_seconds": 242.77,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "squat_07_03.mp4",
+        "duration_seconds": 122.4,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_07_04.mp4",
+        "duration_seconds": 705.17,
+        "target_clips": 8,
+        "clips_extracted": 8,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_07_07.mp4",
+        "duration_seconds": 1328.07,
+        "target_clips": 15,
+        "clips_extracted": 15,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_07_08.mp4",
+        "duration_seconds": 641.97,
+        "target_clips": 7,
+        "clips_extracted": 7,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_07_09.mp4",
+        "duration_seconds": 990.23,
+        "target_clips": 11,
+        "clips_extracted": 8,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "squat_07_10.mp4",
+        "duration_seconds": 530.92,
+        "target_clips": 6,
+        "clips_extracted": 6,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_07_11.mp4",
+        "duration_seconds": 760.56,
+        "target_clips": 8,
+        "clips_extracted": 7,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "squat_07_14.mp4",
+        "duration_seconds": 492.74,
+        "target_clips": 5,
+        "clips_extracted": 5,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_08_02.mp4",
+        "duration_seconds": 536.91,
+        "target_clips": 6,
+        "clips_extracted": 6,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_08_05.mp4",
+        "duration_seconds": 13.88,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_08_06.mp4",
+        "duration_seconds": 284.28,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_08_08.mp4",
+        "duration_seconds": 64.98,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "squat_08_10.mp4",
+        "duration_seconds": 437.7,
+        "target_clips": 5,
+        "clips_extracted": 5,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_08_11.mp4",
+        "duration_seconds": 94.89,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "squat_08_12.mp4",
+        "duration_seconds": 42.88,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_08_14.mp4",
+        "duration_seconds": 78.48,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_09_07.mp4",
+        "duration_seconds": 1235.6,
+        "target_clips": 14,
+        "clips_extracted": 14,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_09_08.mp4",
+        "duration_seconds": 576.37,
+        "target_clips": 6,
+        "clips_extracted": 6,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_09_11.mp4",
+        "duration_seconds": 362.7,
+        "target_clips": 4,
+        "clips_extracted": 4,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_09_12.mp4",
+        "duration_seconds": 514.47,
+        "target_clips": 6,
+        "clips_extracted": 6,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_09_13.mp4",
+        "duration_seconds": 381.96,
+        "target_clips": 4,
+        "clips_extracted": 4,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_09_14.mp4",
+        "duration_seconds": 293.2,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_09_15.mp4",
+        "duration_seconds": 264.7,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_10_03.mp4",
+        "duration_seconds": 11.24,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_10_04.mp4",
+        "duration_seconds": 14.23,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_10_05.mp4",
+        "duration_seconds": 111.88,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "squat_10_08.mp4",
+        "duration_seconds": 14.93,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_10_10.mp4",
+        "duration_seconds": 27.06,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_10_11.mp4",
+        "duration_seconds": 15.42,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "squat_10_13.mp4",
+        "duration_seconds": 46.63,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "squat_10_14.mp4",
+        "duration_seconds": 40.77,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "squat_10_15.mp4",
+        "duration_seconds": 17.8,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      }
+    ],
+    "lunge": [
+      {
+        "filename": "lunge_01_04.mp4",
+        "duration_seconds": 93.13,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_01_06.mp4",
+        "duration_seconds": 54.39,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_01_07.mp4",
+        "duration_seconds": 109.74,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_01_08.mp4",
+        "duration_seconds": 24.57,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_01_09.mp4",
+        "duration_seconds": 234.19,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "lunge_01_10.mp4",
+        "duration_seconds": 21.89,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_01_11.mp4",
+        "duration_seconds": 46.11,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_01_12.mp4",
+        "duration_seconds": 33.43,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_01_14.mp4",
+        "duration_seconds": 58.46,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_01_15.mp4",
+        "duration_seconds": 51.01,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_02_07.mp4",
+        "duration_seconds": 268.16,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "lunge_02_08.mp4",
+        "duration_seconds": 45.42,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_02_09.mp4",
+        "duration_seconds": 480.65,
+        "target_clips": 5,
+        "clips_extracted": 2,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "lunge_02_10.mp4",
+        "duration_seconds": 52.12,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "lunge_02_11.mp4",
+        "duration_seconds": 114.91,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_02_13.mp4",
+        "duration_seconds": 392.19,
+        "target_clips": 4,
+        "clips_extracted": 4,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_03_02.mp4",
+        "duration_seconds": 25.66,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_03_03.mp4",
+        "duration_seconds": 26.93,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_03_04.mp4",
+        "duration_seconds": 18.9,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_03_06.mp4",
+        "duration_seconds": 36.37,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_03_07.mp4",
+        "duration_seconds": 33.9,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_03_09.mp4",
+        "duration_seconds": 116.47,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_03_10.mp4",
+        "duration_seconds": 24.49,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_03_11.mp4",
+        "duration_seconds": 9.94,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_03_12.mp4",
+        "duration_seconds": 58.39,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_03_14.mp4",
+        "duration_seconds": 15.05,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_03_15.mp4",
+        "duration_seconds": 39.54,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_04_05.mp4",
+        "duration_seconds": 455.83,
+        "target_clips": 5,
+        "clips_extracted": 4,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_04_08.mp4",
+        "duration_seconds": 161.84,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_04_09.mp4",
+        "duration_seconds": 91.56,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_04_11.mp4",
+        "duration_seconds": 148.28,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_04_13.mp4",
+        "duration_seconds": 48.26,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_04_14.mp4",
+        "duration_seconds": 254.84,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_05_06.mp4",
+        "duration_seconds": 16.72,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_05_07.mp4",
+        "duration_seconds": 14.28,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_05_13.mp4",
+        "duration_seconds": 191.32,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_05_14.mp4",
+        "duration_seconds": 274.94,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_06_02.mp4",
+        "duration_seconds": 369.97,
+        "target_clips": 4,
+        "clips_extracted": 1,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "lunge_06_03.mp4",
+        "duration_seconds": 1879.7,
+        "target_clips": 15,
+        "clips_extracted": 12,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "lunge_06_04.mp4",
+        "duration_seconds": 961.43,
+        "target_clips": 11,
+        "clips_extracted": 9,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "lunge_06_05.mp4",
+        "duration_seconds": 761.2,
+        "target_clips": 8,
+        "clips_extracted": 6,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "lunge_06_06.mp4",
+        "duration_seconds": 725.23,
+        "target_clips": 8,
+        "clips_extracted": 7,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_06_07.mp4",
+        "duration_seconds": 832.83,
+        "target_clips": 9,
+        "clips_extracted": 9,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_06_08.mp4",
+        "duration_seconds": 460.6,
+        "target_clips": 5,
+        "clips_extracted": 5,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_06_09.mp4",
+        "duration_seconds": 1796.13,
+        "target_clips": 15,
+        "clips_extracted": 10,
+        "clips_discarded": 5
+      },
+      {
+        "filename": "lunge_06_10.mp4",
+        "duration_seconds": 86.29,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "lunge_06_11.mp4",
+        "duration_seconds": 938.77,
+        "target_clips": 10,
+        "clips_extracted": 6,
+        "clips_discarded": 4
+      },
+      {
+        "filename": "lunge_06_12.mp4",
+        "duration_seconds": 921.63,
+        "target_clips": 10,
+        "clips_extracted": 8,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "lunge_06_13.mp4",
+        "duration_seconds": 1047.47,
+        "target_clips": 12,
+        "clips_extracted": 3,
+        "clips_discarded": 9
+      },
+      {
+        "filename": "lunge_06_14.mp4",
+        "duration_seconds": 754.46,
+        "target_clips": 8,
+        "clips_extracted": 8,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_06_15.mp4",
+        "duration_seconds": 1082.47,
+        "target_clips": 12,
+        "clips_extracted": 12,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_07_03.mp4",
+        "duration_seconds": 125.4,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_07_04.mp4",
+        "duration_seconds": 121.5,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "lunge_07_08.mp4",
+        "duration_seconds": 173.94,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_07_09.mp4",
+        "duration_seconds": 705.17,
+        "target_clips": 8,
+        "clips_extracted": 8,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_07_10.mp4",
+        "duration_seconds": 1531.88,
+        "target_clips": 15,
+        "clips_extracted": 14,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_07_11.mp4",
+        "duration_seconds": 760.56,
+        "target_clips": 8,
+        "clips_extracted": 7,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_07_12.mp4",
+        "duration_seconds": 1235.0,
+        "target_clips": 14,
+        "clips_extracted": 14,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_07_13.mp4",
+        "duration_seconds": 127.96,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_08_04.mp4",
+        "duration_seconds": 28.36,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "lunge_08_05.mp4",
+        "duration_seconds": 28.24,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_08_06.mp4",
+        "duration_seconds": 44.58,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_08_07.mp4",
+        "duration_seconds": 18.17,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_08_08.mp4",
+        "duration_seconds": 10.53,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_08_09.mp4",
+        "duration_seconds": 20.17,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_08_10.mp4",
+        "duration_seconds": 16.04,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_08_11.mp4",
+        "duration_seconds": 15.48,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_08_12.mp4",
+        "duration_seconds": 15.02,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_08_13.mp4",
+        "duration_seconds": 133.47,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_08_14.mp4",
+        "duration_seconds": 317.72,
+        "target_clips": 4,
+        "clips_extracted": 3,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_08_15.mp4",
+        "duration_seconds": 15.86,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_09_02.mp4",
+        "duration_seconds": 33.44,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_09_03.mp4",
+        "duration_seconds": 16.48,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_09_05.mp4",
+        "duration_seconds": 42.74,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "lunge_09_08.mp4",
+        "duration_seconds": 92.03,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_09_09.mp4",
+        "duration_seconds": 25.36,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_09_14.mp4",
+        "duration_seconds": 16.81,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_09_15.mp4",
+        "duration_seconds": 45.65,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_10_03.mp4",
+        "duration_seconds": 23.97,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_10_05.mp4",
+        "duration_seconds": 75.83,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_10_06.mp4",
+        "duration_seconds": 117.08,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_10_08.mp4",
+        "duration_seconds": 138.13,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "lunge_10_10.mp4",
+        "duration_seconds": 18.72,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_10_11.mp4",
+        "duration_seconds": 190.95,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_10_12.mp4",
+        "duration_seconds": 35.97,
+        "target_clips": 3,
+        "clips_extracted": 0,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "lunge_10_13.mp4",
+        "duration_seconds": 32.83,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "lunge_10_15.mp4",
+        "duration_seconds": 121.83,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      }
+    ]
+  }
+}

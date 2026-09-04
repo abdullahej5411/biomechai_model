@@ -1,0 +1,93 @@
+{
+  "jumping_jack": [
+    "jumping_jack_b2_01",
+    "jumping_jack_b2_02",
+    "jumping_jack_b2_03",
+    "jumping_jack_b2_04",
+    "jumping_jack_b2_05",
+    "jumping_jack_b2_07",
+    "jumping_jack_b2_09",
+    "jumping_jack_b2_10",
+    "jumping_jack_b2_11",
+    "jumping_jack_b2_12",
+    "jumping_jack_b2_15",
+    "jumping_jack_b2_16",
+    "jumping_jack_b2_17",
+    "jumping_jack_b2_18"
+  ],
+  "plank": [
+    "plank_b2_01",
+    "plank_b2_02",
+    "plank_b2_04",
+    "plank_b2_05",
+    "plank_b2_06",
+    "plank_b2_08",
+    "plank_b2_09",
+    "plank_b2_11",
+    "plank_b2_13",
+    "plank_b2_14",
+    "plank_b2_15"
+  ],
+  "lunge": [
+    "lunge_b2_01",
+    "lunge_b2_02",
+    "lunge_b2_03",
+    "lunge_b2_04",
+    "lunge_b2_05",
+    "lunge_b2_06",
+    "lunge_b2_09",
+    "lunge_b2_10",
+    "lunge_b2_11",
+    "lunge_b2_12",
+    "lunge_b2_13",
+    "lunge_b2_14"
+  ],
+  "bicep_curl": [
+    "bicep_curl_b2_01",
+    "bicep_curl_b2_02",
+    "bicep_curl_b2_03",
+    "bicep_curl_b2_04",
+    "bicep_curl_b2_05",
+    "bicep_curl_b2_06",
+    "bicep_curl_b2_07",
+    "bicep_curl_b2_08",
+    "bicep_curl_b2_09",
+    "bicep_curl_b2_11",
+    "bicep_curl_b2_12"
+  ],
+  "pushup": [
+    "pushup_b2_01",
+    "pushup_b2_02",
+    "pushup_b2_03",
+    "pushup_b2_04",
+    "pushup_b2_05",
+    "pushup_b2_06",
+    "pushup_b2_07",
+    "pushup_b2_08",
+    "pushup_b2_09",
+    "pushup_b2_10",
+    "pushup_b2_11"
+  ],
+  "squat": [
+    "squat_b2_01",
+    "squat_b2_02",
+    "squat_b2_03",
+    "squat_b2_04",
+    "squat_b2_05",
+    "squat_b2_06",
+    "squat_b2_07",
+    "squat_b2_08",
+    "squat_b2_09"
+  ],
+  "high_knees": [
+    "high_knees_b2_01",
+    "high_knees_b2_02",
+    "high_knees_b2_03",
+    "high_knees_b2_04",
+    "high_knees_b2_05",
+    "high_knees_b2_06",
+    "high_knees_b2_07",
+    "high_knees_b2_08",
+    "high_knees_b2_09"
+  ]
+}

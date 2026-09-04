@@ -1,0 +1,127 @@
+[
+  {
+    "exercise": "squat",
+    "video_id": "05",
+    "duplicate_of_video_id": "03"
+  },
+  {
+    "exercise": "squat",
+    "video_id": "06",
+    "duplicate_of_video_id": "01"
+  },
+  {
+    "exercise": "pushup",
+    "video_id": "02",
+    "duplicate_of_video_id": "01"
+  },
+  {
+    "exercise": "pushup",
+    "video_id": "04",
+    "duplicate_of_video_id": "03"
+  },
+  {
+    "exercise": "pushup",
+    "video_id": "05",
+    "duplicate_of_video_id": "03"
+  },
+  {
+    "exercise": "pushup",
+    "video_id": "07",
+    "duplicate_of_video_id": "03"
+  },
+  {
+    "exercise": "jumping_jack",
+    "video_id": "03",
+    "duplicate_of_video_id": "01"
+  },
+  {
+    "exercise": "jumping_jack",
+    "video_id": "05",
+    "duplicate_of_video_id": "01"
+  },
+  {
+    "exercise": "jumping_jack",
+    "video_id": "07",
+    "duplicate_of_video_id": "01"
+  },
+  {
+    "exercise": "jumping_jack",
+    "video_id": "08",
+    "duplicate_of_video_id": "04"
+  },
+  {
+    "exercise": "jumping_jack",
+    "video_id": "09",
+    "duplicate_of_video_id": "02"
+  },
+  {
+    "exercise": "jumping_jack",
+    "video_id": "10",
+    "duplicate_of_video_id": "02"
+  },
+  {
+    "exercise": "bicep_curl",
+    "video_id": "02",
+    "duplicate_of_video_id": "01"
+  },
+  {
+    "exercise": "bicep_curl",
+    "video_id": "04",
+    "duplicate_of_video_id": "01"
+  },
+  {
+    "exercise": "bicep_curl",
+    "video_id": "05",
+    "duplicate_of_video_id": "01"
+  },
+  {
+    "exercise": "bicep_curl",
+    "video_id": "09",
+    "duplicate_of_video_id": "01"
+  },
+  {
+    "exercise": "lunge",
+    "video_id": "05",
+    "duplicate_of_video_id": "04"
+  },
+  {
+    "exercise": "lunge",
+    "video_id": "06",
+    "duplicate_of_video_id": "04"
+  },
+  {
+    "exercise": "lunge",
+    "video_id": "09",
+    "duplicate_of_video_id": "04"
+  },
+  {
+    "exercise": "plank",
+    "video_id": "02",
+    "duplicate_of_video_id": "01"
+  },
+  {
+    "exercise": "plank",
+    "video_id": "04",
+    "duplicate_of_video_id": "01"
+  },
+  {
+    "exercise": "plank",
+    "video_id": "06",
+    "duplicate_of_video_id": "03"
+  },
+  {
+    "exercise": "plank",
+    "video_id": "07",
+    "duplicate_of_video_id": "03"
+  },
+  {
+    "exercise": "plank",
+    "video_id": "08",
+    "duplicate_of_video_id": "01"
+  },
+  {
+    "exercise": "high_knees",
+    "video_id": "04",
+    "duplicate_of_video_id": "01"
+  }
+]

@@ -1,0 +1,553 @@
+{
+  "phase3_raw_extraction_skips": {
+    "jumping_jack": [
+      {
+        "video": "jumping_jack_b2_02.mp4",
+        "clip_filename": "jumping_jack_b2_02_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0030762637498027985,
+        "reason": "motion 0.00308 (15.4% of median) < 20% threshold 0.00400"
+      },
+      {
+        "video": "jumping_jack_b2_03.mp4",
+        "clip_filename": "jumping_jack_b2_03_clip00.json",
+        "clip_index": 0,
+        "motion": 9.558438400180049e-05,
+        "reason": "motion 0.00010 (0.5% of median) < 20% threshold 0.00400"
+      },
+      {
+        "video": "jumping_jack_b2_07.mp4",
+        "clip_filename": "jumping_jack_b2_07_clip04.json",
+        "clip_index": 4,
+        "motion": 0.001277291357849103,
+        "reason": "motion 0.00128 (6.4% of median) < 20% threshold 0.00400"
+      },
+      {
+        "video": "jumping_jack_b2_10.mp4",
+        "clip_filename": "jumping_jack_b2_10_clip03.json",
+        "clip_index": 3,
+        "motion": 0.002460750483563182,
+        "reason": "motion 0.00246 (12.3% of median) < 20% threshold 0.00400"
+      },
+      {
+        "video": "jumping_jack_b2_11.mp4",
+        "clip_filename": "jumping_jack_b2_11_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0017588405803639227,
+        "reason": "motion 0.00176 (8.8% of median) < 20% threshold 0.00400"
+      },
+      {
+        "video": "jumping_jack_b2_12.mp4",
+        "clip_filename": "jumping_jack_b2_12_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0032309652606468692,
+        "reason": "motion 0.00323 (16.2% of median) < 20% threshold 0.00400"
+      },
+      {
+        "video": "jumping_jack_b2_12.mp4",
+        "clip_filename": "jumping_jack_b2_12_clip02.json",
+        "clip_index": 2,
+        "motion": 0.003090122854903503,
+        "reason": "motion 0.00309 (15.5% of median) < 20% threshold 0.00400"
+      },
+      {
+        "video": "jumping_jack_b2_16.mp4",
+        "clip_filename": "jumping_jack_b2_16_clip01.json",
+        "clip_index": 1,
+        "motion": 0.00025619675612438336,
+        "reason": "motion 0.00026 (1.3% of median) < 20% threshold 0.00400"
+      },
+      {
+        "video": "jumping_jack_b2_17.mp4",
+        "clip_filename": "jumping_jack_b2_17_clip02.json",
+        "clip_index": 2,
+        "motion": 0.003029293388111304,
+        "reason": "motion 0.00303 (15.2% of median) < 20% threshold 0.00400"
+      },
+      {
+        "video": "jumping_jack_b2_17.mp4",
+        "clip_filename": "jumping_jack_b2_17_clip03.json",
+        "clip_index": 3,
+        "motion": 0.00031918244978347186,
+        "reason": "motion 0.00032 (1.6% of median) < 20% threshold 0.00400"
+      },
+      {
+        "video": "jumping_jack_b2_18.mp4",
+        "clip_filename": "jumping_jack_b2_18_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00400"
+      }
+    ],
+    "plank": [
+      {
+        "video": "plank_b2_01.mp4",
+        "clip_filename": "plank_b2_01_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_01.mp4",
+        "clip_filename": "plank_b2_01_clip01.json",
+        "clip_index": 1,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_03.mp4",
+        "clip_filename": "plank_b2_03_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_03.mp4",
+        "clip_filename": "plank_b2_03_clip01.json",
+        "clip_index": 1,
+        "motion": 0.00015913124424380177,
+        "reason": "motion 0.00016 (5.1% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_03.mp4",
+        "clip_filename": "plank_b2_03_clip02.json",
+        "clip_index": 2,
+        "motion": 0.00015368741640496716,
+        "reason": "motion 0.00015 (4.9% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_03.mp4",
+        "clip_filename": "plank_b2_03_clip03.json",
+        "clip_index": 3,
+        "motion": 0.00014572904830743378,
+        "reason": "motion 0.00015 (4.7% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_03.mp4",
+        "clip_filename": "plank_b2_03_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0001410524833556971,
+        "reason": "motion 0.00014 (4.5% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_05.mp4",
+        "clip_filename": "plank_b2_05_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_05.mp4",
+        "clip_filename": "plank_b2_05_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0005294958984010527,
+        "reason": "motion 0.00053 (17.0% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_08.mp4",
+        "clip_filename": "plank_b2_08_clip03.json",
+        "clip_index": 3,
+        "motion": 0.00041661920041867505,
+        "reason": "motion 0.00042 (13.4% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_09.mp4",
+        "clip_filename": "plank_b2_09_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0005722634201584948,
+        "reason": "motion 0.00057 (18.4% of median) < 20% threshold 0.00062"
+      },
+      {
+        "video": "plank_b2_09.mp4",
+        "clip_filename": "plank_b2_09_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0003520377659705938,
+        "reason": "motion 0.00035 (11.3% of median) < 20% threshold 0.00062"
+      }
+    ],
+    "lunge": [
+      {
+        "video": "lunge_b2_03.mp4",
+        "clip_filename": "lunge_b2_03_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00157"
+      },
+      {
+        "video": "lunge_b2_10.mp4",
+        "clip_filename": "lunge_b2_10_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00157"
+      },
+      {
+        "video": "lunge_b2_13.mp4",
+        "clip_filename": "lunge_b2_13_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00157"
+      }
+    ],
+    "bicep_curl": [
+      {
+        "video": "bicep_curl_b2_01.mp4",
+        "clip_filename": "bicep_curl_b2_01_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_01.mp4",
+        "clip_filename": "bicep_curl_b2_01_clip01.json",
+        "clip_index": 1,
+        "motion": 0.0007132637570939862,
+        "reason": "motion 0.00071 (6.8% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_02.mp4",
+        "clip_filename": "bicep_curl_b2_02_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_04.mp4",
+        "clip_filename": "bicep_curl_b2_04_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0010665265866288507,
+        "reason": "motion 0.00107 (10.1% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_04.mp4",
+        "clip_filename": "bicep_curl_b2_04_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0010173199481488065,
+        "reason": "motion 0.00102 (9.7% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_05.mp4",
+        "clip_filename": "bicep_curl_b2_05_clip02.json",
+        "clip_index": 2,
+        "motion": 0.002101315671571396,
+        "reason": "motion 0.00210 (20.0% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_11.mp4",
+        "clip_filename": "bicep_curl_b2_11_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_11.mp4",
+        "clip_filename": "bicep_curl_b2_11_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0019677491485526784,
+        "reason": "motion 0.00197 (18.7% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_11.mp4",
+        "clip_filename": "bicep_curl_b2_11_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0014234305485873286,
+        "reason": "motion 0.00142 (13.5% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_11.mp4",
+        "clip_filename": "bicep_curl_b2_11_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0019231278336475208,
+        "reason": "motion 0.00192 (18.3% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_12.mp4",
+        "clip_filename": "bicep_curl_b2_12_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0013847882987178496,
+        "reason": "motion 0.00138 (13.2% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_12.mp4",
+        "clip_filename": "bicep_curl_b2_12_clip03.json",
+        "clip_index": 3,
+        "motion": 0.001003291008282643,
+        "reason": "motion 0.00100 (9.5% of median) < 20% threshold 0.00210"
+      },
+      {
+        "video": "bicep_curl_b2_12.mp4",
+        "clip_filename": "bicep_curl_b2_12_clip04.json",
+        "clip_index": 4,
+        "motion": 0.002059343573033439,
+        "reason": "motion 0.00206 (19.6% of median) < 20% threshold 0.00210"
+      }
+    ],
+    "pushup": [
+      {
+        "video": "pushup_b2_02.mp4",
+        "clip_filename": "pushup_b2_02_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0009477598191858243,
+        "reason": "motion 0.00095 (15.8% of median) < 20% threshold 0.00120"
+      },
+      {
+        "video": "pushup_b2_03.mp4",
+        "clip_filename": "pushup_b2_03_clip03.json",
+        "clip_index": 3,
+        "motion": 0.000449495976145151,
+        "reason": "motion 0.00045 (7.5% of median) < 20% threshold 0.00120"
+      },
+      {
+        "video": "pushup_b2_03.mp4",
+        "clip_filename": "pushup_b2_03_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0011934890782534769,
+        "reason": "motion 0.00119 (19.9% of median) < 20% threshold 0.00120"
+      },
+      {
+        "video": "pushup_b2_06.mp4",
+        "clip_filename": "pushup_b2_06_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0009482483526098813,
+        "reason": "motion 0.00095 (15.8% of median) < 20% threshold 0.00120"
+      },
+      {
+        "video": "pushup_b2_07.mp4",
+        "clip_filename": "pushup_b2_07_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00120"
+      },
+      {
+        "video": "pushup_b2_08.mp4",
+        "clip_filename": "pushup_b2_08_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00120"
+      },
+      {
+        "video": "pushup_b2_10.mp4",
+        "clip_filename": "pushup_b2_10_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0006861243340441544,
+        "reason": "motion 0.00069 (11.4% of median) < 20% threshold 0.00120"
+      },
+      {
+        "video": "pushup_b2_10.mp4",
+        "clip_filename": "pushup_b2_10_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0004199135433315032,
+        "reason": "motion 0.00042 (7.0% of median) < 20% threshold 0.00120"
+      },
+      {
+        "video": "pushup_b2_11.mp4",
+        "clip_filename": "pushup_b2_11_clip01.json",
+        "clip_index": 1,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00120"
+      },
+      {
+        "video": "pushup_b2_11.mp4",
+        "clip_filename": "pushup_b2_11_clip04.json",
+        "clip_index": 4,
+        "motion": 0.0008491862394293276,
+        "reason": "motion 0.00085 (14.1% of median) < 20% threshold 0.00120"
+      }
+    ],
+    "squat": [
+      {
+        "video": "squat_b2_01.mp4",
+        "clip_filename": "squat_b2_01_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0007868579629125714,
+        "reason": "motion 0.00079 (15.8% of median) < 20% threshold 0.00100"
+      },
+      {
+        "video": "squat_b2_01.mp4",
+        "clip_filename": "squat_b2_01_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0008830930453501727,
+        "reason": "motion 0.00088 (17.7% of median) < 20% threshold 0.00100"
+      },
+      {
+        "video": "squat_b2_07.mp4",
+        "clip_filename": "squat_b2_07_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00100"
+      },
+      {
+        "video": "squat_b2_07.mp4",
+        "clip_filename": "squat_b2_07_clip02.json",
+        "clip_index": 2,
+        "motion": 0.0005615882063864532,
+        "reason": "motion 0.00056 (11.3% of median) < 20% threshold 0.00100"
+      },
+      {
+        "video": "squat_b2_07.mp4",
+        "clip_filename": "squat_b2_07_clip03.json",
+        "clip_index": 3,
+        "motion": 0.0008011995192704586,
+        "reason": "motion 0.00080 (16.1% of median) < 20% threshold 0.00100"
+      },
+      {
+        "video": "squat_b2_08.mp4",
+        "clip_filename": "squat_b2_08_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00100"
+      },
+      {
+        "video": "squat_b2_09.mp4",
+        "clip_filename": "squat_b2_09_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0005219909683565581,
+        "reason": "motion 0.00052 (10.5% of median) < 20% threshold 0.00100"
+      },
+      {
+        "video": "squat_b2_09.mp4",
+        "clip_filename": "squat_b2_09_clip01.json",
+        "clip_index": 1,
+        "motion": 0.0007012911571139296,
+        "reason": "motion 0.00070 (14.1% of median) < 20% threshold 0.00100"
+      }
+    ],
+    "high_knees": [
+      {
+        "video": "high_knees_b2_02.mp4",
+        "clip_filename": "high_knees_b2_02_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0011511828301021298,
+        "reason": "motion 0.00115 (13.3% of median) < 20% threshold 0.00173"
+      },
+      {
+        "video": "high_knees_b2_02.mp4",
+        "clip_filename": "high_knees_b2_02_clip01.json",
+        "clip_index": 1,
+        "motion": 0.001109072016783878,
+        "reason": "motion 0.00111 (12.8% of median) < 20% threshold 0.00173"
+      },
+      {
+        "video": "high_knees_b2_04.mp4",
+        "clip_filename": "high_knees_b2_04_clip00.json",
+        "clip_index": 0,
+        "motion": 6.639041669132213e-05,
+        "reason": "motion 0.00007 (0.8% of median) < 20% threshold 0.00173"
+      },
+      {
+        "video": "high_knees_b2_05.mp4",
+        "clip_filename": "high_knees_b2_05_clip00.json",
+        "clip_index": 0,
+        "motion": 0.0,
+        "reason": "motion 0.00000 (0.0% of median) < 20% threshold 0.00173"
+      }
+    ]
+  },
+  "phase5_combined_median_skips": {
+    "jumping_jack": [],
+    "plank": [
+      {
+        "source": "baseline",
+        "filename": "plank_03_clip01.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks\\plank\\plank_03_clip01.json",
+        "motion": 0.0006921492038585329
+      },
+      {
+        "source": "batch2",
+        "filename": "plank_b2_06_clip04.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks_batch2\\plank\\plank_b2_06_clip04.json",
+        "motion": 0.000713247722631119
+      },
+      {
+        "source": "batch2",
+        "filename": "plank_b2_08_clip01.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks_batch2\\plank\\plank_b2_08_clip01.json",
+        "motion": 0.0006947680987046348
+      },
+      {
+        "source": "batch2",
+        "filename": "plank_b2_11_clip02.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks_batch2\\plank\\plank_b2_11_clip02.json",
+        "motion": 0.0008140069118137799
+      }
+    ],
+    "lunge": [],
+    "bicep_curl": [],
+    "pushup": [],
+    "squat": [
+      {
+        "source": "baseline",
+        "filename": "squat_04_clip02.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks\\squat\\squat_04_clip02.json",
+        "motion": 0.0013035550736830816
+      },
+      {
+        "source": "batch2",
+        "filename": "squat_b2_01_clip00.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks_batch2\\squat\\squat_b2_01_clip00.json",
+        "motion": 0.0012540492085525506
+      },
+      {
+        "source": "batch2",
+        "filename": "squat_b2_06_clip02.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks_batch2\\squat\\squat_b2_06_clip02.json",
+        "motion": 0.0013094935598605018
+      }
+    ],
+    "high_knees": [
+      {
+        "source": "baseline",
+        "filename": "high_knees_01_clip02.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks\\high_knees\\high_knees_01_clip02.json",
+        "motion": 0.002754981393886336
+      },
+      {
+        "source": "baseline",
+        "filename": "high_knees_02_clip03.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks\\high_knees\\high_knees_02_clip03.json",
+        "motion": 0.0020725580889236106
+      },
+      {
+        "source": "baseline",
+        "filename": "high_knees_02_clip04.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks\\high_knees\\high_knees_02_clip04.json",
+        "motion": 0.002470116879659938
+      },
+      {
+        "source": "baseline",
+        "filename": "high_knees_09_clip00.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks\\high_knees\\high_knees_09_clip00.json",
+        "motion": 0.0017832347964482848
+      },
+      {
+        "source": "baseline",
+        "filename": "high_knees_09_clip02.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks\\high_knees\\high_knees_09_clip02.json",
+        "motion": 0.002701866622646572
+      },
+      {
+        "source": "baseline",
+        "filename": "high_knees_09_clip04.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks\\high_knees\\high_knees_09_clip04.json",
+        "motion": 0.002462209364236952
+      },
+      {
+        "source": "batch2",
+        "filename": "high_knees_b2_01_clip02.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks_batch2\\high_knees\\high_knees_b2_01_clip02.json",
+        "motion": 0.0028004857120131387
+      },
+      {
+        "source": "batch2",
+        "filename": "high_knees_b2_09_clip00.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks_batch2\\high_knees\\high_knees_b2_09_clip00.json",
+        "motion": 0.0023610720279505126
+      },
+      {
+        "source": "batch2",
+        "filename": "high_knees_b2_09_clip02.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks_batch2\\high_knees\\high_knees_b2_09_clip02.json",
+        "motion": 0.0020359923714561487
+      }
+    ]
+  }
+}

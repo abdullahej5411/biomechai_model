@@ -1,0 +1,84 @@
+# ==============================================================================
+# BioMechAI .gitignore
+# Prevents leaking sensitive tokens/credentials and excludes large media/artifacts
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. CRITICAL SECURITY & CREDENTIALS (NEVER COMMIT)
+# ------------------------------------------------------------------------------
+*token*.json
+*secret*.json
+*credential*.json
+!token.json.example
+!client_secret.json.example
+*.env
+*.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+kaggle.json
+
+# ------------------------------------------------------------------------------
+# 2. PYTHON VIRTUAL ENVIRONMENTS & PACKAGE BUILDS
+# ------------------------------------------------------------------------------
+venv/
+.venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+*.egg
+
+# ------------------------------------------------------------------------------
+# 3. PYTHON & JUPYTER BYTECODE / CACHES
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# ------------------------------------------------------------------------------
+# 4. LARGE VIDEO & RAW MEDIA FILES (>100MB / GitHub Limit)
+# Note: Raw video archives are stored on Google Drive / Kaggle
+# ------------------------------------------------------------------------------
+data/raw_videos/
+data/raw_videos_batch2/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+*.flv
+*.part
+testing videos/
+
+# ------------------------------------------------------------------------------
+# 5. MASSIVE RAW LANDMARK DUMPS (Tens of thousands of raw JSONs)
+# Note: Processed datasets are in model_training/cleanup_v5/merged_dataset.json
+# ------------------------------------------------------------------------------
+data/landmarks/
+data/landmarks_backlog/
+data/landmarks_batch2/
+
+# ------------------------------------------------------------------------------
+# 6. REDUNDANT DUPLICATES & TEMPORARY SCRATCH FOLDERS
+# ------------------------------------------------------------------------------
+model_training/cleanup_v5/posec3d_data/Files to upload to kaggle/
+scratch/
+
+# ------------------------------------------------------------------------------
+# 7. OPERATING SYSTEM & IDE CONFIGURATIONS
+# ------------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/

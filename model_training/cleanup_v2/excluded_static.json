@@ -1,0 +1,298 @@
+[
+  {
+    "exercise": "squat",
+    "video_id": "02",
+    "clip": "02",
+    "motion_value": 0.0004300041869904456,
+    "exercise_median": 0.00582377248045285,
+    "fname": "squat_02_clip02.json"
+  },
+  {
+    "exercise": "squat",
+    "video_id": "03",
+    "clip": "00",
+    "motion_value": 0.00023476551784684655,
+    "exercise_median": 0.00582377248045285,
+    "fname": "squat_03_clip00.json"
+  },
+  {
+    "exercise": "squat",
+    "video_id": "05",
+    "clip": "00",
+    "motion_value": 0.00023476551784684655,
+    "exercise_median": 0.00582377248045285,
+    "fname": "squat_05_clip00.json"
+  },
+  {
+    "exercise": "squat",
+    "video_id": "08",
+    "clip": "03",
+    "motion_value": 0.001062552444150997,
+    "exercise_median": 0.00582377248045285,
+    "fname": "squat_08_clip03.json"
+  },
+  {
+    "exercise": "squat",
+    "video_id": "08",
+    "clip": "04",
+    "motion_value": 0.0003197255424852967,
+    "exercise_median": 0.00582377248045285,
+    "fname": "squat_08_clip04.json"
+  },
+  {
+    "exercise": "squat",
+    "video_id": "09",
+    "clip": "00",
+    "motion_value": 0.0001399676669869037,
+    "exercise_median": 0.00582377248045285,
+    "fname": "squat_09_clip00.json"
+  },
+  {
+    "exercise": "squat",
+    "video_id": "09",
+    "clip": "02",
+    "motion_value": 0.00014403828106252967,
+    "exercise_median": 0.00582377248045285,
+    "fname": "squat_09_clip02.json"
+  },
+  {
+    "exercise": "squat",
+    "video_id": "09",
+    "clip": "03",
+    "motion_value": 0.0010748637113942082,
+    "exercise_median": 0.00582377248045285,
+    "fname": "squat_09_clip03.json"
+  },
+  {
+    "exercise": "squat",
+    "video_id": "09",
+    "clip": "04",
+    "motion_value": 0.0005195320326306037,
+    "exercise_median": 0.00582377248045285,
+    "fname": "squat_09_clip04.json"
+  },
+  {
+    "exercise": "pushup",
+    "video_id": "01",
+    "clip": "02",
+    "motion_value": 0.0009933484040606994,
+    "exercise_median": 0.006011156123853018,
+    "fname": "pushup_01_clip02.json"
+  },
+  {
+    "exercise": "pushup",
+    "video_id": "02",
+    "clip": "02",
+    "motion_value": 0.0009933484040606994,
+    "exercise_median": 0.006011156123853018,
+    "fname": "pushup_02_clip02.json"
+  },
+  {
+    "exercise": "pushup",
+    "video_id": "09",
+    "clip": "02",
+    "motion_value": 0.0009759646499832044,
+    "exercise_median": 0.006011156123853018,
+    "fname": "pushup_09_clip02.json"
+  },
+  {
+    "exercise": "jumping_jack",
+    "video_id": "01",
+    "clip": "00",
+    "motion_value": 8.33113395900414e-05,
+    "exercise_median": 0.019983279684884385,
+    "fname": "jumping_jack_01_clip00.json"
+  },
+  {
+    "exercise": "jumping_jack",
+    "video_id": "03",
+    "clip": "00",
+    "motion_value": 8.33113395900414e-05,
+    "exercise_median": 0.019983279684884385,
+    "fname": "jumping_jack_03_clip00.json"
+  },
+  {
+    "exercise": "jumping_jack",
+    "video_id": "04",
+    "clip": "01",
+    "motion_value": 0.0001545904763172773,
+    "exercise_median": 0.019983279684884385,
+    "fname": "jumping_jack_04_clip01.json"
+  },
+  {
+    "exercise": "jumping_jack",
+    "video_id": "05",
+    "clip": "00",
+    "motion_value": 8.33113395900414e-05,
+    "exercise_median": 0.019983279684884385,
+    "fname": "jumping_jack_05_clip00.json"
+  },
+  {
+    "exercise": "jumping_jack",
+    "video_id": "07",
+    "clip": "00",
+    "motion_value": 8.33113395900414e-05,
+    "exercise_median": 0.019983279684884385,
+    "fname": "jumping_jack_07_clip00.json"
+  },
+  {
+    "exercise": "jumping_jack",
+    "video_id": "08",
+    "clip": "01",
+    "motion_value": 0.0001545904763172773,
+    "exercise_median": 0.019983279684884385,
+    "fname": "jumping_jack_08_clip01.json"
+  },
+  {
+    "exercise": "bicep_curl",
+    "video_id": "06",
+    "clip": "00",
+    "motion_value": 0.0019501709283183592,
+    "exercise_median": 0.010508969495443258,
+    "fname": "bicep_curl_06_clip00.json"
+  },
+  {
+    "exercise": "bicep_curl",
+    "video_id": "10",
+    "clip": "01",
+    "motion_value": 0.0007762420153025252,
+    "exercise_median": 0.010508969495443258,
+    "fname": "bicep_curl_10_clip01.json"
+  },
+  {
+    "exercise": "lunge",
+    "video_id": "02",
+    "clip": "03",
+    "motion_value": 0.0010643311252315235,
+    "exercise_median": 0.007871210122653152,
+    "fname": "lunge_02_clip03.json"
+  },
+  {
+    "exercise": "lunge",
+    "video_id": "02",
+    "clip": "04",
+    "motion_value": 0.00023145206993231514,
+    "exercise_median": 0.007871210122653152,
+    "fname": "lunge_02_clip04.json"
+  },
+  {
+    "exercise": "lunge",
+    "video_id": "10",
+    "clip": "00",
+    "motion_value": 0.0008446920960019345,
+    "exercise_median": 0.007871210122653152,
+    "fname": "lunge_10_clip00.json"
+  },
+  {
+    "exercise": "plank",
+    "video_id": "01",
+    "clip": "02",
+    "motion_value": 0.0005534316601640714,
+    "exercise_median": 0.0031057422430439846,
+    "fname": "plank_01_clip02.json"
+  },
+  {
+    "exercise": "plank",
+    "video_id": "02",
+    "clip": "02",
+    "motion_value": 0.0005534316601640714,
+    "exercise_median": 0.0031057422430439846,
+    "fname": "plank_02_clip02.json"
+  },
+  {
+    "exercise": "plank",
+    "video_id": "03",
+    "clip": "03",
+    "motion_value": 0.0003404970286127756,
+    "exercise_median": 0.0031057422430439846,
+    "fname": "plank_03_clip03.json"
+  },
+  {
+    "exercise": "plank",
+    "video_id": "04",
+    "clip": "02",
+    "motion_value": 0.0005534316601640714,
+    "exercise_median": 0.0031057422430439846,
+    "fname": "plank_04_clip02.json"
+  },
+  {
+    "exercise": "plank",
+    "video_id": "05",
+    "clip": "02",
+    "motion_value": 0.0004940781673404103,
+    "exercise_median": 0.0031057422430439846,
+    "fname": "plank_05_clip02.json"
+  },
+  {
+    "exercise": "plank",
+    "video_id": "05",
+    "clip": "04",
+    "motion_value": 0.000448238099778351,
+    "exercise_median": 0.0031057422430439846,
+    "fname": "plank_05_clip04.json"
+  },
+  {
+    "exercise": "plank",
+    "video_id": "06",
+    "clip": "03",
+    "motion_value": 0.0003404970286127756,
+    "exercise_median": 0.0031057422430439846,
+    "fname": "plank_06_clip03.json"
+  },
+  {
+    "exercise": "plank",
+    "video_id": "07",
+    "clip": "03",
+    "motion_value": 0.0003404970286127756,
+    "exercise_median": 0.0031057422430439846,
+    "fname": "plank_07_clip03.json"
+  },
+  {
+    "exercise": "plank",
+    "video_id": "08",
+    "clip": "02",
+    "motion_value": 0.0005534316601640714,
+    "exercise_median": 0.0031057422430439846,
+    "fname": "plank_08_clip02.json"
+  },
+  {
+    "exercise": "high_knees",
+    "video_id": "02",
+    "clip": "01",
+    "motion_value": 0.0010374026151887923,
+    "exercise_median": 0.008637514407643244,
+    "fname": "high_knees_02_clip01.json"
+  },
+  {
+    "exercise": "high_knees",
+    "video_id": "02",
+    "clip": "02",
+    "motion_value": 0.001083930026144268,
+    "exercise_median": 0.008637514407643244,
+    "fname": "high_knees_02_clip02.json"
+  },
+  {
+    "exercise": "high_knees",
+    "video_id": "08",
+    "clip": "00",
+    "motion_value": 9.864003467788858e-05,
+    "exercise_median": 0.008637514407643244,
+    "fname": "high_knees_08_clip00.json"
+  },
+  {
+    "exercise": "high_knees",
+    "video_id": "08",
+    "clip": "02",
+    "motion_value": 0.0014770221515007077,
+    "exercise_median": 0.008637514407643244,
+    "fname": "high_knees_08_clip02.json"
+  },
+  {
+    "exercise": "high_knees",
+    "video_id": "10",
+    "clip": "00",
+    "motion_value": 6.639041669132213e-05,
+    "exercise_median": 0.008637514407643244,
+    "fname": "high_knees_10_clip00.json"
+  }
+]

@@ -1,0 +1,2344 @@
+{
+  "summary": {
+    "bicep_curl": {
+      "candidates_processed": 64,
+      "total_clips_extracted": 229,
+      "total_clips_discarded": 31
+    },
+    "high_knees": {
+      "candidates_processed": 46,
+      "total_clips_extracted": 174,
+      "total_clips_discarded": 60
+    },
+    "jumping_jack": {
+      "candidates_processed": 60,
+      "total_clips_extracted": 227,
+      "total_clips_discarded": 56
+    },
+    "plank": {
+      "candidates_processed": 85,
+      "total_clips_extracted": 332,
+      "total_clips_discarded": 54
+    },
+    "pushup": {
+      "candidates_processed": 74,
+      "total_clips_extracted": 265,
+      "total_clips_discarded": 17
+    }
+  },
+  "details": {
+    "bicep_curl": [
+      {
+        "filename": "bicep_curl_01_02.mp4",
+        "duration_seconds": 453.69,
+        "target_clips": 5,
+        "clips_extracted": 5,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_01_03.mp4",
+        "duration_seconds": 27.83,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_01_05.mp4",
+        "duration_seconds": 108.61,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "bicep_curl_01_06.mp4",
+        "duration_seconds": 369.33,
+        "target_clips": 4,
+        "clips_extracted": 3,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "bicep_curl_01_07.mp4",
+        "duration_seconds": 84.15,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "bicep_curl_01_08.mp4",
+        "duration_seconds": 118.62,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "bicep_curl_01_09.mp4",
+        "duration_seconds": 147.2,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_01_10.mp4",
+        "duration_seconds": 79.8,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_01_11.mp4",
+        "duration_seconds": 503.34,
+        "target_clips": 6,
+        "clips_extracted": 6,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_01_13.mp4",
+        "duration_seconds": 820.27,
+        "target_clips": 9,
+        "clips_extracted": 9,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_01_14.mp4",
+        "duration_seconds": 182.08,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_01_15.mp4",
+        "duration_seconds": 40.11,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "bicep_curl_02_08.mp4",
+        "duration_seconds": 593.67,
+        "target_clips": 7,
+        "clips_extracted": 7,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_02_09.mp4",
+        "duration_seconds": 30.01,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "bicep_curl_02_11.mp4",
+        "duration_seconds": 473.14,
+        "target_clips": 5,
+        "clips_extracted": 4,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "bicep_curl_02_12.mp4",
+        "duration_seconds": 271.27,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_02_13.mp4",
+        "duration_seconds": 461.92,
+        "target_clips": 5,
+        "clips_extracted": 5,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_02_14.mp4",
+        "duration_seconds": 982.21,
+        "target_clips": 11,
+        "clips_extracted": 10,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "bicep_curl_03_03.mp4",
+        "duration_seconds": 16.52,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_03_05.mp4",
+        "duration_seconds": 22.46,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_03_06.mp4",
+        "duration_seconds": 68.32,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_03_07.mp4",
+        "duration_seconds": 67.43,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_03_08.mp4",
+        "duration_seconds": 40.77,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "bicep_curl_03_13.mp4",
+        "duration_seconds": 30.82,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_03_14.mp4",
+        "duration_seconds": 15.03,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_03_15.mp4",
+        "duration_seconds": 12.8,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_04_06.mp4",
+        "duration_seconds": 119.75,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_04_07.mp4",
+        "duration_seconds": 101.5,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "bicep_curl_04_10.mp4",
+        "duration_seconds": 93.67,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_04_11.mp4",
+        "duration_seconds": 63.6,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_04_14.mp4",
+        "duration_seconds": 304.89,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_05_03.mp4",
+        "duration_seconds": 672.71,
+        "target_clips": 7,
+        "clips_extracted": 7,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_05_04.mp4",
+        "duration_seconds": 509.58,
+        "target_clips": 6,
+        "clips_extracted": 4,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "bicep_curl_05_11.mp4",
+        "duration_seconds": 642.73,
+        "target_clips": 7,
+        "clips_extracted": 7,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_05_12.mp4",
+        "duration_seconds": 604.57,
+        "target_clips": 7,
+        "clips_extracted": 7,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_05_14.mp4",
+        "duration_seconds": 200.67,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "bicep_curl_06_02.mp4",
+        "duration_seconds": 124.86,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_06_07.mp4",
+        "duration_seconds": 169.09,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "bicep_curl_06_11.mp4",
+        "duration_seconds": 119.25,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_06_14.mp4",
+        "duration_seconds": 89.02,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_07_03.mp4",
+        "duration_seconds": 154.99,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_07_04.mp4",
+        "duration_seconds": 151.2,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_07_05.mp4",
+        "duration_seconds": 72.24,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "bicep_curl_07_06.mp4",
+        "duration_seconds": 22.44,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_07_07.mp4",
+        "duration_seconds": 189.09,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "bicep_curl_07_08.mp4",
+        "duration_seconds": 21.07,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_07_09.mp4",
+        "duration_seconds": 23.53,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_07_11.mp4",
+        "duration_seconds": 40.92,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "bicep_curl_07_13.mp4",
+        "duration_seconds": 40.03,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "bicep_curl_08_02.mp4",
+        "duration_seconds": 419.17,
+        "target_clips": 5,
+        "clips_extracted": 5,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_08_07.mp4",
+        "duration_seconds": 1179.56,
+        "target_clips": 13,
+        "clips_extracted": 10,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "bicep_curl_08_08.mp4",
+        "duration_seconds": 94.17,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_08_09.mp4",
+        "duration_seconds": 84.68,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_08_13.mp4",
+        "duration_seconds": 442.43,
+        "target_clips": 5,
+        "clips_extracted": 5,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_08_14.mp4",
+        "duration_seconds": 662.0,
+        "target_clips": 7,
+        "clips_extracted": 4,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "bicep_curl_08_15.mp4",
+        "duration_seconds": 747.2,
+        "target_clips": 8,
+        "clips_extracted": 8,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_10_03.mp4",
+        "duration_seconds": 12.3,
+        "target_clips": 3,
+        "clips_extracted": 0,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "bicep_curl_10_04.mp4",
+        "duration_seconds": 53.55,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_10_05.mp4",
+        "duration_seconds": 481.38,
+        "target_clips": 5,
+        "clips_extracted": 5,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_10_07.mp4",
+        "duration_seconds": 9.6,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_10_09.mp4",
+        "duration_seconds": 231.83,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_10_11.mp4",
+        "duration_seconds": 251.23,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "bicep_curl_10_13.mp4",
+        "duration_seconds": 64.46,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "bicep_curl_10_14.mp4",
+        "duration_seconds": 27.53,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      }
+    ],
+    "high_knees": [
+      {
+        "filename": "high_knees_01_03.mp4",
+        "duration_seconds": 29.53,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "high_knees_01_04.mp4",
+        "duration_seconds": 60.92,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "high_knees_01_05.mp4",
+        "duration_seconds": 55.22,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "high_knees_01_06.mp4",
+        "duration_seconds": 13.28,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "high_knees_01_07.mp4",
+        "duration_seconds": 22.47,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "high_knees_01_08.mp4",
+        "duration_seconds": 220.92,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "high_knees_01_09.mp4",
+        "duration_seconds": 378.73,
+        "target_clips": 4,
+        "clips_extracted": 3,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "high_knees_01_12.mp4",
+        "duration_seconds": 67.28,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "high_knees_01_13.mp4",
+        "duration_seconds": 25.88,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "high_knees_01_14.mp4",
+        "duration_seconds": 13.47,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "high_knees_01_15.mp4",
+        "duration_seconds": 34.6,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "high_knees_02_06.mp4",
+        "duration_seconds": 55.92,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "high_knees_02_08.mp4",
+        "duration_seconds": 48.27,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "high_knees_02_09.mp4",
+        "duration_seconds": 71.5,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "high_knees_02_10.mp4",
+        "duration_seconds": 57.32,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "high_knees_02_11.mp4",
+        "duration_seconds": 66.83,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "high_knees_02_12.mp4",
+        "duration_seconds": 99.07,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "high_knees_02_13.mp4",
+        "duration_seconds": 48.0,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "high_knees_02_15.mp4",
+        "duration_seconds": 153.8,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "high_knees_03_02.mp4",
+        "duration_seconds": 14.97,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "high_knees_03_03.mp4",
+        "duration_seconds": 907.97,
+        "target_clips": 10,
+        "clips_extracted": 6,
+        "clips_discarded": 4
+      },
+      {
+        "filename": "high_knees_03_04.mp4",
+        "duration_seconds": 13.97,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "high_knees_03_05.mp4",
+        "duration_seconds": 11.67,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "high_knees_03_06.mp4",
+        "duration_seconds": 19.13,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "high_knees_03_08.mp4",
+        "duration_seconds": 605.84,
+        "target_clips": 7,
+        "clips_extracted": 6,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "high_knees_03_13.mp4",
+        "duration_seconds": 651.03,
+        "target_clips": 7,
+        "clips_extracted": 5,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "high_knees_04_05.mp4",
+        "duration_seconds": 54.51,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "high_knees_04_13.mp4",
+        "duration_seconds": 1678.16,
+        "target_clips": 15,
+        "clips_extracted": 8,
+        "clips_discarded": 7
+      },
+      {
+        "filename": "high_knees_04_15.mp4",
+        "duration_seconds": 28.16,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "high_knees_05_02.mp4",
+        "duration_seconds": 15.27,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "high_knees_05_04.mp4",
+        "duration_seconds": 50.2,
+        "target_clips": 3,
+        "clips_extracted": 0,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "high_knees_05_06.mp4",
+        "duration_seconds": 629.09,
+        "target_clips": 7,
+        "clips_extracted": 7,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "high_knees_05_07.mp4",
+        "duration_seconds": 32.53,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "high_knees_05_08.mp4",
+        "duration_seconds": 21.39,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "high_knees_05_10.mp4",
+        "duration_seconds": 12.68,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "high_knees_05_11.mp4",
+        "duration_seconds": 162.77,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "high_knees_05_12.mp4",
+        "duration_seconds": 18.92,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "high_knees_05_13.mp4",
+        "duration_seconds": 45.7,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "high_knees_05_14.mp4",
+        "duration_seconds": 27.33,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "high_knees_05_15.mp4",
+        "duration_seconds": 15.54,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "high_knees_06_02.mp4",
+        "duration_seconds": 1842.63,
+        "target_clips": 15,
+        "clips_extracted": 13,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "high_knees_06_05.mp4",
+        "duration_seconds": 1644.88,
+        "target_clips": 15,
+        "clips_extracted": 11,
+        "clips_discarded": 4
+      },
+      {
+        "filename": "high_knees_06_08.mp4",
+        "duration_seconds": 1204.8,
+        "target_clips": 13,
+        "clips_extracted": 6,
+        "clips_discarded": 7
+      },
+      {
+        "filename": "high_knees_06_09.mp4",
+        "duration_seconds": 961.43,
+        "target_clips": 11,
+        "clips_extracted": 9,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "high_knees_06_12.mp4",
+        "duration_seconds": 1251.13,
+        "target_clips": 14,
+        "clips_extracted": 13,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "high_knees_07_05.mp4",
+        "duration_seconds": 1247.08,
+        "target_clips": 14,
+        "clips_extracted": 11,
+        "clips_discarded": 3
+      }
+    ],
+    "jumping_jack": [
+      {
+        "filename": "jumping_jack_01_02.mp4",
+        "duration_seconds": 44.09,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_01_03.mp4",
+        "duration_seconds": 13.18,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_01_04.mp4",
+        "duration_seconds": 1220.32,
+        "target_clips": 14,
+        "clips_extracted": 14,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_01_07.mp4",
+        "duration_seconds": 735.17,
+        "target_clips": 8,
+        "clips_extracted": 8,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_01_08.mp4",
+        "duration_seconds": 1521.25,
+        "target_clips": 15,
+        "clips_extracted": 12,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "jumping_jack_01_09.mp4",
+        "duration_seconds": 740.61,
+        "target_clips": 8,
+        "clips_extracted": 8,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_01_10.mp4",
+        "duration_seconds": 70.04,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_01_11.mp4",
+        "duration_seconds": 257.36,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "jumping_jack_01_12.mp4",
+        "duration_seconds": 28.5,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_01_14.mp4",
+        "duration_seconds": 15.32,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "jumping_jack_02_02.mp4",
+        "duration_seconds": 77.96,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "jumping_jack_02_04.mp4",
+        "duration_seconds": 47.27,
+        "target_clips": 3,
+        "clips_extracted": 0,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "jumping_jack_02_07.mp4",
+        "duration_seconds": 15.15,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_02_09.mp4",
+        "duration_seconds": 18.44,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "jumping_jack_02_10.mp4",
+        "duration_seconds": 26.63,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_02_11.mp4",
+        "duration_seconds": 74.67,
+        "target_clips": 3,
+        "clips_extracted": 0,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "jumping_jack_02_13.mp4",
+        "duration_seconds": 49.79,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "jumping_jack_02_14.mp4",
+        "duration_seconds": 759.55,
+        "target_clips": 8,
+        "clips_extracted": 5,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "jumping_jack_02_15.mp4",
+        "duration_seconds": 74.03,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "jumping_jack_03_02.mp4",
+        "duration_seconds": 8.67,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_03_05.mp4",
+        "duration_seconds": 21.52,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_03_06.mp4",
+        "duration_seconds": 243.31,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_03_07.mp4",
+        "duration_seconds": 60.0,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_03_08.mp4",
+        "duration_seconds": 56.06,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_03_09.mp4",
+        "duration_seconds": 61.3,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "jumping_jack_03_10.mp4",
+        "duration_seconds": 38.88,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_03_11.mp4",
+        "duration_seconds": 23.7,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_03_12.mp4",
+        "duration_seconds": 79.41,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_03_13.mp4",
+        "duration_seconds": 60.97,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_03_14.mp4",
+        "duration_seconds": 614.72,
+        "target_clips": 7,
+        "clips_extracted": 6,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "jumping_jack_03_15.mp4",
+        "duration_seconds": 49.4,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_04_03.mp4",
+        "duration_seconds": 67.65,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_04_06.mp4",
+        "duration_seconds": 258.37,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_04_07.mp4",
+        "duration_seconds": 38.33,
+        "target_clips": 3,
+        "clips_extracted": 0,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "jumping_jack_04_10.mp4",
+        "duration_seconds": 39.96,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_04_12.mp4",
+        "duration_seconds": 100.87,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "jumping_jack_04_14.mp4",
+        "duration_seconds": 255.57,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_05_06.mp4",
+        "duration_seconds": 1842.63,
+        "target_clips": 15,
+        "clips_extracted": 11,
+        "clips_discarded": 4
+      },
+      {
+        "filename": "jumping_jack_05_12.mp4",
+        "duration_seconds": 924.28,
+        "target_clips": 10,
+        "clips_extracted": 9,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "jumping_jack_05_15.mp4",
+        "duration_seconds": 982.72,
+        "target_clips": 11,
+        "clips_extracted": 7,
+        "clips_discarded": 4
+      },
+      {
+        "filename": "jumping_jack_06_07.mp4",
+        "duration_seconds": 1230.27,
+        "target_clips": 14,
+        "clips_extracted": 14,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_06_10.mp4",
+        "duration_seconds": 309.21,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "jumping_jack_06_11.mp4",
+        "duration_seconds": 644.94,
+        "target_clips": 7,
+        "clips_extracted": 7,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_06_13.mp4",
+        "duration_seconds": 652.37,
+        "target_clips": 7,
+        "clips_extracted": 3,
+        "clips_discarded": 4
+      },
+      {
+        "filename": "jumping_jack_06_14.mp4",
+        "duration_seconds": 125.97,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "jumping_jack_07_04.mp4",
+        "duration_seconds": 209.7,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "jumping_jack_07_07.mp4",
+        "duration_seconds": 202.9,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_07_12.mp4",
+        "duration_seconds": 77.7,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "jumping_jack_07_15.mp4",
+        "duration_seconds": 114.45,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "jumping_jack_08_05.mp4",
+        "duration_seconds": 48.11,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "jumping_jack_08_07.mp4",
+        "duration_seconds": 38.04,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "jumping_jack_08_08.mp4",
+        "duration_seconds": 19.6,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "jumping_jack_08_09.mp4",
+        "duration_seconds": 146.75,
+        "target_clips": 3,
+        "clips_extracted": 0,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "jumping_jack_08_11.mp4",
+        "duration_seconds": 24.5,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_08_12.mp4",
+        "duration_seconds": 548.93,
+        "target_clips": 6,
+        "clips_extracted": 3,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "jumping_jack_08_13.mp4",
+        "duration_seconds": 163.44,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_08_14.mp4",
+        "duration_seconds": 245.97,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "jumping_jack_09_04.mp4",
+        "duration_seconds": 946.9,
+        "target_clips": 11,
+        "clips_extracted": 9,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "jumping_jack_09_12.mp4",
+        "duration_seconds": 615.37,
+        "target_clips": 7,
+        "clips_extracted": 7,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "jumping_jack_10_12.mp4",
+        "duration_seconds": 13.75,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      }
+    ],
+    "plank": [
+      {
+        "filename": "plank_01_03.mp4",
+        "duration_seconds": 239.11,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_01_04.mp4",
+        "duration_seconds": 289.56,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_01_05.mp4",
+        "duration_seconds": 205.04,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_01_06.mp4",
+        "duration_seconds": 176.56,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_01_07.mp4",
+        "duration_seconds": 250.17,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_01_08.mp4",
+        "duration_seconds": 76.8,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_01_09.mp4",
+        "duration_seconds": 56.1,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_01_10.mp4",
+        "duration_seconds": 62.42,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_01_11.mp4",
+        "duration_seconds": 78.85,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_01_12.mp4",
+        "duration_seconds": 236.54,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_01_14.mp4",
+        "duration_seconds": 325.64,
+        "target_clips": 4,
+        "clips_extracted": 2,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "plank_02_06.mp4",
+        "duration_seconds": 138.1,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_02_08.mp4",
+        "duration_seconds": 200.96,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_02_12.mp4",
+        "duration_seconds": 126.84,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_02_14.mp4",
+        "duration_seconds": 17.87,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_03_02.mp4",
+        "duration_seconds": 113.66,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_03_03.mp4",
+        "duration_seconds": 52.69,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "plank_03_04.mp4",
+        "duration_seconds": 49.88,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_03_05.mp4",
+        "duration_seconds": 45.65,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_03_07.mp4",
+        "duration_seconds": 38.92,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_03_08.mp4",
+        "duration_seconds": 218.13,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_03_09.mp4",
+        "duration_seconds": 125.92,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_03_10.mp4",
+        "duration_seconds": 12.97,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_03_11.mp4",
+        "duration_seconds": 231.53,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_03_12.mp4",
+        "duration_seconds": 15.98,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_03_13.mp4",
+        "duration_seconds": 31.6,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_03_14.mp4",
+        "duration_seconds": 374.4,
+        "target_clips": 4,
+        "clips_extracted": 4,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_03_15.mp4",
+        "duration_seconds": 42.47,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_04_07.mp4",
+        "duration_seconds": 94.53,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_04_11.mp4",
+        "duration_seconds": 57.88,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_04_15.mp4",
+        "duration_seconds": 88.21,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "plank_05_01.mp4",
+        "duration_seconds": 721.42,
+        "target_clips": 8,
+        "clips_extracted": 8,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_05_03.mp4",
+        "duration_seconds": 412.01,
+        "target_clips": 5,
+        "clips_extracted": 4,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_05_04.mp4",
+        "duration_seconds": 1219.18,
+        "target_clips": 14,
+        "clips_extracted": 13,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_05_05.mp4",
+        "duration_seconds": 832.83,
+        "target_clips": 9,
+        "clips_extracted": 9,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_05_06.mp4",
+        "duration_seconds": 1826.47,
+        "target_clips": 15,
+        "clips_extracted": 12,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "plank_05_07.mp4",
+        "duration_seconds": 582.85,
+        "target_clips": 6,
+        "clips_extracted": 5,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_05_08.mp4",
+        "duration_seconds": 178.83,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_05_09.mp4",
+        "duration_seconds": 929.14,
+        "target_clips": 10,
+        "clips_extracted": 8,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "plank_05_11.mp4",
+        "duration_seconds": 202.08,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_05_12.mp4",
+        "duration_seconds": 1902.83,
+        "target_clips": 15,
+        "clips_extracted": 11,
+        "clips_discarded": 4
+      },
+      {
+        "filename": "plank_05_13.mp4",
+        "duration_seconds": 280.95,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_05_14.mp4",
+        "duration_seconds": 624.42,
+        "target_clips": 7,
+        "clips_extracted": 6,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_05_15.mp4",
+        "duration_seconds": 1278.86,
+        "target_clips": 14,
+        "clips_extracted": 14,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_06_02.mp4",
+        "duration_seconds": 249.58,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_06_03.mp4",
+        "duration_seconds": 807.84,
+        "target_clips": 9,
+        "clips_extracted": 8,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_06_04.mp4",
+        "duration_seconds": 312.88,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_06_05.mp4",
+        "duration_seconds": 477.8,
+        "target_clips": 5,
+        "clips_extracted": 5,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_06_06.mp4",
+        "duration_seconds": 1023.0,
+        "target_clips": 11,
+        "clips_extracted": 8,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "plank_06_07.mp4",
+        "duration_seconds": 650.72,
+        "target_clips": 7,
+        "clips_extracted": 7,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_06_08.mp4",
+        "duration_seconds": 538.0,
+        "target_clips": 6,
+        "clips_extracted": 6,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_06_10.mp4",
+        "duration_seconds": 506.47,
+        "target_clips": 6,
+        "clips_extracted": 5,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_06_11.mp4",
+        "duration_seconds": 661.16,
+        "target_clips": 7,
+        "clips_extracted": 5,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "plank_06_13.mp4",
+        "duration_seconds": 615.82,
+        "target_clips": 7,
+        "clips_extracted": 7,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_06_14.mp4",
+        "duration_seconds": 651.28,
+        "target_clips": 7,
+        "clips_extracted": 6,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_06_15.mp4",
+        "duration_seconds": 342.94,
+        "target_clips": 4,
+        "clips_extracted": 4,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_07_09.mp4",
+        "duration_seconds": 70.27,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_07_10.mp4",
+        "duration_seconds": 97.77,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "plank_07_11.mp4",
+        "duration_seconds": 481.51,
+        "target_clips": 5,
+        "clips_extracted": 5,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_07_12.mp4",
+        "duration_seconds": 187.31,
+        "target_clips": 3,
+        "clips_extracted": 0,
+        "clips_discarded": 3
+      },
+      {
+        "filename": "plank_07_13.mp4",
+        "duration_seconds": 898.61,
+        "target_clips": 10,
+        "clips_extracted": 10,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_08_03.mp4",
+        "duration_seconds": 229.47,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_08_05.mp4",
+        "duration_seconds": 462.16,
+        "target_clips": 5,
+        "clips_extracted": 4,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_08_07.mp4",
+        "duration_seconds": 67.43,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_08_08.mp4",
+        "duration_seconds": 509.05,
+        "target_clips": 6,
+        "clips_extracted": 6,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_08_10.mp4",
+        "duration_seconds": 460.96,
+        "target_clips": 5,
+        "clips_extracted": 5,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_08_13.mp4",
+        "duration_seconds": 200.73,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_08_14.mp4",
+        "duration_seconds": 40.67,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_08_15.mp4",
+        "duration_seconds": 334.7,
+        "target_clips": 4,
+        "clips_extracted": 4,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_09_03.mp4",
+        "duration_seconds": 89.2,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "plank_09_05.mp4",
+        "duration_seconds": 84.5,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_09_06.mp4",
+        "duration_seconds": 50.25,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_09_11.mp4",
+        "duration_seconds": 39.11,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "plank_09_12.mp4",
+        "duration_seconds": 86.24,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_09_13.mp4",
+        "duration_seconds": 168.97,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_10_03.mp4",
+        "duration_seconds": 46.64,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_10_05.mp4",
+        "duration_seconds": 142.97,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_10_06.mp4",
+        "duration_seconds": 13.67,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_10_07.mp4",
+        "duration_seconds": 34.64,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "plank_10_08.mp4",
+        "duration_seconds": 81.78,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "plank_10_09.mp4",
+        "duration_seconds": 63.86,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_10_10.mp4",
+        "duration_seconds": 36.23,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_10_12.mp4",
+        "duration_seconds": 26.67,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_10_13.mp4",
+        "duration_seconds": 17.1,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "plank_10_14.mp4",
+        "duration_seconds": 42.84,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      }
+    ],
+    "pushup": [
+      {
+        "filename": "pushup_01_02.mp4",
+        "duration_seconds": 73.5,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_01_03.mp4",
+        "duration_seconds": 249.87,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_01_06.mp4",
+        "duration_seconds": 466.2,
+        "target_clips": 5,
+        "clips_extracted": 5,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_01_07.mp4",
+        "duration_seconds": 105.83,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "pushup_01_08.mp4",
+        "duration_seconds": 257.76,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_01_09.mp4",
+        "duration_seconds": 337.03,
+        "target_clips": 4,
+        "clips_extracted": 4,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_01_11.mp4",
+        "duration_seconds": 293.17,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_01_12.mp4",
+        "duration_seconds": 124.82,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "pushup_01_13.mp4",
+        "duration_seconds": 173.88,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_01_14.mp4",
+        "duration_seconds": 71.84,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "pushup_01_15.mp4",
+        "duration_seconds": 159.42,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_02_06.mp4",
+        "duration_seconds": 242.98,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_02_08.mp4",
+        "duration_seconds": 268.03,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_02_10.mp4",
+        "duration_seconds": 647.68,
+        "target_clips": 7,
+        "clips_extracted": 7,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_02_12.mp4",
+        "duration_seconds": 160.36,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_02_13.mp4",
+        "duration_seconds": 109.73,
+        "target_clips": 3,
+        "clips_extracted": 1,
+        "clips_discarded": 2
+      },
+      {
+        "filename": "pushup_03_02.mp4",
+        "duration_seconds": 107.57,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "pushup_03_04.mp4",
+        "duration_seconds": 76.62,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_03_06.mp4",
+        "duration_seconds": 223.6,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_03_07.mp4",
+        "duration_seconds": 7.41,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_03_08.mp4",
+        "duration_seconds": 31.53,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_03_09.mp4",
+        "duration_seconds": 233.56,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "pushup_03_10.mp4",
+        "duration_seconds": 81.96,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_03_12.mp4",
+        "duration_seconds": 24.46,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "pushup_03_13.mp4",
+        "duration_seconds": 105.67,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_03_14.mp4",
+        "duration_seconds": 636.8,
+        "target_clips": 7,
+        "clips_extracted": 7,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_04_02.mp4",
+        "duration_seconds": 150.52,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_04_07.mp4",
+        "duration_seconds": 179.03,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_04_09.mp4",
+        "duration_seconds": 253.12,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_04_11.mp4",
+        "duration_seconds": 588.89,
+        "target_clips": 7,
+        "clips_extracted": 7,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_04_14.mp4",
+        "duration_seconds": 64.06,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_04_15.mp4",
+        "duration_seconds": 690.57,
+        "target_clips": 8,
+        "clips_extracted": 7,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "pushup_05_04.mp4",
+        "duration_seconds": 533.93,
+        "target_clips": 6,
+        "clips_extracted": 6,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_05_05.mp4",
+        "duration_seconds": 81.64,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_05_06.mp4",
+        "duration_seconds": 422.87,
+        "target_clips": 5,
+        "clips_extracted": 5,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_05_07.mp4",
+        "duration_seconds": 268.5,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_05_08.mp4",
+        "duration_seconds": 333.28,
+        "target_clips": 4,
+        "clips_extracted": 4,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_05_09.mp4",
+        "duration_seconds": 439.27,
+        "target_clips": 5,
+        "clips_extracted": 5,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_05_10.mp4",
+        "duration_seconds": 741.77,
+        "target_clips": 8,
+        "clips_extracted": 8,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_05_11.mp4",
+        "duration_seconds": 409.1,
+        "target_clips": 5,
+        "clips_extracted": 5,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_05_12.mp4",
+        "duration_seconds": 301.32,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_05_13.mp4",
+        "duration_seconds": 531.56,
+        "target_clips": 6,
+        "clips_extracted": 6,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_05_14.mp4",
+        "duration_seconds": 205.93,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_06_03.mp4",
+        "duration_seconds": 982.53,
+        "target_clips": 11,
+        "clips_extracted": 11,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_06_05.mp4",
+        "duration_seconds": 714.5,
+        "target_clips": 8,
+        "clips_extracted": 8,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_06_06.mp4",
+        "duration_seconds": 494.7,
+        "target_clips": 5,
+        "clips_extracted": 4,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "pushup_06_07.mp4",
+        "duration_seconds": 646.36,
+        "target_clips": 7,
+        "clips_extracted": 7,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_06_09.mp4",
+        "duration_seconds": 153.07,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "pushup_06_12.mp4",
+        "duration_seconds": 325.66,
+        "target_clips": 4,
+        "clips_extracted": 3,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "pushup_06_13.mp4",
+        "duration_seconds": 120.84,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_07_05.mp4",
+        "duration_seconds": 83.83,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_07_06.mp4",
+        "duration_seconds": 48.26,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "pushup_07_08.mp4",
+        "duration_seconds": 16.63,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_07_09.mp4",
+        "duration_seconds": 12.48,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_07_10.mp4",
+        "duration_seconds": 132.92,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_07_11.mp4",
+        "duration_seconds": 71.77,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_07_12.mp4",
+        "duration_seconds": 28.84,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_07_13.mp4",
+        "duration_seconds": 38.87,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "pushup_07_14.mp4",
+        "duration_seconds": 30.75,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_08_05.mp4",
+        "duration_seconds": 23.24,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "pushup_08_08.mp4",
+        "duration_seconds": 154.57,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_08_11.mp4",
+        "duration_seconds": 333.33,
+        "target_clips": 4,
+        "clips_extracted": 4,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_08_13.mp4",
+        "duration_seconds": 125.06,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_08_15.mp4",
+        "duration_seconds": 124.17,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "pushup_09_13.mp4",
+        "duration_seconds": 39.91,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_10_03.mp4",
+        "duration_seconds": 151.53,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_10_04.mp4",
+        "duration_seconds": 114.67,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_10_06.mp4",
+        "duration_seconds": 67.64,
+        "target_clips": 3,
+        "clips_extracted": 2,
+        "clips_discarded": 1
+      },
+      {
+        "filename": "pushup_10_07.mp4",
+        "duration_seconds": 378.01,
+        "target_clips": 4,
+        "clips_extracted": 4,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_10_09.mp4",
+        "duration_seconds": 176.8,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_10_10.mp4",
+        "duration_seconds": 309.96,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_10_12.mp4",
+        "duration_seconds": 89.49,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_10_13.mp4",
+        "duration_seconds": 149.22,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      },
+      {
+        "filename": "pushup_10_14.mp4",
+        "duration_seconds": 141.77,
+        "target_clips": 3,
+        "clips_extracted": 3,
+        "clips_discarded": 0
+      }
+    ]
+  }
+}

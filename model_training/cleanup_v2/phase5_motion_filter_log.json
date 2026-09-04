@@ -1,0 +1,171 @@
+{
+  "jumping_jack": {
+    "clips_entering": 77,
+    "baseline_entering": 18,
+    "batch2_entering": 59,
+    "updated_combined_median": 0.01926774995628294,
+    "updated_threshold": 0.003853549991256588,
+    "clips_excluded": 0,
+    "clips_finally_accepted": 77,
+    "excluded_details": []
+  },
+  "plank": {
+    "clips_entering": 69,
+    "baseline_entering": 21,
+    "batch2_entering": 48,
+    "updated_combined_median": 0.004128311224149249,
+    "updated_threshold": 0.0008256622448298498,
+    "clips_excluded": 4,
+    "clips_finally_accepted": 65,
+    "excluded_details": [
+      {
+        "source": "baseline",
+        "filename": "plank_03_clip01.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks\\plank\\plank_03_clip01.json",
+        "motion": 0.0006921492038585329
+      },
+      {
+        "source": "batch2",
+        "filename": "plank_b2_06_clip04.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks_batch2\\plank\\plank_b2_06_clip04.json",
+        "motion": 0.000713247722631119
+      },
+      {
+        "source": "batch2",
+        "filename": "plank_b2_08_clip01.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks_batch2\\plank\\plank_b2_08_clip01.json",
+        "motion": 0.0006947680987046348
+      },
+      {
+        "source": "batch2",
+        "filename": "plank_b2_11_clip02.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks_batch2\\plank\\plank_b2_11_clip02.json",
+        "motion": 0.0008140069118137799
+      }
+    ]
+  },
+  "lunge": {
+    "clips_entering": 79,
+    "baseline_entering": 22,
+    "batch2_entering": 57,
+    "updated_combined_median": 0.008630032893323215,
+    "updated_threshold": 0.001726006578664643,
+    "clips_excluded": 0,
+    "clips_finally_accepted": 79,
+    "excluded_details": []
+  },
+  "bicep_curl": {
+    "clips_entering": 70,
+    "baseline_entering": 28,
+    "batch2_entering": 42,
+    "updated_combined_median": 0.008993196442070419,
+    "updated_threshold": 0.0017986392884140837,
+    "clips_excluded": 0,
+    "clips_finally_accepted": 70,
+    "excluded_details": []
+  },
+  "pushup": {
+    "clips_entering": 73,
+    "baseline_entering": 28,
+    "batch2_entering": 45,
+    "updated_combined_median": 0.00781654706246983,
+    "updated_threshold": 0.001563309412493966,
+    "clips_excluded": 0,
+    "clips_finally_accepted": 73,
+    "excluded_details": []
+  },
+  "squat": {
+    "clips_entering": 67,
+    "baseline_entering": 30,
+    "batch2_entering": 37,
+    "updated_combined_median": 0.0069945371255156815,
+    "updated_threshold": 0.0013989074251031363,
+    "clips_excluded": 3,
+    "clips_finally_accepted": 64,
+    "excluded_details": [
+      {
+        "source": "baseline",
+        "filename": "squat_04_clip02.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks\\squat\\squat_04_clip02.json",
+        "motion": 0.0013035550736830816
+      },
+      {
+        "source": "batch2",
+        "filename": "squat_b2_01_clip00.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks_batch2\\squat\\squat_b2_01_clip00.json",
+        "motion": 0.0012540492085525506
+      },
+      {
+        "source": "batch2",
+        "filename": "squat_b2_06_clip02.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks_batch2\\squat\\squat_b2_06_clip02.json",
+        "motion": 0.0013094935598605018
+      }
+    ]
+  },
+  "high_knees": {
+    "clips_entering": 76,
+    "baseline_entering": 35,
+    "batch2_entering": 41,
+    "updated_combined_median": 0.01413400973313907,
+    "updated_threshold": 0.002826801946627814,
+    "clips_excluded": 9,
+    "clips_finally_accepted": 67,
+    "excluded_details": [
+      {
+        "source": "baseline",
+        "filename": "high_knees_01_clip02.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks\\high_knees\\high_knees_01_clip02.json",
+        "motion": 0.002754981393886336
+      },
+      {
+        "source": "baseline",
+        "filename": "high_knees_02_clip03.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks\\high_knees\\high_knees_02_clip03.json",
+        "motion": 0.0020725580889236106
+      },
+      {
+        "source": "baseline",
+        "filename": "high_knees_02_clip04.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks\\high_knees\\high_knees_02_clip04.json",
+        "motion": 0.002470116879659938
+      },
+      {
+        "source": "baseline",
+        "filename": "high_knees_09_clip00.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks\\high_knees\\high_knees_09_clip00.json",
+        "motion": 0.0017832347964482848
+      },
+      {
+        "source": "baseline",
+        "filename": "high_knees_09_clip02.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks\\high_knees\\high_knees_09_clip02.json",
+        "motion": 0.002701866622646572
+      },
+      {
+        "source": "baseline",
+        "filename": "high_knees_09_clip04.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks\\high_knees\\high_knees_09_clip04.json",
+        "motion": 0.002462209364236952
+      },
+      {
+        "source": "batch2",
+        "filename": "high_knees_b2_01_clip02.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks_batch2\\high_knees\\high_knees_b2_01_clip02.json",
+        "motion": 0.0028004857120131387
+      },
+      {
+        "source": "batch2",
+        "filename": "high_knees_b2_09_clip00.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks_batch2\\high_knees\\high_knees_b2_09_clip00.json",
+        "motion": 0.0023610720279505126
+      },
+      {
+        "source": "batch2",
+        "filename": "high_knees_b2_09_clip02.json",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\landmarks_batch2\\high_knees\\high_knees_b2_09_clip02.json",
+        "motion": 0.0020359923714561487
+      }
+    ]
+  }
+}
