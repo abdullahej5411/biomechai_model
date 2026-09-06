@@ -2,8 +2,10 @@ default_scope = 'mmaction'
 
 # Pretrained PoseC3D model trained on NTU RGB+D 60 (60-class human action recognition)
 # Architecture is identical to ours — all backbone weights load cleanly.
-# Only the final cls_head fc layer (60 classes) is skipped and replaced with our 7-class head.
+# Primary: NTU RGB+D 60 (CVPR 2022)
 load_from = 'https://download.openmmlab.com/mmaction/v1.0/skeleton/posec3d/slowonly_r50_8xb16-u48-240e_ntu60-xsub-keypoint/slowonly_r50_8xb16-u48-240e_ntu60-xsub-keypoint_20220815-38db104b.pth'
+# FineGYM alternative (Phase 3c - high dynamic gymnastics/aerobics):
+# load_from = 'https://download.openmmlab.com/mmaction/v1.0/skeleton/posec3d/slowonly_r50_8xb16-u48-240e_gym-keypoint/slowonly_r50_8xb16-u48-240e_gym-keypoint_20220815-da338c58.pth'
 
 custom_imports = dict(imports=['drive_sync_hook'], allow_failed_imports=False)
 
@@ -28,7 +30,7 @@ model = dict(
         type='I3DHead',
         in_channels=512,
         num_classes=7, # 7 BioMechAI exercises
-        dropout_ratio=0.5,
+        dropout_ratio=0.7, # Phase 3a: increased from 0.5 to mitigate confirmed overfitting
         average_clips='prob'))
 
 dataset_type = 'PoseDataset'
@@ -85,10 +87,10 @@ val_dataloader = dict(
         test_mode=True))
 
 optim_wrapper = dict(
-    optimizer=dict(type='SGD', lr=0.01, momentum=0.9, weight_decay=0.0003),
+    optimizer=dict(type='SGD', lr=0.01, momentum=0.9, weight_decay=0.001), # Phase 3a: increased from 0.0003
     clip_grad=dict(max_norm=40, norm_type=2))
 
-train_cfg = dict(type='EpochBasedTrainLoop', max_epochs=24, val_interval=2)
+train_cfg = dict(type='EpochBasedTrainLoop', max_epochs=20, val_interval=2) # Phase 3a: reduced from 24 to 20, peak observed at ep 18
 val_cfg = dict(type='ValLoop')
 val_evaluator = [dict(type='AccMetric')]
 test_evaluator = None

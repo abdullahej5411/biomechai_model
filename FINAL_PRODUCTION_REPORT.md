@@ -272,7 +272,7 @@ All production assets and evaluation files are organized within the workspace:
 
 | Asset Description | Filename | Workspace Location | File Size / Format |
 |---|---|---|---|
-| **PoseC3D v3 Champion Checkpoint** | `best_acc_top1_epoch_14.pth` | `models/posec3d_v3/` | ~8.44 MB (PyTorch Weights) |
+| **PoseC3D v3 Champion Checkpoint** | `best_acc_top1_epoch_14.pth` | `models/posec3d_v3/` & Kaggle | ~8.44 MB (PyTorch Weights) |
 | **PoseC3D v3 Architecture Config** | `posec3d_biomechai_v3.py` | `models/posec3d_v3/` | 4.24 KB (Python Config) |
 | **Custom Augmentation Module** | `pose_transforms_extra.py` | `models/posec3d_v3/` | 1.49 KB (RandomRotateKeypoints) |
 | **PoseC3D v3 Evaluation Dumps** | `phase4_v3_result.pkl` | `models/posec3d_v3/` & Kaggle | 444-Clip Predictions & Probabilities |

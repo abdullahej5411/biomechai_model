@@ -7,7 +7,7 @@ load_from = 'https://download.openmmlab.com/mmaction/v1.0/skeleton/posec3d/slowo
 # FineGYM alternative (Phase 3c - high dynamic gymnastics/aerobics):
 # load_from = 'https://download.openmmlab.com/mmaction/v1.0/skeleton/posec3d/slowonly_r50_8xb16-u48-240e_gym-keypoint/slowonly_r50_8xb16-u48-240e_gym-keypoint_20220815-da338c58.pth'
 
-custom_imports = dict(imports=['drive_sync_hook'], allow_failed_imports=False)
+custom_imports = dict(imports=['pose_transforms_extra', 'drive_sync_hook'], allow_failed_imports=True)
 
 model = dict(
     type='Recognizer3D',
@@ -30,7 +30,7 @@ model = dict(
         type='I3DHead',
         in_channels=512,
         num_classes=7, # 7 BioMechAI exercises
-        dropout_ratio=0.7, # Phase 3a: increased from 0.5 to mitigate confirmed overfitting
+        dropout_ratio=0.6, # Option B (v3): moderate sweet spot between 0.5 (overfit) and 0.7 (starved)
         average_clips='prob'))
 
 dataset_type = 'PoseDataset'
@@ -49,6 +49,7 @@ train_pipeline = [
     dict(type='RandomResizedCrop', area_range=(0.56, 1.0)),
     dict(type='Resize', scale=(56, 56), keep_ratio=False),
     dict(type='Flip', flip_ratio=0.5, left_kp=left_kp, right_kp=right_kp),
+    dict(type='RandomRotateKeypoints', max_angle=12.0, prob=0.5), # Option B (v3): viewpoint rotation jitter
     dict(type='GeneratePoseTarget', sigma=0.6, use_score=True, with_kp=True, with_limb=False),
     dict(type='FormatShape', input_format='NCTHW_Heatmap'),
     dict(type='PackActionInputs')
@@ -87,10 +88,10 @@ val_dataloader = dict(
         test_mode=True))
 
 optim_wrapper = dict(
-    optimizer=dict(type='SGD', lr=0.01, momentum=0.9, weight_decay=0.001), # Phase 3a: increased from 0.0003
+    optimizer=dict(type='SGD', lr=0.01, momentum=0.9, weight_decay=0.0005), # Option B (v3): moderate weight decay
     clip_grad=dict(max_norm=40, norm_type=2))
 
-train_cfg = dict(type='EpochBasedTrainLoop', max_epochs=20, val_interval=2) # Phase 3a: reduced from 24 to 20, peak observed at ep 18
+train_cfg = dict(type='EpochBasedTrainLoop', max_epochs=18, val_interval=2) # Option B (v3): 18 epochs peak window
 val_cfg = dict(type='ValLoop')
 val_evaluator = [dict(type='AccMetric')]
 test_evaluator = None
