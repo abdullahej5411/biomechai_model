@@ -12,8 +12,8 @@
 Following our discussion on transfer learning and the empirical camera perspective audit, we executed **PoseC3D v4** on Kaggle GPU (Tesla T4) using the official OpenMMLab **FineGYM athletic pretrained checkpoint** (`slowonly_r50_8xb16-u48-240e_gym-keypoint_20220815-da338c58.pth`). 
 
 Additionally, we restructured the local model repository to completely eliminate version naming confusion:
-* Renamed `models/posec3d_v5/` → **`models/posec3d_v1/`** (the original 49.77% scratch baseline, formerly named after Dataset v5).
-* Preserved **`models/posec3d_v3/`** (the 48.20% NTU-60 baseline).
+* Renamed `models/posec3d_v5/` → **`models/posec3d_v1/`** (the original 49.77% NTU-60 fine-tuned baseline, formerly named after Dataset v5).
+* Preserved **`models/posec3d_v3/`** (the 48.20% NTU-60 baseline with tilt jitter).
 * Created **`models/posec3d_v4/`** containing today's FineGYM champion checkpoint, evaluation dump, and config.
 
 ---
@@ -22,7 +22,7 @@ Additionally, we restructured the local model repository to completely eliminate
 
 Evaluated on the exact same held-out validation partition of **444 clips across 115 independent videos** (0 video overlap, 0 subject leakage):
 
-| Exercise Class | Held-Out Clips | Random Forest v5 | PoseC3D v1 (Scratch, Ep 18) | PoseC3D v2 (Overfit, Ep 16) | PoseC3D v3 (NTU-60, Ep 14) | **PoseC3D v4 (FineGYM, Ep 4)** | v3 → v4 Delta |
+| Exercise Class | Held-Out Clips | Random Forest v5 | PoseC3D v1 (NTU-60, Ep 18) | PoseC3D v2 (Overfit, Ep 16) | PoseC3D v3 (NTU-60, Ep 14) | **PoseC3D v4 (FineGYM, Ep 4)** | v3 → v4 Delta |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **`bicep_curl`** | 73 | 60.27% (44) | 46.58% (34) | 26.03% (19) | 30.14% (22) | **67.12% (49)** | **+36.98 pp** 🚀 |
 | **`lunge`** | 68 | 66.18% (45) | 69.12% (47) | 76.47% (52) | 60.29% (41) | **85.29% (58)** | **+25.00 pp** 🚀 |
@@ -86,7 +86,7 @@ The local repository is verified and organized as follows:
 | :--- | :--- | :--- |
 | **`models/posec3d_v4/`** | `best_acc_top1_epoch_4.pth`<br>`phase4_v4_result.pkl`<br>`posec3d_biomechai_v4.py`<br>`pose_transforms_extra.py`<br>`README.md` | **8.22 MB** (260 tensors, output `torch.Size([7, 512])`)<br>**499.6 KB** (444 clips, 226/444 correct = 50.90%)<br>3.6 KB (FineGYM config)<br>1.3 KB (Tilt jitter transform)<br>3.2 KB (Documentation & confusion matrix) |
 | **`models/posec3d_v3/`** | `best_acc_top1_epoch_14.pth`<br>`phase4_v3_result.pkl`<br>`posec3d_biomechai_v3.py` | **8.38 MB** (NTU-60 base, 48.20% Top-1)<br>**499.6 KB** (444 clips)<br>4.2 KB (Config) |
-| **`models/posec3d_v1/`** | `best_acc_top1_epoch_18.pth`<br>`epoch_24.pth`<br>`posec3d_biomechai.py` | **8.05 MB** (Scratch baseline, 49.77% Top-1)<br>15.79 MB (Final checkpoint)<br>3.8 KB (Config) |
+| **`models/posec3d_v1/`** | `best_acc_top1_epoch_18.pth`<br>`epoch_24.pth`<br>`posec3d_biomechai.py` | **8.05 MB** (NTU-60 base, 49.77% Top-1)<br>15.79 MB (Final checkpoint)<br>3.8 KB (Config) |
 | **`models/random_forest_baselines/`** | `exercise_classifier_v4.pkl` | **56.08%** Top-1 LOVO Benchmark |
 
 ---
