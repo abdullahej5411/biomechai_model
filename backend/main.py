@@ -514,6 +514,8 @@ async def websocket_stream_endpoint(websocket: WebSocket):
             # Evaluate voice coaching trigger (Edge-triggered & debounced per Day 3 spec)
             voice_cue_packet = voice_engine.evaluate(rep_event, form_alert, time.time())
             voice_cue_text = voice_cue_packet.get("text") if voice_cue_packet else None
+            if voice_cue_packet is not None:
+                print(f"[VoiceCoachingEngine @ {time.strftime('%H:%M:%S')}] Emitted Cue: '{voice_cue_text}' (Priority: {voice_cue_packet.get('priority')}, Frame: {frame_idx})")
 
             response_payload = {
                 "frame_idx": frame_idx,
