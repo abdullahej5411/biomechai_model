@@ -14,7 +14,7 @@ import asyncio
 import numpy as np
 from typing import List, Dict, Any, Optional
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect, HTTPException
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
@@ -34,6 +34,7 @@ from backend.kinematics import (
     validate_landmark_tracking,
     RepetitionStateMachine,
     evaluate_knee_valgus,
+    VoiceCoachingEngine,
 )
 from backend.engine import PoseC3DEngine
 
@@ -92,6 +93,14 @@ def root():
         "host_ip": lan_ip,
         "endpoints": ["/health", "/classify", "/ws/stream", "/latency_test", "/api/pairing", "/pair"]
     }
+
+@app.get("/download/app-debug.apk", tags=["Download"])
+def download_apk():
+    """Serves the latest compiled Flutter debug APK with HTTP Range & streaming support."""
+    apk_path = os.path.abspath(os.path.join(os.path.dirname(__file__), r"..\..\biomechai_flutter_latest\build\app\outputs\flutter-apk\app-debug.apk"))
+    if os.path.exists(apk_path):
+        return FileResponse(apk_path, media_type="application/vnd.android.package-archive", filename="app-debug.apk")
+    raise HTTPException(status_code=404, detail=f"APK not found at {apk_path}")
 
 @app.get("/api/pairing", tags=["Pairing"])
 def dynamic_pairing_config():
@@ -416,6 +425,7 @@ async def websocket_stream_endpoint(websocket: WebSocket):
     print("[WebSocket] Client connected successfully.")
 
     state_machine = RepetitionStateMachine()
+    voice_engine = VoiceCoachingEngine()
     frame_counter = 0
 
     try:
@@ -498,6 +508,10 @@ async def websocket_stream_endpoint(websocket: WebSocket):
             safe_knee_flexion = round(knee_flexion, 1) if (is_valid_tracking and is_angle_sane) else None
             safe_fppa = round(fppa_valgus, 1) if is_valid_tracking else None
 
+            # Evaluate voice coaching trigger (Edge-triggered & debounced per Day 3 spec)
+            voice_cue_packet = voice_engine.evaluate(rep_event, form_alert, time.time())
+            voice_cue_text = voice_cue_packet.get("text") if voice_cue_packet else None
+
             response_payload = {
                 "frame_idx": frame_idx,
                 "reps": state_machine.rep_count,
@@ -508,6 +522,8 @@ async def websocket_stream_endpoint(websocket: WebSocket):
                 "is_tracking_valid": is_valid_tracking,
                 "tracking_error": tracking_err if not is_valid_tracking else None,
                 "form_alert": form_alert,
+                "voice_cue": voice_cue_text,
+                "voice_cue_detail": voice_cue_packet,
                 "posec3d": {
                     "exercise": pose_pred.get("exercise", "buffering"),
                     "display_name": pose_pred.get("display_name", "Buffering..."),

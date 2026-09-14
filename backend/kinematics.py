@@ -183,3 +183,72 @@ def evaluate_knee_valgus(knee_flexion: float, fppa_valgus: float) -> Dict[str, A
             "message": "Form: Normal (Neutral)",
             "voice_cue": None
         }
+
+class VoiceCoachingEngine:
+    """
+    Day 3 Module 8: Real-Time Voice Coaching Engine.
+    Enforces edge-triggered state transitions, cooldown windows,
+    and priority preemption so audio coaching never spams at 30 FPS.
+    """
+    def __init__(self, warning_cooldown_sec: float = 3.5, recovery_cooldown_sec: float = 5.0):
+        self.prev_has_warning = False
+        self.prev_alert_code = "NORMAL_NEUTRAL"
+        self.last_warning_voice_time = 0.0
+        self.last_recovery_voice_time = 0.0
+        self.warning_cooldown_sec = warning_cooldown_sec
+        self.recovery_cooldown_sec = recovery_cooldown_sec
+
+    def evaluate(
+        self,
+        rep_event: Optional[Dict[str, Any]],
+        form_alert: Dict[str, Any],
+        current_time: float
+    ) -> Optional[Dict[str, Any]]:
+        current_has_warning = form_alert.get("has_warning", False)
+        current_code = form_alert.get("code", "NORMAL_NEUTRAL")
+
+        cue = None
+
+        # Priority 1: Safety Warning Onset (false -> true) OR change in warning code
+        if current_has_warning:
+            is_onset = not self.prev_has_warning
+            is_code_change = (current_code != self.prev_alert_code)
+            has_cooldown_expired = (current_time - self.last_warning_voice_time) >= self.warning_cooldown_sec
+
+            if (is_onset or is_code_change) and has_cooldown_expired:
+                cue_text = form_alert.get("voice_cue") or "Check your form!"
+                cue = {
+                    "cue_id": current_code,
+                    "text": cue_text,
+                    "priority": 1,
+                    "type": "safety_warning"
+                }
+                self.last_warning_voice_time = current_time
+
+        # Priority 2: Rep Completion Milestone (Event-bound, fires only when Rep FSM returns to TOP)
+        elif rep_event is not None:
+            rep_num = rep_event.get("rep_number", 1)
+            cue = {
+                "cue_id": "CUE_REP_MILESTONE",
+                "text": f"Rep {rep_num}",
+                "priority": 2,
+                "type": "rep_milestone"
+            }
+
+        # Priority 3: Form Recovery (true -> false)
+        elif self.prev_has_warning and not current_has_warning:
+            if (current_time - self.last_recovery_voice_time) >= self.recovery_cooldown_sec:
+                cue = {
+                    "cue_id": "CUE_FORM_RECOVERY",
+                    "text": "Good form, keep going!",
+                    "priority": 3,
+                    "type": "recovery"
+                }
+                self.last_recovery_voice_time = current_time
+
+        # Update historical state for edge detection
+        self.prev_has_warning = current_has_warning
+        self.prev_alert_code = current_code
+
+        return cue
+
