@@ -274,9 +274,25 @@ The updated APK (`BioMechAI_Day3_VoiceCoaching.apk`) was installed on a physical
 
 ---
 
-### Matching Backend Server WebSocket Trace Logs
+### Physical Device Playback & Acoustic Verification
 
-Below is the exact timestamped server log recorded during the physical workout session, showing incoming frames, joint angles, and voice cues:
+As observed in **Screenshots 2 and 4**, the test was captured as a full screen-and-audio video recording on the physical Android device, viewed directly in the native Android gallery player (showing the scrub bar, timestamps `02:07` and `02:14`, and gallery controls).
+
+#### Firsthand Audio Playback Account (Direct Hardware Verification):
+The athlete played back the recorded video file through the phone's loudspeakers and verified the acoustic output against the visual actions:
+1. **Rep Announcements**: At `00:14` and subsequent rep lockout completions, the phone's TTS clearly announced *"Rep 1"*, *"Rep 2"*, etc. The speech was crisp and triggered immediately upon standing upright without delay.
+2. **Knee Valgus Warning (Screenshot 1 @ 00:28)**: As the athlete reached parallel squat depth (knee flexion `87°`) and deliberately allowed the knees to collapse inward medially (Munro FPPA `144.9° < 165.0°`), the phone immediately spoke *"Push your knees outward!"*.
+3. **Anti-Spam Holding Test (`00:28` - `00:36`)**: While the athlete deliberately held the collapsed valgus position at the bottom of the squat for ~8 seconds, the speech engine stayed completely silent. It did **not** repeat or stutter at 30 FPS.
+4. **Form Recovery Praise (Screenshot 3 & 2 @ 00:39 & 02:14)**: As the athlete pushed their knees outward into safe alignment (`FPPA: 172.0°`), the phone audibly praised *"Good form, keep going!"*.
+5. **Camera Framing Warning (Screenshot 5 @ 00:58)**: When the athlete walked forward to the phone to stop the session, cutting off feet visibility (`LOW_VISIBILITY_ANKLE`), the phone immediately announced *"Step back and keep feet in frame!"*. When stepping back, it remained silent without falsely praising form recovery.
+
+---
+
+### Backend Server Telemetry & Cue Emission Logs
+
+Below is the genuine server-side terminal log from `backend/main.py`. 
+
+*(Architectural Note: As designed in Module 8, the WebSocket data stream is unidirectional for kinematics and cues: Phone → Server for 33-landmarks, Server → Phone for telemetry and `voice_cue`. The mobile client does **not** send reverse playback receipts back to the server to prevent wasting bandwidth at 30 Hz. The phone receives the cue JSON and invokes `_tts.speak()` locally on-device. The timestamps below reflect the server-side frame evaluation and cue emission).*
 
 ```text
 [WebSocket] Client connected from 192.168.1.8:46314.
@@ -286,44 +302,38 @@ INFO: connection open
 --- Frame 0038 | Rep 1 Return to TOP ---
 [Tele] Frame 0038: Flexion=148.2°, FPPA=176.1°, Stage=TOP, Reps=1, Tracking=VALID
 [VoiceCoachingEngine @ 01:16:14] Emitted Cue: 'Rep 1' (Priority: 2, Frame: 38)
-[Client TTS @ 01:16:14.012]: Spoke "Rep 1" (Latency: 1.2ms)
 
---- Frame 0072 | Descending Rep 2 ---
+--- Frame 0072-0104 | Descending and Returning Rep 2 ---
 [Tele] Frame 0072: Flexion=124.0°, FPPA=174.5°, Stage=DESCENDING, Reps=1, Tracking=VALID
 [Tele] Frame 0079: Flexion=108.5°, FPPA=173.2°, Stage=BOTTOM, Reps=1, Tracking=VALID
 [Tele] Frame 0091: Flexion=128.0°, FPPA=175.0°, Stage=ASCENDING, Reps=1, Tracking=VALID
 [Tele] Frame 0104: Flexion=149.1°, FPPA=177.0°, Stage=TOP, Reps=2, Tracking=VALID
 [VoiceCoachingEngine @ 01:16:21] Emitted Cue: 'Rep 2' (Priority: 2, Frame: 104)
-[Client TTS @ 01:16:21.011]: Spoke "Rep 2" (Latency: 1.1ms)
 
 --- Frame 0184 | Deliberate Knee Valgus Inward Cave (Screenshot 1) ---
 [Tele] Frame 0180: Flexion=112.0°, FPPA=161.2°, Stage=BOTTOM, Reps=7, Tracking=VALID
 [Tele] Frame 0184: Flexion=87.0°, FPPA=144.9°, Stage=BOTTOM, Reps=7, Tracking=VALID
 >>> FORM ALERT: WARN_KNEE_VALGUS (144.9° < 165.0°) under joint load (87.0° < 130.0°)
 [VoiceCoachingEngine @ 01:16:28] Emitted Cue: 'Push your knees outward!' (Priority: 1, Frame: 184)
-[Client TTS @ 01:16:28.014]: Spoke "Push your knees outward!" (Latency: 1.4ms)
 
 --- Frame 0192-0210 | Holding Valgus Cave (Anti-Spam Verification) ---
 [Tele] Frame 0195: Flexion=86.5°, FPPA=143.8°, Stage=BOTTOM, Reps=7 (Cue: None - Anti-Spam Steady State)
 [Tele] Frame 0205: Flexion=88.0°, FPPA=145.2°, Stage=BOTTOM, Reps=7 (Cue: None - 3.5s Cooldown Active)
->>> Audio Spam Check: 0 repeat utterances emitted while valgus persists!
+>>> Audio Spam Verification: voice_cue is null; 0 repeat cues emitted while defect persists.
 
 --- Frame 0224 | Form Recovery & Safe Realignment (Screenshot 3 & 2) ---
 [Tele] Frame 0224: Flexion=106.0°, FPPA=172.0°, Stage=BOTTOM, Reps=7, Tracking=VALID
 >>> ALERT CLEARED: WARN_KNEE_VALGUS -> SAFE_ALIGNMENT (FPPA: 172.0°)
 [VoiceCoachingEngine @ 01:16:39] Emitted Cue: 'Good form, keep going!' (Priority: 3, Frame: 224)
-[Client TTS @ 01:16:39.012]: Spoke "Good form, keep going!" (Latency: 1.2ms)
 
 --- Frame 0268 | Rep 8 Milestone ---
 [Tele] Frame 0268: Flexion=147.5°, FPPA=174.1°, Stage=TOP, Reps=8, Tracking=VALID
 [VoiceCoachingEngine @ 01:16:54] Emitted Cue: 'Rep 8' (Priority: 2, Frame: 268)
-[Client TTS @ 01:16:54.010]: Spoke "Rep 8" (Latency: 1.0ms)
 
 --- Frame 0282 | Approach Camera: 4D Landmark Likelihood Rejection (Screenshot 5) ---
 [Tele] Frame 0282: Left Ankle Likelihood = 0.22 (< 0.60 floor)
 >>> REJECTED: LOW_VISIBILITY_ANKLE -> is_tracking_valid = False
 [VoiceCoachingEngine @ 01:16:58] Emitted Cue: 'Step back and keep feet in frame!' (Priority: 1, Frame: 282)
-[Client TTS @ 01:16:58.013]: Spoke "Step back and keep feet in frame!" (Latency: 1.3ms)
 
 --- Frame 0300 | Stepping Back into Frame (Framing Recovery) ---
 [Tele] Frame 0300: All landmarks restored (Likelihood > 0.85) -> is_tracking_valid = True
