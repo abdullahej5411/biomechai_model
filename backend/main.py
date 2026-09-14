@@ -464,10 +464,9 @@ async def websocket_stream_endpoint(websocket: WebSocket):
 
             # Strict anatomical sanity check: reject 2D occlusion glitch (< 35.0 deg)
             is_angle_sane = (knee_flexion >= KNEE_FLEXION_SANITY_FLOOR)
-            effective_tracking_valid = is_valid_tracking and is_angle_sane
 
-            # 2. Fast Path: Repetition State Machine (guarded against invalid occluded depth)
-            rep_event = state_machine.update(knee_flexion, frame_idx, is_tracking_valid=effective_tracking_valid)
+            # 2. Fast Path: Repetition State Machine
+            rep_event = state_machine.update(knee_flexion, frame_idx, is_tracking_valid=is_valid_tracking)
 
             # 3. Fast Path: Dynamic Knee Valgus / Framing Injury Alert
             if not is_valid_tracking:
@@ -476,13 +475,6 @@ async def websocket_stream_endpoint(websocket: WebSocket):
                     "code": "WARN_CAMERA_FRAMING",
                     "message": f"WARN: Step Back! ({tracking_err})",
                     "voice_cue": "Step back and keep feet in frame!"
-                }
-            elif not is_angle_sane:
-                form_alert = {
-                    "has_warning": True,
-                    "code": "WARN_OCCLUSION",
-                    "message": "WARN: Adjust Camera Angle",
-                    "voice_cue": "Adjust camera angle!"
                 }
             else:
                 form_alert = evaluate_knee_valgus(knee_flexion, fppa_valgus)
@@ -501,8 +493,9 @@ async def websocket_stream_endpoint(websocket: WebSocket):
 
             pose_pred = engine.last_prediction
 
-            # 5. Emit Real-Time Telemetry Back to Mobile Client (Null out metrics when tracking invalid per Rule 4)
-            safe_knee_flexion = round(knee_flexion, 1) if effective_tracking_valid else None
+            # 5. Emit Real-Time Telemetry Back to Mobile Client
+            # Knee flexion is only reported if tracking is valid and angle is anatomically sane (>= 35.0 deg)
+            safe_knee_flexion = round(knee_flexion, 1) if (is_valid_tracking and is_angle_sane) else None
             safe_fppa = round(fppa_valgus, 1) if is_valid_tracking else None
 
             response_payload = {
@@ -512,8 +505,8 @@ async def websocket_stream_endpoint(websocket: WebSocket):
                 "rep_event": rep_event,
                 "knee_flexion": safe_knee_flexion,
                 "fppa": safe_fppa,
-                "is_tracking_valid": effective_tracking_valid,
-                "tracking_error": tracking_err if not is_valid_tracking else (None if is_angle_sane else "OCCLUSION_ANGLE_BELOW_SANITY_FLOOR"),
+                "is_tracking_valid": is_valid_tracking,
+                "tracking_error": tracking_err if not is_valid_tracking else None,
                 "form_alert": form_alert,
                 "posec3d": {
                     "exercise": pose_pred.get("exercise", "buffering"),
