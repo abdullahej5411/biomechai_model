@@ -138,16 +138,21 @@ Following Claude AI's rigorous empirical code review, an architectural vulnerabi
   // DECOMMISSIONED: Legacy FormValidationService calls removed from _processPoses:
   // _validationService.validateForm(pose, _recognitionService.confirmedExercise!); // REMOVED!
 
-  // UNIFIED SINGLE SOURCE OF TRUTH: Bottom feedback card strictly bound to backend telemetry
-  final String feedbackMsg = telemetry?.alertMessage ?? "Form: Normal (Neutral)";
+  // UNIFIED SINGLE SOURCE OF TRUTH: Bottom feedback card strictly bound to backend telemetry & connection status
+  final bool isDisconnected = _wsService.status == StreamStatus.reconnecting ||
+      _wsService.status == StreamStatus.disconnected;
+  final bool isWarning = isDisconnected || (telemetry?.hasWarning ?? false);
+  final String feedbackMsg = isDisconnected
+      ? "Reconnecting to Backend Server..."
+      : (telemetry?.alertMessage ?? "Form: Normal (Neutral)");
   final Color feedbackBg = isWarning
-      ? AppTheme.red.withOpacity(0.15)
-      : (telemetry != null ? AppTheme.green.withOpacity(0.15) : AppTheme.card2);
+      ? AppTheme.red.withOpacity(0.2)
+      : (telemetry != null ? AppTheme.green.withOpacity(0.2) : AppTheme.card2);
   final Color feedbackTextColor = isWarning
       ? AppTheme.red
       : (telemetry != null ? AppTheme.green : AppTheme.muted);
   ```
-- **Result**: Both the top guard banner and the bottom feedback card display the **exact same message and verdict** across 100% of frames.
+- **Result**: Both the top guard banner and the bottom feedback card display the **exact same message and verdict** across 100% of frames — including during network disconnection, where both top and bottom immediately display `"Reconnecting to Backend Server..."`.
 
 ### 3.3 Strict Validity-Gating & Overflow Protection for Numeric Knee Angle
 - **Backend Metric Sanitization (`backend/main.py`)**:
