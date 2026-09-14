@@ -16,6 +16,9 @@ from typing import Dict, Any, Tuple, List, Optional
 _orig_torch_load = torch.load
 torch.load = lambda *args, **kwargs: _orig_torch_load(*args, **{**kwargs, "weights_only": False})
 
+# Limit CPU threads to 2 to prevent CPU core exhaustion during 3D CNN inference
+torch.set_num_threads(2)
+
 from backend.config import (
     BASE_DIR,
     POSEC3D_CONFIG,

@@ -497,8 +497,11 @@ async def websocket_stream_endpoint(websocket: WebSocket):
 
             engine.push_coco_keypoints(current_coco)
 
-            # Trigger background PoseC3D inference asynchronously without blocking the 30 Hz loop
-            if engine.is_buffer_full() and (frame_counter % 16 == 0):
+            # Trigger background PoseC3D inference asynchronously only when worker is idle
+            # Throttled to interval of 60 frames (~2s), or 120 frames (~4s) once high confidence is achieved
+            current_conf = engine.last_prediction.get("confidence", 0.0)
+            inference_interval = 120 if current_conf >= 0.85 else 60
+            if engine.is_buffer_full() and (frame_counter % inference_interval == 0) and not engine.is_inferring:
                 asyncio.create_task(engine.trigger_async_inference(img_shape=(h, w)))
 
             pose_pred = engine.last_prediction

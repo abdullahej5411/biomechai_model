@@ -8,8 +8,8 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Strict Biomechanical Coded Constants (No ambiguous ranges)
-BOTTOM_DEPTH_THRESHOLD     = 100.0  # Deg: Knee flexion must drop below this to register valid bottom
-TOP_RETURN_THRESHOLD        = 155.0  # Deg: Knee flexion must return above this single exact threshold
+BOTTOM_DEPTH_THRESHOLD     = 115.0  # Deg: Biomechanically parallel squat depth (femur parallel to floor)
+TOP_RETURN_THRESHOLD        = 146.0  # Deg: Natural upright standing extension (registers immediately upon return)
 VALGUS_LOAD_THRESHOLD       = 130.0  # Deg: Dynamic knee valgus evaluated only when joint is loaded
 VALGUS_FPPA_THRESHOLD       = 165.0  # Deg: Munro et al. 2012 clinical diagnostic cutoff for knee valgus
 KNEE_FLEXION_SANITY_FLOOR   = 35.0   # Deg: Anatomical limit of human knee flexion; rejects 2D occlusion glitches

@@ -71,7 +71,7 @@ def validate_landmark_tracking(
     hip: Any,
     knee: Any,
     ankle: Any,
-    min_visibility: float = 0.65,
+    min_visibility: float = 0.60,
     max_boundary_y: float = 0.94
 ) -> Tuple[bool, str]:
     """
@@ -79,13 +79,21 @@ def validate_landmark_tracking(
     Rejects tracking frames where:
     1. Ankles/feet drop out of camera boundary (y > max_boundary_y).
     2. Any key joint has low MediaPipe detection confidence (visibility < min_visibility).
+    Supports 4D array [x, y, z, likelihood] from mobile client as well as MediaPipe objects.
     """
     joints = [("hip", hip), ("knee", knee), ("ankle", ankle)]
     for name, lm in joints:
-        vis = getattr(lm, "visibility", 1.0)
+        vis = 1.0
+        if isinstance(lm, (list, tuple)) and len(lm) >= 4:
+            vis = float(lm[3])
+        elif hasattr(lm, "visibility"):
+            vis = getattr(lm, "visibility", 1.0)
+        elif hasattr(lm, "likelihood"):
+            vis = getattr(lm, "likelihood", 1.0)
+
         if vis is not None and vis < min_visibility:
             return False, f"LOW_VISIBILITY_{name.upper()}"
-        y = getattr(lm, "y", lm[1] if isinstance(lm, (list, tuple)) else 0.5)
+        y = lm[1] if isinstance(lm, (list, tuple)) else getattr(lm, "y", 0.5)
         if y > max_boundary_y:
             return False, f"FEET_OUT_OF_FRAME_{name.upper()}"
         if y < 0.02:
@@ -97,7 +105,7 @@ class RepetitionStateMachine:
     Strict Finite State Machine: TOP -> DESCENDING -> BOTTOM -> ASCENDING -> TOP
     A repetition ONLY increments when returning to TOP (> TOP_RETURN_THRESHOLD)
     after having reached a verified valid BOTTOM (< BOTTOM_DEPTH_THRESHOLD).
-    Rejects corrupted depth readings when landmarks are occluded or out-of-frame.
+    Uses strict 4-stage hysteresis deadbands to prevent double-counting and bouncing.
     """
     def __init__(self):
         self.rep_count = 0
@@ -111,27 +119,34 @@ class RepetitionStateMachine:
         # Only update minimum depth on anatomically valid, non-occluded frames
         can_update_depth = is_tracking_valid and (knee_flexion >= KNEE_FLEXION_SANITY_FLOOR)
 
-        if self.stage == "TOP" and knee_flexion < 150.0:
-            self.stage = "DESCENDING"
-            if can_update_depth:
-                self.min_flexion_reached = knee_flexion
+        # 1. TOP -> DESCENDING: requires knee flexion to drop below 138°
+        if self.stage == "TOP":
+            if knee_flexion < 138.0:
+                self.stage = "DESCENDING"
+                if can_update_depth:
+                    self.min_flexion_reached = knee_flexion
+
+        # 2. DESCENDING: track minimum depth, enter BOTTOM when crossing parallel (< 115°)
         elif self.stage == "DESCENDING":
             if can_update_depth:
                 if knee_flexion < self.min_flexion_reached:
                     self.min_flexion_reached = knee_flexion
                 if knee_flexion < BOTTOM_DEPTH_THRESHOLD:
                     self.stage = "BOTTOM"
-            elif knee_flexion > 150.0:
-                # Stood back up without verified bottom or with occluded landmarks: reset cleanly
+            elif knee_flexion > 142.0:
+                # Stood back up without reaching verified bottom: reset cleanly to TOP
                 self.stage = "TOP"
                 self.min_flexion_reached = 180.0
+
+        # 3. BOTTOM: must reverse upwards by at least 7° (> 122°) to transition to ASCENDING
         elif self.stage == "BOTTOM":
             if can_update_depth and knee_flexion < self.min_flexion_reached:
                 self.min_flexion_reached = knee_flexion
-            if is_tracking_valid and knee_flexion > 110.0:
+            if is_tracking_valid and knee_flexion > (BOTTOM_DEPTH_THRESHOLD + 7.0):
                 self.stage = "ASCENDING"
+
+        # 4. ASCENDING: return to upright extension (> 146°) triggers instantaneous rep completion
         elif self.stage == "ASCENDING":
-            # Rep completion ONLY fires when returning to TOP on a verified, valid frame
             if is_tracking_valid and knee_flexion > TOP_RETURN_THRESHOLD:
                 self.rep_count += 1
                 rep_completed_event = {
@@ -235,9 +250,11 @@ class VoiceCoachingEngine:
                 "type": "rep_milestone"
             }
 
-        # Priority 3: Form Recovery (true -> false)
+        # Priority 3: Form Recovery (true -> false) strictly from a genuine form defect
         elif self.prev_has_warning and not current_has_warning:
-            if (current_time - self.last_recovery_voice_time) >= self.recovery_cooldown_sec:
+            is_real_form_correction = (self.prev_alert_code == "WARN_KNEE_VALGUS")
+            has_cooldown_expired = (current_time - self.last_recovery_voice_time) >= self.recovery_cooldown_sec
+            if is_real_form_correction and has_cooldown_expired:
                 cue = {
                     "cue_id": "CUE_FORM_RECOVERY",
                     "text": "Good form, keep going!",
