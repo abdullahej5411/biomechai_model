@@ -26,6 +26,7 @@ from backend.config import (
     TOP_RETURN_THRESHOLD,
     VALGUS_LOAD_THRESHOLD,
     VALGUS_FPPA_THRESHOLD,
+    KNEE_FLEXION_SANITY_FLOOR,
 )
 from backend.kinematics import (
     calculate_knee_flexion,
