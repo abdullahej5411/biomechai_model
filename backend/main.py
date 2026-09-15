@@ -32,6 +32,7 @@ from backend.kinematics import (
     calculate_knee_flexion,
     calculate_fppa_munro,
     validate_landmark_tracking,
+    select_optimal_tracking_leg,
     RepetitionStateMachine,
     evaluate_knee_valgus,
     VoiceCoachingEngine,
@@ -442,40 +443,43 @@ async def websocket_stream_endpoint(websocket: WebSocket):
             if not landmarks or len(landmarks) < 33:
                 continue
 
-            # 1. Fast Path: Landmark Framing & Quality Validation
+            # 1. Fast Path: Bilateral Leg Selection for 45°/90° Oblique & Sagittal Viewpoints
+            leg_name, (hip_lm, knee_lm, ankle_lm), is_left_leg = select_optimal_tracking_leg(landmarks)
+
+            # Validate optimal leg framing & tracking quality
             is_valid_tracking, tracking_err = validate_landmark_tracking(
-                landmarks[23], landmarks[25], landmarks[27]
+                hip_lm, knee_lm, ankle_lm
             )
 
             # Joint Angle Trigonometry (3D coordinates where available to prevent 2D projection collapse)
-            l_hip_3d = np.array([
-                landmarks[23][0] * w, 
-                landmarks[23][1] * h, 
-                landmarks[23][2] * w if len(landmarks[23]) > 2 else 0.0
+            hip_3d = np.array([
+                hip_lm[0] * w, 
+                hip_lm[1] * h, 
+                hip_lm[2] * w if len(hip_lm) > 2 else 0.0
             ], dtype=np.float32)
-            l_knee_3d = np.array([
-                landmarks[25][0] * w, 
-                landmarks[25][1] * h, 
-                landmarks[25][2] * w if len(landmarks[25]) > 2 else 0.0
+            knee_3d = np.array([
+                knee_lm[0] * w, 
+                knee_lm[1] * h, 
+                knee_lm[2] * w if len(knee_lm) > 2 else 0.0
             ], dtype=np.float32)
-            l_ankle_3d = np.array([
-                landmarks[27][0] * w, 
-                landmarks[27][1] * h, 
-                landmarks[27][2] * w if len(landmarks[27]) > 2 else 0.0
+            ankle_3d = np.array([
+                ankle_lm[0] * w, 
+                ankle_lm[1] * h, 
+                ankle_lm[2] * w if len(ankle_lm) > 2 else 0.0
             ], dtype=np.float32)
 
-            knee_flexion = calculate_knee_flexion(l_hip_3d, l_knee_3d, l_ankle_3d)
+            knee_flexion = calculate_knee_flexion(hip_3d, knee_3d, ankle_3d)
             fppa_valgus = calculate_fppa_munro(
-                (l_hip_3d[0], l_hip_3d[1]), 
-                (l_knee_3d[0], l_knee_3d[1]), 
-                (l_ankle_3d[0], l_ankle_3d[1]), 
-                is_left=True
+                (hip_3d[0], hip_3d[1]), 
+                (knee_3d[0], knee_3d[1]), 
+                (ankle_3d[0], ankle_3d[1]), 
+                is_left=is_left_leg
             )
 
             # Strict anatomical sanity check: reject 2D occlusion glitch (< 35.0 deg)
             is_angle_sane = (knee_flexion >= KNEE_FLEXION_SANITY_FLOOR)
 
-            # 2. Fast Path: Repetition State Machine
+            # 2. Fast Path: Hardened Repetition State Machine
             rep_event = state_machine.update(knee_flexion, frame_idx, is_tracking_valid=is_valid_tracking)
 
             # 3. Fast Path: Dynamic Knee Valgus / Framing Injury Alert
@@ -511,14 +515,18 @@ async def websocket_stream_endpoint(websocket: WebSocket):
             safe_knee_flexion = round(knee_flexion, 1) if (is_valid_tracking and is_angle_sane) else None
             safe_fppa = round(fppa_valgus, 1) if is_valid_tracking else None
 
-            # Evaluate voice coaching trigger (Edge-triggered & debounced per Day 3 spec)
-            voice_cue_packet = voice_engine.evaluate(rep_event, form_alert, time.time())
+            # Evaluate voice coaching trigger (Edge-triggered, cooldown envelopes & load-gated recovery)
+            is_under_load = (knee_flexion < VALGUS_LOAD_THRESHOLD) and is_valid_tracking and is_angle_sane
+            voice_cue_packet = voice_engine.evaluate(
+                rep_event, form_alert, time.time(), is_squatting_under_load=is_under_load
+            )
             voice_cue_text = voice_cue_packet.get("text") if voice_cue_packet else None
             if voice_cue_packet is not None:
                 print(f"[VoiceCoachingEngine @ {time.strftime('%H:%M:%S')}] Emitted Cue: '{voice_cue_text}' (Priority: {voice_cue_packet.get('priority')}, Frame: {frame_idx})")
 
             response_payload = {
                 "frame_idx": frame_idx,
+                "tracked_leg": leg_name,
                 "reps": state_machine.rep_count,
                 "stage": state_machine.stage,
                 "rep_event": rep_event,

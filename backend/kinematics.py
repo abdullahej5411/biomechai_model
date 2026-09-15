@@ -5,7 +5,7 @@ and closed finite state machine repetition counting.
 """
 
 import numpy as np
-from typing import Tuple, Dict, Any, Optional
+from typing import Tuple, Dict, Any, Optional, List
 from backend.config import (
     BOTTOM_DEPTH_THRESHOLD,
     TOP_RETURN_THRESHOLD,
@@ -79,6 +79,7 @@ def validate_landmark_tracking(
     Rejects tracking frames where:
     1. Ankles/feet drop out of camera boundary (y > max_boundary_y).
     2. Any key joint has low MediaPipe detection confidence (visibility < min_visibility).
+    3. Person is too close to camera (torso/legs truncated).
     Supports 4D array [x, y, z, likelihood] from mobile client as well as MediaPipe objects.
     """
     joints = [("hip", hip), ("knee", knee), ("ankle", ankle)]
@@ -98,36 +99,92 @@ def validate_landmark_tracking(
             return False, f"FEET_OUT_OF_FRAME_{name.upper()}"
         if y < 0.02:
             return False, f"HEAD_OUT_OF_FRAME_{name.upper()}"
+
+    # Vertical proportion sanity: ankle must be significantly below hip
+    hip_y = hip[1] if isinstance(hip, (list, tuple)) else getattr(hip, "y", 0.5)
+    ankle_y = ankle[1] if isinstance(ankle, (list, tuple)) else getattr(ankle, "y", 0.8)
+    if (ankle_y - hip_y) < 0.20:
+        return False, "SUBJECT_TOO_CLOSE_OR_TRUNCATED"
+
     return True, "VALID"
+
+def select_optimal_tracking_leg(landmarks: List[Any]) -> Tuple[str, Tuple[Any, Any, Any], bool]:
+    """
+    Evaluates both left leg (23, 25, 27) and right leg (24, 26, 28).
+    Returns (leg_name, (hip, knee, ankle), is_left).
+    Crucial for 45° and 90° oblique/sagittal viewpoints:
+    Selects the leg facing closest to the camera with highest confidence.
+    """
+    l_hip, l_knee, l_ankle = landmarks[23], landmarks[25], landmarks[27]
+    r_hip, r_knee, r_ankle = landmarks[24], landmarks[26], landmarks[28]
+
+    def get_vis(lm):
+        if isinstance(lm, (list, tuple)) and len(lm) >= 4:
+            return float(lm[3])
+        return getattr(lm, "visibility", getattr(lm, "likelihood", 1.0))
+
+    l_score = (get_vis(l_hip) + get_vis(l_knee) + get_vis(l_ankle)) / 3.0
+    r_score = (get_vis(r_hip) + get_vis(r_knee) + get_vis(r_ankle)) / 3.0
+
+    if l_score >= r_score:
+        return "left", (l_hip, l_knee, l_ankle), True
+    else:
+        return "right", (r_hip, r_knee, r_ankle), False
 
 class RepetitionStateMachine:
     """
-    Strict Finite State Machine: TOP -> DESCENDING -> BOTTOM -> ASCENDING -> TOP
+    Hardened 4-Stage Finite State Machine: TOP -> DESCENDING -> BOTTOM -> ASCENDING -> TOP
     A repetition ONLY increments when returning to TOP (> TOP_RETURN_THRESHOLD)
     after having reached a verified valid BOTTOM (< BOTTOM_DEPTH_THRESHOLD).
-    Uses strict 4-stage hysteresis deadbands to prevent double-counting and bouncing.
+
+    ANTI-GLITCH HARDENING:
+    1. Tracking must be 100% valid on EVERY stage transition.
+    2. Enforces minimum rep duration (>= 18 frames / ~0.6s) to reject camera-approach glitches.
+    3. Rejects rapid velocity spikes (> 40° in single frame).
+    4. Freezes completely in TOP if the subject is walking or out of frame.
     """
     def __init__(self):
         self.rep_count = 0
         self.stage = "TOP"
         self.min_flexion_reached = 180.0
         self.last_rep_event: Optional[Dict[str, Any]] = None
+        self.prev_flexion = 180.0
+        self.frames_in_cycle = 0
 
     def update(self, knee_flexion: float, frame_idx: int, is_tracking_valid: bool = True) -> Optional[Dict[str, Any]]:
         rep_completed_event = None
 
-        # Only update minimum depth on anatomically valid, non-occluded frames
-        can_update_depth = is_tracking_valid and (knee_flexion >= KNEE_FLEXION_SANITY_FLOOR)
+        # Hard guard: If tracking is invalid (person walking, touching camera, feet cut off),
+        # LOCK state machine in TOP and reject all transitions!
+        if not is_tracking_valid:
+            if self.stage != "TOP":
+                # User walked away mid-rep: reset cleanly to TOP without false rep increment
+                self.stage = "TOP"
+                self.min_flexion_reached = 180.0
+                self.frames_in_cycle = 0
+            self.prev_flexion = 180.0
+            return None
+
+        # Angular velocity sanity filter: human knee cannot change > 40° in 33ms
+        delta_angle = abs(knee_flexion - self.prev_flexion)
+        if delta_angle > 40.0 and self.prev_flexion < 175.0:
+            # Glitch frame: hold previous flexion angle
+            knee_flexion = self.prev_flexion
+
+        self.prev_flexion = knee_flexion
+        can_update_depth = (knee_flexion >= KNEE_FLEXION_SANITY_FLOOR)
 
         # 1. TOP -> DESCENDING: requires knee flexion to drop below 138°
         if self.stage == "TOP":
             if knee_flexion < 138.0:
                 self.stage = "DESCENDING"
+                self.frames_in_cycle = 1
                 if can_update_depth:
                     self.min_flexion_reached = knee_flexion
 
         # 2. DESCENDING: track minimum depth, enter BOTTOM when crossing parallel (< 115°)
         elif self.stage == "DESCENDING":
+            self.frames_in_cycle += 1
             if can_update_depth:
                 if knee_flexion < self.min_flexion_reached:
                     self.min_flexion_reached = knee_flexion
@@ -137,28 +194,38 @@ class RepetitionStateMachine:
                 # Stood back up without reaching verified bottom: reset cleanly to TOP
                 self.stage = "TOP"
                 self.min_flexion_reached = 180.0
+                self.frames_in_cycle = 0
 
         # 3. BOTTOM: must reverse upwards by at least 7° (> 122°) to transition to ASCENDING
         elif self.stage == "BOTTOM":
+            self.frames_in_cycle += 1
             if can_update_depth and knee_flexion < self.min_flexion_reached:
                 self.min_flexion_reached = knee_flexion
-            if is_tracking_valid and knee_flexion > (BOTTOM_DEPTH_THRESHOLD + 7.0):
+            if knee_flexion > (BOTTOM_DEPTH_THRESHOLD + 7.0):
                 self.stage = "ASCENDING"
 
         # 4. ASCENDING: return to upright extension (> 146°) triggers instantaneous rep completion
         elif self.stage == "ASCENDING":
-            if is_tracking_valid and knee_flexion > TOP_RETURN_THRESHOLD:
-                self.rep_count += 1
-                rep_completed_event = {
-                    "rep_number": self.rep_count,
-                    "frame_idx": frame_idx,
-                    "min_flexion": round(self.min_flexion_reached, 1),
-                    "return_flexion": round(knee_flexion, 1),
-                    "threshold_crossed": TOP_RETURN_THRESHOLD
-                }
-                self.last_rep_event = rep_completed_event
+            self.frames_in_cycle += 1
+            if knee_flexion > TOP_RETURN_THRESHOLD:
+                # Minimum duration check: A real human squat takes at least 18 frames (~0.6s)
+                # Rejects camera touch / walk-in spikes that happen in 3-5 frames
+                if self.frames_in_cycle >= 18:
+                    self.rep_count += 1
+                    rep_completed_event = {
+                        "rep_number": self.rep_count,
+                        "frame_idx": frame_idx,
+                        "min_flexion": round(self.min_flexion_reached, 1),
+                        "return_flexion": round(knee_flexion, 1),
+                        "threshold_crossed": TOP_RETURN_THRESHOLD,
+                        "duration_frames": self.frames_in_cycle
+                    }
+                    self.last_rep_event = rep_completed_event
+
                 self.stage = "TOP"
                 self.min_flexion_reached = 180.0
+                self.frames_in_cycle = 0
+
             elif can_update_depth and knee_flexion < BOTTOM_DEPTH_THRESHOLD:
                 # Re-entered bottom before completing extension
                 self.stage = "BOTTOM"
@@ -170,6 +237,8 @@ class RepetitionStateMachine:
         self.stage = "TOP"
         self.min_flexion_reached = 180.0
         self.last_rep_event = None
+        self.prev_flexion = 180.0
+        self.frames_in_cycle = 0
 
 def evaluate_knee_valgus(knee_flexion: float, fppa_valgus: float) -> Dict[str, Any]:
     """
@@ -204,12 +273,17 @@ class VoiceCoachingEngine:
     Day 3 Module 8: Real-Time Voice Coaching Engine.
     Enforces edge-triggered state transitions, cooldown windows,
     and priority preemption so audio coaching never spams at 30 FPS.
+
+    ANTI-SPAM & FORM RECOVERY HARDENING:
+    1. Warning onset fires on edge (false -> true).
+    2. Praise ("Good form, keep going!") only fires when an active squat under load
+       actually corrects valgus back to SAFE_ALIGNMENT, NEVER while standing still!
     """
     def __init__(self, warning_cooldown_sec: float = 3.5, recovery_cooldown_sec: float = 5.0):
         self.prev_has_warning = False
         self.prev_alert_code = "NORMAL_NEUTRAL"
-        self.last_warning_voice_time = 0.0
-        self.last_recovery_voice_time = 0.0
+        self.last_warning_voice_time = -999.0
+        self.last_recovery_voice_time = -999.0
         self.warning_cooldown_sec = warning_cooldown_sec
         self.recovery_cooldown_sec = recovery_cooldown_sec
 
@@ -217,7 +291,8 @@ class VoiceCoachingEngine:
         self,
         rep_event: Optional[Dict[str, Any]],
         form_alert: Dict[str, Any],
-        current_time: float
+        current_time: float,
+        is_squatting_under_load: bool = False
     ) -> Optional[Dict[str, Any]]:
         current_has_warning = form_alert.get("has_warning", False)
         current_code = form_alert.get("code", "NORMAL_NEUTRAL")
@@ -250,11 +325,14 @@ class VoiceCoachingEngine:
                 "type": "rep_milestone"
             }
 
-        # Priority 3: Form Recovery (true -> false) strictly from a genuine form defect
+        # Priority 3: Form Recovery (strictly from knee valgus under active joint load)
         elif self.prev_has_warning and not current_has_warning:
             is_real_form_correction = (self.prev_alert_code == "WARN_KNEE_VALGUS")
             has_cooldown_expired = (current_time - self.last_recovery_voice_time) >= self.recovery_cooldown_sec
-            if is_real_form_correction and has_cooldown_expired:
+            
+            # CRITICAL FIX: Only praise recovery if the athlete is actively squatting under load!
+            # If the user just stood up into neutral, stay silent (zero spurious praise).
+            if is_real_form_correction and is_squatting_under_load and has_cooldown_expired:
                 cue = {
                     "cue_id": "CUE_FORM_RECOVERY",
                     "text": "Good form, keep going!",
@@ -268,4 +346,5 @@ class VoiceCoachingEngine:
         self.prev_alert_code = current_code
 
         return cue
+
 
