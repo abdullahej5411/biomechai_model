@@ -71,15 +71,15 @@ def validate_landmark_tracking(
     hip: Any,
     knee: Any,
     ankle: Any,
-    min_visibility: float = 0.60,
-    max_boundary_y: float = 0.94
+    min_visibility: float = 0.35,
+    max_boundary_y: float = 0.985
 ) -> Tuple[bool, str]:
     """
     Validates anatomical landmark visibility and camera framing.
-    Rejects tracking frames where:
-    1. Ankles/feet drop out of camera boundary (y > max_boundary_y).
-    2. Any key joint has low MediaPipe detection confidence (visibility < min_visibility).
-    3. Person is too close to camera (torso/legs truncated).
+    Rejects tracking frames ONLY where:
+    1. Ankles/feet truly drop out of camera boundary (y > 0.985).
+    2. Key joint visibility drops below 0.35 (severe occlusion).
+    3. Head is completely truncated at top (y < 0.01).
     Supports 4D array [x, y, z, likelihood] from mobile client as well as MediaPipe objects.
     """
     joints = [("hip", hip), ("knee", knee), ("ankle", ankle)]
@@ -97,14 +97,8 @@ def validate_landmark_tracking(
         y = lm[1] if isinstance(lm, (list, tuple)) else getattr(lm, "y", 0.5)
         if y > max_boundary_y:
             return False, f"FEET_OUT_OF_FRAME_{name.upper()}"
-        if y < 0.02:
+        if y < 0.01:
             return False, f"HEAD_OUT_OF_FRAME_{name.upper()}"
-
-    # Vertical proportion sanity: ankle must be significantly below hip
-    hip_y = hip[1] if isinstance(hip, (list, tuple)) else getattr(hip, "y", 0.5)
-    ankle_y = ankle[1] if isinstance(ankle, (list, tuple)) else getattr(ankle, "y", 0.8)
-    if (ankle_y - hip_y) < 0.20:
-        return False, "SUBJECT_TOO_CLOSE_OR_TRUNCATED"
 
     return True, "VALID"
 
@@ -150,6 +144,7 @@ class RepetitionStateMachine:
         self.last_rep_event: Optional[Dict[str, Any]] = None
         self.prev_flexion = 180.0
         self.frames_in_cycle = 0
+        self.stable_top_frames = 0
 
     def update(self, knee_flexion: float, frame_idx: int, is_tracking_valid: bool = True) -> Optional[Dict[str, Any]]:
         rep_completed_event = None
@@ -174,13 +169,21 @@ class RepetitionStateMachine:
         self.prev_flexion = knee_flexion
         can_update_depth = (knee_flexion >= KNEE_FLEXION_SANITY_FLOOR)
 
-        # 1. TOP -> DESCENDING: requires knee flexion to drop below 138°
+        # 1. TOP -> DESCENDING: requires subject to be steadily standing upright (> 146°)
+        # for at least 10 frames (~0.33s) before allowing descent into a repetition.
+        # This completely prevents stooping down to adjust the phone camera from triggering reps!
         if self.stage == "TOP":
-            if knee_flexion < 138.0:
-                self.stage = "DESCENDING"
-                self.frames_in_cycle = 1
-                if can_update_depth:
-                    self.min_flexion_reached = knee_flexion
+            if knee_flexion > TOP_RETURN_THRESHOLD:
+                self.stable_top_frames += 1
+            elif knee_flexion < 138.0:
+                if self.stable_top_frames >= 10:
+                    self.stage = "DESCENDING"
+                    self.frames_in_cycle = 1
+                    if can_update_depth:
+                        self.min_flexion_reached = knee_flexion
+                else:
+                    # User was not standing ready; ignore spurious movement
+                    pass
 
         # 2. DESCENDING: track minimum depth, enter BOTTOM when crossing parallel (< 115°)
         elif self.stage == "DESCENDING":
@@ -239,6 +242,7 @@ class RepetitionStateMachine:
         self.last_rep_event = None
         self.prev_flexion = 180.0
         self.frames_in_cycle = 0
+        self.stable_top_frames = 0
 
 def evaluate_knee_valgus(knee_flexion: float, fppa_valgus: float) -> Dict[str, Any]:
     """
@@ -279,13 +283,15 @@ class VoiceCoachingEngine:
     2. Praise ("Good form, keep going!") only fires when an active squat under load
        actually corrects valgus back to SAFE_ALIGNMENT, NEVER while standing still!
     """
-    def __init__(self, warning_cooldown_sec: float = 3.5, recovery_cooldown_sec: float = 5.0):
+    def __init__(self, warning_cooldown_sec: float = 3.5, recovery_cooldown_sec: float = 5.0, framing_cooldown_sec: float = 7.0):
         self.prev_has_warning = False
         self.prev_alert_code = "NORMAL_NEUTRAL"
         self.last_warning_voice_time = -999.0
+        self.last_framing_voice_time = -999.0
         self.last_recovery_voice_time = -999.0
         self.warning_cooldown_sec = warning_cooldown_sec
         self.recovery_cooldown_sec = recovery_cooldown_sec
+        self.framing_cooldown_sec = framing_cooldown_sec
 
     def evaluate(
         self,
@@ -303,7 +309,11 @@ class VoiceCoachingEngine:
         if current_has_warning:
             is_onset = not self.prev_has_warning
             is_code_change = (current_code != self.prev_alert_code)
-            has_cooldown_expired = (current_time - self.last_warning_voice_time) >= self.warning_cooldown_sec
+            
+            if current_code == "WARN_CAMERA_FRAMING":
+                has_cooldown_expired = (current_time - self.last_framing_voice_time) >= self.framing_cooldown_sec
+            else:
+                has_cooldown_expired = (current_time - self.last_warning_voice_time) >= self.warning_cooldown_sec
 
             if (is_onset or is_code_change) and has_cooldown_expired:
                 cue_text = form_alert.get("voice_cue") or "Check your form!"
@@ -313,7 +323,10 @@ class VoiceCoachingEngine:
                     "priority": 1,
                     "type": "safety_warning"
                 }
-                self.last_warning_voice_time = current_time
+                if current_code == "WARN_CAMERA_FRAMING":
+                    self.last_framing_voice_time = current_time
+                else:
+                    self.last_warning_voice_time = current_time
 
         # Priority 2: Rep Completion Milestone (Event-bound, fires only when Rep FSM returns to TOP)
         elif rep_event is not None:
