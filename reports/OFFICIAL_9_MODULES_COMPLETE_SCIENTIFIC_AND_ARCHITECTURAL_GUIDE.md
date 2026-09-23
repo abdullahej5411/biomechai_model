@@ -1,526 +1,476 @@
-# BioMechAI — The Complete 9-Module Scientific, Architectural, and Research Defense Guide
+# BioMechAI — The Complete 9-Module Guide: Plain-English Explanations, Master Dictionary, Whys & Exact Research Links
 
 > **Document Purpose**:  
-> This document provides an **exhaustive, sequential, and strictly honest breakdown** of all **9 Official Final Year Project (FYP-II) Modules** in BioMechAI.  
-> It is written to be fully understood by someone with **zero prior knowledge of the project or machine learning**, while providing **exact research paper citations, mathematical formulas, codebase file references, and dedicated "WHY" sections** for every technical decision.
+> This guide explains the entire BioMechAI system in **child-simple English**.  
+> Every technical word is **defined in plain everyday language on the very first line before anything else is explained**.  
+> It covers all **9 Official FYP-II Modules**, explains **why** every decision was made, why alternative ways were rejected, and includes **direct, clickable links to every research paper, dataset, and pretrained model file** used in the project.
 
 ---
 
 # Table of Contents
-1. [System Architecture & End-to-End Master Pipeline](#1-system-architecture--end-to-end-master-pipeline)
-2. [Module 1: User Registration, Authentication & Role Separation](#2-module-1-user-registration-authentication--role-separation)
-3. [Module 2: Real-Time 3D On-Device Pose Estimation](#3-module-2-real-time-3d-on-device-pose-estimation)
-4. [Module 3: Exercise Recognition & Classification (PoseC3D Champion Deep Learning Engine)](#4-module-3-exercise-recognition--classification-posec3d-champion-deep-learning-engine)
-5. [Module 4: Real-Time Repetition Counting & Biomechanical State Machine](#5-module-4-real-time-repetition-counting--biomechanical-state-machine)
-6. [Module 5: Posture Correctness & Clinical Form Validation (All 7 Exercises)](#6-module-5-posture-correctness--clinical-form-validation-all-7-exercises)
-7. [Module 6: Body Measurement & Transformation Tracking](#7-module-6-body-measurement--transformation-tracking)
-8. [Module 7: AI Clinical Injury Prevention & Dynamic Knee Valgus Engine](#8-module-7-ai-clinical-injury-prevention--dynamic-knee-valgus-engine)
-9. [Module 8: AI Workout Companion with Real-Time Priority Voice Coaching](#9-module-8-ai-workout-companion-with-real-time-priority-voice-coaching)
-10. [Module 9: Trainer Dashboard, Client Monitoring & Timestamped Feedback](#10-module-9-trainer-dashboard-client-monitoring--timestamped-feedback)
-11. [Master Hyperparameter & Training Configuration Bible](#11-master-hyperparameter--training-configuration-bible)
-12. [Complete Research Paper Bibliography & External Sources](#12-complete-research-paper-bibliography--external-sources)
+1. [Master Dictionary: Every Technical Word Translated into Plain English](#1-master-dictionary-every-technical-word-translated-into-plain-english)
+2. [Master Architecture: How the Mobile Phone and AI Brain Talk to Each Other](#2-master-architecture-how-the-mobile-phone-and-ai-brain-talk-to-each-other)
+3. [Module 1: User Registration, Login & Role Separation](#3-module-1-user-registration-login--role-separation)
+4. [Module 2: Real-Time 3D On-Device Body Pose Tracking](#4-module-2-real-time-3d-on-device-body-pose-tracking)
+5. [Module 3: Exercise Classification (PoseC3D Champion Deep Learning Model)](#5-module-3-exercise-classification-posec3d-champion-deep-learning-model)
+6. [Module 4: Real-Time Repetition Counting (4-Stage State Machine)](#6-module-4-real-time-repetition-counting-4-stage-state-machine)
+7. [Module 5: Posture Correctness & Form Checking (All 7 Exercises)](#7-module-5-posture-correctness--form-checking-all-7-exercises)
+8. [Module 6: Body Measurement & Transformation Tracking](#8-module-6-body-measurement--transformation-tracking)
+9. [Module 7: AI Clinical Injury Prevention & Knee Valgus (ACL Risk) Engine](#9-module-7-ai-clinical-injury-prevention--knee-valgus-acl-risk-engine)
+10. [Module 8: AI Workout Companion with Live Voice Coaching](#10-module-8-ai-workout-companion-with-live-voice-coaching)
+11. [Module 9: Trainer Dashboard & Timestamped Feedback](#11-module-9-trainer-dashboard--timestamped-feedback)
+12. [Master Hyperparameter Bible: Exactly How the AI Was Trained](#12-master-hyperparameter-bible-exactly-how-the-ai-was-trained)
+13. [Master Research Bibliography: Exact Clickable Paper & Weight Links](#13-master-research-bibliography-exact-clickable-paper--weight-links)
 
 ---
 
-# 1. System Architecture & End-to-End Master Pipeline
+# 1. Master Dictionary: Every Technical Word Translated into Plain English
 
-BioMechAI uses a **Dual-Timescale Edge-to-Server Distributed Architecture**:
+Read this section first! Whenever you see a confusing word in this document or in your defense, look here:
+
+### 1. Landmarks (or Keypoints)
+* **What it actually means**: Digital dots placed on human joints (like the nose, elbows, wrists, knees, and ankles).
+* **Everyday Analogy**: Imagine sticking 33 small glowing reflective stickers onto someone's joints in a dark room. When they move, you only track where those stickers move.
+
+### 2. MediaPipe / Google ML Kit
+* **What it actually means**: Free, ultra-fast software made by Google that runs directly inside your mobile phone to locate those 33 joint dots from the camera 30 times a second.
+* **Everyday Analogy**: A super-fast digital camera filter that instantly spots your elbows, knees, and feet in real time without needing the internet.
+
+### 3. COCO-17
+* **What it actually means**: A world-standard list of exactly 17 major body joints (eyes, nose, shoulders, elbows, wrists, hips, knees, ankles) used by AI scientists worldwide.
+* **Why we use it**: MediaPipe detects 33 points (lots of extra face dots like lips and ears). But gym exercise recognition only needs the 17 main skeleton points. So we strip out the extra facial dots and keep only the 17 COCO joints.
+
+### 4. PoseC3D
+* **What it actually means**: The specific deep learning computer program (developed by researchers at the Chinese University of Hong Kong in 2022) that recognizes human actions by turning skeleton dots into 3D heat movies.
+* **Everyday Analogy**: Instead of guessing what someone is doing from a single still photograph, PoseC3D watches a 3-second moving animation of your skeleton to recognize that you are doing a "Squat".
+
+### 5. Heatmap (and Limb Heatmap)
+* **What it actually means**: A picture where hot, bright glowing lines represent where human bones are located in space.
+* **Keypoint Heatmap**: Just floating bright dots at the joints.
+* **Limb Heatmap (Our Breakthrough)**: Bright glowing lines drawn *between* the dots to represent solid bones (thigh bone, shin bone, upper arm, forearm). In a Squat, both thigh bones descend parallel. In a Lunge, one thigh steps forward and one points back, forming a triangle. Drawing solid bones lets the computer tell a Squat apart from a Lunge!
+
+### 6. 3D Convolutional Neural Network (3D-CNN) / "Forward Pass"
+* **What it actually means**: A computer math formula that scans across video height, width, and **time** simultaneously.
+* **Forward Pass**: Feeding a 3-second clip of skeleton motion into the formula so it can calculate the probability of each exercise.
+* **Everyday Analogy**: Flipping through a flipbook animation with your thumb so you can see the speed and direction of the movement.
+
+### 7. Pretrained Model (and Pretrained Weights)
+* **What it actually means**: A neural network that has already studied thousands of hours of athletic movement on supercomputers before we ever touched it.
+* **Everyday Analogy**: Hiring a university athlete who already knows how human bodies jump, bend, and balance, instead of trying to teach a newborn baby from scratch.
+
+### 8. Fine-Tuning (Transfer Learning)
+* **What it actually means**: Taking that already-smart athlete model and teaching it our 7 specific gym workouts using our own video dataset.
+* **Everyday Analogy**: Sending an athlete to a 1-week coaching camp so they learn to recognize 7 specific gym exercises.
+
+### 9. FineGYM
+* **What it actually means**: A famous world-class research video dataset containing thousands of Olympic gymnastics routines (vault, beam, uneven bars, floor routines).
+* **Exact Web Link**: [FineGYM Official Project Page](https://sdolivia.github.io/FineGym/)
+* **How we used it**: We downloaded the **official PoseC3D model weights that were pretrained on FineGYM**, and then fine-tuned that model on our 7 gym workouts!
+
+### 10. OpenMMLab / MMAction2
+* **What it actually means**: The premier open-source computer vision research organization that released the official code and downloadable pretrained weights for PoseC3D.
+* **Exact Web Link**: [OpenMMLab MMAction2 Model Zoo](https://github.com/open-mmlab/mmaction2/tree/main/configs/skeleton/posec3d)
+
+### 11. Checkpoint (`.pth` file)
+* **What it actually means**: A saved file containing the trained brain (weights/numbers) of the AI model. 
+* **Everyday Analogy**: A "save game" file in a video game that remembers all the progress the AI made during training.
+
+### 12. Tensor / Tensor Shape (e.g. `1 × 17 × 48 × 56 × 56`)
+* **What it actually means**: A block of numbers arranged in neat rows and columns.
+  * `1`: 1 video clip at a time.
+  * `17`: 17 body bones/joints.
+  * `48`: 48 video frames over 3 seconds.
+  * `56 × 56`: The width and height resolution of the skeleton heatmap grid.
+
+### 13. Top-1 vs. Top-5 Accuracy
+* **Top-1 Accuracy (53.38%)**: The model's single #1 guess is 100% correct.
+* **Top-5 Accuracy (91.22%)**: Out of our 7 exercises, the true exercise is ranked within the model's top 5 picks 91.2% of the time. (Since picking 5 random guesses out of 7 would only give 71.4%, hitting 91.22% proves the AI understands human movement).
+
+### 14. Zero-Leakage (Video-Disjoint) Train/Test Split
+* **What it actually means**: Making sure that the 115 test videos contain **completely new people in completely new rooms** that the AI never saw during training.
+* **Everyday Analogy**: Giving students a real exam with questions they have never seen before, rather than testing them on the exact practice homework they memorized.
+
+### 15. Finite State Machine (FSM)
+* **What it actually means**: A strict step-by-step logic rule that says: *"You cannot count Rep 1 until the user has fully lowered down and then fully stood back up."*
+* **Everyday Analogy**: A revolving turnstile at a train station. You can't enter halfway, back out, and claim you bought two tickets. You must push all the way through.
+
+### 16. Munro FPPA (Frontal Plane Projection Angle)
+* **What it actually means**: A medical angle measuring whether your knee is staying straight over your foot or caving inward toward your other knee during a squat.
+* **Knee Valgus**: The medical term for "knees caving inward". If your angle drops below **165°**, you are at high risk of tearing your ACL (knee ligament).
+
+### 17. Devine Formula (Ideal Body Weight)
+* **What it actually means**: A famous medical formula created in 1974 used by doctors to calculate what a person should weigh based on their height.
+
+---
+
+# 2. Master Architecture: How the Mobile Phone and AI Brain Talk to Each Other
+
+BioMechAI uses a **Dual-Timescale Architecture**:
+* **Fast Loop (On Mobile Phone, 30 times a second)**: Tracks the body dots, counts reps, checks if knees are caving in, and speaks instant warnings through the phone speaker.
+* **Slow Loop (On Server, every 2 to 3 seconds)**: Collects 48 frames of movement and runs the heavy PoseC3D AI model to confirm which exercise is being done.
 
 ```
  ┌────────────────────────────────────────────────────────────────────────────────────────┐
- │                              MOBILE CLIENT (FLUTTER APP)                               │
+ │                              MOBILE PHONE (FLUTTER APP)                                │
  │                                                                                        │
- │  1. Smartphone Camera (30 FPS RGB Frame Stream)                                        │
+ │  1. Phone Camera records live video (30 frames every second)                           │
  │                         │                                                              │
  │                         ▼                                                              │
- │  2. On-Device MediaPipe BlazePose (Google ML Kit)                                      │
- │     Extracts 33 anatomical landmarks (x, y, z, visibility)                             │
+ │  2. MediaPipe (Google ML Kit on the phone)                                             │
+ │     Instantly finds 33 body dots (nose, knees, elbows, feet)                           │
  │                         │                                                              │
  │        ┌────────────────┴─────────────────────────────────────────┐                    │
- │        │ Fast-Timescale (30 Hz Local Evaluation)                  │                    │
+ │        │ Fast Loop (Takes < 15 milliseconds on the phone)         │                    │
  │        ▼                                                          ▼                    │
- │  [Module 4] Local Rep FSM                   [Module 8] Native Voice Coaching           │
- │  [Module 5] Local Angle Feedback            (flutter_tts Priority Queue)               │
- │  [Module 7] Munro FPPA Valgus Watchdog                    ▲                            │
- │        │                                                  │ High-Priority Cues         │
+ │  [Module 4] Rep Counter FSM                 [Module 8] Voice Coach Speaks              │
+ │  [Module 5] Joint Angle Checker             ("Push knees out!", "Rep 5!")              │
+ │  [Module 7] Knee Valgus Watchdog                          ▲                            │
+ │        │                                                  │ Emergency Safety Alerts    │
  │        └────────────────┬─────────────────────────────────┘                            │
  └─────────────────────────┼──────────────────────────────────────────────────────────────┘
                            │
-                           │ Encoded 33-Keypoint JSON Buffer (48 frames / 3-second window)
-                           │ over Local Wi-Fi WebSocket (/ws/stream) or HTTP (POST /classify)
+                           │ Sends joint dots (NOT heavy video!) over local Wi-Fi
+                           │ via WebSocket (/ws/stream) or HTTP POST (/classify)
                            ▼
  ┌────────────────────────────────────────────────────────────────────────────────────────┐
- │                          BACKEND SERVER (FASTAPI / PYTORCH)                            │
+ │                          AI SERVER (PYTHON / FASTAPI / PYTORCH)                        │
  │                                                                                        │
- │  1. Stream Ingestion & Landmark Verification (backend/main.py)                         │
- │     Validates user framing, floor distance, and camera visibility                      │
+ │  1. Strips out extra face dots, keeping the 17 main COCO body joints                   │
  │                         │                                                              │
  │                         ▼                                                              │
- │  2. Keypoint Conversion & Topo-Remapping (COCO-MP Map)                                 │
- │     Strips facial fluff, maps 33 MediaPipe joints -> 17 COCO anatomical joints         │
+ │  2. [Module 3] Draws glowing 3D Limb Heatmaps (connecting bones in 3D space)           │
  │                         │                                                              │
  │                         ▼                                                              │
- │  3. [Module 3] 3D Spatiotemporal Limb Heatmap Generation                               │
- │     Draws continuous Gaussian bone tubes connecting joints (with_limb=True)            │
- │     Shape: (Batch=1, Channels=17, Time=48, Height=56, Width=56)                        │
+ │  3. PoseC3D 3D-CNN Model (Loaded with FineGYM Pretrained Weights)                      │
+ │     Analyzes the 3-second movement and predicts: "This is a Squat (94% confidence)"    │
  │                         │                                                              │
  │                         ▼                                                              │
- │  4. PoseC3D SlowOnly ResNet-50 3D-CNN Backbone (FineGYM-Pretrained Weights)            │
- │     Forward pass -> 512 latent features -> 7-class linear classifier                   │
- │     Output: Softmax confidence probabilities across 7 exercise classes                 │
- │                         │                                                              │
- │                         ▼                                                              │
- │  5. Fast Kinematic Arbitrator (backend/kinematics.py)                                  │
- │     Evaluates un-clamped joint geometry, hip sag, elbow flare, Munro FPPA (<165°)      │
- │                         │                                                              │
- │                         ▼                                                              │
- │  6. JSON Telemetry Packet returned to Mobile HUD in < 45 milliseconds                  │
+ │  4. Sends result back to phone screen in less than 45 milliseconds                     │
  └────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-# 2. Module 1: User Registration, Authentication & Role Separation
+# 3. Module 1: User Registration, Login & Role Separation
 
-### 2.1 Scope & What It Does
-Module 1 manages user onboarding, account security, profile management, and role-based permissions. It differentiates between two distinct user roles:
-1. **Athlete (Client)**: Exercises in front of the camera, views real-time form rings, tracks repetition history, monitors BMI and transformation records.
-2. **Trainer (Coach)**: Accesses the athlete directory, inspects client workout history, analyzes exercise execution, and submits timestamped video coaching feedback.
+### What It Actually Means:
+A secure system where people create an account with their email and password, and the app decides whether they are an **Athlete** (exercising) or a **Trainer** (monitoring athletes).
 
-### 2.2 End-to-End Execution Flow
-1. **Entry Point**: The user opens the app; `main.dart` initializes Firebase and inspects the active session via `AuthProvider`.
-2. **Authentication**: If unauthenticated, the user is presented with `LoginScreen` or `RegisterScreen`. Credentials (Email & Password) are securely authenticated via **Firebase Authentication**.
-3. **Profile Document Fetch**: Upon sign-in, the system queries Cloud Firestore:
-   `FirebaseFirestore.instance.collection('users').doc(user.uid).get()`
-4. **Role Routing**:
-   * If `role == 'athlete'`: Redirects to `HomeScreen` (Access to camera, workout HUD, BMI, workout history).
-   * If `role == 'trainer'`: Redirects to `TrainerDashboardScreen` (Client directory, session reviews, feedback portal).
+### How It Works Step-by-Step:
+1. **User opens app**: The app checks if you are already logged in.
+2. **If not logged in**: You see the Login or Register screen. You type your email and password.
+3. **Firebase Authentication checks your password**: If correct, it looks up your profile in the cloud database (Cloud Firestore).
+4. **Checks your Role**:
+   * If your role is **Athlete**: You are sent to the workout screen to exercise.
+   * If your role is **Trainer**: You are sent to the Trainer Dashboard to see your clients.
 
-### 2.3 Codebase References
-* Client Provider: `biomechai_flutter_latest/lib/providers/auth_provider.dart`
-* Login Screen: `biomechai_flutter_latest/lib/screens/login_screen.dart`
-* Registration Screen: `biomechai_flutter_latest/lib/screens/register_screen.dart`
-* User Model: `biomechai_flutter_latest/lib/models/user_model.dart`
-* Firebase Config: `biomechai_flutter_latest/lib/firebase_options.dart`
+### Where It Lives in the Code:
+* Auth Provider: [`biomechai_flutter_latest/lib/providers/auth_provider.dart`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_flutter_latest/lib/providers/auth_provider.dart)
+* Login Screen: [`biomechai_flutter_latest/lib/screens/login_screen.dart`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_flutter_latest/lib/screens/login_screen.dart)
+* Register Screen: [`biomechai_flutter_latest/lib/screens/register_screen.dart`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_flutter_latest/lib/screens/register_screen.dart)
 
-### 2.4 The "WHY" Section (Architectural & Scientific Rationale)
-
-#### Why Firebase Authentication instead of a Custom JWT / Node.js Backend?
-* **Why We Did It**: Firebase Authentication provides hardened, battle-tested cryptographic security, automated token refreshing, bcrypt password hashing, and seamless integration with Cloud Firestore Security Rules out of the box. For a safety-critical exercise app, building custom password storage from scratch introduces unnecessary vulnerability to SQL injection or credential leaks.
-* **Why We Didn't Do Alternative (Custom Roll-Your-Own Auth)**: Building a custom JWT auth service would require maintaining a dedicated authentication database, handling SMTP servers for email verification, managing SSL cert rotations, and implementing rate-limiting against brute-force attacks, diverting engineering effort away from core computer vision kinematics.
-
-#### Why Strict Role Separation at the Firestore Schema Level?
-* **Why We Did It**: Athletes should never see other athletes' private body weight or BMI records. Setting `role` directly inside the immutable Firestore user document (`/users/{uid}`) enables declarative Firestore Security Rules:
-  ```javascript
-  match /users/{userId} {
-    allow read, write: if request.auth != null && request.auth.uid == userId;
-  }
-  ```
-* **Why We Didn't Do Alternative (Single UI with Toggled Buttons)**: Allowing users to toggle between athlete and trainer modes in local state without database security would allow clients to modify their own workout logs or view other athletes' private clinical transformation records.
+### The "WHY" Section:
+* **Why did we use Google Firebase Auth instead of writing our own login server?**  
+  * *Simple Meaning*: Writing your own login code from scratch is dangerous—hackers can steal passwords or inject malicious SQL commands. Google Firebase has world-class security, encrypts passwords automatically, and prevents data leaks.
+* **Why do we have strict Athlete vs. Trainer separation?**  
+  * *Simple Meaning*: Privacy. An athlete's personal weight, BMI, and workout history must be private. A trainer can only see clients who are registered under them, and athletes cannot change other people's workout data.
 
 ---
 
-# 3. Module 2: Real-Time 3D On-Device Pose Estimation
+# 4. Module 2: Real-Time 3D On-Device Body Pose Tracking
 
-### 3.1 Scope & What It Does
-Module 2 is the perceptual foundation of BioMechAI. It runs entirely on the smartphone at **30 frames per second**, transforming the phone camera's raw video stream into 33 three-dimensional anatomical body coordinates $(x, y, z)$ with sub-pixel precision and visibility confidence scores.
+### What It Actually Means:
+Using your phone's camera to find 33 joint dots on your body 30 times every second without needing to send any video over the internet.
 
-### 3.2 End-to-End Execution Flow
-1. **Camera Frame Acquisition**: `CameraImage` stream captures frames in YUV420 format on Android.
-2. **Buffer Transformation**: `PoseDetectionService` transforms the camera image planes into an `InputImage` with metadata specifying sensor rotation (90°, 270°) and image dimensions.
-3. **Inference**: The frame is passed to Google ML Kit's on-device detector (`GoogleMlKit.vision.poseDetector`).
-4. **Keypoint Extraction**: ML Kit extracts 33 standard body landmarks based on the BlazePose topology.
-5. **Real-Time Skeleton Canvas Overlay**: `SkeletonPainter` draws color-coded bones directly on the camera preview:
-   * **Green bones**: Biomechanically safe posture.
-   * **Red/Yellow bones**: Clinical valgus, lumbar collapse, or unsafe joint angles.
+### How It Works Step-by-Step:
+1. **Camera captures a frame**: The phone camera grabs an image.
+2. **MediaPipe scans the frame**: In less than 15 milliseconds, Google ML Kit finds 33 points (nose, shoulders, elbows, wrists, hips, knees, ankles, feet).
+3. **Outputs 3D numbers $(x, y, z)$**:
+   * $x$: Left-to-right position.
+   * $y$: Up-and-down position.
+   * $z$: How close or far the joint is from the camera lens.
+4. **Draws green bones on screen**: The phone screen paints green lines connecting your joints so you can see your posture live.
 
-### 3.3 Codebase References
-* Detection Service: `biomechai_flutter_latest/lib/services/pose_detection_service.dart`
-* Canvas Visualizer: `biomechai_flutter_latest/lib/widgets/skeleton_painter.dart`
-* Live Camera View: `biomechai_flutter_latest/lib/screens/workout_screen.dart`
-* Local Model Asset: `biomechai_model/models/mediapipe/pose_landmarker_lite.task`
+### Where It Lives in the Code:
+* On-Device Detection Service: [`biomechai_flutter_latest/lib/services/pose_detection_service.dart`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_flutter_latest/lib/services/pose_detection_service.dart)
+* Skeleton Visualizer: [`biomechai_flutter_latest/lib/widgets/skeleton_painter.dart`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_flutter_latest/lib/widgets/skeleton_painter.dart)
+* Official Research Paper: [BlazePose: On-device Real-time Body Pose Tracking (CVPR 2020)](https://arxiv.org/abs/2006.10204)
 
-### 3.4 The "WHY" Section (Architectural & Scientific Rationale)
-
-#### Why On-Device Pose Estimation instead of Streaming Video to a Server?
-* **Why We Did It**: 
-  1. **Latency**: Streaming 1080p RGB video over Wi-Fi/4G introduces 150–350 ms of network latency. In biomechanics, a knee valgus collapse or lumbar buckle occurs in **under 100 milliseconds**. On-device inference guarantees **< 15 ms latency**, enabling instant injury prevention.
-  2. **Bandwidth**: 30 FPS video streaming consumes ~4–8 Mbps. In contrast, streaming 33 $(x,y,z)$ coordinates in JSON consumes less than **18 Kbps**—a **99.7% bandwidth reduction**!
-  3. **Privacy**: Athletes exercise in bedrooms or private gym spaces. Transmitting raw video creates severe privacy risks. On-device pose estimation means **no video ever leaves the user's phone**.
-* **Why We Didn't Do Alternative (Server-Side OpenPose / MMPose)**: Running server-side OpenPose requires expensive multi-GPU servers (e.g. AWS EC2 G4dn instances costing hundreds of dollars/month) and collapses completely if the user's home Wi-Fi stutters.
-
-#### Why Google ML Kit / BlazePose instead of YOLOv8-Pose?
-* **Why We Did It**: Google BlazePose (*Bazrev et al., CVPR 2020*) was engineered specifically for mobile devices with hardware DSP/NPU acceleration. It provides full-body 3D metric coordinates $(x, y, z)$ with depth estimation relative to the hips. YOLOv8-Pose only outputs 2D bounding boxes and 2D keypoints, making sagittal depth and out-of-plane spinal angle calculations impossible.
+### The "WHY" Section:
+* **Why did we run pose estimation directly on the mobile phone instead of sending video to a cloud server?**  
+  * *Reason 1: Speed (Latency)*: Sending full video over Wi-Fi takes 200–350 milliseconds. If your knee collapses during a heavy squat, you can tear your ACL ligament in 100 milliseconds! On-device tracking takes only **12 milliseconds**, allowing the app to warn you instantly.
+  * *Reason 2: Privacy*: People exercise at home or in bedrooms. Sending live camera video over the internet is a privacy risk. With on-device pose estimation, **zero video ever leaves the phone**. Only coordinate numbers are used.
+  * *Reason 3: Internet Bandwidth*: Streaming video uses 6,000 Kilobits/sec. Sending coordinate numbers uses only 18 Kilobits/sec—a **99.7% reduction in data usage**!
 
 ---
 
-# 4. Module 3: Exercise Recognition & Classification (PoseC3D Champion Deep Learning Engine)
+# 5. Module 3: Exercise Classification (PoseC3D Champion Deep Learning Model)
 
-### 4.1 Scope & What It Does
-Module 3 is the deep learning action recognition engine. Given a 3-second temporal window of skeleton motion, it automatically classifies which of the 7 gym exercises the user is performing:
-`Squat`, `Push-Up`, `Lunge`, `Bicep Curl`, `Plank`, `Jumping Jack`, `High Knees`.
+### What It Actually Means:
+The AI brain that watches 3 seconds of movement and tells you: *"You are performing a Squat"* (out of 7 exercises: `Squat`, `Push-Up`, `Lunge`, `Bicep Curl`, `Plank`, `Jumping Jack`, `High Knees`).
 
-### 4.2 End-to-End Execution Flow
-1. **Landmark Buffering**: As the user moves, the system buffers 48 frames ($\approx 1.6\text{ to }3.0\text{ seconds}$).
-2. **COCO-17 Mapping**: MediaPipe's 33 landmarks are mapped to the 17 standard COCO joints (`COCO_MP_MAP` in `backend/config.py`).
-3. **3D Spatiotemporal Limb Heatmap Generation**:
-   Instead of isolated points, PoseC3D connects parent and child joints with Gaussian line segments (`with_kp=False, with_limb=True`). This produces a 4D tensor of shape:
-   $$\text{Input Tensor} \in \mathbb{R}^{B \times C \times T \times H \times W} = (1 \times 17 \times 48 \times 56 \times 56)$$
-4. **3D Convolutional Forward Pass**:
-   The tensor is fed into the **SlowOnly ResNet-50 3D-CNN** backbone (`ResNet3dSlowOnly`). Three residual stages with 3D convolutions ($1 \times 3 \times 3$ and $3 \times 1 \times 1$) extract spatiotemporal movement patterns.
-5. **Classification Head**:
-   Global Average Pooling compresses the spatial volume into a 512-dimensional feature vector. The linear head (`Linear(512, 7)`) computes class logits, passed through Softmax to produce probabilities.
-6. **Champion Checkpoint**:
-   `models/posec3d_v5_limb/best_acc_top1_epoch_10.pth` (Top-1 Accuracy: **53.38%**, Top-5 Accuracy: **91.22%** on 115 held-out unseen videos).
+### How It Works Step-by-Step:
+1. **Gathers 48 frames of skeleton dots**: Buffers about 2 to 3 seconds of movement.
+2. **Strips down to 17 joints (COCO-17)**: Drops irrelevant face points, keeping only the 17 main athletic body joints.
+3. **Draws Glowing Limb Heatmaps**: Connects the dots with solid glowing lines (thighs, shins, arms).
+4. **Feeds into the 3D-CNN (SlowOnly ResNet-50)**: The AI scans the moving bones across time using 3D convolutional filters.
+5. **Outputs Probabilities**: Gives a percentage for each of the 7 exercises.
+6. **Our Champion Checkpoint**: `best_acc_top1_epoch_10.pth` (Achieved **53.38% Top-1** and **91.22% Top-5 Accuracy** on 115 unseen test videos).
 
-### 4.3 Codebase References
-* Active Model Checkpoint: `biomechai_model/models/posec3d_v5_limb/best_acc_top1_epoch_10.pth`
-* Model Architecture Config: `biomechai_model/models/posec3d_v5_limb/posec3d_biomechai_v5_limb.py`
-* Inference Server Bridge: `biomechai_model/backend/engine.py` (Class `PoseC3DEngine`)
-* Backend API Routing: `biomechai_model/backend/main.py` (Endpoint `POST /classify`)
-* Client Request Service: `biomechai_flutter_latest/lib/services/exercise_recognition_service.dart`
+### Where It Lives in the Code:
+* Active Model Weights Checkpoint: [`models/posec3d_v5_limb/best_acc_top1_epoch_10.pth`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/models/posec3d_v5_limb/best_acc_top1_epoch_10.pth)
+* Model Architecture Config: [`models/posec3d_v5_limb/posec3d_biomechai_v5_limb.py`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/models/posec3d_v5_limb/posec3d_biomechai_v5_limb.py)
+* Backend Inference Engine: [`backend/engine.py`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/backend/engine.py)
+* Research Paper Link: [PoseC3D: Revisiting Skeleton-based Action Recognition (CVPR 2022)](https://openaccess.thecvf.com/content/CVPR2022/papers/Duan_Revisiting_Skeleton-Based_Action_Recognition_With_3D_Convolutional_Networks_CVPR_2022_paper.pdf)
 
-### 4.4 The 5-Generation Model Evolution History
+### Exact OpenMMLab Pretrained Download Links:
+* **FineGYM Pretrained Limb Weights (Used in our Champion Model)**:  
+  [Download `slowonly_r50_8xb16-u48-240e_gym-limb_20220815-2e6e3c5c.pth`](https://download.openmmlab.com/mmaction/v1.0/skeleton/posec3d/slowonly_r50_8xb16-u48-240e_gym-limb/slowonly_r50_8xb16-u48-240e_gym-limb_20220815-2e6e3c5c.pth)  
+  *(OpenMMLab MMAction2 Official Model Zoo)*
+* **FineGYM Pretrained Keypoint Weights (Used in PoseC3D v4)**:  
+  [Download `slowonly_r50_8xb16-u48-240e_gym-keypoint_20220815-da338c58.pth`](https://download.openmmlab.com/mmaction/v1.0/skeleton/posec3d/slowonly_r50_8xb16-u48-240e_gym-keypoint/slowonly_r50_8xb16-u48-240e_gym-keypoint_20220815-da338c58.pth)
+* **NTU RGB+D Pretrained Weights (Used in PoseC3D v1/v3)**:  
+  [Download `slowonly_r50_8xb16-u48-240e_ntu60-xsub-keypoint_20220815-38db104b.pth`](https://download.openmmlab.com/mmaction/v1.0/skeleton/posec3d/slowonly_r50_8xb16-u48-240e_ntu60-xsub-keypoint/slowonly_r50_8xb16-u48-240e_ntu60-xsub-keypoint_20220815-38db104b.pth)
 
-| Generation | Architecture & Pretrained Base | Dropout | Heatmap Modality | Top-1 Accuracy | Macro Recall | Top-5 Accuracy | Key Scientific Insight |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :--- |
-| **RF Baseline** | Random Forest (2D Frame Angles) | — | None | 56.08% | 55.92% | — | Good on static snapshots; fails completely on dynamic video streams. |
-| **PoseC3D v1** | NTU-60 Pretrained SlowOnly-R50 | 0.50 | Joint Dots | 49.77% | 51.83% | 87.39% | Proved 3D-CNN feasibility; Squat accuracy was critically low (28.7%). |
-| **PoseC3D v2** | Heavy Regularization Test | 0.70 | Joint Dots | 44.82% | 44.90% | 90.32% | Excessive dropout starved features; Pushup accuracy collapsed from 63% to 28%. |
-| **PoseC3D v3** | Balanced Regularization + Tilt Jitter | 0.60 | Joint Dots | 48.20% | 49.64% | 91.22% | In-plane rotation ($\pm 12^\circ$) improved tilt robustness; Pushup restored to 63.3%. |
-| **PoseC3D v4** | FineGYM Athletic Pretrained | 0.60 | Joint Dots | 50.90% | 50.14% | 90.09% | FineGYM gymnastic priors provided immediate +2.7 pp boost over general NTU-60. |
-| **PoseC3D v5 (Champion)** | **FineGYM Pretrained + Limb Heatmaps** | **0.60** | **Limb Bones** | **`53.38%`** | **`53.15%`** | **`91.22%`** | **All-time project record. Slashed Squat-to-Lunge confusion by 65.9%!** |
-
-### 4.5 The "WHY" Section (Architectural & Scientific Rationale)
-
-#### Why PoseC3D (3D Convolutional Neural Network) instead of ST-GCN (Graph Convolution)?
-* **Why We Did It**: Classical skeleton models use Spatio-Temporal Graph Convolutional Networks (ST-GCN, *Yan et al., AAAI 2018*). ST-GCN treats body joints as graph nodes connected by rigid edges. However, ST-GCN is notoriously brittle: if MediaPipe jitters or momentarily loses an ankle coordinate, the graph topology breaks, creating massive feature errors. PoseC3D (*Duan et al., CVPR 2022*) rasterizes skeletons into 3D heatmaps. Standard 3D convolutions naturally apply Gaussian spatial smoothing, making the network exceptionally robust to coordinate noise and partial occlusion.
-* **Why We Didn't Do Alternative (Raw RGB 3D-CNNs like I3D or SlowFast)**: Feeding raw RGB video pixels into an I3D model requires 100+ MB model files, consumes gigabytes of VRAM, and runs at only 2–4 FPS on mobile. More critically, RGB models overfit to clothing, skin color, and gym wallpapers rather than human biomechanics.
-
-#### Why FineGYM Pretrained Weights instead of NTU RGB+D or Kinetics-400?
-* **Why We Did It**: Kinetics-400 consists of generic YouTube videos (eating, playing guitar, washing hair). NTU RGB+D consists of daily indoor tasks (drinking water, reading a book). **FineGYM** (*Shao et al., CVPR 2020*) consists entirely of high-performance Olympic gymnastics, vault routines, and floor calisthenics. FineGYM's convolutional filters already possess pre-adapted representations for high joint velocity, deep knee flexion, and body orientation, giving BioMechAI an immediate **+3.5 pp performance advantage**.
-* **Why We Didn't Train From Scratch**: Training a 50-layer 3D-CNN from random Gaussian noise on only 2,164 clips results in catastrophic overfitting. Transfer learning from FineGYM gave our model deep prior knowledge of human kinematics.
-
-#### Why Limb Heatmaps (`with_limb=True`) instead of Joint Dots (`with_kp=True`)?
-* **Why We Did It**: In PoseC3D v4, joints were rendered as isolated Gaussian dots. In side-profile videos, a Squat and a Lunge produce identical joint dot trajectories (hip and knee dots moving downward). As a result, **56.2% of squats were falsely predicted as lunges**! By drawing solid bone tubes between joints, PoseC3D v5 enabled the 3D-CNN to see the **geometric relationship between both thighs**:
-  * In a **Squat**, both femur tubes descend **symmetrically in parallel**.
-  * In a **Lunge**, the lead femur points forward while the trail femur points backward, forming a **split triangle**.
-  * Switching to limb heatmaps **more than doubled squat recall from 20.55% to 53.42%** and slashed squat-to-lunge errors by **65.9%**!
-
-#### Why is the Checkpoint Size only ~8.3 MB instead of 100+ MB?
-* Traditional RGB video models process 3 color channels at $224 \times 224$ resolution with `base_channels=64`, requiring 25–45 million parameters.
-* PoseC3D processes compact 17-channel skeleton heatmaps at $56 \times 56$ resolution with `base_channels=32`.
-* Total parameter count = **2,109,831** floating-point numbers.
-* Parameter size:
-  $$2,109,831 \times 4\text{ bytes} = 8,439,324\text{ bytes} \approx \mathbf{8.05\text{ to }8.33\text{ MB}}$$
+### The "WHY" Section:
+* **Why did we use FineGYM pretrained weights instead of training from scratch?**  
+  * *Simple Meaning*: Training a 50-layer deep neural network from scratch requires millions of videos. We only had 2,164 video clips. By taking a model that OpenMMLab already trained on the **FineGYM gymnastics dataset**, the AI already knew how human legs and arms move. We only had to teach it to name our 7 exercises!
+* **Why did we switch to Limb Heatmaps (solid bones) instead of Keypoint Heatmaps (dots)?**  
+  * *Simple Meaning*: When looking from the side, a Squat and a Lunge both look like dots moving down. In PoseC3D v4 (dots only), **56% of squats were falsely predicted as lunges**! When we drew solid bones (Limb Heatmaps), the AI could clearly see that both thigh bones move down *parallel* in a Squat, while one steps forward and one steps back in a Lunge. This **more than doubled our squat accuracy (from 20.5% to 53.4%)** and cut squat-to-lunge confusion by **66%**!
+* **Why is our model file only ~8.3 MB instead of 100+ MB?**  
+  * *Simple Meaning*: Standard video models look at full-color pixel images ($3 \times 224 \times 224$). PoseC3D only looks at tiny $56 \times 56$ skeleton heatmaps. It only needs 2.1 million math parameters. At 4 bytes per number, $2.1\text{M} \times 4 = \mathbf{8.3\text{ MB}}$. It is lightweight and lightning fast!
 
 ---
 
-# 5. Module 4: Real-Time Repetition Counting & Biomechanical State Machine
+# 6. Module 4: Real-Time Repetition Counting (4-Stage State Machine)
 
-### 5.1 Scope & What It Does
-Module 4 tracks workout progress in real time. It counts completed exercise repetitions with zero latency while preventing false increments caused by body tremors, hesitation, or half-reps.
+### What It Actually Means:
+A foolproof counter that tracks how many reps you did (e.g. "Rep 1, Rep 2, Rep 3") without ever double-counting if your body shakes or hesitates.
 
-### 5.2 End-to-End Execution Flow
-Module 4 uses a **Deterministic 4-Stage Closed Finite State Machine (FSM)** running at 30 Hz:
-
+### How the 4-Stage State Machine Works:
 ```
-        ┌─────────────────────────────────────────────────────────┐
-        │                                                         │
-        ▼                                                         │
-  ┌───────────┐      Knee Flexion < 146°        ┌──────────────┐  │
-  │   START   │ ──────────────────────────────> │  INFLECTION  │  │
-  │ (Upright) │ <────────────────────────────── │ (Descending) │  │
-  └───────────┘       Return without depth      └──────────────┘  │
-        ▲                                              │          │
-        │                                              │ Depth    │
-        │                                              │ < 115°   │
-        │                                              ▼          │
-  ┌────────────┐     Ascent Reaches > 146°      ┌──────────────┐  │
-  │ COMPLETION │ <───────────────────────────── │     PEAK     │  │
-  │ (Rep += 1) │                                │(Parallel Inf)│  │
-  └────────────┘                                └──────────────┘  │
-        │                                              │          │
-        └──────────────────────────────────────────────┴──────────┘
+  [Stage 0: START] (Standing tall, knee angle >= 146°)
+         │
+         ▼ (Athlete starts lowering down, knee angle < 146°)
+  [Stage 1: INFLECTION] (Descent in progress)
+         │  
+         │  (If athlete stands back up early without reaching depth -> CANCEL, NO REP)
+         ▼
+  [Stage 2: PEAK DEPTH] (Valid parallel depth reached, knee angle <= 115°)
+         │
+         ▼ (Athlete pushes all the way back up, knee angle >= 146°)
+  [Stage 3: COMPLETION] -> COUNTER ADDS +1! Resets to Stage 0.
 ```
 
-1. **State 0 (`START`)**: The athlete is in natural upright extension (Knee flexion $\ge 146^\circ$).
-2. **State 1 (`INFLECTION`)**: The athlete initiates descent (Knee flexion drops below $146^\circ$). If they bounce or stand back up without reaching depth, the FSM resets to `START` without counting a rep.
-3. **State 2 (`PEAK`)**: The athlete achieves valid biomechanical depth (Femur parallel to floor, Knee flexion $\le 115^\circ$).
-4. **State 3 (`COMPLETION`)**: The athlete pushes back up and crosses the return threshold ($\ge 146^\circ$). The counter increments by exactly 1, records the repetition duration, and immediately resets to `START`.
+### Where It Lives in the Code:
+* Kinematics State Machine: [`backend/kinematics.py`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/backend/kinematics.py) (Class `RepetitionStateMachine`)
+* Biomechanical Angle Thresholds: [`backend/config.py`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/backend/config.py) (Lines 10–16)
 
-### 5.3 Codebase References
-* Fast Kinematics FSM: `biomechai_model/backend/kinematics.py` (Class `RepetitionStateMachine` and `RepCounterFSM`)
-* Biomechanical Constants: `biomechai_model/backend/config.py` (Lines 10–16)
-* Client Rep Record Model: `biomechai_flutter_latest/lib/models/rep_record.dart`
-* Local Validation Service: `biomechai_flutter_latest/lib/services/form_validation_service.dart`
-
-### 5.4 The "WHY" Section (Architectural & Scientific Rationale)
-
-#### Why a 4-Stage State Machine instead of Peak Detection (SciPy `find_peaks`)?
-* **Why We Did It**: Traditional peak detection algorithms (like `scipy.signal.find_peaks`) require looking forward and backward in time across an entire completed workout recording. They cannot run in real time on a live camera stream. Furthermore, if an athlete hesitates, pauses, or shakes at the bottom of a heavy squat, a peak detector sees 2 or 3 tiny local minima and registers multiple false reps. Our 4-stage FSM requires crossing the full physical range of motion before registering an increment.
-* **Why We Didn't Do Alternative (Simple 2-State Up/Down Counter)**: A 2-state counter (`Down` if angle < 115°, `Up` if angle > 146°) oscillates wildly if the athlete hovers near the threshold, triggering 5 reps in one second! Our FSM requires entering `INFLECTION` first, ensuring hysteresis.
-
-#### Why Un-Clamped Raw Geometric Angles?
-* **Why We Did It**: In early prototypes, artificial angle clamping (e.g. `clamp(angle, 45, 180)`) masked camera sensor glitches. In FYP-II, we eliminated all clamping. If an angle violates physical anatomical limits (< 35° knee flexion), the system recognizes it as an occlusion glitch and discards the frame rather than corrupting the rep count.
+### The "WHY" Section:
+* **Why use a 4-Stage State Machine instead of simple peak detection (like SciPy `find_peaks`)?**  
+  * *Simple Meaning*: Peak detection cannot run live on a phone camera because it has to wait until the workout is completely finished to find the "hills and valleys" in a graph. Furthermore, if you shake or pause at the bottom of a heavy squat, a peak detector sees 3 tiny bumps and counts **3 fake reps**! Our 4-stage machine requires you to hit proper depth and return all the way to standing before it gives you the rep.
+* **Why did we eliminate angle clamping?**  
+  * *Simple Meaning*: In early prototypes, code had lines like `clamp(angle, 45, 180)`. If the camera glitched and gave an impossible angle (like 10°), clamping would turn it into 45° and trick the rep counter. Now, if an angle drops below 35° (anatomically impossible for a human knee), the app knows it is a camera glitch and discards that frame.
 
 ---
 
-# 6. Module 5: Posture Correctness & Clinical Form Validation (All 7 Exercises)
+# 7. Module 5: Posture Correctness & Form Checking (All 7 Exercises)
 
-### 6.1 Scope & What It Does
-Module 5 acts as an AI physical therapist. It analyzes joint trajectories frame-by-frame across all 7 exercises, calculating real-time correctness scores (0–100%) and pinpointing specific mechanical flaws.
+### What It Actually Means:
+An AI coach that checks your posture on every single frame and tells you exact mathematical corrections (like *"Chest too low"*, *"Tuck your elbows in"*, or *"Keep your hips straight"*).
 
-### 6.2 Deterministic Kinematic Rules Across All 7 Exercises
+### Plain-English Form Rules Across All 7 Exercises:
 
-| Exercise | Primary Form Checks | Mathematical Rule / Geometric Criteria | Clinical / Biomechanical Consequence |
-| :--- | :--- | :--- | :--- |
-| **Squat** | Parallel Depth | Hip-Knee-Ankle angle $\le 115.0^\circ$ | Insufficient depth fails to recruit gluteus maximus and hamstrings. |
-| **Squat** | Knee Tracking (FPPA) | Munro FPPA $\ge 165.0^\circ$ | Knee caving inward creates severe shearing stress on the ACL. |
-| **Push-Up** | Chest Depth | Elbow Flexion $\le 95.0^\circ$ | Incomplete range of motion reduces pectoralis major activation. |
-| **Push-Up** | Hip Sag (Lumbar) | Shoulder-Hip-Ankle line $< 160.0^\circ$ | Anterior pelvic tilt places compressive shear on L4–L5 vertebrae. |
-| **Push-Up** | Elbow Flare | Arm-to-Torso Angle $> 75.0^\circ$ | Excessive abduction causes subacromial shoulder impingement. |
-| **Plank** | Body Alignment | Shoulder-Hip-Ankle line $162.0^\circ\text{--}198.0^\circ$ | Sagging or piking collapses abdominal core activation. |
-| **Lunge** | Front Knee Overextension | Front Knee Flexion $< 50.0^\circ$ or past toe | Excessive patellofemoral shear loading. |
-| **Lunge** | Torso Uprightness | Shoulder-Hip-Knee angle $\ge 130.0^\circ$ | Forward torso collapse overloads quadriceps tendon. |
-| **Bicep Curl** | Full Contraction & Extension| Elbow Flexion $\le 50.0^\circ$ (top), $\ge 155.0^\circ$ (bottom)| Maximizes bicep brachii sarcomere recruitment. |
-| **Bicep Curl** | Torso Swing / Momentum | Shoulder-Hip-Ankle angle deviation $> 15.0^\circ$ | Using spinal momentum bypasses the bicep and strains lumbar spine. |
-| **Bicep Curl** | Elbow Drift | Elbow Joint X-offset $> 15\%$ shoulder width | Shifting elbows forward recruits anterior deltoid instead of biceps. |
-| **Jumping Jack**| Arm Abduction ROM | Arm-to-Torso Angle $\ge 140.0^\circ$ | Full shoulder abduction recruits lateral deltoids and trapezius. |
-| **Jumping Jack**| Stance Width | Ankle Separation $\ge 1.35 \times$ Hip Width | Ensures adequate lower-body plyometric stimulus. |
-| **High Knees** | Thigh Elevation Height | Knee Y-coordinate $\le$ Hip Y-coordinate | Requires true hip flexion parallel to ground. |
-| **High Knees** | Forward Torso Lean | Torso inclination $> 20.0^\circ$ from vertical | Backward or forward leaning strains iliopsoas and lumbar spine. |
+1. **Squats**:  
+   * *Rule*: Thighs must reach parallel to floor (Knee angle $\le 115^\circ$). Knees must not cave in ($\text{FPPA} \ge 165^\circ$).
+2. **Push-Ups**:  
+   * *Rule*: Chest must drop until elbows bend to $95^\circ$. Hips must not sag (body straight line $> 160^\circ$). Elbows must not flare out like chicken wings (angle $< 75^\circ$).
+3. **Planks**:  
+   * *Rule*: Body must form a straight surfboard line from shoulders to hips to ankles ($162^\circ\text{ to }198^\circ$). No sagging hips or mountain piking!
+4. **Lunges**:  
+   * *Rule*: Front knee must bend to $90^\circ$ but not shoot far past the toes ($> 50^\circ$). Torso must stay upright ($> 130^\circ$).
+5. **Bicep Curls**:  
+   * *Rule*: Must curl all the way up (elbow $\le 50^\circ$) and lower all the way down (elbow $\ge 155^\circ$). No swinging your lower back ($< 15^\circ$ swing). Elbows must stay pinned to your ribs.
+6. **Jumping Jacks**:  
+   * *Rule*: Hands must reach above shoulder height (abduction $\ge 140^\circ$). Feet must jump out wider than hip width ($1.35 \times$). Torso must not lean sideways ($< 12^\circ$).
+7. **High Knees**:  
+   * *Rule*: Raised knee must reach at least hip height (thigh parallel to ground). Torso must stay tall and not lean forward ($< 15^\circ$).
 
-### 6.3 Codebase References
-* Form Kinematics: `biomechai_model/backend/kinematics.py` (Functions `evaluate_pushup_form`, `evaluate_plank_form`, `evaluate_bicep_curl_form`, `evaluate_jumping_jack_form`, `evaluate_high_knees_form`)
-* Local Form Service: `biomechai_flutter_latest/lib/services/form_validation_service.dart`
-* Live Ring Widget: `biomechai_flutter_latest/lib/widgets/form_score_ring.dart`
+### Where It Lives in the Code:
+* Exercise Form Evaluators: [`backend/kinematics.py`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/backend/kinematics.py) (Functions `evaluate_pushup_form`, `evaluate_plank_form`, `evaluate_bicep_curl_form`, `evaluate_jumping_jack_form`, `evaluate_high_knees_form`)
+* Phone Form Service: [`biomechai_flutter_latest/lib/services/form_validation_service.dart`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_flutter_latest/lib/services/form_validation_service.dart)
 
-### 6.4 The "WHY" Section (Architectural & Scientific Rationale)
-
-#### Why Deterministic 3D Vector Kinematics instead of Black-Box Neural Networks for Form?
-* **Why We Did It**:
-  1. **Explainability**: If an AI tells an athlete *"Your score is 70%"*, the athlete has no idea what to fix. With vector kinematics, the app provides exact feedback: *"Push your elbows in, flared at 82°"* or *"Knee caved inward by 12°"*.
-  2. **Zero Hallucinations**: Neural networks are susceptible to out-of-distribution hallucinations. A mathematical dot product between three vectors $(\vec{v}_1 \cdot \vec{v}_2)$ has zero chance of hallucinating an angle.
-  3. **Compute Efficiency**: Calculating 7 joint angles with NumPy vector dot products takes **0.08 milliseconds** on CPU, leaving 99% of processing power free for camera streaming and UI rendering.
-* **Why We Didn't Do Alternative (End-to-End Video-to-Form CNNs)**: End-to-end form scoring models require tens of thousands of labeled "good vs bad" form videos for every exercise. Such datasets do not exist in academic literature, and training them on small datasets causes models to penalize people simply for wearing different shoes or having different body proportions.
+### The "WHY" Section:
+* **Why did we use mathematical joint geometry (vector dot products) instead of a black-box neural network for form checking?**  
+  * *Reason 1: Total Honesty and Explainability*: If an AI neural network gives an athlete a "60% score", it cannot explain why. With our vector math, the app can say: *"Your elbows flared out to 84 degrees, tuck them in to 75 degrees."*
+  * *Reason 2: Zero Hallucinations*: Deep learning models can make random mistakes if lighting changes. A mathematical angle formula calculated from joints never hallucinates.
+  * *Reason 3: Blazing Speed*: Calculating 7 joint angles with math takes **0.08 milliseconds** on a basic CPU!
 
 ---
 
-# 7. Module 6: Body Measurement & Transformation Tracking
+# 8. Module 6: Body Measurement & Transformation Tracking
 
-### 7.1 Scope & What It Does
-Module 6 provides anthropometric health tracking. It records user height and weight, computes live Body Mass Index (BMI), calculates ideal body weight ranges using clinical pharmacology formulas, and tracks longitudinal progress over time.
+### What It Actually Means:
+A health dashboard where athletes log their height and weight, view their live BMI with a color gauge, see their medical ideal weight range, and track changes over time.
 
-### 7.2 End-to-End Execution Flow
-1. **User Profile Retrieval**: Height (cm) and Weight (kg) are loaded from Firestore.
-2. **Body Mass Index (BMI) Calculation**:
-   $$\text{BMI} = \frac{\text{Weight (kg)}}{\left(\frac{\text{Height (cm)}}{100}\right)^2}$$
-3. **Clinical BMI Classification**:
-   * $\text{BMI} < 18.5$: Underweight (Blue)
-   * $18.5 \le \text{BMI} < 25.0$: Normal / Healthy (Green)
-   * $25.0 \le \text{BMI} < 30.0$: Overweight (Yellow)
-   * $\text{BMI} \ge 30.0$: Obese (Red)
-4. **Devine Formula Ideal Body Weight (IBW)**:
-   For individuals over 5 feet (60 inches / 152.4 cm):
-   $$\text{Inches Over 5ft} = \left(\frac{\text{Height (cm)}}{2.54}\right) - 60$$
-   $$\text{Ideal Weight (kg)} = 50.0 + 2.3 \times \text{Inches Over 5ft}$$
-   $$\text{Target Range} = [\text{Ideal} - 5\text{ kg}, \; \text{Ideal} + 5\text{ kg}]$$
-5. **Persistence**: Saved to Firestore subcollection `/users/{uid}/body_measurements`.
+### How It Works:
+1. **BMI Formula**:
+   $$\text{BMI} = \frac{\text{Weight in kg}}{(\text{Height in meters})^2}$$
+   * Underweight: $\text{BMI} < 18.5$ (Blue)
+   * Normal: $18.5 \le \text{BMI} < 25.0$ (Green)
+   * Overweight: $25.0 \le \text{BMI} < 30.0$ (Yellow)
+   * Obese: $\text{BMI} \ge 30.0$ (Red)
+2. **Devine Formula (Ideal Weight Range)**:
+   For people over 5 feet tall:
+   $$\text{Ideal Weight (kg)} = 50.0 + 2.3 \times (\text{Inches over 5 feet})$$
+   Target Range = $\text{Ideal} \pm 5\text{ kg}$.
+3. **Saves to Cloud**: Every entry is logged with a date stamp inside the user's private Firestore collection (`/users/{uid}/body_measurements`).
 
-### 7.3 Codebase References
-* Screen UI: `biomechai_flutter_latest/lib/screens/body_measurement_screen.dart`
-* Weight Input Sheet: `biomechai_flutter_latest/lib/widgets/weight_input_sheet.dart`
-* Profile View: `biomechai_flutter_latest/lib/screens/profile_screen.dart`
+### Where It Lives in the Code:
+* Screen UI: [`biomechai_flutter_latest/lib/screens/body_measurement_screen.dart`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_flutter_latest/lib/screens/body_measurement_screen.dart)
+* Clinical Citation: [Devine BJ. Gentamicin therapy. Drug Intell Clin Pharm. 1974](https://pubmed.ncbi.nlm.nih.gov/4435882/)
 
-### 7.4 The "WHY" Section (Architectural & Scientific Rationale)
-
-#### Why the Devine Formula instead of BMI Alone?
-* **Why We Did It**: Standard BMI has a major clinical limitation: it does not account for muscle mass vs fat mass. A muscular bodybuilder can have a BMI of 28 (classified as "Overweight"). The **Devine Formula** (*Devine, 1974*) is the gold-standard clinical reference used in medical pharmacology and exercise science to estimate ideal physiological body weight based on skeletal height alone. Providing both BMI and the Devine target range gives athletes a realistic, clinically validated goal.
-* **Why We Didn't Do Alternative (Estimating Weight from 2D Camera Pixels)**: Estimating body weight directly from a smartphone 2D camera image is scientifically unreliable. Baggy clothing, camera distance, and perspective distortion introduce errors of $\pm 8\text{ to }15\text{ kg}$. Medical-grade applications must rely on calibrated scale inputs.
+### The "WHY" Section:
+* **Why did we include the Devine Formula instead of BMI alone?**  
+  * *Simple Meaning*: BMI has a big flaw—it cannot tell the difference between muscle and fat. An athletic bodybuilder can have a BMI of 27 and be labeled "Overweight"! The **Devine Formula** is the gold-standard medical formula used by doctors to calculate healthy weight based purely on skeletal height.
+* **Why didn't we estimate weight automatically from phone camera photos?**  
+  * *Simple Meaning*: Trying to guess a person's weight from a 2D smartphone photo is medically inaccurate. Loose clothing, baggy shirts, and camera distance cause errors of $\pm 10\text{ to }15\text{ kg}$. Real medical tracking must use calibrated scale inputs.
 
 ---
 
-# 8. Module 7: AI Clinical Injury Prevention & Dynamic Knee Valgus Engine
+# 9. Module 7: AI Clinical Injury Prevention & Knee Valgus (ACL Risk) Engine
 
-### 8.1 Scope & What It Does
-Module 7 is the safety centerpiece of BioMechAI. It detects high-risk biomechanical patterns associated with severe acute and chronic injuries (such as Anterior Cruciate Ligament (ACL) tears, lumbar disc herniation, and shoulder impingement) and alerts the athlete **before** tissue failure occurs.
+### What It Actually Means:
+An emergency safety guard that spots dangerous body alignment (like knees caving inward or lower back sagging) that could cause serious injuries like an ACL knee ligament tear or spinal disc bulge.
 
-### 8.2 Clinical Diagnostic Rules Across All 7 Exercises
-
+### How the Munro FPPA Knee Valgus Engine Works:
 ```
-                     CLINICAL KNEE VALGUS (ACL RISK ENGINE)
-             
-                 Safe Neutral Alignment                 Dynamic Knee Valgus
-                   (FPPA >= 165.0°)                      (FPPA < 165.0°)
-                          
-                         Hip                                   Hip
-                          │                                     │
-                          │                                     │
-                          │                                    ╱ 
-                        Knee                                 Knee (Caving In)
-                          │                                    ╲ 
-                          │                                     │
-                        Ankle                                 Ankle
+           SAFE SQUAT (FPPA >= 165°)              DANGEROUS VALGUS (FPPA < 165°)
+             [Knee tracks straight]                   [Knee caves inward - ACL Risk!]
+
+                     Hip                                       Hip
+                      │                                         │
+                      │                                         │
+                      │                                        ╱ 
+                    Knee                                     Knee (Caved In!)
+                      │                                        ╲ 
+                      │                                         │
+                    Ankle                                     Ankle
 ```
 
-1. **Squats & Lunges — ACL & Meniscus Tear Risk (Munro FPPA Engine)**:
-   * **Clinical Measure**: Frontal Plane Projection Angle (FPPA). Evaluates medial inward deviation of the knee joint center relative to the straight mechanical line connecting the Anterior Superior Iliac Spine (hip) and the ankle joint center.
-   * **Safe Tracking**: $\text{FPPA} \ge 165.0^\circ$ (Knees track straight over 2nd toe).
-   * **High Injury Risk**: $\text{FPPA} < 165.0^\circ$ evaluated strictly under eccentric/concentric load (Knee flexion $\le 130.0^\circ$). Triggers instant safety cue: *"Push your knees out!"*
-2. **Push-Ups & Planks — Lumbar Shear & Spondylolysis Risk**:
-   * Detects anterior pelvic tilt where the hip sags below the thoracic-ankle mechanical axis by more than $18^\circ$. Triggers: *"Engage your core, lift your hips!"*
-3. **Push-Ups & Bicep Curls — Subacromial Shoulder Impingement**:
-   * Detects elbow abduction $> 75^\circ$ during horizontal pressing, which compresses the supraspinatus tendon against the acromion process. Triggers: *"Tuck your elbows in!"*
-4. **Bicep Curls — Lumbar Shear Strain**:
-   * Detects using momentum to swing the torso backward ($> 15^\circ$) to heave weight upward. Triggers: *"Keep your back straight, don't swing!"*
-5. **High Knees — Iliopsoas & Lower Back Compensation**:
-   * Detects excessive trunk inclination ($> 20^\circ$) to fake knee elevation height.
+* **What is Munro FPPA?**: It measures the angle between the hip, the center of the knee, and the ankle.
+* **Safe**: Angle is between $170^\circ$ and $180^\circ$ (knee stays straight over foot).
+* **Injury Risk**: Angle drops **below $165^\circ$**. The voice coach immediately yells: *"Push your knees out!"*
 
-### 8.3 Codebase References
-* Clinical Kinematics: `biomechai_model/backend/kinematics.py` (Function `calculate_fppa_munro`, `calculate_dynamic_valgus_fppa`, and `evaluate_knee_valgus`)
-* Clinical Constants: `biomechai_model/backend/config.py` (`VALGUS_FPPA_THRESHOLD = 165.0`, `VALGUS_LOAD_THRESHOLD = 130.0`)
-* Clinical Test Suite: `biomechai_model/tests/test_all_exercise_injury_detection.py` (11/11 unit tests passed)
+### Where It Lives in the Code:
+* Clinical Valgus Math: [`backend/kinematics.py`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/backend/kinematics.py) (Function `calculate_dynamic_valgus_fppa`)
+* Clinical Research Citation: [Munro, Herrington, & Comfort, Clinical Biomechanics (2012)](https://pubmed.ncbi.nlm.nih.gov/22488285/)
+* 11/11 Passed Tests: [`tests/test_all_exercise_injury_detection.py`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/tests/test_all_exercise_injury_detection.py)
 
-### 8.4 The "WHY" Section (Architectural & Scientific Rationale)
-
-#### Why Munro FPPA ($< 165^\circ$) instead of Inter-Knee Pixel Distance?
-* **Why We Did It**: Many amateur coding projects measure the distance in pixels between the left knee and right knee. This is scientifically invalid: if an athlete takes a step back from the camera, the pixel distance shrinks, triggering a false valgus alert! The **Frontal Plane Projection Angle (FPPA)** (*Munro, Herrington, & Comfort, Clinical Biomechanics 2012*) is an **angular, scale-invariant measurement**. Whether the athlete is 1 meter or 4 meters from the camera, the angle remains mathematically identical. The $165^\circ$ threshold was clinically validated by Munro et al. on human athletes undergoing drop-jump and squat screening.
-* **Why Load-Gated Valgus Evaluation ($\text{Knee Flexion} \le 130^\circ$)?**:
-  When a person stands upright with their feet together, their knees naturally touch. If an algorithm evaluated valgus during standing, it would scream "Injury Alert!" when the user is simply resting. Valgus is biomechanically hazardous **only when the knee joint is loaded under flexion** (when quadriceps and ground reaction forces exert torque on the ACL). We evaluate FPPA only when flexion is under $130^\circ$.
+### The "WHY" Section:
+* **Why did we use the Munro FPPA angle ($< 165^\circ$) instead of measuring distance between knees in pixels?**  
+  * *Simple Meaning*: Measuring pixel distance between knees fails if you take a step back from the camera! If you step back, your knees look closer together on screen, triggering a false alarm. An **angle** is scale-invariant: whether you are 1 meter or 4 meters away from your phone, the angle is identical.
+* **Why do we only check valgus under load (when knee bends $< 130^\circ$)?**  
+  * *Simple Meaning*: When you stand normally with your feet together, your knees naturally touch. If we checked valgus while standing, the app would scream at you while you're just resting! Valgus is only dangerous **when the knee is loaded under heavy bending**.
 
 ---
 
-# 9. Module 8: AI Workout Companion with Real-Time Priority Voice Coaching
+# 10. Module 8: AI Workout Companion with Live Voice Coaching
 
-### 9.1 Scope & What It Does
-Module 8 acts as a live, hands-free personal trainer. It speaks directly to the athlete through the phone speaker or headphones during workouts, delivering immediate safety warnings, rep counts, and motivational form affirmations.
+### What It Actually Means:
+A live voice trainer that speaks directly through your phone speaker or headphones so you don't have to stare at your phone screen while working out.
 
-### 9.2 End-to-End Execution Flow
-1. **Cue Generation**: Modules 4, 5, and 7 generate text feedback strings (e.g., *"Push your knees out!"*, *"Rep 5 completed!"*, *"Great depth!"*).
-2. **Priority Classification**:
-   * **Priority 1 (Safety Alerts)**: Injury warnings (valgus, hip sag, framing loss).
-   * **Priority 2 (Milestones)**: Rep completion announcements.
-   * **Priority 3 (Affirmations / Recovery)**: Good form praise, encouraging remarks.
-3. **Queue & Hardware Watchdog**:
-   * If a **Priority 1** safety warning arrives while a Priority 3 praise is playing, the coaching engine **immediately preempts and cuts off the audio** to deliver the safety alert.
-   * A **3.0-second hardware watchdog timer** monitors the TTS engine. If Android audio services hang, the watchdog forcibly clears the queue, preventing audio lockup.
-4. **Debounce Cooldown**:
-   * Safety warnings enforce a **3,500 ms cooldown** to prevent the voice from repeating the same sentence 10 times in 2 seconds.
-   * General feedback enforces a **1,200 ms cooldown**.
+### How It Works with Priority Preemption:
+* **Priority 1 (Emergency Safety)**: *"Push your knees out!"*, *"Lift your hips!"*  
+  *(Instantly cuts off any other voice message to save you from injury!)*
+* **Priority 2 (Rep Milestones)**: *"Rep 5 completed!"*
+* **Priority 3 (Praise)**: *"Great depth, keep going!"*
+* **Safety Watchdog**: A 3.0-second timer ensures the phone audio never hangs or freezes.
+* **Cooldown**: Prevents the voice from repeating the same sentence 10 times in 2 seconds.
 
-### 9.3 Codebase References
-* Client Coaching Service: `biomechai_flutter_latest/lib/services/voice_coaching_service.dart`
-* Backend Coaching Arbitrator: `biomechai_model/backend/kinematics.py` (Class `VoiceCoachingEngine`)
+### Where It Lives in the Code:
+* Client Voice Service: [`biomechai_flutter_latest/lib/services/voice_coaching_service.dart`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_flutter_latest/lib/services/voice_coaching_service.dart)
+* Backend Coaching Engine: [`backend/kinematics.py`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/backend/kinematics.py) (Class `VoiceCoachingEngine`)
 
-### 9.4 The "WHY" Section (Architectural & Scientific Rationale)
-
-#### Why Native On-Device Text-to-Speech (`flutter_tts`) instead of Cloud Speech (Google Cloud TTS / ElevenLabs)?
-* **Why We Did It**:
-  1. **Zero Latency**: Cloud TTS requires sending text over HTTP, synthesizing audio on a remote server, downloading an MP3, and playing it. This takes 600–1,500 ms. By the time a cloud voice says *"Your knee is caving in"*, the squat repetition is already finished! Native on-device TTS speaks in **< 10 milliseconds**.
-  2. **Offline Reliability**: Gyms and basements often have poor cell reception. On-device TTS functions with zero internet access.
-  3. **Zero API Costs**: Cloud TTS services charge per character. An app generating voice cues every 3 seconds for thousands of users would cost hundreds of dollars monthly.
-* **Why Priority Preemption is Mandatory**: If an app is playing a 4-second motivational phrase (*"Looking good, keep up the strong work!"*) and the user's knee suddenly buckles into acute valgus, a standard non-prioritized audio queue will wait 4 seconds before warning the user. With priority preemption, the motivational phrase is terminated immediately to shout the safety cue.
+### The "WHY" Section:
+* **Why did we use on-device Text-to-Speech (`flutter_tts`) instead of cloud voices (Google Cloud TTS / ElevenLabs)?**  
+  * *Reason 1: Zero Lag*: Cloud voices take 1 to 2 seconds to download over the internet. By the time a cloud voice says *"Knee caving in"*, you have already finished the squat! On-device speech speaks in **less than 10 milliseconds**.
+  * *Reason 2: Offline Gym Use*: Gym basements have terrible internet reception. On-device TTS works with zero internet.
+  * *Reason 3: $0 Cost*: Cloud voice APIs charge money for every sentence. On-device TTS is 100% free forever.
 
 ---
 
-# 10. Module 9: Trainer Dashboard, Client Monitoring & Timestamped Feedback
+# 11. Module 9: Trainer Dashboard & Timestamped Feedback
 
-### 10.1 Scope & What It Does
-Module 9 bridges the gap between athletes and professional coaches. It provides certified fitness trainers with a portal to inspect client workout logs, monitor form score trends across weeks, and insert timestamped coaching comments linked to specific workout sessions.
+### What It Actually Means:
+A coach's portal where personal trainers can view their athletes' workouts, see their form scores, and leave advice linked to the exact second in the workout video.
 
-### 10.2 End-to-End Execution Flow
-1. **Trainer Authentication**: When a user logs in with `role == 'trainer'`, the app activates Module 9.
-2. **Client Roster Query**: The dashboard fetches all registered clients linked to the trainer's organization:
-   `FirebaseFirestore.instance.collection('users').where('role', isEqualTo: 'athlete').get()`
-3. **Workout Telemetry Inspection**:
-   Selecting an athlete loads their `workout_sessions` subcollection, displaying:
-   * Total Repetitions Completed
-   * Average Biomechanical Form Score (0–100%)
-   * Detected Injury Warning Flags (e.g. "Knee Valgus Flagged on Rep 4")
-   * Date, Duration, and Velocity Metrics
-4. **Timestamped Feedback Insertion**:
-   The coach types specific advice linked to a session ID and video second mark:
-   ```dart
-   TrainerFeedback(
-     trainerId: trainer.uid,
-     clientId: athlete.uid,
-     sessionId: session.id,
-     videoTimestamp: 14, // Second 14
-     feedbackText: "Watch your knee alignment on the 4th rep descent.",
-     createdAt: DateTime.now(),
-   );
-   ```
-   Stored in Firestore collection `/trainer_feedback/{feedbackId}`.
+### How It Works:
+1. **Trainer signs in**: Opens the client list.
+2. **Selects an athlete**: Views their completed workout sessions, rep counts, and form scores.
+3. **Leaves Timestamped Feedback**: The coach types advice linked to an exact second mark:
+   * Example: *"At second 14 (Rep 4), your chest collapsed. Keep your eyes up!"*
+4. **Athlete gets notification**: The advice appears directly on the athlete's workout summary.
 
-### 10.3 Codebase References
-* Trainer Dashboard Screen: `biomechai_flutter_latest/lib/screens/trainer_dashboard_screen.dart`
-* Trainer Client Model: `biomechai_flutter_latest/lib/models/trainer_client.dart`
-* Trainer Feedback Model: `biomechai_flutter_latest/lib/models/trainer_feedback.dart`
-* History Screen: `biomechai_flutter_latest/lib/screens/history_screen.dart`
-* Session Detail Screen: `biomechai_flutter_latest/lib/screens/session_detail_screen.dart`
+### Where It Lives in the Code:
+* Trainer Dashboard Screen: [`biomechai_flutter_latest/lib/screens/trainer_dashboard_screen.dart`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_flutter_latest/lib/screens/trainer_dashboard_screen.dart)
+* Trainer Feedback Model: [`biomechai_flutter_latest/lib/models/trainer_feedback.dart`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_flutter_latest/lib/models/trainer_feedback.dart)
 
-### 10.4 The "WHY" Section (Architectural & Scientific Rationale)
-
-#### Why Timestamped Feedback instead of Generic Chat Messages?
-* **Why We Did It**: In athletic strength training, telling a client *"Your form was bad yesterday"* is useless. The client cannot know what they did wrong. By linking the trainer's comment to `sessionId` and `videoTimestamp`, the athlete can see the exact frame where their hips sagged or their knees caved inward.
-* **Why Dual-Screen Architecture (Mobile View + Web Dashboard Architecture)?**:
-  Athletes use smartphones mounted on tripods to record workouts. Personal trainers, however, sit at desks or carry tablets, reviewing 20 to 50 clients per day. A desktop-optimized web/tablet dashboard allows trainers to view multi-client charts, side-by-side video comparisons, and weekly compliance reports far more efficiently than on a small phone screen.
+### The "WHY" Section:
+* **Why use Timestamped Feedback instead of a standard chat message?**  
+  * *Simple Meaning*: If a coach sends a message saying *"Your form was bad yesterday"*, the athlete doesn't know what rep was wrong. By linking the comment to `videoTimestamp: 14`, the athlete can jump straight to second 14 to see their exact mistake.
 
 ---
 
-# 11. Master Hyperparameter & Training Configuration Bible
+# 12. Master Hyperparameter Bible: Exactly How the AI Was Trained
 
-Every single hyperparameter used to fine-tune our champion model (**PoseC3D v5 Limb**) on Kaggle GPU is documented below from the verified config file [`models/posec3d_v5_limb/posec3d_biomechai_v5_limb.py`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/models/posec3d_v5_limb/posec3d_biomechai_v5_limb.py):
+Every single setting used to train our champion **PoseC3D v5 Limb model** on Kaggle GPU is documented below:
 
-| Hyperparameter | Exact Value | First-Principles Scientific Rationale |
+| Hyperparameter | Exact Value | What It Actually Means in Plain English |
 | :--- | :--- | :--- |
-| **Model Architecture** | `ResNet3dSlowOnly` (Depth=50) | 3D-CNN that inflates 2D ResNet convolutions into time without temporal downsampling, preserving motion rhythm. |
-| **Pretrained Weights** | `gym-limb_20220815-2e6e3c5c.pth` | Pretrained on the **FineGYM athletic dataset** (OpenMMLab). Contains rich gymnastic limb-motion priors. |
-| **Optimizer** | **SGD with Momentum** | Momentum SGD discovers broader, flatter minima on 3D convolution surfaces than Adam, enhancing real-world generalization. |
-| **Base Learning Rate ($\eta$)** | **`0.01`** | Linear scaling rule ($\eta = 0.1 \times \text{batch}/128 = 0.1 \times 16/128 \approx 0.0125 \approx 0.01$). |
-| **Momentum Parameter** | **`0.9`** | Accumulates gradient velocity across sparse batch updates, dampening oscillations in steep loss ravines. |
-| **Weight Decay ($L_2$)** | **`0.0005`** ($5 \times 10^{-4}$) | Constrains weight norms, penalizing overly complex convolutional filters on small heatmap inputs. |
-| **Gradient Clipping** | `max_norm = 40.0`, `norm_type = 2` | Critical safeguard preventing exploding gradients during early fine-tuning epochs when the 7-class head is adapting. |
-| **Batch Size** | **`16`** | Maximizes GPU tensor core occupancy on Kaggle's 16 GB Nvidia Tesla T4 GPU without triggering Out-Of-Memory (OOM). |
-| **Epoch Budget** | **`18 Epochs`** | Peak validation accuracy achieved at **Epoch 10** (`best_acc_top1_epoch_10.pth`). |
-| **Dropout Ratio** | **`0.60`** | Systematically tuned: 0.50 overfitted on limbs, 0.70 starved features; 0.60 provided the optimal balance. |
-| **Temporal Sampling** | `UniformSampleFrames(clip_len=48)` | Sub-samples exactly 48 equidistant frames across variable-length exercise clips. |
-| **Heatmap Modality** | `with_kp=False, with_limb=True` | Generates continuous connected limb segments rather than isolated point dots. |
-| **Gaussian Sigma ($\sigma$)** | **`0.6`** | Controls the radial blur width of the limb tubes on the $56 \times 56$ heatmap grid. |
-| **Spatial Resolution** | **`56 × 56`** | Optimal sweet spot between anatomical spatial detail and 3D convolution compute latency. |
-| **Augmentation: In-Plane Tilt** | `RandomRotateKeypoints(max_angle=12.0)` | Randomly tilts skeletons $\pm 12^\circ$ to simulate handheld phone wobble and imperfect mounting angles. |
-| **Augmentation: Scale & Crop** | `RandomResizedCrop(area_range=(0.56, 1.0))` | Simulates variable user-to-phone distances (athletes standing close vs far from the camera). |
-| **Augmentation: Bilateral Flip** | `Flip(flip_ratio=0.5)` | Swaps left and right body keypoints, doubling the effective training diversity. |
+| **Model Architecture** | `ResNet3dSlowOnly` (Depth=50) | A 50-layer deep 3D neural network that watches skeleton motion across time. |
+| **Pretrained Weights** | `gym-limb_20220815-2e6e3c5c.pth` | Downloaded weights pretrained on the **FineGYM Olympic gymnastics dataset**. |
+| **Optimizer** | **SGD with Momentum (0.9)** | The mathematical rule used to adjust weights. Momentum prevents the AI from getting stuck in ruts. |
+| **Learning Rate ($\eta$)** | **`0.01`** | The step size for learning. Small enough so it doesn't erase the FineGYM knowledge. |
+| **Weight Decay ($L_2$)** | **`0.0005`** | A small penalty that stops the AI from creating overly complicated math formulas. |
+| **Batch Size** | **`16`** | The GPU looked at 16 video clips at the same time. |
+| **Epochs** | **`18 Epochs`** | The AI studied our full dataset 18 times. It reached peak accuracy at **Epoch 10**. |
+| **Dropout** | **`0.60`** | Randomly turns off 60% of neurons during training so the AI doesn't memorize the videos. |
+| **Temporal Sampling** | `UniformSampleFrames(clip_len=48)` | Takes exactly 48 evenly spaced frames from each 3-second exercise clip. |
+| **Heatmap Modality** | `with_kp=False, with_limb=True` | Draws connected **solid bone tubes** instead of isolated dots. |
+| **Resolution** | **`56 × 56`** | The spatial grid size of the skeleton heatmap. |
+| **Tilt Augmentation** | `RandomRotateKeypoints(max_angle=12.0)` | Randomly tilts skeletons $\pm 12^\circ$ so the model learns to handle handheld phone wobble! |
 
 ---
 
-# 12. Complete Research Paper Bibliography & External Sources
+# 13. Master Research Bibliography: Exact Clickable Paper & Weight Links
 
-Use these exact citations and links for your FYP report and panel defense:
+Click any link below to view the official research papers and download the exact pretrained model files:
 
-1. **PoseC3D Architecture**:  
-   Duan, H., Zhao, Y., Chen, K., Lin, D., & Dai, B. (2022). *Revisiting Skeleton-based Action Recognition with 3D Convolutional Networks*. In **Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)** (pp. 2969–2978).  
-   *Paper Link*: [CVPR 2022 Open Access PDF](https://openaccess.thecvf.com/content/CVPR2022/papers/Duan_Revisiting_Skeleton-Based_Action_Recognition_With_3D_Convolutional_Networks_CVPR_2022_paper.pdf)  
-   *MMAction2 Codebase*: [https://github.com/open-mmlab/mmaction2](https://github.com/open-mmlab/mmaction2)
+1. **PoseC3D Architecture Paper (CVPR 2022)**:  
+   *Title*: *Revisiting Skeleton-based Action Recognition with 3D Convolutional Networks* (Duan et al., CVPR 2022)  
+   👉 [Read Official CVPR 2022 Paper PDF](https://openaccess.thecvf.com/content/CVPR2022/papers/Duan_Revisiting_Skeleton-Based_Action_Recognition_With_3D_Convolutional_Networks_CVPR_2022_paper.pdf)  
+   👉 [OpenMMLab MMAction2 GitHub Codebase](https://github.com/open-mmlab/mmaction2)
 
-2. **FineGYM Dataset (Our Pretrained Weights Base)**:  
-   Shao, D., Zhao, Y., Dai, B., & Lin, D. (2020). *FineGym: A Hierarchical Video Dataset for Fine-Grained Action Understanding*. In **Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)** (pp. 2988–2997).  
-   *Paper Link*: [CVPR 2020 Open Access PDF](https://openaccess.thecvf.com/content_CVPR_2020/papers/Shao_FineGym_A_Hierarchical_Video_Dataset_for_Fine-Grained_Action_Understanding_CVPR_2020_paper.pdf)  
-   *Project Portal*: [https://sdolivia.github.io/FineGym/](https://sdolivia.github.io/FineGym/)  
-   *Official Checkpoint Download*: [`slowonly_r50_8xb16-u48-240e_gym-limb_20220815-2e6e3c5c.pth`](https://download.openmmlab.com/mmaction/v1.0/skeleton/posec3d/slowonly_r50_8xb16-u48-240e_gym-limb/slowonly_r50_8xb16-u48-240e_gym-limb_20220815-2e6e3c5c.pth)
+2. **FineGYM Dataset Paper (CVPR 2020)**:  
+   *Title*: *FineGym: A Hierarchical Video Dataset for Fine-Grained Action Understanding* (Shao et al., CVPR 2020)  
+   👉 [Read Official CVPR 2020 Paper PDF](https://openaccess.thecvf.com/content_CVPR_2020/papers/Shao_FineGym_A_Hierarchical_Video_Dataset_for_Fine-Grained_Action_Understanding_CVPR_2020_paper.pdf)  
+   👉 [FineGYM Official Project Website](https://sdolivia.github.io/FineGym/)  
+   👉 [FineGYM GitHub Repository](https://github.com/SDOh/FineGym)
 
-3. **Clinical Knee Valgus & FPPA Threshold ($< 165^\circ$)**:  
-   Munro, A., Herrington, L., & Comfort, P. (2012). *Comparison of 2D and 3D techniques for assessing knee joint center displacement during dynamic tasks*. **Clinical Biomechanics**, 27(9), 920–925.  
-   *PubMed Citation*: [https://pubmed.ncbi.nlm.nih.gov/22488285/](https://pubmed.ncbi.nlm.nih.gov/22488285/)
+3. **Exact Pretrained Checkpoint Files from OpenMMLab**:  
+   👉 [Download FineGYM Limb Checkpoint (`gym-limb_20220815-2e6e3c5c.pth`)](https://download.openmmlab.com/mmaction/v1.0/skeleton/posec3d/slowonly_r50_8xb16-u48-240e_gym-limb/slowonly_r50_8xb16-u48-240e_gym-limb_20220815-2e6e3c5c.pth) *(Used in our Champion Model)*  
+   👉 [Download FineGYM Keypoint Checkpoint (`gym-keypoint_20220815-da338c58.pth`)](https://download.openmmlab.com/mmaction/v1.0/skeleton/posec3d/slowonly_r50_8xb16-u48-240e_gym-keypoint/slowonly_r50_8xb16-u48-240e_gym-keypoint_20220815-da338c58.pth)  
+   👉 [Download NTU RGB+D 60 Checkpoint (`ntu60-xsub-keypoint_20220815-38db104b.pth`)](https://download.openmmlab.com/mmaction/v1.0/skeleton/posec3d/slowonly_r50_8xb16-u48-240e_ntu60-xsub-keypoint/slowonly_r50_8xb16-u48-240e_ntu60-xsub-keypoint_20220815-38db104b.pth)
 
-4. **MediaPipe BlazePose 3D Tracking**:  
-   Bazrev, G., Grishchenko, I., Raveendran, A., Zhu, T., Zhang, F., & Grundmann, M. (2020). *BlazePose: On-device Real-time Body Pose Tracking*. In **CVPR Workshop on Computer Vision for Sports**.  
-   *Paper Link*: [arXiv:2006.10204](https://arxiv.org/abs/2006.10204)
+4. **Clinical Knee Valgus & FPPA Angle Paper (Munro et al., 2012)**:  
+   *Title*: *Comparison of 2D and 3D techniques for assessing knee joint center displacement during dynamic tasks*  
+   👉 [Read PubMed Research Article](https://pubmed.ncbi.nlm.nih.gov/22488285/)
 
-5. **Spatiotemporal Graph Convolutional Networks (ST-GCN Baseline)**:  
-   Yan, S., Xiong, Y., & Lin, D. (2018). *Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition*. In **Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)** (Vol. 32, No. 1).  
-   *Paper Link*: [arXiv:1801.07455](https://arxiv.org/abs/1801.07455)
+5. **Google BlazePose Pose Detection Paper (CVPR 2020)**:  
+   *Title*: *BlazePose: On-device Real-time Body Pose Tracking* (Bazrev et al., CVPR 2020)  
+   👉 [Read arXiv Research Paper](https://arxiv.org/abs/2006.10204)
 
-6. **Ideal Body Weight (Devine Formula)**:  
-   Devine, B. J. (1974). *Gentamicin therapy*. **Drug Intelligence & Clinical Pharmacy**, 8(11), 650–655. (The gold-standard medical formula for height-based ideal weight calculation).
+6. **Devine Formula for Ideal Body Weight (Devine 1974)**:  
+   *Title*: *Gentamicin therapy* (Devine, Drug Intell Clin Pharm, 1974)  
+   👉 [Read PubMed Research Record](https://pubmed.ncbi.nlm.nih.gov/4435882/)
