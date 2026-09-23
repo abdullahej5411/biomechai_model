@@ -323,24 +323,94 @@ A health screen where athletes log their height and weight, view their live BMI 
 
 ---
 
-# 10. Module 7: AI Clinical Injury Prevention & Knee Valgus (ACL Risk) Engine
+# 10. Module 7: AI Clinical Injury Prevention (Full Body: Shoulders, Spine, Lower Back & Knees)
 
 ### What It Actually Means:
-An emergency safety guard that detects dangerous joint angles (like knees caving inward or lower back sagging) that could cause serious injuries like ACL ligament tears or spinal disc damage.
+An automated clinical safety guard that monitors your **entire body**—not just knees, but shoulders, spine, lower back, and elbows—to detect dangerous joint stress before it causes acute tears or chronic orthopedic injuries.
 
-### How the Munro FPPA Knee Valgus Engine Works:
-* **What is Munro FPPA?**: The Frontal Plane Projection Angle formed by the hip, center of the knee, and ankle.
-* **Safe Tracking**: $\text{FPPA} \ge 165.0^\circ$ (Knees stay straight over the feet).
-* **Injury Alert**: $\text{FPPA} < 165.0^\circ$ under active bending load ($\le 130^\circ$). Triggers instant audio: *"Push your knees out!"*
+---
 
-### Where It Lives in the Code:
-* Valgus Math: [`backend/kinematics.py`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/backend/kinematics.py) (Function `calculate_dynamic_valgus_fppa`)
-* Clinical Research Citation: [Munro et al., Clinical Biomechanics (2012)](https://pubmed.ncbi.nlm.nih.gov/22488285/)
-* 11/11 Unit Tests: [`tests/test_all_exercise_injury_detection.py`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/tests/test_all_exercise_injury_detection.py)
+### The Complete Body-Part Injury Prevention Breakdown Across All 7 Exercises
+
+Here is the honest truth: BioMechAI protects **4 distinct anatomical regions** of the body across all 7 exercises:
+
+```
+                      FULL-BODY AI INJURY PREVENTION ENGINE
+ 
+       [UPPER BODY: SHOULDERS & ELBOWS]             [CORE & SPINE: LUMBAR VERTEBRAE]
+    Push-Up Elbow Flare (> 65°):                 Push-Up / Plank Hip Sag (> 10% below line):
+      -> Subacromial Shoulder Impingement          -> L4-L5 Lumbar Spine Compression & Shear
+      -> Rotator Cuff Supraspinatus Tear           -> Facet Joint Hyperextension
+    Bicep Curl Elbow Drift (> 30°):              Bicep Curl Torso Swing (> 20°):
+      -> Anterior Deltoid & Bicipital Overload     -> Lumbar Hyperextension Strain
+                                                 High Knees Forward Lean (> 15°):
+                                                   -> Iliopsoas & Lower Back Compensation
+ 
+                         [LOWER BODY: KNEES & LIGAMENTS]
+                      Squat & Lunge Knee Valgus (Munro FPPA < 165°):
+                        -> Acute Anterior Cruciate Ligament (ACL) Tear
+                        -> Medial Collateral Ligament (MCL) Sprain
+                        -> Patellofemoral Meniscus Shearing
+```
+
+---
+
+### 1. Upper Body Injury Prevention: Shoulders & Rotator Cuff
+* **Injury Guard 1: Subacromial Shoulder Impingement (Push-Ups)**:
+  * *Clinical Danger*: When an athlete does push-ups with elbows flared wide out like chicken wings ($> 65^\circ$ from torso), the greater tuberosity of the humerus pinches the **supraspinatus tendon** against the acromion bone, leading to chronic rotator cuff inflammation or full tears.
+  * *Mathematical Rule*: Shoulder-to-elbow vector angle relative to the torso axis must stay $\le 65.0^\circ$.
+  * *Audio Warning Triggered*: `"WARN_ELBOW_FLARE"` $\to$ **"Tuck your elbows closer to your body!"**
+  * *Code File*: [`backend/kinematics.py:422-436`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/backend/kinematics.py#L422-L436)
+* **Injury Guard 2: Anterior Deltoid & Bicipital Tendon Overload (Bicep Curls)**:
+  * *Clinical Danger*: Allowing the elbows to drift forward ($> 30^\circ$ from vertical) during curls shifts the mechanical load off the biceps brachii and onto the fragile long head of the biceps tendon and anterior deltoid.
+  * *Mathematical Rule*: Angle of upper arm from vertical must stay $\le 30.0^\circ$.
+  * *Audio Warning Triggered*: `"WARN_ELBOW_DRIFT"` $\to$ **"Pin your elbows to your sides!"**
+  * *Code File*: [`backend/kinematics.py:525-540`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/backend/kinematics.py#L525-L540)
+
+---
+
+### 2. Spine & Lower Back Injury Prevention: Lumbar Disc Herniation & Shear
+* **Injury Guard 3: Lumbar Disc Compression & Spondylolysis (Push-Ups & Planks)**:
+  * *Clinical Danger*: When core abdominals fatigue, the hips sag toward the floor (anterior pelvic tilt). This places extreme **compressive and shearing force on the L4–L5 and L5–S1 lumbar vertebrae**, leading to lower back disc bulges and facet joint pinching.
+  * *Mathematical Rule*: Hip joint center must not sag $> 10\%$ of total body length below the straight shoulder-to-ankle axis.
+  * *Audio Warning Triggered*: `"WARN_HIP_SAG"` $\to$ **"Tighten your core, lift your hips!"**
+  * *Code File*: [`backend/kinematics.py:394-413`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/backend/kinematics.py#L394-L413) (Push-Ups) and [`backend/kinematics.py:465-485`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/backend/kinematics.py#L465-L485) (Planks)
+* **Injury Guard 4: Lumbar Hyperextension Shear (Bicep Curls)**:
+  * *Clinical Danger*: Heaving heavy weights by swinging the upper body backward ($> 20^\circ$) uses spinal momentum rather than bicep strength, exerting violent lumbar shear forces.
+  * *Mathematical Rule*: Torso line from shoulders to hips must not deviate $> 20.0^\circ$ from vertical.
+  * *Audio Warning Triggered*: `"WARN_TORSO_SWING"` $\to$ **"Keep your back straight, no swinging!"**
+  * *Code File*: [`backend/kinematics.py:541-555`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/backend/kinematics.py#L541-L555)
+* **Injury Guard 5: Iliopsoas & Lumbar Overload (High Knees)**:
+  * *Clinical Danger*: Leaning the torso forward ($> 15^\circ$) to fake knee height overstrains the iliopsoas hip flexors and causes lumbar rounding.
+  * *Mathematical Rule*: Torso vertical lean must stay $\le 15.0^\circ$.
+  * *Audio Warning Triggered*: `"WARN_FORWARD_LEAN"` $\to$ **"Stand tall, don't lean forward!"**
+  * *Code File*: [`backend/kinematics.py:657-670`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/backend/kinematics.py#L657-L670)
+
+---
+
+### 3. Lower Body Injury Prevention: Knee Ligaments (ACL & Meniscus)
+* **Injury Guard 6: Dynamic Knee Valgus & Acute ACL Tear (Squats & Lunges)**:
+  * *Clinical Danger*: When knees collapse inward toward each other under heavy flexion load, the knee joint undergoes combined knee abduction and internal tibial rotation. This exerts extreme mechanical strain on the **Anterior Cruciate Ligament (ACL)**, which can rupture completely in under 100 milliseconds!
+  * *Mathematical Rule*: Munro Frontal Plane Projection Angle (**FPPA**) must stay $\ge 165.0^\circ$ whenever knee flexion is under active load ($\le 130.0^\circ$).
+  * *Audio Warning Triggered*: `"WARN_KNEE_VALGUS"` $\to$ **"Push your knees out!"**
+  * *Code File*: [`backend/kinematics.py:315-365`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/backend/kinematics.py#L315-L365)
+  * *Clinical Citation*: [Munro, Herrington, & Comfort, Clinical Biomechanics (2012)](https://pubmed.ncbi.nlm.nih.gov/22488285/)
+
+---
+
+### 4. Why Did Earlier Documentation Focus So Heavily on the Knee?
+An honest question deserves an honest answer:
+1. **The Severity of the Injury**: An ACL tear from knee valgus is an **acute, catastrophic surgical injury** that requires surgery and 9–12 months of rehabilitation. Shoulder impingement and lower back fatigue are chronic over-use injuries.
+2. **The Clinical Citation**: In FYP-I (Semester 7), the evaluation panel asked: *"What clinical medical paper proves your injury threshold is not just a made-up number?"* We cited **Munro et al. (2012)**, who specifically published the $165^\circ$ FPPA cutoff for dynamic knee valgus. Because Munro et al. had a famous published paper, earlier project summaries over-emphasized the knee, making it look like upper-body checks didn't exist.
+3. **The Reality of the Code**: As shown above in [`backend/kinematics.py`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/backend/kinematics.py), **every single exercise has dedicated kinematic injury prevention rules for the shoulders, spine, lower back, and knees**.
+
+---
 
 ### The "WHY" Section:
-* **Why Munro FPPA angle ($< 165^\circ$) instead of measuring pixel distance between knees?**  
+* **Why did we use the Munro FPPA angle ($< 165^\circ$) for knees instead of pixel distance?**  
   * *Why We Did It*: Pixel distance shrinks when you take a step back from the phone camera, triggering false alarms! Angles are scale-invariant: whether you stand 1 meter or 4 meters away, the angle remains identical.
+* **Why did we evaluate elbow flare ($> 65^\circ$) relative to the torso axis rather than the floor?**  
+  * *Why We Did It*: In push-ups, the user's body is tilted. Measuring elbow angle relative to the floor would give wrong readings if the push-up is done on an incline. Measuring relative to the **torso axis** ensures the angle is anatomically accurate regardless of body tilt.
 
 ---
 
