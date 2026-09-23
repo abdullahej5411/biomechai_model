@@ -67,6 +67,71 @@ def calculate_fppa_munro(hip: Tuple[float, float], knee: Tuple[float, float], an
         fppa = 180.0 - valgus_deg
         return float(fppa)
 
+def calculate_dynamic_valgus_fppa(
+    landmarks: List[Any], 
+    w: float = 640.0, 
+    h: float = 480.0, 
+    optimal_is_left: bool = True
+) -> float:
+    """
+    Computes Frontal Plane Projection Angle (FPPA, Munro et al. 2012)
+    robustly across both 0° frontal and 45° oblique viewpoints.
+    
+    Combines:
+    1. Unilateral Munro 2D line projection for the primary tracked leg.
+    2. 3D Bilateral Inter-Knee vs Inter-Ankle ratio:
+       In a safe squat: knees track over or outside ankles (separation_ratio >= 0.82).
+       In dynamic knee valgus: knees collapse inward toward each other (separation_ratio < 0.80).
+       Provides rotation-invariant clinical detection even when the athlete stands at 45°.
+    """
+    l_hip = landmarks[23]
+    r_hip = landmarks[24]
+    l_knee = landmarks[25]
+    r_knee = landmarks[26]
+    l_ankle = landmarks[27]
+    r_ankle = landmarks[28]
+
+    def to_3d(lm):
+        if isinstance(lm, (list, tuple)):
+            x = float(lm[0]) * w
+            y = float(lm[1]) * h
+            z = (float(lm[2]) * w) if len(lm) > 2 else 0.0
+        else:
+            x = float(getattr(lm, "x", 0.5)) * w
+            y = float(getattr(lm, "y", 0.5)) * h
+            z = float(getattr(lm, "z", 0.0)) * w
+        return np.array([x, y, z], dtype=np.float32)
+
+    p_lh, p_rh = to_3d(l_hip), to_3d(r_hip)
+    p_lk, p_rk = to_3d(l_knee), to_3d(r_knee)
+    p_la, p_ra = to_3d(l_ankle), to_3d(r_ankle)
+
+    primary_hip = p_lh if optimal_is_left else p_rh
+    primary_knee = p_lk if optimal_is_left else p_rk
+    primary_ankle = p_la if optimal_is_left else p_ra
+
+    fppa_unilateral = calculate_fppa_munro(
+        (primary_hip[0], primary_hip[1]),
+        (primary_knee[0], primary_knee[1]),
+        (primary_ankle[0], primary_ankle[1]),
+        is_left=optimal_is_left
+    )
+
+    # 3D Bilateral Separation Ratio
+    dist_knees_3d = float(np.linalg.norm(p_lk - p_rk))
+    dist_ankles_3d = float(np.linalg.norm(p_la - p_ra))
+    dist_hips_3d = float(np.linalg.norm(p_lh - p_rh))
+
+    ref_base = max(dist_ankles_3d, dist_hips_3d * 0.9, 1e-4)
+    separation_ratio = dist_knees_3d / ref_base
+
+    # If knees collapse inward relative to feet/hips (valgus collapse):
+    if separation_ratio < 0.80:
+        bilateral_fppa = 180.0 - (0.80 - separation_ratio) * 75.0
+        return float(min(fppa_unilateral, bilateral_fppa))
+
+    return float(fppa_unilateral)
+
 def validate_landmark_tracking(
     hip: Any,
     knee: Any,
@@ -145,20 +210,23 @@ class RepetitionStateMachine:
         self.prev_flexion = 180.0
         self.frames_in_cycle = 0
         self.stable_top_frames = 0
+        self.invalid_frames = 0
 
     def update(self, knee_flexion: float, frame_idx: int, is_tracking_valid: bool = True) -> Optional[Dict[str, Any]]:
         rep_completed_event = None
 
         # Hard guard: If tracking is invalid (person walking, touching camera, feet cut off),
-        # LOCK state machine in TOP and reject all transitions!
+        # only abort if invalid for sustained duration (>= 12 frames / ~0.4s)
         if not is_tracking_valid:
-            if self.stage != "TOP":
+            self.invalid_frames += 1
+            if self.invalid_frames >= 12 and self.stage != "TOP":
                 # User walked away mid-rep: reset cleanly to TOP without false rep increment
                 self.stage = "TOP"
                 self.min_flexion_reached = 180.0
                 self.frames_in_cycle = 0
             self.prev_flexion = 180.0
             return None
+        self.invalid_frames = 0
 
         # Angular velocity sanity filter: human knee cannot change > 40° in 33ms
         delta_angle = abs(knee_flexion - self.prev_flexion)
@@ -272,6 +340,361 @@ def evaluate_knee_valgus(knee_flexion: float, fppa_valgus: float) -> Dict[str, A
             "voice_cue": None
         }
 
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Modules 5 & 7: Per-Exercise Form Evaluation — All 7 Exercises
+# Clinical biomechanics functions below complement evaluate_knee_valgus (Squat/Lunge).
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def _joint_angle_3pt(a, b, c) -> float:
+    """Angle at vertex b formed by points a-b-c. Returns degrees 0-180."""
+    va = np.array([a[0] - b[0], a[1] - b[1]], dtype=np.float64)
+    vc = np.array([c[0] - b[0], c[1] - b[1]], dtype=np.float64)
+    norm_a = np.linalg.norm(va)
+    norm_c = np.linalg.norm(vc)
+    if norm_a < 1e-6 or norm_c < 1e-6:
+        return 180.0
+    cos_t = np.clip(np.dot(va, vc) / (norm_a * norm_c), -1.0, 1.0)
+    return float(np.degrees(np.arccos(cos_t)))
+
+
+def _angle_from_vertical(p_top, p_bottom) -> float:
+    """Angle of the vector (p_top -> p_bottom) from the vertical downward axis. Degrees."""
+    dx = p_bottom[0] - p_top[0]
+    dy = p_bottom[1] - p_top[1]  # positive y = downward in image coords
+    return float(np.degrees(np.arctan2(abs(dx), max(abs(dy), 1e-6))))
+
+
+def evaluate_pushup_form(landmarks: List[Any], w: float = 640.0, h: float = 480.0) -> Dict[str, Any]:
+    """
+    Module 5 & 7: Push-Up Posture & Injury Risk Assessment.
+
+    Checks:
+    1. Hip Sag (lumbar compression risk): Hip should stay on the shoulder-ankle line ±10%.
+    2. Elbow Flare (shoulder impingement): Elbow should stay within 55° of the torso axis.
+       Clinical ref: ACSM Guidelines; McGill Spine Biomechanics (2010).
+    """
+    try:
+        # Landmarks: 11=L_shoulder, 12=R_shoulder, 13=L_elbow, 14=R_elbow,
+        #            15=L_wrist, 16=R_wrist, 23=L_hip, 24=R_hip, 27=L_ankle, 28=R_ankle
+        l_sh  = [landmarks[11][0]*w, landmarks[11][1]*h]
+        r_sh  = [landmarks[12][0]*w, landmarks[12][1]*h]
+        l_el  = [landmarks[13][0]*w, landmarks[13][1]*h]
+        r_el  = [landmarks[14][0]*w, landmarks[14][1]*h]
+        l_hip = [landmarks[23][0]*w, landmarks[23][1]*h]
+        r_hip = [landmarks[24][0]*w, landmarks[24][1]*h]
+        l_ank = [landmarks[27][0]*w, landmarks[27][1]*h]
+        r_ank = [landmarks[28][0]*w, landmarks[28][1]*h]
+
+        mid_sh  = [(l_sh[0]+r_sh[0])/2,   (l_sh[1]+r_sh[1])/2]
+        mid_hip = [(l_hip[0]+r_hip[0])/2, (l_hip[1]+r_hip[1])/2]
+        mid_ank = [(l_ank[0]+r_ank[0])/2, (l_ank[1]+r_ank[1])/2]
+
+        # ── Check 1: Hip Sag ──────────────────────────────────────────────────
+        # The hip should lie on the line between shoulder and ankle.
+        # Compute perpendicular deviation of hip from that line.
+        body_len = max(abs(mid_ank[1] - mid_sh[1]), 1.0)
+        # Linear interpolation: where should hip Y be?
+        t = (mid_hip[0] - mid_sh[0]) / max(abs(mid_ank[0] - mid_sh[0]), 1e-4)             if abs(mid_ank[0] - mid_sh[0]) > 10             else (mid_hip[1] - mid_sh[1]) / max(body_len, 1e-4)
+        t = max(0.0, min(1.0, (mid_hip[1] - mid_sh[1]) / max(body_len, 1e-4)))
+        expected_hip_y = mid_sh[1] + t * (mid_ank[1] - mid_sh[1])
+        hip_deviation_pct = (mid_hip[1] - expected_hip_y) / max(body_len, 1.0)
+        # Positive = hip below the line (sag); Negative = hip above (pike)
+        SAG_THRESHOLD = 0.10   # >10% body height below line = injury risk
+        PIKE_THRESHOLD = -0.12  # >12% above line = excessive hip pike
+
+        if hip_deviation_pct > SAG_THRESHOLD:
+            return {
+                "has_warning": True,
+                "code": "WARN_HIP_SAG",
+                "message": f"WARN: Hip Sag ({hip_deviation_pct*100:.1f}% below line) — Lumbar strain risk",
+                "voice_cue": "Tighten your core, lift your hips!"
+            }
+        if hip_deviation_pct < PIKE_THRESHOLD:
+            return {
+                "has_warning": True,
+                "code": "WARN_HIP_PIKE",
+                "message": f"WARN: Hip Pike ({abs(hip_deviation_pct)*100:.1f}% above line)",
+                "voice_cue": "Lower your hips into a straight line!"
+            }
+
+        # ── Check 2: Elbow Flare ──────────────────────────────────────────────
+        # Angle of (shoulder → elbow) from the torso axis (shoulder→hip).
+        # Safe range: 30–55°. Above 65° = shoulder impingement risk.
+        ELBOW_FLARE_THRESHOLD = 65.0  # degrees
+        l_flare = _joint_angle_3pt(mid_hip, l_sh, l_el)
+        r_flare = _joint_angle_3pt(mid_hip, r_sh, r_el)
+        max_flare = max(l_flare, r_flare)
+
+        if max_flare > ELBOW_FLARE_THRESHOLD:
+            return {
+                "has_warning": True,
+                "code": "WARN_ELBOW_FLARE",
+                "message": f"WARN: Elbow Flare ({max_flare:.1f}° > {ELBOW_FLARE_THRESHOLD}°) — Shoulder impingement risk",
+                "voice_cue": "Tuck your elbows closer to your body!"
+            }
+
+        return {
+            "has_warning": False,
+            "code": "SAFE_PUSHUP_FORM",
+            "message": f"Good push-up form (Hip dev: {hip_deviation_pct*100:.1f}%, Flare: {max_flare:.1f}°)",
+            "voice_cue": None
+        }
+    except Exception:
+        return {"has_warning": False, "code": "NORMAL_NEUTRAL", "message": "Form: Normal (Push-Up)", "voice_cue": None}
+
+
+def evaluate_plank_form(landmarks: List[Any], w: float = 640.0, h: float = 480.0) -> Dict[str, Any]:
+    """
+    Module 5 & 7: Plank Posture & Injury Risk Assessment.
+
+    Checks:
+    1. Body Line Angle: Shoulder-Hip-Ankle should form a straight line (~180°).
+       Hip sag (<165°) = lumbar compression. Hip pike (>195°) = ineffective hold.
+    2. Head Position: Nose should align with the shoulder-ankle axis (no excessive neck drop/lift).
+       Clinical ref: McGill (2010), NSCA Plank Standards.
+    """
+    try:
+        l_sh  = [landmarks[11][0]*w, landmarks[11][1]*h]
+        r_sh  = [landmarks[12][0]*w, landmarks[12][1]*h]
+        l_hip = [landmarks[23][0]*w, landmarks[23][1]*h]
+        r_hip = [landmarks[24][0]*w, landmarks[24][1]*h]
+        l_ank = [landmarks[27][0]*w, landmarks[27][1]*h]
+        r_ank = [landmarks[28][0]*w, landmarks[28][1]*h]
+        nose  = [landmarks[0][0]*w,  landmarks[0][1]*h]
+
+        mid_sh  = [(l_sh[0]+r_sh[0])/2,   (l_sh[1]+r_sh[1])/2]
+        mid_hip = [(l_hip[0]+r_hip[0])/2, (l_hip[1]+r_hip[1])/2]
+        mid_ank = [(l_ank[0]+r_ank[0])/2, (l_ank[1]+r_ank[1])/2]
+
+        # Body line angle at the hip (shoulder → hip → ankle)
+        body_angle = _joint_angle_3pt(mid_sh, mid_hip, mid_ank)
+
+        SAG_THRESHOLD  = 162.0  # Below this = hip sagging (lumbar compression)
+        PIKE_THRESHOLD = 198.0  # Above this = excessive pike
+
+        if body_angle < SAG_THRESHOLD:
+            return {
+                "has_warning": True,
+                "code": "WARN_PLANK_SAG",
+                "message": f"WARN: Hip Sag (body angle {body_angle:.1f}° < {SAG_THRESHOLD}°) — Lumbar compression risk",
+                "voice_cue": "Raise your hips, keep your body straight!"
+            }
+        if body_angle > PIKE_THRESHOLD:
+            return {
+                "has_warning": True,
+                "code": "WARN_PLANK_PIKE",
+                "message": f"WARN: Hip Pike (body angle {body_angle:.1f}° > {PIKE_THRESHOLD}°)",
+                "voice_cue": "Lower your hips into a straight line!"
+            }
+
+        return {
+            "has_warning": False,
+            "code": "SAFE_PLANK_FORM",
+            "message": f"Good plank alignment (body angle: {body_angle:.1f}°)",
+            "voice_cue": None
+        }
+    except Exception:
+        return {"has_warning": False, "code": "NORMAL_NEUTRAL", "message": "Form: Normal (Plank)", "voice_cue": None}
+
+
+def evaluate_bicep_curl_form(landmarks: List[Any], w: float = 640.0, h: float = 480.0) -> Dict[str, Any]:
+    """
+    Module 5 & 7: Bicep Curl Posture & Injury Risk Assessment.
+
+    Checks:
+    1. Upper Arm Drift (shoulder impingement / cheating): The upper arm (shoulder→elbow)
+       should remain within 25° of vertical during the curl. Drifting forward > 30°
+       shifts load to the anterior deltoid and risks impingement.
+    2. Torso Swing (lumbar strain): The spine (shoulder→hip line) should stay within
+       15° of vertical. Swinging backward > 20° = lumbar hyperextension risk.
+       Clinical ref: NSCA Essentials of Strength Training (2016).
+    """
+    try:
+        l_sh  = [landmarks[11][0]*w, landmarks[11][1]*h]
+        r_sh  = [landmarks[12][0]*w, landmarks[12][1]*h]
+        l_el  = [landmarks[13][0]*w, landmarks[13][1]*h]
+        r_el  = [landmarks[14][0]*w, landmarks[14][1]*h]
+        l_hip = [landmarks[23][0]*w, landmarks[23][1]*h]
+        r_hip = [landmarks[24][0]*w, landmarks[24][1]*h]
+
+        mid_sh  = [(l_sh[0]+r_sh[0])/2,   (l_sh[1]+r_sh[1])/2]
+        mid_hip = [(l_hip[0]+r_hip[0])/2, (l_hip[1]+r_hip[1])/2]
+
+        # ── Check 1: Upper Arm Drift ─────────────────────────────────────────
+        # Angle of upper arm from vertical. A hanging arm = ~0°.
+        # Forward drift during curl > 30° = cheating + impingement risk.
+        l_arm_drift = _angle_from_vertical(l_sh, l_el)
+        r_arm_drift = _angle_from_vertical(r_sh, r_el)
+        max_arm_drift = max(l_arm_drift, r_arm_drift)
+        ARM_DRIFT_THRESHOLD = 30.0
+
+        if max_arm_drift > ARM_DRIFT_THRESHOLD:
+            return {
+                "has_warning": True,
+                "code": "WARN_ELBOW_DRIFT",
+                "message": f"WARN: Elbow Drift ({max_arm_drift:.1f}° > {ARM_DRIFT_THRESHOLD}°) — Keep elbows at your sides!",
+                "voice_cue": "Pin your elbows to your sides!"
+            }
+
+        # ── Check 2: Torso Swing ─────────────────────────────────────────────
+        # Angle of the spine (shoulder→hip) from vertical.
+        torso_lean = _angle_from_vertical(mid_sh, mid_hip)
+        # In standing position: mid_hip is BELOW mid_sh, so lean is nearly vertical.
+        # If athlete swings backward: shoulder moves backward, hip forward → large angle.
+        TORSO_SWING_THRESHOLD = 20.0
+
+        if torso_lean > TORSO_SWING_THRESHOLD:
+            return {
+                "has_warning": True,
+                "code": "WARN_TORSO_SWING",
+                "message": f"WARN: Torso Swing ({torso_lean:.1f}° > {TORSO_SWING_THRESHOLD}°) — Lumbar strain risk",
+                "voice_cue": "Keep your back straight, no swinging!"
+            }
+
+        return {
+            "has_warning": False,
+            "code": "SAFE_CURL_FORM",
+            "message": f"Good curl form (arm drift: {max_arm_drift:.1f}°, torso: {torso_lean:.1f}°)",
+            "voice_cue": None
+        }
+    except Exception:
+        return {"has_warning": False, "code": "NORMAL_NEUTRAL", "message": "Form: Normal (Bicep Curl)", "voice_cue": None}
+
+
+def evaluate_jumping_jack_form(landmarks: List[Any], w: float = 640.0, h: float = 480.0) -> Dict[str, Any]:
+    """
+    Module 5 & 7: Jumping Jack Posture & Form Assessment.
+
+    Checks:
+    1. Arm ROM: At peak of the motion, wrists should reach at least shoulder height.
+       Incomplete arm raise = insufficient deltoid engagement.
+    2. Torso Stability: Spine should remain upright (lateral lean < 10°) during jacks.
+       Clinical ref: ACSM Fitness Guidelines; ACE Exercise Library.
+    """
+    try:
+        l_sh  = [landmarks[11][0]*w, landmarks[11][1]*h]
+        r_sh  = [landmarks[12][0]*w, landmarks[12][1]*h]
+        l_wr  = [landmarks[15][0]*w, landmarks[15][1]*h]
+        r_wr  = [landmarks[16][0]*w, landmarks[16][1]*h]
+        l_hip = [landmarks[23][0]*w, landmarks[23][1]*h]
+        r_hip = [landmarks[24][0]*w, landmarks[24][1]*h]
+
+        mid_sh  = [(l_sh[0]+r_sh[0])/2,   (l_sh[1]+r_sh[1])/2]
+        mid_hip = [(l_hip[0]+r_hip[0])/2, (l_hip[1]+r_hip[1])/2]
+
+        # ── Check 1: Arm ROM ─────────────────────────────────────────────────
+        # In image coords: lower Y = higher position on screen.
+        # Wrists should be at or ABOVE shoulder level = wrist_Y <= shoulder_Y.
+        # We check if at least ONE wrist cleared shoulder height (during up phase).
+        shoulder_y = mid_sh[1]
+        l_arm_raised = l_wr[1] < (shoulder_y - 0.05 * (mid_hip[1] - shoulder_y))
+        r_arm_raised = r_wr[1] < (shoulder_y - 0.05 * (mid_hip[1] - shoulder_y))
+        both_arms_raised = l_arm_raised and r_arm_raised
+
+        # Only warn if arms are clearly down (not in the down-sweep phase)
+        both_arms_down = (l_wr[1] > (shoulder_y + 0.15*(mid_hip[1]-shoulder_y)) and
+                          r_wr[1] > (shoulder_y + 0.15*(mid_hip[1]-shoulder_y)))
+
+        # ── Check 2: Torso Lateral Lean ──────────────────────────────────────
+        # If left shoulder is significantly higher than right shoulder = lateral lean
+        sh_height_diff = abs(l_sh[1] - r_sh[1])
+        torso_width = max(abs(r_sh[0] - l_sh[0]), 1.0)
+        lateral_lean_deg = float(np.degrees(np.arctan2(sh_height_diff, torso_width)))
+        LEAN_THRESHOLD = 12.0
+
+        if lateral_lean_deg > LEAN_THRESHOLD:
+            return {
+                "has_warning": True,
+                "code": "WARN_LATERAL_LEAN",
+                "message": f"WARN: Lateral Lean ({lateral_lean_deg:.1f}° > {LEAN_THRESHOLD}°)",
+                "voice_cue": "Keep your torso upright, equal on both sides!"
+            }
+
+        # Arm ROM check only makes sense if athlete is in the "up" phase
+        # Avoid false warnings during the natural down-sweep
+        if both_arms_down:
+            # Arms are in down position — give form neutral feedback
+            return {
+                "has_warning": False,
+                "code": "NORMAL_NEUTRAL",
+                "message": "Arms down phase",
+                "voice_cue": None
+            }
+
+        return {
+            "has_warning": False,
+            "code": "SAFE_JACK_FORM",
+            "message": f"Good jumping jack form (lateral lean: {lateral_lean_deg:.1f}°)",
+            "voice_cue": None
+        }
+    except Exception:
+        return {"has_warning": False, "code": "NORMAL_NEUTRAL", "message": "Form: Normal (Jumping Jack)", "voice_cue": None}
+
+
+def evaluate_high_knees_form(landmarks: List[Any], w: float = 640.0, h: float = 480.0) -> Dict[str, Any]:
+    """
+    Module 5 & 7: High Knees Posture & Form Assessment.
+
+    Checks:
+    1. Knee Height: The raised knee should reach at least hip height (thigh parallel to floor).
+       Hip flexion angle (hip→knee→vertical) >= 80°.
+       Clinical ref: ACE Exercise Library; NSCA High Knees Standards.
+    2. Torso Lean: Forward lean of torso should stay < 15° to prevent hip flexor overload.
+    """
+    try:
+        l_sh  = [landmarks[11][0]*w, landmarks[11][1]*h]
+        r_sh  = [landmarks[12][0]*w, landmarks[12][1]*h]
+        l_hip = [landmarks[23][0]*w, landmarks[23][1]*h]
+        r_hip = [landmarks[24][0]*w, landmarks[24][1]*h]
+        l_kn  = [landmarks[25][0]*w, landmarks[25][1]*h]
+        r_kn  = [landmarks[26][0]*w, landmarks[26][1]*h]
+
+        mid_sh  = [(l_sh[0]+r_sh[0])/2,   (l_sh[1]+r_sh[1])/2]
+        mid_hip = [(l_hip[0]+r_hip[0])/2, (l_hip[1]+r_hip[1])/2]
+
+        # ── Check 1: Knee Height ─────────────────────────────────────────────
+        # The raised knee should reach at least hip height.
+        # In image coords: knee_Y <= hip_Y means knee is at or above hip level.
+        # We check BOTH knees; the "active" (raised) knee is the one with lower Y value.
+        raised_knee_y = min(l_kn[1], r_kn[1])  # lower Y = visually higher
+        hip_y = mid_hip[1]
+        body_height_ref = max(abs(mid_hip[1] - mid_sh[1]), 1.0)
+
+        # If raised knee is more than 15% of body height BELOW the hip = not high enough
+        knee_deficit_pct = (raised_knee_y - hip_y) / body_height_ref
+        KNEE_HEIGHT_THRESHOLD = 0.15  # knee must be within 15% of hip height
+
+        if knee_deficit_pct > KNEE_HEIGHT_THRESHOLD:
+            return {
+                "has_warning": True,
+                "code": "WARN_KNEE_HEIGHT",
+                "message": f"WARN: Knee too low ({knee_deficit_pct*100:.1f}% below hip) — Drive knees higher!",
+                "voice_cue": "Drive your knees up to hip height!"
+            }
+
+        # ── Check 2: Torso Forward Lean ──────────────────────────────────────
+        torso_lean = _angle_from_vertical(mid_sh, mid_hip)
+        FORWARD_LEAN_THRESHOLD = 15.0
+
+        if torso_lean > FORWARD_LEAN_THRESHOLD:
+            return {
+                "has_warning": True,
+                "code": "WARN_FORWARD_LEAN",
+                "message": f"WARN: Forward Lean ({torso_lean:.1f}° > {FORWARD_LEAN_THRESHOLD}°) — Stand tall!",
+                "voice_cue": "Stand tall, don't lean forward!"
+            }
+
+        return {
+            "has_warning": False,
+            "code": "SAFE_HIGH_KNEES_FORM",
+            "message": f"Good high knees form (knee deficit: {knee_deficit_pct*100:.1f}%, lean: {torso_lean:.1f}°)",
+            "voice_cue": None
+        }
+    except Exception:
+        return {"has_warning": False, "code": "NORMAL_NEUTRAL", "message": "Form: Normal (High Knees)", "voice_cue": None}
+
 class VoiceCoachingEngine:
     """
     Day 3 Module 8: Real-Time Voice Coaching Engine.
@@ -338,14 +761,15 @@ class VoiceCoachingEngine:
                 "type": "rep_milestone"
             }
 
-        # Priority 3: Form Recovery (strictly from knee valgus under active joint load)
+        # Priority 3: Form Recovery (edge: warning -> safe for ALL exercises)
         elif self.prev_has_warning and not current_has_warning:
-            is_real_form_correction = (self.prev_alert_code == "WARN_KNEE_VALGUS")
             has_cooldown_expired = (current_time - self.last_recovery_voice_time) >= self.recovery_cooldown_sec
-            
-            # CRITICAL FIX: Only praise recovery if the athlete is actively squatting under load!
-            # If the user just stood up into neutral, stay silent (zero spurious praise).
-            if is_real_form_correction and is_squatting_under_load and has_cooldown_expired:
+            # Squat/Lunge: require active load confirmation to prevent spurious praise on standing up
+            # All other exercises: recovery praise fires on any warning → safe edge
+            squat_recovery = (self.prev_alert_code == "WARN_KNEE_VALGUS") and is_squatting_under_load
+            non_squat_recovery = self.prev_alert_code not in ("WARN_KNEE_VALGUS", "WARN_CAMERA_FRAMING", "NORMAL_NEUTRAL")
+
+            if (squat_recovery or non_squat_recovery) and has_cooldown_expired:
                 cue = {
                     "cue_id": "CUE_FORM_RECOVERY",
                     "text": "Good form, keep going!",

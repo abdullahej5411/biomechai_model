@@ -151,7 +151,16 @@ class PoseC3DEngine:
             "buffer_pct": 100.0,
             "probabilities": all_probs
         }
-        return self.last_prediction
+    def clear_buffer(self):
+        """Clears rolling buffer and resets prediction state when athlete leaves frame."""
+        self.frame_buffer.clear()
+        self.last_prediction = {
+            "exercise": "out_of_frame",
+            "display_name": "Step into Frame",
+            "confidence": 0.0,
+            "buffer_pct": 0.0,
+            "probabilities": {}
+        }
 
     def predict_from_landmarks_sequence(self, raw_sequence: List[List[List[float]]], img_shape: Tuple[int, int] = (480, 640)) -> Dict[str, Any]:
         """
@@ -172,8 +181,33 @@ class PoseC3DEngine:
             coco_kps[:, c_idx, 0] = raw_arr[:, mp_idx, 0] * w
             coco_kps[:, c_idx, 1] = raw_arr[:, mp_idx, 1] * h
 
-        kp_input = coco_kps[np.newaxis, ...] # (1, T, 17, 2)
-        kp_score = np.ones((1, T, 17), dtype=np.float32) * 0.9
+        # Physical presence guard: Only evaluate frames that actually contain a human body
+        frame_has_pts = np.sum(np.abs(coco_kps) > 1e-3, axis=(1, 2)) > 5
+        valid_coco = coco_kps[frame_has_pts]
+        T_valid = valid_coco.shape[0]
+
+        if T_valid < 16:
+            return {
+                "exercise": "Waiting for Athlete...",
+                "raw_class": "unknown",
+                "display_name": "Waiting for Athlete...",
+                "confidence": 0.0,
+                "probabilities": {}
+            }
+
+        bbox_w = float(np.max(valid_coco[:, :, 0]) - np.min(valid_coco[:, :, 0]))
+        bbox_h = float(np.max(valid_coco[:, :, 1]) - np.min(valid_coco[:, :, 1]))
+        if bbox_w < 30.0 or bbox_h < 40.0:
+            return {
+                "exercise": "Waiting for Athlete...",
+                "raw_class": "unknown",
+                "display_name": "Waiting for Athlete...",
+                "confidence": 0.0,
+                "probabilities": {}
+            }
+
+        kp_input = valid_coco[np.newaxis, ...] # (1, T_valid, 17, 2)
+        kp_score = np.ones((1, T_valid, 17), dtype=np.float32) * 0.9
 
         anno = {
             "frame_dir": "",
@@ -182,7 +216,7 @@ class PoseC3DEngine:
             "origin_shape": (h, w),
             "start_index": 0,
             "modality": "Pose",
-            "total_frames": T,
+            "total_frames": T_valid,
             "keypoint": kp_input,
             "keypoint_score": kp_score
         }

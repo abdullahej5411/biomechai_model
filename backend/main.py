@@ -31,10 +31,16 @@ from backend.config import (
 from backend.kinematics import (
     calculate_knee_flexion,
     calculate_fppa_munro,
+    calculate_dynamic_valgus_fppa,
     validate_landmark_tracking,
     select_optimal_tracking_leg,
     RepetitionStateMachine,
     evaluate_knee_valgus,
+    evaluate_pushup_form,
+    evaluate_plank_form,
+    evaluate_bicep_curl_form,
+    evaluate_jumping_jack_form,
+    evaluate_high_knees_form,
     VoiceCoachingEngine,
 )
 from backend.engine import PoseC3DEngine
@@ -408,6 +414,13 @@ def classify_exercise(payload: ClassifyRequest):
         raise HTTPException(status_code=400, detail="Landmarks sequence must contain at least 16 frames.")
 
     result = engine.predict_from_landmarks_sequence(payload.landmarks)
+    print(f"\n============================================================")
+    print(f"[CLASSIFY AUDIT @ {time.strftime('%H:%M:%S')}]")
+    print(f"  Frames received from Phone: {len(payload.landmarks)}")
+    print(f"  Predicted Exercise:         {result.get('exercise')} ({result.get('raw_class')})")
+    print(f"  Confidence Score:           {result.get('confidence', 0.0) * 100:.2f}%")
+    print(f"  All 7 Probabilities:        {result.get('probabilities', {})}")
+    print(f"============================================================\n")
     return result
 
 # ------------------------------------------------------------------------------
@@ -428,6 +441,8 @@ async def websocket_stream_endpoint(websocket: WebSocket):
     state_machine = RepetitionStateMachine()
     voice_engine = VoiceCoachingEngine()
     frame_counter = 0
+    out_of_frame_streak = 0
+    last_active_exercise = None
 
     try:
         while True:
@@ -469,20 +484,32 @@ async def websocket_stream_endpoint(websocket: WebSocket):
             ], dtype=np.float32)
 
             knee_flexion = calculate_knee_flexion(hip_3d, knee_3d, ankle_3d)
-            fppa_valgus = calculate_fppa_munro(
-                (hip_3d[0], hip_3d[1]), 
-                (knee_3d[0], knee_3d[1]), 
-                (ankle_3d[0], ankle_3d[1]), 
-                is_left=is_left_leg
+            fppa_valgus = calculate_dynamic_valgus_fppa(
+                landmarks, w=float(w), h=float(h), optimal_is_left=is_left_leg
             )
 
             # Strict anatomical sanity check: reject 2D occlusion glitch (< 35.0 deg)
             is_angle_sane = (knee_flexion >= KNEE_FLEXION_SANITY_FLOOR)
 
             # 2. Fast Path: Hardened Repetition State Machine
-            rep_event = state_machine.update(knee_flexion, frame_idx, is_tracking_valid=is_valid_tracking)
+            active_exercise = str(data.get("exercise", "Squat")).strip().lower()
+            is_squat_family = ("squat" in active_exercise) or ("lunge" in active_exercise)
+            client_reps = int(data.get("client_reps", 0))
 
-            # 3. Fast Path: Dynamic Knee Valgus / Framing Injury Alert
+            if active_exercise != last_active_exercise:
+                state_machine.rep_count = client_reps
+                state_machine.stage = "TOP"
+                state_machine.min_flexion_reached = 180.0
+                last_active_exercise = active_exercise
+            elif client_reps > state_machine.rep_count:
+                state_machine.rep_count = client_reps
+
+            if is_squat_family:
+                rep_event = state_machine.update(knee_flexion, frame_idx, is_tracking_valid=is_valid_tracking)
+            else:
+                rep_event = None
+
+            # ── Module 5 & 7: Exercise-Specific Form Evaluation (all 7 exercises) ──
             if not is_valid_tracking:
                 form_alert = {
                     "has_warning": True,
@@ -490,25 +517,59 @@ async def websocket_stream_endpoint(websocket: WebSocket):
                     "message": f"WARN: Step Back! ({tracking_err})",
                     "voice_cue": "Step back and keep feet in frame!"
                 }
-            else:
+            elif is_squat_family:
+                # Squat + Lunge: Munro FPPA dynamic knee valgus (existing, unchanged)
                 form_alert = evaluate_knee_valgus(knee_flexion, fppa_valgus)
+            elif "push" in active_exercise:
+                # Push-Up: hip sag + elbow flare
+                form_alert = evaluate_pushup_form(landmarks, float(w), float(h))
+            elif "plank" in active_exercise:
+                # Plank: body line alignment (shoulder-hip-ankle)
+                form_alert = evaluate_plank_form(landmarks, float(w), float(h))
+            elif "bicep" in active_exercise or "curl" in active_exercise:
+                # Bicep Curl: elbow drift + torso swing
+                form_alert = evaluate_bicep_curl_form(landmarks, float(w), float(h))
+            elif "jumping" in active_exercise or "jack" in active_exercise:
+                # Jumping Jack: arm ROM + lateral lean
+                form_alert = evaluate_jumping_jack_form(landmarks, float(w), float(h))
+            elif "high" in active_exercise or "knee" in active_exercise:
+                # High Knees: knee height + forward lean
+                form_alert = evaluate_high_knees_form(landmarks, float(w), float(h))
+            else:
+                form_alert = {
+                    "has_warning": False,
+                    "code": "NORMAL_NEUTRAL",
+                    "message": f"Form: Normal ({active_exercise.title()})",
+                    "voice_cue": None
+                }
 
-            # 4. Slow Path: Push COCO-17 Keypoints into PoseC3D Buffer
-            current_coco = np.zeros((17, 2), dtype=np.float32)
-            for c_i, mp_i in enumerate(COCO_MP_MAP):
-                current_coco[c_i, 0] = landmarks[mp_i][0] * w
-                current_coco[c_i, 1] = landmarks[mp_i][1] * h
+            # 4. Slow Path: Push COCO-17 Keypoints into PoseC3D Buffer ONLY IF VALID TRACKING
+            if is_valid_tracking:
+                current_coco = np.zeros((17, 2), dtype=np.float32)
+                for c_i, mp_i in enumerate(COCO_MP_MAP):
+                    current_coco[c_i, 0] = landmarks[mp_i][0] * w
+                    current_coco[c_i, 1] = landmarks[mp_i][1] * h
 
-            engine.push_coco_keypoints(current_coco)
+                engine.push_coco_keypoints(current_coco)
+                out_of_frame_streak = 0
 
-            # Trigger background PoseC3D inference asynchronously only when worker is idle
-            # Throttled to interval of 60 frames (~2s), or 120 frames (~4s) once high confidence is achieved
-            current_conf = engine.last_prediction.get("confidence", 0.0)
-            inference_interval = 120 if current_conf >= 0.85 else 60
-            if engine.is_buffer_full() and (frame_counter % inference_interval == 0) and not engine.is_inferring:
-                asyncio.create_task(engine.trigger_async_inference(img_shape=(h, w)))
+                # Trigger background PoseC3D inference asynchronously only when worker is idle
+                current_conf = engine.last_prediction.get("confidence", 0.0)
+                inference_interval = 120 if current_conf >= 0.85 else 60
+                if engine.is_buffer_full() and (frame_counter % inference_interval == 0) and not engine.is_inferring:
+                    asyncio.create_task(engine.trigger_async_inference(img_shape=(h, w)))
 
-            pose_pred = engine.last_prediction
+                pose_pred = engine.last_prediction
+            else:
+                out_of_frame_streak += 1
+                if out_of_frame_streak >= 10:
+                    engine.clear_buffer()
+                pose_pred = {
+                    "exercise": "out_of_frame",
+                    "display_name": "Step into Frame",
+                    "confidence": 0.0,
+                    "buffer_pct": 0.0
+                }
 
             # 5. Emit Real-Time Telemetry Back to Mobile Client
             # Knee flexion is only reported if tracking is valid and angle is anatomically sane (>= 35.0 deg)
@@ -527,8 +588,8 @@ async def websocket_stream_endpoint(websocket: WebSocket):
             response_payload = {
                 "frame_idx": frame_idx,
                 "tracked_leg": leg_name,
-                "reps": state_machine.rep_count,
-                "stage": state_machine.stage,
+                "reps": state_machine.rep_count if is_squat_family else client_reps,
+                "stage": state_machine.stage if is_squat_family else ("ACTIVE" if client_reps > 0 else "READY"),
                 "rep_event": rep_event,
                 "knee_flexion": safe_knee_flexion,
                 "fppa": safe_fppa,
