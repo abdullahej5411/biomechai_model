@@ -59,7 +59,7 @@
 ## 1. Introduction
 BioMechAI is created to solve an important problem in personal fitness: many people do not have an easy way to check whether they are performing exercises with the correct form in real time, which can increase the chances of workout-related injuries. This section introduces the main goals and reasons behind developing this system.
 
-In addition, this Software Requirements Specification (SRS) clearly describes the system’s functional requirements (what the system should do) and non-functional requirements (how well the system should perform). It also includes the use case models and the guidelines for designing artifacts that will be used while building the BioMechAI system. For the final graduation evaluation (Semester 8), the project is structured into the following nine (9) comprehensive modules:
+In addition, this Software Requirements Specification (SRS) clearly describes the system’s functional requirements (what the system should do) and non-functional requirements (how well the system should perform). It also includes the use case models and the guidelines for designing artifacts that will be used while building the BioMechAI system. For the mid-evaluation stage of FYP-II (Semester 8), the project is structured into the following nine (9) comprehensive modules:
 * **Module 1**: User Registration and Login
 * **Module 2**: Real-time 3D Pose Detection
 * **Module 3**: Exercise Recognition and Classification (PoseC3D Deep Learning Engine)

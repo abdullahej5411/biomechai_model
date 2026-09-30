@@ -1,30 +1,56 @@
-# BioMechAI Reports Directory
+# BioMechAI Master Reports & Documentation Index
 
 ## Overview
-This directory contains the authoritative technical, diagnostic, and evaluation reports produced throughout the development and finalization of the BioMechAI model.
+This directory contains the authoritative technical, diagnostic, and evaluation reports produced throughout the development and finalization of the **BioMechAI** system for **Semester 8 (FYP-II Mid Evaluation)**. All documentation files across the project have been organized into a strict chronological sequence (`XX_YYYY-MM-DD_[CATEGORY]_[BriefDescription].md`) reflecting their exact development timeline and context.
 
 ---
 
-## Report Manifest
+## Master Chronological Documentation Manifest
 
-| Report Name | Focus | Key Findings & Content |
-|---|:---:|---|
-| **`AUTHENTIC_FINE_TUNING_AND_DEFENSE_COMPENDIUM.md`** | **Master Defense & Methodology Compendium** | Comprehensive resolution of all student confusions, mathematical proofs, architectural origins (Pose Convolutional 3D), fine-tuning vs random training, and FYP panel defense Q&A. |
-| **`FINAL_POSEC3D_PRODUCTION_REPORT.md`** | **Final Production Model (v5)** | Full evaluation of PoseC3D (`best_acc_top1_epoch_18.pth`), per-class metrics, confusion matrix analysis, and direct comparison against the Random Forest baseline. |
-| **`FULL_REPORT.md`** | **Comprehensive Project Status** | End-to-end documentation covering data expansion, landmark extraction, and cross-validation progression from v1 to v4. |
-| **`COMPREHENSIVE_EVALUATION_AND_VERSION_ANALYSIS.md`** | **Version Progression Analysis** | Comparative analysis across dataset iterations (v2: 35.7% $\rightarrow$ v3: 56.4% $\rightarrow$ v4: 50.8% $\rightarrow$ v5: 52.9% $\rightarrow$ PoseC3D). |
-| **`PIPELINE_VERIFICATION_COMPLETE_OUTPUT.md`** | **Dataset & Split Integrity** | Mathematical proof of 0 subject leakage across 457 train / 115 val videos, coordinate sanity bounds, and MD5 hash deduplication logs. |
-| **`RAW_VIDEO_BACKLOG_REPORT.md`** | **1,000-Video Backlog Audit** | Detailed breakdown of the raw video pool audit, duplicate groups, exclusion criteria, and clean candidate counts. |
-| **`CLAUDE_FINAL_AUDIT_RESOLUTION.md`** | **Final Audit Resolution Dossier** | Definitive resolution to all Claude AI inquiries: Jumping Jack 12-clip forensic audit, true apples-to-apples 115-video RF recomputation, and panel defense strategy. |
-| **`CLAUDE_VERIFICATION_AUDIT_RESPONSE.md`** | **Peer Review & Audit Response** | Forensic line-by-line audit addressing baseline discrepancies, ground-truth provenance from JSON, and failure mode empirical diagnostics. |
-| **`CLAUDE_FINAL_PRODUCTION_UPDATE.md`** | **Complete Project & Model Summary** | Authoritative briefing for Claude AI review covering 24-epoch production run, metrics, failure analysis, and cleanup. |
-| **`CLAUDE_VERIFICATION_CONFIRMATION_KAGGLE_DRIVE_BACKUP.md`** | **Pre-Launch Audit & Proof** | Historical audit document answering all pre-training questions and recording the Q11 Kaggle end-to-end dry-run evidence. |
+| # | Filename | Date | Category | Primary Focus & Context |
+|:---:|---|:---:|:---:|---|
+| **01** | `01_2026-08-30_ARCH_InitialProjectContextAndClaudeGuide.md` | 2026-08-30 | Architecture | End-to-end documentation covering data expansion, landmark extraction, and cross-validation progression (v1 to v4). |
+| **02** | `02_2026-08-30_DATA_RawVideoBacklogInvestigation.md` | 2026-08-30 | Data | Detailed breakdown of raw video pool audit, duplicate groups, exclusion criteria, and clean candidate counts. |
+| **03** | `03_2026-08-31_MODEL_ModelEvolutionAndVersionAnalysis.md` | 2026-08-31 | Model | Comparative analysis across dataset iterations (v2: 35.7% $\rightarrow$ v3: 56.4% $\rightarrow$ v4: 50.8% $\rightarrow$ v5: 52.9% $\rightarrow$ PoseC3D). |
+| **04** | `04_2026-09-01_DATA_KagglePipelineVerificationChecks1to5.md` | 2026-09-01 | Data | Mathematical proof of zero subject leakage across 457 train / 115 test videos, coordinate sanity bounds, and MD5 hash deduplication logs. |
+| **05** | `05_2026-09-03_ARCH_DriveCheckpointSyncHookVerification.md` | 2026-09-03 | Architecture | Historical pre-training audit document answering all setup questions and recording Kaggle Google Drive checkpoint sync proof. |
+| **06** | `06_2026-09-04_MODEL_ProductionRunAndRepoFinalization.md` | 2026-09-04 | Model | Authoritative briefing covering the 24-epoch production training run, metrics, failure analysis, and codebase cleanup. |
+| **07** | `07_2026-09-04_AUDIT_BaselineAuditResponseAndDossier.md` | 2026-09-04 | Audit | Forensic line-by-line audit addressing baseline discrepancies, ground-truth provenance from JSON, and failure mode empirical diagnostics. |
+| **08** | `08_2026-09-05_AUDIT_ApplesToApplesVerificationAndResolution.md` | 2026-09-05 | Audit | Definitive resolution of baseline inquiries: Jumping Jack 12-clip forensic audit, true apples-to-apples 115-video RF recomputation, and defense strategy. |
+| **09** | `09_2026-09-05_DEFENSE_FineTuningMethodologyCompendium.md` | 2026-09-05 | Defense | Comprehensive master defense compendium resolving student confusions, mathematical proofs, PoseC3D architectural origins, and panel Q&A scripts. |
+| **10** | `10_2026-09-06_MODEL_5PhaseAccuracyFixResolution.md` | 2026-09-06 | Model | Detailed resolution across 5 technical phases resolving accuracy bottlenecks and standardizing feature representation. |
+| **11** | `11_2026-09-06_DATA_ProposalDataExpansionTo80Percent.md` | 2026-09-06 | Data | Strategic proposal detailing data expansion and feature engineering roadmap to surpass the 80% accuracy threshold. |
+| **12** | `12_2026-09-07_MODEL_PoseC3D_v4_FineGYMResults.md` | 2026-09-07 | Model | Benchmark results comparing FineGYM pretrained backbone vs NTU RGB+D backbone on the v4 dataset. |
+| **13** | `13_2026-09-07_MODEL_PoseC3D_v5_FineGYMLimbHeatmapResults.md` | 2026-09-07 | Model | Empirical evaluation of 3D limb heatmaps and kinematic features under PoseC3D v5 architecture. |
+| **14** | `14_2026-09-07_MODEL_Epoch6VsEpoch10ComparisonAndHighKnees.md` | 2026-09-07 | Model | Comparative convergence analysis between Epoch 6 and Epoch 10, specifically targeting High Knees per-class performance. |
+| **15** | `15_2026-09-07_BENCHMARK_FinalProductionTrainingAndTop5Accuracy.md` | 2026-09-07 | Benchmark | Full benchmark evaluation of champion PoseC3D model (`epoch_14.pth` with 91.22% Top-5 accuracy on 115-video held-out test split) and confusion matrix. |
+| **16** | `16_2026-09-08_DEFENSE_PlainEnglishDefenseAndVivaGuide.md` | 2026-09-08 | Defense | Plain-English oral defense guide, supervisor viva script, and core concept breakdown designed for student presentation confidence. |
+| **17** | `17_2026-09-08_ROADMAP_MasterStrategyAnd20DayExecutionGuide.md` | 2026-09-08 | Roadmap | 20-day end-to-end sprint plan detailing milestones, mobile integration, kinematic pipelines, and FYP-II deliverables. |
+| **18** | `18_2026-09-08_AUDIT_FourCriticalFixesAuditReport.md` | 2026-09-08 | Audit | Technical audit report covering four critical architectural fixes across preprocessing, inference caching, and pipeline latency. |
+| **19** | *(in `../teacher_review/`)* `19_2026-09-11_TEACHER_ModelArchitectureAndTrainingDossier.md` | 2026-09-11 | Teacher | Comprehensive dossier submitted to supervisor/evaluators detailing mathematical architecture and training pipeline. |
+| **20** | *(in `../teacher_review/`)* `20_2026-09-13_TEACHER_Official9ModulesStatusAndRoadmap.md` | 2026-09-13 | Teacher | Formal status audit of all 9 official FYP modules aligning development progress with department requirements. |
+| **21** | *(in `../srs_documentation/`)* `21_2026-09-15_SRS_OfficialFYPSpecificationDocument.md` | 2026-09-15 | SRS | Official markdown representation of the FYP Software Requirements Specification. |
+| **22** | *(in `../srs_documentation/`)* `22_2026-09-15_SRS_ScientificAuditAndGapAnalysisGuide.md` | 2026-09-15 | SRS | Comprehensive scientific audit identifying discrepancies, outdated claims, and missing clinical citations in the original SRS. |
+| **23** | `23_2026-09-16_SYSTEM_ComprehensiveHandoverAndStatusV1_6.md` | 2026-09-16 | System | Complete engineering handover document documenting APK v1.6, WebSocket pipelines, TTS engine, and client HUD. |
+| **24** | `24_2026-09-17_AUDIT_FormalComplianceResponseAndRecord.md` | 2026-09-17 | Audit | Formal compliance response addressing audit questions regarding dataset provenance, split cleanliness, and model weights. |
+| **25** | `25_2026-09-18_SUPERVISOR_CompleteModelAndTerminologyGuide.md` | 2026-09-18 | Supervisor | Clear guide addressing confusing terminology (PoseC3D vs 2D/3D CNNs, transfer learning vs fine-tuning) for supervisor interactions. |
+| **26** | `26_2026-09-23_MODULES_Complete9ModulesMasterGuide.md` | 2026-09-23 | Modules | **Authoritative Master Engineering Guide** covering all 9 modules, exact algorithms, clinical thresholds, and real-time mobile integration. |
+| **27** | *(in `../srs_documentation/`)* `27_2026-09-30_SRS_PartnerExactSearchAndReplaceManual.md` | 2026-09-30 | SRS | Exact word-for-word, page-by-page search & replace instruction manual for the partner's SRS Word document (also kept as `SRS_EXACT_SEARCH_AND_REPLACE_MODIFICATION_MANUAL.md`). |
 
 ---
 
-## Recommended Reading Order for FYP Presentation:
-1. **`AUTHENTIC_FINE_TUNING_AND_DEFENSE_COMPENDIUM.md`**: Master summary of methodology, resolved confusions, and FYP panel defense scripts.
-2. **`FINAL_POSEC3D_PRODUCTION_REPORT.md`**: Official production model metrics and confusion matrix.
-3. **`CLAUDE_FINAL_AUDIT_RESOLUTION.md`**: Verified head-to-head baseline audit with Claude AI.
-4. **`COMPREHENSIVE_EVALUATION_AND_VERSION_ANALYSIS.md`**: Chronological version progression (v1 $\rightarrow$ v5).
-5. **`PIPELINE_VERIFICATION_COMPLETE_OUTPUT.md`**: Proof of 0 data leakage and coordinate sanity.
+## Recommended Reading Order by Audience
+
+### For FYP-II Defense & Viva Preparation
+1. **`16_2026-09-08_DEFENSE_PlainEnglishDefenseAndVivaGuide.md`**: Master viva answers, simplified explanations, and counter-arguments for tough questions.
+2. **`09_2026-09-05_DEFENSE_FineTuningMethodologyCompendium.md`**: Deep dive into why PoseC3D was chosen, how fine-tuning works, and mathematical validation.
+3. **`25_2026-09-18_SUPERVISOR_CompleteModelAndTerminologyGuide.md`**: Clear explanations resolving technical jargon and terminology.
+
+### For Understanding the Complete BioMechAI Architecture
+1. **`26_2026-09-23_MODULES_Complete9ModulesMasterGuide.md`**: Exhaustive reference for all 9 modules, state machines, Munro FPPA formulas, and Devine BMI equations.
+2. **`15_2026-09-07_BENCHMARK_FinalProductionTrainingAndTop5Accuracy.md`**: Official production model performance, 91.22% Top-5 accuracy, and confusion matrix.
+3. **`04_2026-09-01_DATA_KagglePipelineVerificationChecks1to5.md`**: Rigorous data split verification proving zero leakage.
+
+### For SRS Documentation & Academic Evaluation
+1. **`../srs_documentation/22_2026-09-15_SRS_ScientificAuditAndGapAnalysisGuide.md`**: Scientific gap analysis and audit of the original SRS.
+2. **`../srs_documentation/27_2026-09-30_SRS_PartnerExactSearchAndReplaceManual.md`**: The exhaustive partner edit manual for the Word document.
