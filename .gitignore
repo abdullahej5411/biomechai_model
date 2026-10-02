@@ -94,4 +94,6 @@ mmaction2_repo/
 # ------------------------------------------------------------------------------
 *.apk
 *.aab
+hf_space_deploy/
+huggingface_deployment/
 
