@@ -1,8 +1,8 @@
-# BioMechAI — Official FYP-II Final Graduation System Memory
+# BioMechAI — Official FYP-II Final Graduation System Memory & Agent Operating Guide
 
-## CRITICAL PROJECT CONTEXT: SEMESTER 8 (FYP-II FINAL DEFENSE)
-- **Current Phase**: **Semester 8 — Final Evaluation (FYP-II)**.
-- **ABSOLUTE RULE 1**: **THERE IS NO NEXT SEMESTER**. This is the final graduation evaluation. We must NEVER say "reserved for FYP-II" or "planned for next semester" because we ARE in FYP-II right now.
+## 1. CRITICAL PROJECT CONTEXT: SEMESTER 8 (FYP-II FINAL DEFENSE)
+- **Current Academic Phase**: **Semester 8 — Final Evaluation (FYP-II)**.
+- **ABSOLUTE RULE 1 (GRADUATION FINALITY)**: **THERE IS NO NEXT SEMESTER**. This is the final graduation evaluation. We must NEVER say "reserved for FYP-II" or "planned for next semester" because we ARE in FYP-II right now. Everything built is final, validated, and ready for defense.
 - **ABSOLUTE RULE 2 (CHAMPION MODEL ACCURACY TRUTH)**:
   - **The Active Production Model is PoseC3D v5 (Limb Heatmaps)**.
   - Checkpoint: `models/posec3d_v5_limb/best_acc_top1_epoch_10.pth` (8.33 MB).
@@ -14,8 +14,17 @@
     - **Top-1 Accuracy**: **`53.38%`** (237/444 clips on strictly frozen 115 held-out videos zero-leakage split).
     - **Macro Recall**: **`53.15%`**.
     - **Top-5 Accuracy**: **`91.22%`**.
+  - **Per-Class Accuracy Breakdown**:
+    * Lunge: **75.00%** (51/68)
+    * Push-Up: **67.35%** (33/49)
+    * Plank: **65.62%** (42/64)
+    * Bicep Curl: **61.64%** (45/73)
+    * Squat: **53.42%** (39/73) — surged from 20.55% in v4 (+160% relative gain due to limb heatmaps)
+    * High Knees: **29.27%** (12/41)
+    * Jumping Jack: **19.74%** (15/76)
   - **NEVER GET CONFUSED ABOUT OLD EXPERIMENTS**:
     - Do NOT say "accuracy is 50.90%" — that was the old v4 keypoints (dot heatmaps) model.
+    - Do NOT say "accuracy is 48.20%" — that was the old v3 NTU-60 model.
     - Do NOT propose "retrain with limb heatmaps" — limb heatmaps were ALREADY trained on Kaggle and produced this v5 champion!
     - Do NOT quote the old FYP-I 84% Random Forest number as current — that 84% was due to clip-level data leakage (memorizing subjects). Under honest video-disjoint evaluation, RF dropped to 56.08% and PoseC3D stands at 53.38% Top-1 / 91.22% Top-5.
 - **ABSOLUTE RULE 3 (MODULE 7 IS NOT JUST ACL)**:
@@ -23,25 +32,72 @@
   - Implemented in `backend/kinematics.py` and `form_validation_service.dart`.
 - **ABSOLUTE RULE 4 (FIREBASE UNIFICATION)**:
   - Active Firebase Project: **`biomechai-fitness`** (Project Number `479596177740`, Owner: `aejshah@gmail.com` / `abdullahej5411`).
-  - Both Flutter mobile app and Coach Web Dashboard (`web_dashboard/src/firebase.ts`) are unified to `biomechai-fitness`.
+  - Both Flutter mobile app (`biomechai_flutter_latest`) and Coach Web Dashboard (`web_dashboard/src/firebase.ts`) are unified to `biomechai-fitness`.
+  - Discard/ignore old FYP-I project IDs (like `biomechai-549717601795` or `biomechai.web.app`).
 
 ---
 
-## THE 9 OFFICIAL FYP MODULES & CURRENT FYP-II STATUS
+## 2. REPOSITORY & DIRECTORY TOPOGRAPHY
+
+The overall project lives in `d:\Study Folder\Semester 8\FYP-I\Final Evaluation\fypbiomechai\`:
+
+```
+fypbiomechai/
+├── biomechai_model/                     # [MAIN WORKSPACE] AI Backend, Checkpoints, & Scripts
+│   ├── backend/                         # FastAPI Application
+│   │   ├── main.py                      # REST & WebSocket Endpoints (/classify, /ws/stream, /health)
+│   │   ├── engine.py                    # PyTorch PoseC3D v5 Inference Engine
+│   │   ├── kinematics.py                # Biomechanical Form Rules & Clinical Injury Engines
+│   │   └── config.py                    # Model Paths & Biomechanical Constants
+│   ├── models/                          # Trained Weights & Checkpoints
+│   │   └── posec3d_v5_limb/             # Active Champion Checkpoint (best_acc_top1_epoch_10.pth)
+│   ├── run_cloud_server.bat             # 1-Click Startup: Starts Uvicorn + Permanent ngrok Tunnel
+│   ├── run_live_webcam.bat              # Standalone local webcam test launcher
+│   ├── BioMechAI_v2.2_PermanentCloudTunnel.apk # Latest Compiled Mobile APK
+│   ├── AGENTS.md                        # Master Agent System Memory (This File)
+│   ├── README.md                        # Master Architecture & Benchmarks Overview
+│   └── FINAL_PRODUCTION_REPORT.md       # Definitive Academic Action Recognition Report
+│
+├── biomechai_flutter_latest/            # Athlete Mobile Application (Flutter Android)
+│   ├── lib/
+│   │   ├── screens/                     # UI Views (WorkoutScreen, BodyMeasurementsScreen, etc.)
+│   │   ├── services/
+│   │   │   ├── server_config.dart       # Dynamic Backend Router (Cloud Tunnel vs Local Wi-Fi)
+│   │   │   ├── exercise_recognition_service.dart # HTTP REST Client with ngrok Bypass Headers
+│   │   │   ├── websocket_stream_service.dart     # WSS/WS Telemetry Client
+│   │   │   ├── form_validation_service.dart      # Real-Time On-Device Kinematics
+│   │   │   └── voice_coaching_service.dart       # Module 8 Native TTS Voice Engine
+│   │   └── main.dart                    # App Entry Point
+│   │
+│   └── web_dashboard/                   # Module 9: Coach Web Portal (React + Vite + Tailwind)
+│       ├── src/
+│       │   ├── firebase.ts              # Unified to biomechai-fitness
+│       │   ├── components/              # Calendar, Charts, Rep Breakdown Tables
+│       │   └── App.tsx                  # Dashboard Entry Point
+│       └── dist/                        # Production Web Build
+│
+├── OLD_OUTDATED_FLUTTER_APP_BACKUP/     # Archived legacy code (DO NOT TOUCH OR EDIT)
+└── testing videos/                      # Raw test videos for offline validation
+```
+
+---
+
+## 3. THE 9 OFFICIAL FYP MODULES & OPERATIONAL STATUS
 
 1. **Module 1: User Registration and Login** (Done in FYP-I)
-   - Status: 100% Completed (Flutter, Firebase Auth, role-based routing for `user` vs `trainer`).
+   - Status: **100% Completed**.
+   - Tech: Flutter, Firebase Auth (Email/Password), role-based routing (`user` athlete vs `trainer`).
 2. **Module 2: Real-time 3D Pose Detection** (Done in FYP-I)
-   - Status: 100% Completed (Google ML Kit on-device, 30 FPS, $33 \times 3$ normalized coordinates).
+   - Status: **100% Completed**.
+   - Tech: Google ML Kit Pose Detection on-device, 30 FPS, 33 landmark 3D normalized coordinates.
 3. **Module 3: Exercise Recognition and Classification** (FYP-II Deliverable per Panel Mandate)
    - Status: **100% Code Complete & Benchmark Certified**.
    - Model: PoseC3D SlowOnly ResNet-50 fine-tuned on FineGYM limb heatmaps (`models/posec3d_v5_limb/best_acc_top1_epoch_10.pth`).
    - Official Metrics: **`53.38%` Top-1 Accuracy**, **`53.15%` Macro Recall**, and **`91.22%` Top-5 Accuracy** on 115 held-out videos (444 clips, strictly zero leakage).
-   - Per-Class Breakdown: Lunge 75.00%, Push-Up 67.35%, Plank 65.62%, Bicep Curl 61.64%, Squat 53.42%, High Knees 29.27%, Jumping Jack 19.74%.
-   - Demo Strategy: Use the app's manual dropdown picker for seamless live demonstrations (Squat, Pushup, Curl) while citing the 91.22% Top-5 benchmark for Module 3.
+   - Demo Strategy: In live panel demos, use the manual dropdown lock in the mobile app for guaranteed seamless execution on Squat, Push-up, and Bicep Curl, while citing the 91.22% Top-5 benchmark for autonomous classification.
 4. **Module 4: Real-time Rep Counting and Form Validation** (Upgraded for FYP-II)
    - Status: **100% Code Complete & Validated**.
-   - Closed 4-Stage Rep FSM (`UPRIGHT` $\rightarrow$ `DESCENDING` $\rightarrow$ `BOTTOM` $\rightarrow$ `ASCENDING` $\rightarrow$ `COMPLETED`), zero-clamping, sustained boundary occlusion rejection.
+   - Architecture: Closed 4-Stage Rep FSM (`UPRIGHT` $\rightarrow$ `DESCENDING` $\rightarrow$ `BOTTOM` $\rightarrow$ `ASCENDING` $\rightarrow$ `COMPLETED`), zero-clamping, sustained boundary occlusion rejection, adaptive peak detection.
 5. **Module 5: Posture Correctness (Form Correction Across 7 Exercises)** (FYP-II Deliverable)
    - Status: **100% Code Complete & Kinematics Certified**.
    - Real-time kinematic checks for all 7 exercises: sagittal depth, spine alignment, elbow flare, arm drift, knee height, torso lean.
@@ -68,7 +124,7 @@
    - Architecture:
      * Athlete Mobile App (`biomechai_flutter_latest`) sends telemetry to Firebase Firestore (`biomechai-fitness`).
      * Trainer Web Portal (`web_dashboard/`, React + Vite + Tailwind + Recharts) connects directly to `biomechai-fitness`.
-     * Live Host: Deployable via `npx firebase-tools deploy --only hosting` to `https://biomechai-fitness.web.app` (previously on `biomechai.web.app`).
+     * Live Host: Deployable via `npx firebase-tools deploy --only hosting` to `https://biomechai-fitness.web.app`.
      * Coach Views:
        1. Overview KPI Cards (Total Workouts, Avg Form Score, Total Valid Reps).
        2. Form Progression Area Chart (`recharts`) tracking score trends across chronological sessions.
@@ -78,25 +134,68 @@
 
 ---
 
-## BACKEND & DEPLOYMENT ARCHITECTURE
+## 4. BACKEND & CLOUD TUNNEL DEPLOYMENT ARCHITECTURE
 
 - **Backend Code Location**: `backend/`
   - `main.py`: FastAPI server (`POST /classify`, `GET /health`, `WebSocket /ws/stream`, `GET /pair`, `GET /latency_test`).
   - `engine.py`: `PoseC3DEngine` loading `best_acc_top1_epoch_10.pth` on PyTorch.
   - `kinematics.py`: Deterministic biomechanical physics and clinical injury detection.
   - `config.py`: Joint indices and clinical angle constants.
-- **Hosting Options**:
-  - Local Wi-Fi: `python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000`.
-  - Permanent Cloud Tunnel (Any Network): `run_cloud_server.bat` (launches Uvicorn + ngrok tunnel on permanent free domain `persevere-kindred-tasty.ngrok-free.dev`).
-  - Mobile App default endpoint: `https://persevere-kindred-tasty.ngrok-free.dev` (with `ngrok-skip-browser-warning: true` header baked in).
+- **Permanent Cloud Tunnel (Zero-Config Mobile Connection)**:
+  - Startup script: [`run_cloud_server.bat`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/run_cloud_server.bat).
+  - Permanent Static ngrok Domain: `https://persevere-kindred-tasty.ngrok-free.dev`.
+  - Port: Local Uvicorn binds to `0.0.0.0:8000`, ngrok forwards HTTPS/WSS traffic directly to port 8000.
+  - Interstitial Bypass: Mobile app sends header `'ngrok-skip-browser-warning': 'true'` on all HTTP requests to bypass ngrok's free tier browser interstitial notice.
+- **Local Fallback**:
+  - The mobile app retains full backward compatibility. If running purely offline without internet, the user can tap the DNS settings icon in the app and type the local IPv4 address (e.g. `192.168.1.192`) and port `8000`.
 
 ---
 
-## MANDATORY APK SEQUENTIAL NAMING CONVENTION
-- All newly compiled or updated APKs MUST follow strict semantic sequential naming:
-  `BioMechAI_v<Major>.<Minor>_<FeatureTag>.apk`
-  - Current baseline: `BioMechAI_v2.2_PermanentCloudTunnel.apk` (baked with permanent zero-config cloud domain `persevere-kindred-tasty.ngrok-free.dev`)
-  - Previous baseline: `BioMechAI_v2.1_Module6CameraComplete.apk`
-  - Previous baseline: `BioMechAI_v2.0_AllModulesComplete.apk`
-  - Next update: `BioMechAI_v2.3_<FeatureTag>.apk`, then `v2.4`, etc.
-- Never overwrite without leaving the clear sequential version tag so the user is never confused about which APK is latest.
+## 5. MANDATORY APK SEQUENTIAL NAMING CONVENTION
+
+All newly compiled or updated APKs MUST follow strict semantic sequential naming:
+`BioMechAI_v<Major>.<Minor>_<FeatureTag>.apk`
+
+- **Current Production Baseline**: [`BioMechAI_v2.2_PermanentCloudTunnel.apk`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/BioMechAI_v2.2_PermanentCloudTunnel.apk) (~215.1 MB)
+  - Features: Embedded permanent zero-config cloud domain `persevere-kindred-tasty.ngrok-free.dev`, ngrok bypass headers, smart WSS routing, automated legacy IP preference migration.
+- Previous baselines:
+  - `BioMechAI_v2.1_Module6CameraComplete.apk` (Module 6 anthropometry camera scanner)
+  - `BioMechAI_v2.0_AllModulesComplete.apk` (All 9 modules integrated)
+- **Next Update**: `BioMechAI_v2.3_<FeatureTag>.apk`, then `v2.4`, etc.
+- **Rule**: Never overwrite existing APK files without creating the new sequential tag.
+
+---
+
+## 6. GIT WORKFLOW & REPOSITORY POLICIES
+
+The project is split across two Git repositories:
+1. **Model & Backend Repository**:
+   - Path: `d:\Study Folder\Semester 8\FYP-I\Final Evaluation\fypbiomechai\biomechai_model`
+   - Remote: `https://github.com/abdullahej5411/biomechai_model.git`
+   - Active Branch: `main`
+2. **Flutter App & Web Dashboard Repository**:
+   - Path: `d:\Study Folder\Semester 8\FYP-I\Final Evaluation\fypbiomechai\biomechai_flutter_latest`
+   - Remote: `https://github.com/abdullahej5411/BioMechAI.git`
+   - Active Branch: `master`
+
+### Git Command Protocol (Windows PowerShell)
+- Never use `&&` in PowerShell commands (PowerShell does not support `&&` in older versions). Use `;` instead:
+  ```powershell
+  git add <files> ; git commit -m "<message>" ; git push
+  ```
+- **Never commit secrets**:
+  - Do NOT commit `token.json`, `client_secret.json`, `.env`, or API private keys.
+  - `.apk` files are git-ignored to prevent bloated repo histories.
+
+---
+
+## 7. COMMON PITFALLS & TECHNICAL GOTCHAS
+
+1. **Hugging Face Spaces Compute Paywall**:
+   - Hugging Face paywalled Docker/Gradio hardware spaces behind a paid tier. Do not attempt to re-deploy the PyTorch backend to free HF compute spaces. The permanent ngrok tunnel (`run_cloud_server.bat`) is the verified, permanent solution.
+2. **PyTorch 2.6+ Checkpoint Unpickling**:
+   - In PyTorch 2.6+, `torch.load` defaults to `weights_only=True`. The MMAction2 / OpenMMLab checkpoints require arbitrary object unpickling. Always apply `torch.load = functools.partial(torch.load, weights_only=False)` when loading checkpoints directly.
+3. **Flutter SharedPreferences Legacy Cache**:
+   - If an older APK was previously installed on a phone, `SharedPreferences` might still store the old `192.168.1.192` string. `ServerConfig.init()` is explicitly programmed to detect `192.168.1.192` and automatically migrate it to `persevere-kindred-tasty.ngrok-free.dev`.
+4. **Dart `withOpacity` Deprecation**:
+   - Flutter 3.27+ deprecates `Color.withOpacity(double)` in favor of `Color.withValues(alpha: double)`. Existing usages produce mild warnings but compile cleanly.
