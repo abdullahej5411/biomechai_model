@@ -36,20 +36,23 @@ This directory contains the authoritative technical, diagnostic, and evaluation 
 | **25** | `25_2026-09-18_SUPERVISOR_CompleteModelAndTerminologyGuide.md` | 2026-09-18 | Supervisor | Clear guide addressing confusing terminology (PoseC3D vs 2D/3D CNNs, transfer learning vs fine-tuning) for supervisor interactions. |
 | **26** | `26_2026-09-23_MODULES_Complete9ModulesMasterGuide.md` | 2026-09-23 | Modules | **Authoritative Master Engineering Guide** covering all 9 modules, exact algorithms, clinical thresholds, and real-time mobile integration. |
 | **27** | *(in `../srs_documentation/`)* `27_2026-09-30_SRS_PartnerExactSearchAndReplaceManual.md` | 2026-09-30 | SRS | Exact word-for-word, page-by-page search & replace instruction manual for the partner's SRS Word document (also kept as `SRS_EXACT_SEARCH_AND_REPLACE_MODIFICATION_MANUAL.md`). |
+| **28** | `28_2026-10-03_SYSTEM_FinalGraduationHandoverAndCloudArchitectureV2_2.md` | 2026-10-03 | System | **Final Graduation Handover & v2.2 Cloud Architecture**: Complete 9-module completion matrix, permanent ngrok cloud tunnel integration, and live viva demonstration guide. |
 
 ---
 
 ## Recommended Reading Order by Audience
 
-### For FYP-II Defense & Viva Preparation
-1. **`16_2026-09-08_DEFENSE_PlainEnglishDefenseAndVivaGuide.md`**: Master viva answers, simplified explanations, and counter-arguments for tough questions.
-2. **`09_2026-09-05_DEFENSE_FineTuningMethodologyCompendium.md`**: Deep dive into why PoseC3D was chosen, how fine-tuning works, and mathematical validation.
-3. **`25_2026-09-18_SUPERVISOR_CompleteModelAndTerminologyGuide.md`**: Clear explanations resolving technical jargon and terminology.
+### For FYP-II Final Defense & Viva Preparation
+1. **`28_2026-10-03_SYSTEM_FinalGraduationHandoverAndCloudArchitectureV2_2.md`**: Master graduation summary, permanent cloud tunnel deployment, and step-by-step viva presentation playbook.
+2. **`16_2026-09-08_DEFENSE_PlainEnglishDefenseAndVivaGuide.md`**: Master viva answers, simplified explanations, and counter-arguments for tough questions.
+3. **`09_2026-09-05_DEFENSE_FineTuningMethodologyCompendium.md`**: Deep dive into why PoseC3D was chosen, how fine-tuning works, and mathematical validation.
+4. **`25_2026-09-18_SUPERVISOR_CompleteModelAndTerminologyGuide.md`**: Clear explanations resolving technical jargon and terminology.
 
 ### For Understanding the Complete BioMechAI Architecture
-1. **`26_2026-09-23_MODULES_Complete9ModulesMasterGuide.md`**: Exhaustive reference for all 9 modules, state machines, Munro FPPA formulas, and Devine BMI equations.
-2. **`15_2026-09-07_BENCHMARK_FinalProductionTrainingAndTop5Accuracy.md`**: Official production model performance, 91.22% Top-5 accuracy, and confusion matrix.
-3. **`04_2026-09-01_DATA_KagglePipelineVerificationChecks1to5.md`**: Rigorous data split verification proving zero leakage.
+1. **`28_2026-10-03_SYSTEM_FinalGraduationHandoverAndCloudArchitectureV2_2.md`**: Latest architecture, APK v2.2, and permanent cloud tunnel.
+2. **`26_2026-09-23_MODULES_Complete9ModulesMasterGuide.md`**: Exhaustive reference for all 9 modules, state machines, Munro FPPA formulas, and Devine BMI equations.
+3. **`13_2026-09-07_MODEL_PoseC3D_v5_FineGYMLimbHeatmapResults.md`**: Official production PoseC3D v5 Limb Heatmap model performance (53.38% Top-1, 91.22% Top-5) and confusion matrix.
+4. **`04_2026-09-01_DATA_KagglePipelineVerificationChecks1to5.md`**: Rigorous data split verification proving zero leakage.
 
 ### For SRS Documentation & Academic Evaluation
 1. **`../srs_documentation/22_2026-09-15_SRS_ScientificAuditAndGapAnalysisGuide.md`**: Scientific gap analysis and audit of the original SRS.
