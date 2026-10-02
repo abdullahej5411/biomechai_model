@@ -87,15 +87,16 @@
   - `config.py`: Joint indices and clinical angle constants.
 - **Hosting Options**:
   - Local Wi-Fi: `python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000`.
-  - Tunnel (Any Network): `cloudflared tunnel --url http://localhost:8000` (or `ngrok http 8000`).
-  - 24/7 Cloud: Hugging Face Spaces (Docker, Basic CPU tier gives **16 GB RAM** free, preventing Render 512MB OOM crashes; kept awake with UptimeRobot ping to `/health`).
+  - Permanent Cloud Tunnel (Any Network): `run_cloud_server.bat` (launches Uvicorn + ngrok tunnel on permanent free domain `persevere-kindred-tasty.ngrok-free.dev`).
+  - Mobile App default endpoint: `https://persevere-kindred-tasty.ngrok-free.dev` (with `ngrok-skip-browser-warning: true` header baked in).
 
 ---
 
 ## MANDATORY APK SEQUENTIAL NAMING CONVENTION
 - All newly compiled or updated APKs MUST follow strict semantic sequential naming:
   `BioMechAI_v<Major>.<Minor>_<FeatureTag>.apk`
-  - Current baseline: `BioMechAI_v2.1_Module6CameraComplete.apk`
+  - Current baseline: `BioMechAI_v2.2_PermanentCloudTunnel.apk` (baked with permanent zero-config cloud domain `persevere-kindred-tasty.ngrok-free.dev`)
+  - Previous baseline: `BioMechAI_v2.1_Module6CameraComplete.apk`
   - Previous baseline: `BioMechAI_v2.0_AllModulesComplete.apk`
-  - Next update: `BioMechAI_v2.2_<FeatureTag>.apk`, then `v2.3`, etc.
+  - Next update: `BioMechAI_v2.3_<FeatureTag>.apk`, then `v2.4`, etc.
 - Never overwrite without leaving the clear sequential version tag so the user is never confused about which APK is latest.
