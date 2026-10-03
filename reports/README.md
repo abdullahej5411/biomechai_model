@@ -37,6 +37,8 @@ This directory contains the authoritative technical, diagnostic, and evaluation 
 | **26** | `26_2026-09-23_MODULES_Complete9ModulesMasterGuide.md` | 2026-09-23 | Modules | **Authoritative Master Engineering Guide** covering all 9 modules, exact algorithms, clinical thresholds, and real-time mobile integration. |
 | **27** | *(in `../srs_documentation/`)* `27_2026-09-30_SRS_PartnerExactSearchAndReplaceManual.md` | 2026-09-30 | SRS | Exact word-for-word, page-by-page search & replace instruction manual for the partner's SRS Word document (also kept as `SRS_EXACT_SEARCH_AND_REPLACE_MODIFICATION_MANUAL.md`). |
 | **28** | `28_2026-10-03_SYSTEM_FinalGraduationHandoverAndCloudArchitectureV2_2.md` | 2026-10-03 | System | **Final Graduation Handover & v2.2 Cloud Architecture**: Complete 9-module completion matrix, permanent ngrok cloud tunnel integration, and live viva demonstration guide. |
+| **29** | `29_2026-10-03_SYSTEM_SmartScannerAndAnthropometryVerificationV2_3.md` | 2026-10-03 | System | **Smart Body Scanner & Firebase Architecture (v2.3)**: Computer vision anthropometry scale calibration, monocular optics proof, Firebase collection topography, and viva defense guide. |
+| **30** | `30_2026-10-04_SYSTEM_OptionC_CrossPlatformPdfAssessmentExportV2_4.md` | 2026-10-04 | System | **Cross-Platform Assessment PDF Export Engine (v2.4)**: Option C delivery for Athlete Mobile App & Coach Web Portal. Anthropometric tables, Devine ideal vitals, and workout progression. Certified with 0 errors/0 warnings. |
 
 ---
 
