@@ -85,9 +85,16 @@ fypbiomechai/
 
 ## 3. THE 9 OFFICIAL FYP MODULES & OPERATIONAL STATUS
 
-1. **Module 1: User Registration and Login** (Done in FYP-I)
-   - Status: **100% Completed**.
-   - Tech: Flutter, Firebase Auth (Email/Password), role-based routing (`user` athlete vs `trainer`).
+1. **Module 1: User Registration and Login** (Done in FYP-I, Hardened with Mandatory Email Verification in FYP-II)
+   - Status: **100% Completed & Security Certified**.
+   - Tech: Flutter, React Web, Firebase Auth, Cloud Firestore (`biomechai-fitness`).
+   - Role-Based Dynamic Routing: Automatically partitions `user` (athlete) vs `trainer` (coach) accounts across mobile and web.
+   - **Mandatory Email Verification & Sign-In Gatekeeper (Milestone #32)**:
+     * Registration on Web (`AuthPage.tsx`) or Mobile (`register_screen.dart`, `firebase_service.dart`) triggers native Google verification link dispatch (`sendEmailVerification`) and immediately forces sign-out (`signOut`).
+     * Sign-in Gatekeeper inspects `user.emailVerified`. If `false`, access is blocked, the session is terminated, and a prominent unverified alert is shown.
+     * Interactive **Resend Verification Link** action allows unverified users to request fresh activation links with background credential authentication.
+     * Auto-Login Protection: `getCurrentUser()` calls `user.reload()` and suppresses auto-login for unverified accounts, directing them to the login screen.
+     * Web Protected Routes (`App.tsx`): `ProtectedRoute` strictly validates `currentUser && currentUser.emailVerified`.
 2. **Module 2: Real-time 3D Pose Detection** (Done in FYP-I)
    - Status: **100% Completed**.
    - Tech: Google ML Kit Pose Detection on-device, 30 FPS, 33 landmark 3D normalized coordinates.
@@ -137,19 +144,24 @@ fypbiomechai/
 8. **Module 8: AI Workout Companion with Voice Coaching** (FYP-II Deliverable)
    - Status: **100% Operational & Architecture Hardened**.
    - Edge-triggered `VoiceCoachingEngine` with priority preemption, debouncing cooldowns (3.5s warnings, 5.0s recovery praise), and on-device native `flutter_tts` with 3.0s watchdog.
-9. **Module 9: Trainer Dashboard (Coach Portal)** (Demonstrated in FYP-I, Unified in FYP-II)
+9. **Module 9: Trainer Dashboard (Coach Portal & Multi-Tenant Pairing)** (Unified in FYP-II)
    - Status: **100% Operational & Live on Firebase**.
    - Architecture:
      * Athlete Mobile App (`biomechai_flutter_latest`) sends telemetry to Firebase Firestore (`biomechai-fitness`).
      * Trainer Web Portal (`web_dashboard/`, React + Vite + Tailwind + Recharts) connects directly to `biomechai-fitness`.
      * Live Host: Deployable via `npx firebase-tools deploy --only hosting` to `https://biomechai-fitness.web.app`.
+     * **Two-Way Coach-Athlete Pairing & Multi-Tenant Isolation (Milestone #31)**:
+       - Coach invites athlete by email on Web (`ClientListPage.tsx`); verifies athlete role and prevents duplicate requests.
+       - Athlete Sovereignty: Athlete receives real-time invitation card on Web (`DashboardHome.tsx`) and Mobile App (`home_screen.dart`, `profile_screen.dart`) with interactive **[Accept]** and **[Decline]** buttons.
+       - Multi-Coach Isolation: Coaches only access athletes who accepted pairing (`c.trainerId === uid`).
+       - Two-Sided Unlink: Coach can remove client (`ClientListPage.tsx`), and Athlete can disconnect anytime (`profile_screen.dart` and `ProfilePage.tsx`), immediately returning to independent self-guided mode.
      * Coach Views:
        1. Overview KPI Cards (Total Workouts, Avg Form Score, Total Valid Reps).
        2. Form Progression Area Chart (`recharts`) tracking score trends across chronological sessions.
        3. Interactive Monthly Workout Calendar (`react-calendar`) with green attendance indicator dots.
        4. Granular Rep-by-Rep Fault Breakdown Table (Rep #, Valid/Invalid, Form Score, exact biomechanical fault detected).
        5. Direct Feedback Messenger: Coach writes notes and delivers instant feedback to the athlete's phone.
-       6. Assessment PDF Export: Instant 1-click clinical PDF download for any athlete.
+       6. Assessment PDF Export: Instant 1-click clinical PDF download for any athlete (fixed Chromium DOM-detached blob bug).
 
 ---
 

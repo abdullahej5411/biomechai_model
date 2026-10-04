@@ -44,7 +44,11 @@ biomechai_model/
 ├── FINAL_PRODUCTION_REPORT.md                 # Authoritative Academic Action Recognition Report
 ├── run_cloud_server.bat                       # 1-Click Production Server Launcher (FastAPI + ngrok)
 ├── run_live_webcam.bat                        # Standalone local webcam test launcher
-├── BioMechAI_v2.2_PermanentCloudTunnel.apk    # Latest Production Android APK
+├── BioMechAI_v2.6_EmailVerification.apk       # [LATEST PRODUCTION APK] (222.4 MB)
+├── BioMechAI_v2.5_TwoWayCoachPairing.apk      # Previous Baseline APK
+├── BioMechAI_v2.4_PdfAssessmentExport.apk     # Cross-Platform PDF Engine Baseline APK
+├── BioMechAI_v2.3_SmartScannerProductionReady.apk # Smart Anthropometry Scanner APK
+├── BioMechAI_v2.2_PermanentCloudTunnel.apk    # Permanent Cloud Tunnel Baseline APK
 │
 ├── backend/                                   # FastAPI Backend Bridge
 │   ├── main.py                                # Endpoints: POST /classify, WebSocket /ws/stream, GET /health
@@ -58,6 +62,7 @@ biomechai_model/
 │       ├── posec3d_biomechai_v5_limb.py       # Model architecture configuration
 │       └── pose_transforms_extra.py           # Custom limb heatmap transforms
 │
+├── reports/                                   # 32 Authoritative Milestone & Engineering Reports
 └── work_dirs/                                 # Training checkpoint runs and execution logs
 ```
 
@@ -82,11 +87,16 @@ python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000
 
 ## 📱 Mobile App Connection
 
-The mobile application ([`BioMechAI_v2.2_PermanentCloudTunnel.apk`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/BioMechAI_v2.2_PermanentCloudTunnel.apk)) comes pre-configured with:
+The mobile application ([`BioMechAI_v2.6_EmailVerification.apk`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/BioMechAI_v2.6_EmailVerification.apk)) comes pre-configured with:
 - **Default Endpoint**: `https://persevere-kindred-tasty.ngrok-free.dev`
 - **Telemetry Stream**: `wss://persevere-kindred-tasty.ngrok-free.dev/ws/stream`
 - **Header**: `'ngrok-skip-browser-warning': 'true'`
 - **Fallback**: Built-in network settings dialog allowing custom local IP entry for completely offline setups.
+- **Latest Production Features (v2.3–v2.6)**:
+  * Mandatory Email Verification & Sign-In Gatekeeper with interactive Resend action.
+  * Two-Way Coach-Athlete Pairing & Disconnect Flow with multi-tenant data isolation.
+  * Option C Cross-Platform Clinical Assessment PDF Export Engine.
+  * Smart Distance-Guiding Auto-Body Scanner with monocular height scale calibration.
 
 ---
 

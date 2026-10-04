@@ -39,22 +39,32 @@ This directory contains the authoritative technical, diagnostic, and evaluation 
 | **28** | `28_2026-10-03_SYSTEM_FinalGraduationHandoverAndCloudArchitectureV2_2.md` | 2026-10-03 | System | **Final Graduation Handover & v2.2 Cloud Architecture**: Complete 9-module completion matrix, permanent ngrok cloud tunnel integration, and live viva demonstration guide. |
 | **29** | `29_2026-10-03_SYSTEM_SmartScannerAndAnthropometryVerificationV2_3.md` | 2026-10-03 | System | **Smart Body Scanner & Firebase Architecture (v2.3)**: Computer vision anthropometry scale calibration, monocular optics proof, Firebase collection topography, and viva defense guide. |
 | **30** | `30_2026-10-04_SYSTEM_OptionC_CrossPlatformPdfAssessmentExportV2_4.md` | 2026-10-04 | System | **Cross-Platform Assessment PDF Export Engine (v2.4)**: Option C delivery for Athlete Mobile App & Coach Web Portal. Anthropometric tables, Devine ideal vitals, and workout progression. Certified with 0 errors/0 warnings. |
+| **31** | `31_2026-10-04_SYSTEM_TwoWayCoachAthletePairingAndDataIsolationV2_5.md` | 2026-10-04 | System | **Two-Way Coach-Athlete Pairing & Multi-Tenant Data Isolation (v2.5)**: Approach 2 implementation across Web & Mobile. Athlete sovereignty (Accept/Decline invitations), two-sided Unlink, multi-coach data isolation, and Chromium DOM blob PDF fix. |
+| **32** | `32_2026-10-04_SYSTEM_MandatoryEmailVerificationAndGatekeeperV2_6.md` | 2026-10-04 | System | **Mandatory Email Verification & Sign-In Gatekeeper (v2.6)**: Enforces email verification across Web and Mobile registration, blocks unverified logins, provides interactive resend link flow, auto-login protection, and anti-phishing console audit. |
+| **33** | `33_2026-10-04_SYSTEM_ComprehensivePostModule6EvolutionAndServicesGuide.md` | 2026-10-04 | System | **Comprehensive Post-Module-6 Evolution & Unified Services Dossier**: Master architectural guide detailing the full progression from v2.3 to v2.6, all 10 Flutter services, React contexts, FastAPI modules, and QA matrix. |
 
 ---
 
 ## Recommended Reading Order by Audience
 
 ### For FYP-II Final Defense & Viva Preparation
-1. **`28_2026-10-03_SYSTEM_FinalGraduationHandoverAndCloudArchitectureV2_2.md`**: Master graduation summary, permanent cloud tunnel deployment, and step-by-step viva presentation playbook.
-2. **`16_2026-09-08_DEFENSE_PlainEnglishDefenseAndVivaGuide.md`**: Master viva answers, simplified explanations, and counter-arguments for tough questions.
-3. **`09_2026-09-05_DEFENSE_FineTuningMethodologyCompendium.md`**: Deep dive into why PoseC3D was chosen, how fine-tuning works, and mathematical validation.
-4. **`25_2026-09-18_SUPERVISOR_CompleteModelAndTerminologyGuide.md`**: Clear explanations resolving technical jargon and terminology.
+1. **`33_2026-10-04_SYSTEM_ComprehensivePostModule6EvolutionAndServicesGuide.md`**: Master post-Module-6 architecture, services breakdown, and graduation readiness.
+2. **`32_2026-10-04_SYSTEM_MandatoryEmailVerificationAndGatekeeperV2_6.md`**: Latest production baseline (v2.6), security gatekeeper, and complete auth lifecycle.
+3. **`31_2026-10-04_SYSTEM_TwoWayCoachAthletePairingAndDataIsolationV2_5.md`**: Two-way coach pairing, athlete privacy, and multi-tenant data isolation.
+4. **`30_2026-10-04_SYSTEM_OptionC_CrossPlatformPdfAssessmentExportV2_4.md`**: Clinical assessment PDF generation engine across Mobile and Web.
+5. **`29_2026-10-03_SYSTEM_SmartScannerAndAnthropometryVerificationV2_3.md`**: Module 6 smart camera anthropometry, distance guidance, and monocular optics proof.
+6. **`28_2026-10-03_SYSTEM_FinalGraduationHandoverAndCloudArchitectureV2_2.md`**: Master graduation summary, permanent cloud tunnel deployment, and step-by-step viva presentation playbook.
+7. **`16_2026-09-08_DEFENSE_PlainEnglishDefenseAndVivaGuide.md`**: Master viva answers, simplified explanations, and counter-arguments for tough questions.
+8. **`09_2026-09-05_DEFENSE_FineTuningMethodologyCompendium.md`**: Deep dive into why PoseC3D was chosen, how fine-tuning works, and mathematical validation.
+9. **`25_2026-09-18_SUPERVISOR_CompleteModelAndTerminologyGuide.md`**: Clear explanations resolving technical jargon and terminology.
 
 ### For Understanding the Complete BioMechAI Architecture
-1. **`28_2026-10-03_SYSTEM_FinalGraduationHandoverAndCloudArchitectureV2_2.md`**: Latest architecture, APK v2.2, and permanent cloud tunnel.
-2. **`26_2026-09-23_MODULES_Complete9ModulesMasterGuide.md`**: Exhaustive reference for all 9 modules, state machines, Munro FPPA formulas, and Devine BMI equations.
-3. **`13_2026-09-07_MODEL_PoseC3D_v5_FineGYMLimbHeatmapResults.md`**: Official production PoseC3D v5 Limb Heatmap model performance (53.38% Top-1, 91.22% Top-5) and confusion matrix.
-4. **`04_2026-09-01_DATA_KagglePipelineVerificationChecks1to5.md`**: Rigorous data split verification proving zero leakage.
+1. **`33_2026-10-04_SYSTEM_ComprehensivePostModule6EvolutionAndServicesGuide.md`**: Master unified services directory and complete post-Module-6 features.
+2. **`32_2026-10-04_SYSTEM_MandatoryEmailVerificationAndGatekeeperV2_6.md`**: Latest system baseline (v2.6).
+3. **`28_2026-10-03_SYSTEM_FinalGraduationHandoverAndCloudArchitectureV2_2.md`**: Permanent cloud tunnel and WebSocket telemetry.
+4. **`26_2026-09-23_MODULES_Complete9ModulesMasterGuide.md`**: Exhaustive reference for all 9 modules, state machines, Munro FPPA formulas, and Devine BMI equations.
+5. **`13_2026-09-07_MODEL_PoseC3D_v5_FineGYMLimbHeatmapResults.md`**: Official production PoseC3D v5 Limb Heatmap model performance (53.38% Top-1, 91.22% Top-5) and confusion matrix.
+6. **`04_2026-09-01_DATA_KagglePipelineVerificationChecks1to5.md`**: Rigorous data split verification proving zero leakage.
 
 ### For SRS Documentation & Academic Evaluation
 1. **`../srs_documentation/22_2026-09-15_SRS_ScientificAuditAndGapAnalysisGuide.md`**: Scientific gap analysis and audit of the original SRS.
