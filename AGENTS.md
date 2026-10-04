@@ -175,14 +175,15 @@ fypbiomechai/
 All newly compiled or updated APKs MUST follow strict semantic sequential naming:
 `BioMechAI_v<Major>.<Minor>_<FeatureTag>.apk`
 
-- **Current Production Baseline**: [`BioMechAI_v2.4_PdfAssessmentExport.apk`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/BioMechAI_v2.4_PdfAssessmentExport.apk) (~222.4 MB)
-  - Features: Option C Cross-Platform Assessment PDF Export (Athlete Mobile App + Coach Web Portal), Smart Distance-Guiding Auto-Body Scanner (5-phase FSM, 30 FPS stream framing, hands-free 3-second hold countdown, front/back camera switch), full 13-screen responsive layout audit with 0 errors/0 warnings, embedded permanent cloud tunnel `persevere-kindred-tasty.ngrok-free.dev`.
+- **Current Production Baseline**: [`BioMechAI_v2.5_TwoWayCoachPairing.apk`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/BioMechAI_v2.5_TwoWayCoachPairing.apk) (~222.4 MB)
+  - Features: Two-Way Coach-Athlete Pairing & Disconnect Flow on Mobile & Web Dashboard (Accept/Decline invitations on mobile home and profile screens, active coach status with disconnect dialog, independent training mode, Chromium DOM-attached PDF export fix, 0 analyze errors), Option C Cross-Platform Assessment PDF Export, Smart Distance-Guiding Auto-Body Scanner, embedded permanent cloud tunnel `persevere-kindred-tasty.ngrok-free.dev`.
 - Previous baselines:
+  - `BioMechAI_v2.4_PdfAssessmentExport.apk` (Option C Cross-platform assessment PDF export)
   - `BioMechAI_v2.3_SmartScannerProductionReady.apk` (Smart distance-guiding body scanner)
   - `BioMechAI_v2.2_PermanentCloudTunnel.apk` (Permanent cloud tunnel)
   - `BioMechAI_v2.1_Module6CameraComplete.apk` (Module 6 anthropometry camera scanner)
   - `BioMechAI_v2.0_AllModulesComplete.apk` (All 9 modules integrated)
-- **Next Update**: `BioMechAI_v2.5_<FeatureTag>.apk`, then `v2.6`, etc.
+- **Next Update**: `BioMechAI_v2.6_<FeatureTag>.apk`, then `v2.7`, etc.
 - **Rule**: Never overwrite existing APK files without creating the new sequential tag.
 
 ---
