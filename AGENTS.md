@@ -187,9 +187,10 @@ fypbiomechai/
 All newly compiled or updated APKs MUST follow strict semantic sequential naming:
 `BioMechAI_v<Major>.<Minor>_<FeatureTag>.apk`
 
-- **Current Production Baseline**: [`BioMechAI_v2.7_PlankHoldTimer.apk`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/BioMechAI_v2.7_PlankHoldTimer.apk) (~98.1 MB)
-  - Features: Posture-Gated Isometric Plank Hold Timer (McGill 150°–195° standard), Adaptive Zero-Layout-Shift HUD (`Hold Time`, `Status` with `HOLDING`/`PAUSED`, and `Spine Alignment` chips for Plank; `Reps (Live)`, `Stage`, and joint angle chips for dynamic exercises), voice hold milestone encouragement, smart out-of-frame hold preservation, Mandatory Email Verification on Web & Mobile, Sign-In Gatekeeper, Two-Way Coach-Athlete Pairing, Option C Cross-Platform Assessment PDF Export, Smart Distance-Guiding Auto-Body Scanner, embedded permanent cloud tunnel `persevere-kindred-tasty.ngrok-free.dev`.
+- **Current Production Baseline**: [`BioMechAI_v2.8_ExerciseBreakdown.apk`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/BioMechAI_v2.8_ExerciseBreakdown.apk) (~98.2 MB)
+  - Features: Granular Exercise Breakdown Timeline on Session Details (dedicated score rings, timestamps, rep/hold duration for each exercise), Posture-Weighted Plank Continuous Scoring (`_plankAccumulatedScore / _plankAccumulatedTime`), Direct Post-Session Replacement Navigation (smooth transition from WorkoutScreen directly to SessionDetailScreen), Posture-Gated Isometric Plank Hold Timer (McGill 150°–195° standard), Adaptive Zero-Layout-Shift HUD, voice hold milestones, smart out-of-frame hold preservation, Mandatory Email Verification on Web & Mobile, Sign-In Gatekeeper, Two-Way Coach-Athlete Pairing, Option C Cross-Platform Assessment PDF Export, Smart Distance-Guiding Auto-Body Scanner, embedded permanent cloud tunnel `persevere-kindred-tasty.ngrok-free.dev`.
 - Previous baselines:
+  - `BioMechAI_v2.7_PlankHoldTimer.apk` (Posture-Gated Isometric Plank Hold Timer, Adaptive HUD)
   - `BioMechAI_v2.6_EmailVerification.apk` (Mandatory Email Verification and Sign-In Gatekeeper)
   - `BioMechAI_v2.5_TwoWayCoachPairing.apk` (Two-way coach-athlete pairing and PDF download fix)
   - `BioMechAI_v2.4_PdfAssessmentExport.apk` (Option C Cross-platform assessment PDF export)
@@ -197,7 +198,7 @@ All newly compiled or updated APKs MUST follow strict semantic sequential naming
   - `BioMechAI_v2.2_PermanentCloudTunnel.apk` (Permanent cloud tunnel)
   - `BioMechAI_v2.1_Module6CameraComplete.apk` (Module 6 anthropometry camera scanner)
   - `BioMechAI_v2.0_AllModulesComplete.apk` (All 9 modules integrated)
-- **Next Update**: `BioMechAI_v2.8_<FeatureTag>.apk`, then `v2.9`, etc.
+- **Next Update**: `BioMechAI_v2.9_<FeatureTag>.apk`, then `v3.0`, etc.
 - **Rule**: Never overwrite existing APK files without creating the new sequential tag.
 
 ---
