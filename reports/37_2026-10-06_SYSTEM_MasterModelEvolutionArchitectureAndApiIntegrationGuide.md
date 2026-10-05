@@ -170,6 +170,25 @@ Total Predicted      93      26      15      92      80      72      66  |   444
 
 ---
 
+### 4.3 Training Hyperparameters & Convergence Dynamics (Learning Rates, Optimizers & Epochs)
+
+Below is the complete, audited breakdown of the training hyperparameters, optimizers, learning rates, total epochs planned, and the exact peak convergence epoch where each model's best checkpoint was saved:
+
+| Model Version | Architecture / Algorithm | Optimizer | Initial Learning Rate ($\eta$) | Momentum | Weight Decay | Gradient Clipping | Planned Max Epochs | Validation Interval | Peak Convergence Epoch & Checkpoint |
+| :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| **Random Forest v5** | Ensemble Decision Trees (Tabular) | Gini Impurity Criterion | N/A *(Non-gradient)* | N/A | N/A | N/A | N/A *(100 Trees)* | Cross-Validation | **Fitted on 457 videos**<br>Evaluated across 115 folds |
+| **PoseC3D v1** | SlowOnly ResNet-50 3D (Scratch) | SGD | **`0.01`** | 0.90 | 0.0010 | None | 20 Epochs | Every 2 Epochs | **Epoch 18**<br>`best_acc_top1_epoch_18.pth` |
+| **PoseC3D v2** | SlowOnly ResNet-50 3D (Dropout 0.70) | SGD | **`0.01`** | 0.90 | 0.0010 | None | 20 Epochs | Every 2 Epochs | **Epoch 16**<br>`best_acc_top1_epoch_16.pth` |
+| **PoseC3D v3** | SlowOnly ResNet-50 3D (NTU-60 Base) | SGD | **`0.01`** | 0.90 | 0.0005 | None | 18 Epochs | Every 2 Epochs | **Epoch 14**<br>`best_acc_top1_epoch_14.pth` |
+| **PoseC3D v4** | SlowOnly ResNet-50 3D (FineGYM Dots) | SGD | **`0.01`** | 0.90 | 0.0005 | Max Norm 40 | 18 Epochs | Every 2 Epochs | **Epoch 4**<br>`best_acc_top1_epoch_4.pth` |
+| **PoseC3D v5 [CHAMPION]** | SlowOnly ResNet-50 3D (FineGYM Limbs) | **SGD** | **`0.01`** | **0.90** | **0.0005** | **Max Norm 40 (Norm Type 2)** | **18 Epochs** | **Every 2 Epochs** | **Epoch 10**<br>`best_acc_top1_epoch_10.pth`<br>*(8.33 MB)* |
+
+#### Why Peak Accuracy Occurs at Intermediate Epochs (The Regularization Curve)
+* **Pretrained Warm-Start Advantage**: Notice that with pretrained weights (v3, v4, v5), peak validation accuracy is reached much faster (Epoch 4 to 14) than when training from scratch (Epoch 18 in v1). Because the 50-layer backbone already possessed athletic spatiotemporal filters, the network did not need dozens of epochs to discover limb features.
+* **Early Stopping & Overfitting Prevention**: In transfer learning with medium-sized datasets (~1,720 training clips), training beyond 14–18 epochs causes the deep network to memorize subtle video idiosyncrasies. The `CheckpointHook` automatically tracked validation accuracy every 2 epochs and preserved the exact model state at its statistical peak: **Epoch 10 for the PoseC3D v5 champion model**.
+
+---
+
 ## 5. Pretrained Weights in the Context of BioMechAI
 
 To understand why the pretrained weights were critical for the project, consider what happens inside the 50 layers of a 3D Convolutional Neural Network:
