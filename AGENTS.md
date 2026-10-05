@@ -187,9 +187,10 @@ fypbiomechai/
 All newly compiled or updated APKs MUST follow strict semantic sequential naming:
 `BioMechAI_v<Major>.<Minor>_<FeatureTag>.apk`
 
-- **Current Production Baseline**: [`BioMechAI_v3.0_SessionPersistence.apk`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/BioMechAI_v3.0_SessionPersistence.apk) (~98.2 MB)
-  - Features: Automatic Session Persistence (eliminates splash screen race condition by dynamically awaiting background Firebase auth verification with 3s safety watchdog), Edge-Cloud Hybrid Kinematics with Zero-Fail Offline Fallback (local `FormValidationService` immediately engages if cloud telemetry is disconnected; turns skeleton Crimson Red `#F85149`, shows red clinical alert card, and speaks on-device TTS safety warnings aloud with Priority 1 preemption across all 7 exercises), Plank Posture Gating (150°–195° standard with instant red skeleton on sag/pike), Granular Exercise Breakdown Timeline on Session Details, Posture-Weighted Plank Continuous Scoring, Direct Post-Session Replacement Navigation, Mandatory Email Verification on Web & Mobile, Sign-In Gatekeeper, Two-Way Coach-Athlete Pairing, Option C Cross-Platform Assessment PDF Export, Smart Distance-Guiding Auto-Body Scanner, embedded permanent cloud tunnel `persevere-kindred-tasty.ngrok-free.dev`.
+- **Current Production Baseline**: [`BioMechAI_v3.1_FeedbackBadgeAndNavigation.apk`](file:///d:/Study%20Folder/Semester%208/FYP-I/Final%20Evaluation/fypbiomechai/biomechai_model/BioMechAI_v3.1_FeedbackBadgeAndNavigation.apk) (~98.2 MB)
+  - Features: Real-Time Unread Trainer Feedback Count Badge on Home Notification Bell, 1-Tap Direct Session Detail Navigation from Notifications with highlighted coach feedback card, Automatic Session Persistence (eliminates splash screen race condition by dynamically awaiting background Firebase auth verification with 3s safety watchdog), Edge-Cloud Hybrid Kinematics with Zero-Fail Offline Fallback (local `FormValidationService` immediately engages if cloud telemetry is disconnected; turns skeleton Crimson Red `#F85149`, shows red clinical alert card, and speaks on-device TTS safety warnings aloud with Priority 1 preemption across all 7 exercises), Plank Posture Gating (150°–195° standard with instant red skeleton on sag/pike), Granular Exercise Breakdown Timeline on Session Details, Posture-Weighted Plank Continuous Scoring, Direct Post-Session Replacement Navigation, Mandatory Email Verification on Web & Mobile, Sign-In Gatekeeper, Two-Way Coach-Athlete Pairing, Option C Cross-Platform Assessment PDF Export, Smart Distance-Guiding Auto-Body Scanner, embedded permanent cloud tunnel `persevere-kindred-tasty.ngrok-free.dev`.
 - Previous baselines:
+  - `BioMechAI_v3.0_SessionPersistence.apk` (Automatic Session Persistence on app restart)
   - `BioMechAI_v2.9_EdgeCloudHybridFallback.apk` (Edge-Cloud Hybrid Kinematics with Zero-Fail Offline Fallback)
   - `BioMechAI_v2.8_ExerciseBreakdown.apk` (Granular Exercise Breakdown Timeline on Session Details)
   - `BioMechAI_v2.7_PlankHoldTimer.apk` (Posture-Gated Isometric Plank Hold Timer, Adaptive HUD)
@@ -200,7 +201,7 @@ All newly compiled or updated APKs MUST follow strict semantic sequential naming
   - `BioMechAI_v2.2_PermanentCloudTunnel.apk` (Permanent cloud tunnel)
   - `BioMechAI_v2.1_Module6CameraComplete.apk` (Module 6 anthropometry camera scanner)
   - `BioMechAI_v2.0_AllModulesComplete.apk` (All 9 modules integrated)
-- **Next Update**: `BioMechAI_v3.1_<FeatureTag>.apk`, then `v3.2`, etc.
+- **Next Update**: `BioMechAI_v3.2_<FeatureTag>.apk`, then `v3.3`, etc.
 - **Rule**: Never overwrite existing APK files without creating the new sequential tag.
 
 ---
