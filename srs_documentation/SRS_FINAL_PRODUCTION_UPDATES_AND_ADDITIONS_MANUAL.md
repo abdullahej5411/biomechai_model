@@ -1,5 +1,5 @@
 # BioMechAI — SRS Final Production Updates & Additions Manual
-## Complete Step-by-Step Guide for Updating the SRS Word Document to the Final Semester 8 Production Baseline
+## Complete Step-by-Step Guide for Updating the SRS Word Document for FYP-II Mid Evaluation (Semester 8)
 
 - **Target Document**: `BioMechAI SRS -FYP-II Mid Evaluation Document.docx` (or your Google Docs working copy)  
 - **Context**: This manual builds directly upon the previous manual (`27_2026-09-30_SRS_PartnerExactSearchAndReplaceManual.md`). Assuming all edits from that previous manual have already been applied, this document contains **every single new feature, security rule, and refined specification** developed since then.
@@ -13,7 +13,7 @@ Tell your partner: *"We have added several production-certified features (Email 
 
 | Edit # | Target SRS Section | Fail-Safe Search (`Ctrl+F`) | Feature / Update Summary | Status |
 | :---: | :--- | :--- | :--- | :---: |
-| **New 1.1** | Section 1 (Document Purpose & Scope) | `final evaluation` or `Semester 8` | Clarify Final Graduation Baseline (FYP-II Final Defense) | [ ] |
+| **New 1.1** | Section 1 (Document Purpose & Scope) | `mid-evaluation` or `Semester 8` | Clarify FYP-II Mid Evaluation Scope & System Maturity | [ ] |
 | **New 2.1** | Section 2.3 (Objectives - Security) | `Secure multi-role authentication` | Add Mandatory Email Verification & Sign-In Gatekeeper | [ ] |
 | **New 3.1** | Section 3.1 (System Features - Module 1) | `Module 1: User Registration` | Update Module 1 with Email Verification & Auto-Login Session Persistence | [ ] |
 | **New 3.4** | Section 3.1 (System Features - Module 4) | `Module 4: Real-time Rep Counting` | Add Posture-Gated Isometric Plank Hold Timer & Continuous Scoring | [ ] |
@@ -30,16 +30,16 @@ Tell your partner: *"We have added several production-certified features (Email 
 
 ---
 
-# Part 1: Final Graduation Context (Semester 8 Defense)
+# Part 1: FYP-II Mid Evaluation Scope & System Maturity (Semester 8)
 
-### Edit New 1.1: Final Graduation Baseline Finality
+### Edit New 1.1: FYP-II Mid Evaluation Scope & Baseline Alignment
 * **Where in Word**: Section 1 (*Introduction*), under Document Purpose or Scope.
 * **Fail-Safe Search (`Ctrl+F`)**: `mid-evaluation stage of FYP-II` or `Semester 8`
 * **Text to Inspect / Update**:
-  If the text says *"For the mid-evaluation stage of FYP-II..."*, replace it with the final graduation statement:
+  Verify that the text formally frames the comprehensive implementation presented for the FYP-II Mid Evaluation:
 * **Replacement Text to Paste**:
-  > This Software Requirements Specification (SRS) establishes the definitive, production-validated requirements for **BioMechAI** at the **FYP-II Final Graduation Defense (Semester 8)**. All nine (9) core modules have been fully implemented, hardened, and verified through both rigorous computational benchmarks and real-time physical athletic trials.
-* **Why**: Ensures no outdated "planned for next semester" or "mid-evaluation" phrases remain in your final graduation document.
+  > This Software Requirements Specification (SRS) establishes the definitive, production-validated requirements for **BioMechAI** presented at the **FYP-II Mid Evaluation (Semester 8)**. All nine (9) core modules have been fully implemented, integrated, and verified through empirical benchmarks and physical athletic trials.
+* **Why**: Aligns the document precisely with the official **FYP-II Mid Evaluation milestone**, demonstrating that all 9 modules are actively working and verified.
 
 ---
 
@@ -198,4 +198,4 @@ Before saving and submitting the Word document, have your partner perform these 
 8. **Search for `50.90%` or `48.20%`**: Should return **0 results** (Active champion PoseC3D v5 is **53.38% Top-1 / 91.22% Top-5**).
 
 ---
-*Created for BioMechAI FYP-II Final Graduation System Memory & SRS Word Synchronization.*
+*Created for BioMechAI FYP-II Mid Evaluation System Memory & SRS Word Synchronization.*
