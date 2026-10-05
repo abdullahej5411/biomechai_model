@@ -2,14 +2,14 @@
 ## Complete Step-by-Step Guide for Updating the SRS Word Document for FYP-II Mid Evaluation (Semester 8)
 
 - **Target Document**: `BioMechAI SRS -FYP-II Mid Evaluation Document.docx` (or your Google Docs working copy)  
-- **Context**: This manual builds directly upon the previous manual (`27_2026-09-30_SRS_PartnerExactSearchAndReplaceManual.md`). Assuming all edits from that previous manual have already been applied, this document contains **every single new feature, security rule, and refined specification** developed since then.
-- **Goal for Partner**: Give this file to your partner. She can simply press `Ctrl+F`, find the target location in Word, and paste the exact production-accurate text without breaking any formatting or document structure.
+- **Context**: This manual builds directly upon the previous manual (`27_2026-09-30_SRS_PartnerExactSearchAndReplaceManual.md`). Assuming all edits from that previous manual have already been applied, this document contains **every single new feature, security rule, table update, and diagram blueprint** developed since then.
+- **Goal for Partner**: Give this file to your partner. She can simply press `Ctrl+F`, find each target location in Word, and paste the exact production-accurate text, tables, and diagram descriptions without breaking any formatting or document structure.
 
 ---
 
-# 🚀 Quick Partner Checklist & Overview of New Additions
+# 🚀 Quick Partner Checklist & Master Index
 
-Tell your partner: *"We have added several production-certified features (Email Verification Security, Two-Way Coach Pairing, Smart Distance-Guiding Body Scanner, Plank Hold Timer, and Unread Feedback Badge). Use the table below to find each section and paste the new text."*
+Tell your partner: *"We have added production-certified upgrades (Email Verification Security, Two-Way Coach Pairing, Smart Distance-Guiding Body Scanner, Plank Hold Timer, and Unread Feedback Badge). Use this checklist to update each section, table, and diagram."*
 
 | Edit # | Target SRS Section | Fail-Safe Search (`Ctrl+F`) | Feature / Update Summary | Status |
 | :---: | :--- | :--- | :--- | :---: |
@@ -26,7 +26,14 @@ Tell your partner: *"We have added several production-certified features (Email 
 | **New 4.7** | Section 3.2.6 (Functional Req - Module 7) | `Dynamic Knee Valgus` | Add FR-7.5 (Edge-Cloud Hybrid Zero-Fail Offline Fallback Architecture) | [ ] |
 | **New 4.9** | Section 3.2.8 (Functional Req - Module 9) | `Module 9` or `Trainer Dashboard` | Add FR-9.5 (Two-Way Pairing Sovereign Unlink) & FR-9.6 (Unread Badge Count) | [ ] |
 | **New 5.1** | Section 3.3.1 (Performance Requirements) | `PoseC3D` or `latency` | Ensure Champion PoseC3D v5 Benchmark Accuracy (53.38% Top-1, 91.22% Top-5) | [ ] |
-| **New 6.1** | Section 4.1 (Use Case Tables - Table 19) | `Table 19:` | Update Use Case Table 19 with Coach Invitation Acceptance & Feedback Badge | [ ] |
+| **New 6.1** | Section 4.1 (Use Case Tables - Table 9) | `Table 9:` or `UC-01` | Update Table 9 with Email Verification Sign-In Gatekeeper Flow | [ ] |
+| **New 6.4** | Section 4.1 (Use Case Tables - Table 12) | `Table 12:` or `UC-04` | Update Table 12 with Posture-Gated Isometric Plank Hold Timer Flow | [ ] |
+| **New 6.6** | Section 4.1 (Use Case Tables - Table 14) | `Table 14:` or `UC-06` | Update Table 14 with Smart Camera Scanner & PDF Assessment Export | [ ] |
+| **New 6.7** | Section 4.1 (Use Case Tables - Table 15) | `Table 15:` or `UC-07` | Update Table 15 with Clinical Injury Prevention & Hybrid Offline Fallback | [ ] |
+| **New 6.9** | Section 4.1 (Use Case Tables - Table 19) | `Table 19:` or `UC-09` | Update Table 19 with Coach Pairing, Notification Badge & Deep Linking | [ ] |
+| **New 7.1** | Section 4.2 (Diagram - Figure 14) | `Figure 14` | Update Sequence Diagram: Authentication & Email Verification Gatekeeper | [ ] |
+| **New 7.2** | Section 4.3 (Diagram - Figure 17) | `Figure 17` | Update Activity Diagram: Dual-Branch Rep FSM vs Plank Hold Timer | [ ] |
+| **New 7.3** | Section 4.4 (Diagram - Figure 19) | `Figure 19` | Update Deployment Diagram: 4-Node Mobile + Web Dashboard + GPU Backend | [ ] |
 
 ---
 
@@ -164,14 +171,72 @@ In **Section 3.2 (Specific Functional Requirements)**, add the following sub-bul
 
 ---
 
-# Part 5: Section 4.1 — Use Case Table 19 Update
+# Part 5: Section 4.1 — Use Case Tables Modernization
 
-In **Section 4.1 (Use Case Tables)**, verify that **Table 19** includes the Two-Way Pairing and Notification Badge interactions:
+In **Section 4.1 (Use Case Tables)**, verify and update the following tables to reflect the newest flows:
 
-### Edit New 6.1: Table 19 (Two-Way Coach Pairing & Notification Feedback Hub)
-* **Where in Word**: Section 4.1, Table 19 (*UC-09: Coach Dashboard & Client Management*).
+### Edit New 6.1: Table 9 (UC-01: User Registration & Security Gatekeeper)
+* **Where in Word**: Table 9 (`UC-01`).
+* **Fail-Safe Search (`Ctrl+F`)**: `Table 9:` or `UC-01`
+* **Update the Main Flow & Exceptions**:
+  > **Main Flow**:
+  > 1. User enters name, email, password, height, weight, age, and selects role (Athlete vs Trainer).
+  > 2. System validates input formats and creates an authentication record in Firebase Auth.
+  > 3. System automatically dispatches a verification link to the user's email inbox via `sendEmailVerification()`.
+  > 4. System immediately terminates the unverified session and redirects to the Login screen with an alert: *"Verification email sent. Please verify before signing in."*
+  > 5. User clicks the verification link in their email client.
+  > 6. User enters credentials on the Login screen; System reloads user profile, verifies `emailVerified == true`, and grants access to the dashboard.
+  >
+  > **Exceptions**:
+  > * **3a. User attempts login without verifying email**: System intercepts the attempt, denies login, terminates session, and displays an interactive *"Resend Verification Link"* button.
+  > * **3b. Session persistence verification**: On application relaunch, system verifies cached token in background with a 3.0s watchdog, bypassing credentials input for verified users.
+
+---
+
+### Edit New 6.4: Table 12 (UC-04: Rep Counting & Isometric Hold Timer)
+* **Where in Word**: Table 12 (`UC-04`).
+* **Fail-Safe Search (`Ctrl+F`)**: `Table 12:` or `UC-04`
+* **Update the Main Flow**:
+  > **Main Flow**:
+  > 1. Athlete enters camera frame; System locks active exercise (e.g. Squat or Plank).
+  > 2. **For Dynamic Exercises**: Closed 4-Stage Rep FSM monitors primary joint angles. As athlete reaches peak depth (e.g., knee flexion $\le 115^\circ$) and ascends fully ($\ge 146^\circ$), valid rep count increments by +1.
+  > 3. **For Isometric Plank**: Posture-Gated Hold Timer monitors body line angle ($150^\circ - 195^\circ$). As long as alignment is straight, timer ticks continuously second-by-second.
+  > 4. **Exception (Plank Sag / Pike)**: If athlete's hips sag below $150^\circ$ or pike above $195^\circ$, skeleton turns Crimson Red and the timer immediately pauses until posture is corrected.
+  > 5. System writes exercise timeline blocks to memory upon exercise transition or session completion.
+
+---
+
+### Edit New 6.6: Table 14 (UC-06: Smart Camera Body Scanner & PDF Export)
+* **Where in Word**: Table 14 (`UC-06`).
+* **Fail-Safe Search (`Ctrl+F`)**: `Table 14:` or `UC-06`
+* **Update the Main Flow**:
+  > **Main Flow**:
+  > 1. Athlete navigates to Body Measurement screen and selects the Camera Scanner tab.
+  > 2. Athlete stands in front of camera; live video stream tracks vertical body span fraction ($span = |y_{ankle} - y_{nose}| / H$).
+  > 3. Viewfinder HUD provides dynamic color-coded guidance: Red if too close ($>0.92$) or too far ($<0.55$), Yellow if near, and Green when within ideal framing ($0.65 - 0.85$).
+  > 4. Once stable in the green zone, a 3-second hold countdown initiates.
+  > 5. Upon countdown completion, the system instantly captures live landmarks (`_latestPose`) without shutter lag.
+  > 6. Euclidean anthropometric engine calculates Shoulder Width, Hip Width, Torso Length, and Arm Span in centimeters calibrated by user stature.
+  > 7. User taps "Export Assessment PDF" to generate a clinical PDF report via `PdfReportService`.
+
+---
+
+### Edit New 6.7: Table 15 (UC-07: Clinical Injury Prevention & Hybrid Fallback)
+* **Where in Word**: Table 15 (`UC-07`).
+* **Fail-Safe Search (`Ctrl+F`)**: `Table 15:` or `UC-07`
+* **Update the Main Flow & Edge-Cloud Hybrid Failover**:
+  > **Main Flow**:
+  > 1. Kinematics engine continuously inspects live 3D joint landmarks across every single rep.
+  > 2. Evaluates specific clinical rules: Munro Dynamic Knee Valgus ($<165^\circ$) for Squats/Lunges, Lumbar Hip Sag ($>10\%$) for Push-Ups/Planks, and Elbow Flare ($>65^\circ$) for Push-Ups.
+  > 3. If an injury threshold is breached: Skeleton turns Crimson Red (`#F85149`), a red alert card appears, and priority-preempted audio safety cue is spoken aloud.
+  > 4. **Edge-Cloud Hybrid Failover (Zero-Fail Guarantee)**: If network connectivity or cloud backend is disconnected, the local on-device `FormValidationService` seamlessly assumes 100% of injury evaluation and rep counting with zero frame drops or latency spikes.
+
+---
+
+### Edit New 6.9: Table 19 (UC-09: Coach Web Portal, Two-Way Pairing & Notification Hub)
+* **Where in Word**: Table 19 (`UC-09`).
 * **Fail-Safe Search (`Ctrl+F`)**: `Table 19:` or `UC-09`
-* **Update the "Main Flow of Events" section in Table 19**:
+* **Update the Main Flow**:
   > **Main Flow**:  
   > 1. Trainer logs into the Web Dashboard (`https://biomechai-fitness.web.app`) and navigates to the Client Management page.  
   > 2. Trainer enters an athlete's registered email to send a coaching invitation.  
@@ -185,9 +250,164 @@ In **Section 4.1 (Use Case Tables)**, verify that **Table 19** includes the Two-
 
 ---
 
-## Final Quality Assurance Check for Partner
+# Part 6: Master Diagram Modernization Blueprints
 
-Before saving and submitting the Word document, have your partner perform these quick checks:
+Use these visual blueprints if updating your diagram images or Word drawings:
+
+---
+
+### Blueprint 1: Figure 14 — Sequence Diagram (Authentication & Security Gatekeeper)
+* **Where in Word**: Figure 14 (or your Authentication Sequence Diagram).
+* **Exact Flow to Represent**:
+
+```
+Athlete / Trainer            Mobile / Web App              Firebase Auth              Cloud Firestore
+      |                             |                            |                            |
+      |--- 1. Submit Registration ->|                            |                            |
+      |    (email, password, role)  |--- 2. createUserWithEmail->|                            |
+      |                             |<-- 3. Returns User Cred ---|                            |
+      |                             |--- 4. sendEmailVerification---------------------------->|
+      |                             |--- 5. Force signOut() ---->|                            |
+      |<-- 6. Show "Verify Email" --|                            |                            |
+      |                             |                            |                            |
+      |=== 7. User Clicks Verification Link in Email Inbox ===================================|
+      |                             |                            |                            |
+      |--- 8. Submit Login -------->|                            |                            |
+      |                             |--- 9. signInWithPassword ->|                            |
+      |                             |--- 10. user.reload() ----->|                            |
+      |                             |<-- 11. emailVerified: true |                            |
+      |                             |--- 12. getUserData(uid) ------------------------------->|
+      |                             |<-- 13. Return Profile Data -----------------------------|
+      |<-- 14. Access Granted ------|
+```
+
+---
+
+### Blueprint 2: Figure 17 — Activity Diagram (Dual-Branch Workout State Machine)
+* **Where in Word**: Figure 17 (Workout State Machine Activity Diagram).
+* **Exact Logic to Represent**:
+
+```
+                             [ User Enters Frame ]
+                                       │
+                                       ▼
+                         [ Exercise Locked / Auto-Detected ]
+                                       │
+                    ┌──────────────────┴──────────────────┐
+                    ▼                                     ▼
+        [ Dynamic Repetition Mode ]               [ Isometric Plank Mode ]
+       (Squat, Push-Up, Lunge, etc.)                      │
+                    │                                     ▼
+                    ▼                          [ Check Body Line Angle θ ]
+           ┌─────────────────┐                 (McGill Standard: 150°–195°)
+           │  START (θ≥146°) │                            │
+           └────────┬────────┘                   ┌────────┴────────┐
+                    │ Descent                    ▼                 ▼
+                    ▼                       [ θ in Range ]   [ θ out of Range ]
+         ┌─────────────────────┐             (150°–195°)      (<150° or >195°)
+         │ INFLECTION (θ<146°) │                 │                 │
+         └──────────┬──────────┘                 ▼                 ▼
+                    │ Valid Depth            [ Green Skeleton ] [ Red Skeleton ]
+                    ▼                        [ Timer Ticking  ] [ Timer Paused ]
+           ┌─────────────────┐               [ Audio: Praise  ] [ Audio: Alert ]
+           │  PEAK (θ≤115°)  │                   │                 │
+           └────────┬────────┘                   └────────┬────────┘
+                    │ Full Ascent                         ▼
+                    ▼                           [ End Hold Session ]
+           ┌─────────────────┐                            │
+           │   COMPLETION    │                            ▼
+           │  [RepCount++]   │                   [ Posture-Weighted ]
+           └─────────────────┘                   [ Continuous Score ]
+```
+
+---
+
+### Blueprint 3: Figure 19 — Deployment Diagram (Accurate 4-Node Architecture)
+* **Where in Word**: Figure 19 (Deployment Diagram, Word Page 33 / PDF Page 39).
+* **Exact Node-by-Node Layout**:
+
+```
++-----------------------------------------------------------------------------------------------+
+|                                BioMechAI SRS — Figure 19: Deployment Diagram                  |
++-----------------------------------------------------------------------------------------------+
+
++-----------------------------------------+                 +-----------------------------------------+
+|     Node: Athlete Smartphone            |                 |     Node: Trainer Workstation           |
+|         (Android / iOS)                 |                 |     (Chrome / Safari / Edge Browser)    |
+|-----------------------------------------|                 |-----------------------------------------|
+| <<artifact>> BioMechAI.apk (v3.1)       |                 | <<artifact>> React + Vite Web Portal    |
+| <<artifact>> Google ML Kit BlazePose    |                 | <<artifact>> Tailwind + Recharts UI     |
+| <<artifact>> Closed 4-Stage Rep FSM     |                 | <<artifact>> jsPDF Assessment Engine    |
+| <<artifact>> Plank Hold Timer           |                 | <<artifact>> Firebase Web SDK           |
+| <<artifact>> flutter_tts Audio Engine   |                 +--------------------+--------------------+
+| <<artifact>> Smart Distance Scanner     |                                      |
+| <<artifact>> Firestore Client SDK       |                                      | HTTPS
++--------------------+--------------------+                                      |
+                     |                                                           |
+                     | HTTPS / WSS (Cloud Tunnel)                                |
+                     v                                                           |
++-----------------------------------------+                                      |
+|       Node: Cloud AI Server             |                                      |
+|     (GPU / FastAPI / Ubuntu 22.04)      |                                      |
+|-----------------------------------------|                                      |
+| <<artifact>> FastAPI PyTorch App        |                                      |
+| <<artifact>> PoseC3D v5 Limb Model      |                                      |
+|              (best_acc_top1_epoch_10)   |                                      |
+| <<artifact>> ngrok Permanent Tunnel     |                                      |
+|   (persevere-kindred-tasty.ngrok-free)  |                                      |
++--------------------+--------------------+                                      |
+                     |                                                           |
+                     | Cloud Telemetry                                           |
+                     v                                                           v
++-----------------------------------------------------------------------------------------------+
+|                               Node: Google Firebase Cloud (`biomechai-fitness`)               |
+|-----------------------------------------------------------------------------------------------|
+| <<artifact>> Firebase Authentication (Mandatory Email Verification & Role Gatekeeper)         |
+| <<artifact>> Cloud Firestore Database (Real-Time Workouts, Two-Way Pairing, Feedback)        |
+| <<artifact>> Firebase Hosting (Web Portal: `https://biomechai-fitness.web.app`)               |
++-----------------------------------------------------------------------------------------------+
+```
+
+---
+
+### Blueprint 4: Smart Camera Body Scanner State Machine Diagram
+* **Where to Include**: Section 3.2.5 (or Module 6 documentation).
+
+```
+[ Idle / Tab Opened ]
+         │
+         ▼
+[ Camera Active ] ──► Continuous 30 FPS Stream
+         │            Tracks: Span = |y_ankle - y_nose| / H_frame
+         ▼
+[ Real-Time Framing Check ]
+         ├── If Span < 0.55 (Red) ──► CUE: "Move closer - too far away!"
+         ├── If Span > 0.92 (Red) ──► CUE: "Step back - too close!"
+         ├── If 0.55–0.65 or 0.85–0.92 (Yellow) ──► CUE: "Adjust slightly..."
+         └── If 0.65–0.85 (Green) ──► CUE: "Perfect! Hold still."
+                                           │
+                                           ▼
+                                 [ 3-Second Hold Countdown ]
+                                 (3... 2... 1...)
+                                           │
+                                           ▼
+                                 [ Zero-Lag Live Capture ]
+                                 (Read Verified Landmark Buffer)
+                                           │
+                                           ▼
+                                 [ Anthropometric Engine ]
+                                 (Shoulder, Hip, Torso, Arm reach in cm)
+                                           │
+                                           ▼
+                                 [ Save to Firestore & Export PDF ]
+```
+
+---
+
+# Part 7: Final 8-Point Quality Assurance Check for Partner
+
+Before saving and submitting the Word document, have your partner perform these quick `Ctrl+F` checks:
+
 1. **Search for `Colab`**: Should return **0 results**.
 2. **Search for `LLaVA`**: Should return **0 results**.
 3. **Search for `SMPL`**: Should return **0 results**.
