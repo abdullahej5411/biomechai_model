@@ -42,14 +42,16 @@ This directory contains the authoritative technical, diagnostic, and evaluation 
 | **31** | `31_2026-10-04_SYSTEM_TwoWayCoachAthletePairingAndDataIsolationV2_5.md` | 2026-10-04 | System | **Two-Way Coach-Athlete Pairing & Multi-Tenant Data Isolation (v2.5)**: Approach 2 implementation across Web & Mobile. Athlete sovereignty (Accept/Decline invitations), two-sided Unlink, multi-coach data isolation, and Chromium DOM blob PDF fix. |
 | **32** | `32_2026-10-04_SYSTEM_MandatoryEmailVerificationAndGatekeeperV2_6.md` | 2026-10-04 | System | **Mandatory Email Verification & Sign-In Gatekeeper (v2.6)**: Enforces email verification across Web and Mobile registration, blocks unverified logins, provides interactive resend link flow, auto-login protection, and anti-phishing console audit. |
 | **33** | `33_2026-10-04_SYSTEM_ComprehensivePostModule6EvolutionAndServicesGuide.md` | 2026-10-04 | System | **Comprehensive Post-Module-6 Evolution & Unified Services Dossier**: Master architectural guide detailing the full progression from v2.3 to v2.6, all 10 Flutter services, React contexts, FastAPI modules, and QA matrix. |
+| **34** | `34_2026-10-05_SYSTEM_PlankIsometricHoldTimerAndPostureGatingV2_7.md` | 2026-10-05 | System | **Isometric Plank Hold Timer & Posture-Gated Timing Engine (v2.7)**: Decoupled isometric plank from dynamic reps, posture-gated continuous temporal integration (McGill 150°–195° standard), adaptive zero-layout-shift HUD (`Hold Time` & `Status` chips), and voice milestone coaching. Certified with 0 errors/0 warnings. |
 
 ---
 
 ## Recommended Reading Order by Audience
 
 ### For FYP-II Final Defense & Viva Preparation
-1. **`33_2026-10-04_SYSTEM_ComprehensivePostModule6EvolutionAndServicesGuide.md`**: Master post-Module-6 architecture, services breakdown, and graduation readiness.
-2. **`32_2026-10-04_SYSTEM_MandatoryEmailVerificationAndGatekeeperV2_6.md`**: Latest production baseline (v2.6), security gatekeeper, and complete auth lifecycle.
+1. **`34_2026-10-05_SYSTEM_PlankIsometricHoldTimerAndPostureGatingV2_7.md`**: Latest production baseline (v2.7), isometric plank timing engine, and biomechanical posture gating.
+2. **`33_2026-10-04_SYSTEM_ComprehensivePostModule6EvolutionAndServicesGuide.md`**: Master post-Module-6 architecture, services breakdown, and graduation readiness.
+3. **`32_2026-10-04_SYSTEM_MandatoryEmailVerificationAndGatekeeperV2_6.md`**: Email verification baseline (v2.6), security gatekeeper, and complete auth lifecycle.
 3. **`31_2026-10-04_SYSTEM_TwoWayCoachAthletePairingAndDataIsolationV2_5.md`**: Two-way coach pairing, athlete privacy, and multi-tenant data isolation.
 4. **`30_2026-10-04_SYSTEM_OptionC_CrossPlatformPdfAssessmentExportV2_4.md`**: Clinical assessment PDF generation engine across Mobile and Web.
 5. **`29_2026-10-03_SYSTEM_SmartScannerAndAnthropometryVerificationV2_3.md`**: Module 6 smart camera anthropometry, distance guidance, and monocular optics proof.

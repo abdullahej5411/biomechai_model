@@ -44,7 +44,8 @@ biomechai_model/
 ├── FINAL_PRODUCTION_REPORT.md                 # Authoritative Academic Action Recognition Report
 ├── run_cloud_server.bat                       # 1-Click Production Server Launcher (FastAPI + ngrok)
 ├── run_live_webcam.bat                        # Standalone local webcam test launcher
-├── BioMechAI_v2.6_EmailVerification.apk       # [LATEST PRODUCTION APK] (222.4 MB)
+├── BioMechAI_v2.7_PlankHoldTimer.apk          # [LATEST PRODUCTION APK] (98.1 MB)
+├── BioMechAI_v2.6_EmailVerification.apk       # Email Verification Baseline APK (222.4 MB)
 ├── BioMechAI_v2.5_TwoWayCoachPairing.apk      # Previous Baseline APK
 ├── BioMechAI_v2.4_PdfAssessmentExport.apk     # Cross-Platform PDF Engine Baseline APK
 ├── BioMechAI_v2.3_SmartScannerProductionReady.apk # Smart Anthropometry Scanner APK
@@ -62,7 +63,7 @@ biomechai_model/
 │       ├── posec3d_biomechai_v5_limb.py       # Model architecture configuration
 │       └── pose_transforms_extra.py           # Custom limb heatmap transforms
 │
-├── reports/                                   # 32 Authoritative Milestone & Engineering Reports
+├── reports/                                   # 34 Authoritative Milestone & Engineering Reports
 └── work_dirs/                                 # Training checkpoint runs and execution logs
 ```
 
