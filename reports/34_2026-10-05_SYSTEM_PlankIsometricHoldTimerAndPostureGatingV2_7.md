@@ -140,6 +140,18 @@ To strictly preserve existing screen responsiveness and ensure zero UI shifts or
 | **Chip 3 (Right)** | **`Spine Alignment`**<br>`${angleText}°` | **`Knee / Elbow Angle`**<br>`${angleText}°` | Displays real-time degrees for the active kinetic joint. |
 | **Feedback Banner** | **`Good plank alignment — timer running`** or **`Form Break: Check hips & spine alignment`** | Rep validation feedback or kinematic alert message | Contextual textual cue explaining why the timer is running or paused. |
 
+### 3.1 Graceful Edge Autonomy & Status Indicator Architecture
+To eliminate confusing red error banners when an athlete works out without the cloud backend active, the UI applies strict context-aware status isolation:
+1. **Manual Selection Mode (`_manuallySelected == true`)**:
+   - The athlete explicitly selected the exercise (e.g. Squat or Plank). The app has full on-device autonomy (ML Kit pose estimation, rep counter, form validation, and plank hold timer).
+   - **Top Red `wifi_off` Reconnect Banner**: **Completely suppressed** (`SizedBox.shrink()`).
+   - **Top-Right Telemetry Pill**: Displays a subtle blue dot with **`Local`** (or green `${lat}ms` if cloud backend is running).
+   - **Feedback Card**: Never overwritten with "Reconnecting..." errors. Shows genuine exercise kinesiology feedback.
+2. **Auto-Detect via AI Mode (`_isDetectingNewExercise == true`)**:
+   - If the backend is disconnected, an informative amber notice is displayed: *"Cloud Offline — Using Local AI Detection"*.
+   - The feedback card gently guides: *"Auto-Detect: Move naturally (or select exercise above)"*.
+   - The athlete is never blocked or frightened by red crash-like warnings.
+
 ---
 
 ## 4. Complete Lifecycle & State Synchronization
