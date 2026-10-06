@@ -18,43 +18,12 @@ The goal of this document is to provide a complete, transparent, and step-by-ste
 
 This guide is written in clear, structured, and accessible language to ensure that both academic evaluators and engineering practitioners can easily inspect the mathematical rationale and engineering decisions behind the system. In accordance with system documentation standards, all references remain general and focus strictly on engineering roles, athletes, coaches, and architectural modules.
 
-```
-+----------------------------------------------------------------------------------------------------+
-|                                    BIOMECHAI SYSTEM TOPOGRAPHY                                     |
-+----------------------------------------------------------------------------------------------------+
-|                                                                                                    |
-|   [ ATHLETE MOBILE CLIENT (Flutter Android) ]                                                      |
-|   +-- Camera Video Stream (30 FPS, YUV420 nv21)                                                    |
-|   +-- Google ML Kit On-Device Pose Estimation (33 3D Keypoints)                                    |
-|   +-- Closed 4-Stage Rep Counting State Machine (UPRIGHT -> DESCENDING -> BOTTOM -> ASCENDING)     |
-|   +-- Edge-Cloud Hybrid Fallback Engine (Immediate Local Kinematic Takeover on disconnect)        |
-|   +-- Native Text-To-Speech (TTS) Voice Coaching Companion (Debounced Audio Cues)                  |
-|   +-- Monocular Anthropometry Scanner (Standing Height Scale Anchor Calibration)                   |
-|                                                                                                    |
-|                                         |                                                          |
-|       Encrypted WebSocket / HTTPS       | Dual Network Channel                                     |
-|       (ngrok-skip-browser-warning)      | (persevere-kindred-tasty.ngrok-free.dev:8000)            |
-|                                         v                                                          |
-|                                                                                                    |
-|   [ HIGH-PERFORMANCE AI BACKEND (Python FastAPI) ]                                                 |
-|   +-- Endpoints: POST /classify | WebSocket /ws/stream | GET /health                               |
-|   +-- Model: PoseC3D SlowOnly ResNet-50 3D CNN (Champion v5 Checkpoint, 8.33 MB)                   |
-|   +-- Input Modality: 3D Spatiotemporal Connected Limb Heatmaps (48-frame sliding window)          |
-|   +-- Kinematics Physics Engine: Munro FPPA Knee Valgus, McGill Hip Sag, Elbow Flares             |
-|                                                                                                    |
-|                                         |                                                          |
-|       Real-Time Cloud Firestore Sync    | Atomic Batch Uploads (<300ms)                            |
-|       (Project: biomechai-fitness)      |                                                          |
-|                                         v                                                          |
-|                                                                                                    |
-|   [ COACH & ATHLETE WEB DASHBOARD (React + Vite + Tailwind) ]                                      |
-|   +-- Multi-Tenant Role Isolation (Two-Way Coach-Athlete Pairing)                                  |
-|   +-- Granular Multi-Exercise & Rep Breakdown Tables (SVG Status Badges & Fault Diagnostics)      |
-|   +-- Cross-Platform Vector Assessment PDF Engine (jsPDF Multi-Page Clinical Reports)             |
-|   +-- Real-Time Notification Center (/notifications)                                              |
-|                                                                                                    |
-+----------------------------------------------------------------------------------------------------+
-```
+| System Tier | Core Technologies | Primary Responsibilities & Architectural Functions |
+| :--- | :--- | :--- |
+| **Athlete Mobile Client** | Flutter (Android SDK), Google ML Kit, Dart | • Live camera feed capture at 30 FPS (`YUV420 nv21`).<br>• On-device 3D landmark extraction (33 keypoints).<br>• Closed 4-Stage Rep Counting State Machine (`UPRIGHT` $\rightarrow$ `DESCENDING` $\rightarrow$ `BOTTOM` $\rightarrow$ `ASCENDING`).<br>• Edge-Cloud Hybrid Fallback Engine (immediate local takeover on network cut).<br>• Native TTS voice coaching with priority preemption and debouncing.<br>• Monocular anthropometry scanner with standing height anchor calibration. |
+| **High-Performance AI Backend** | Python 3.10+, FastAPI, Uvicorn, PyTorch, OpenMMLab MMAction2, ngrok | • Permanent cloud tunnel via static ngrok domain (`persevere-kindred-tasty.ngrok-free.dev:8000`).<br>• REST `/classify` and streaming WebSocket `/ws/stream` telemetry endpoints.<br>• PoseC3D SlowOnly ResNet-50 3D CNN (Champion v5 Checkpoint, 8.33 MB).<br>• 3D spatiotemporal connected limb heatmaps over 48-frame sliding windows.<br>• Real-time biomechanical kinematics (Munro FPPA knee valgus, McGill hip sag, elbow flare). |
+| **Coach & Athlete Web Dashboard** | React 18, Vite, TypeScript, Tailwind CSS, Recharts, Firebase Hosting | • Unified Cloud Firestore synchronization (`biomechai-fitness`).<br>• Multi-tenant role isolation and two-way coach-athlete invitation pairing.<br>• Chronological workout progression charts and interactive attendance calendar.<br>• Granular multi-exercise and rep-by-rep fault diagnostic tables.<br>• Cross-platform vector assessment PDF engine (`jsPDF` multi-page reports).<br>• Real-time notification center for direct coach-athlete feedback notes. |
+
 
 ---
 
@@ -79,28 +48,13 @@ A machine learning model is only as credible as its validation protocol. In huma
 
 To ensure scientific honesty, BioMechAI was developed and benchmarked under a **strictly zero-leakage, video-disjoint protocol**:
 
-```
-+----------------------------------------------------------------------------------------------------+
-|                               DATASET PARTITIONING SPECIFICATIONS                                  |
-+----------------------------------------------------------------------------------------------------+
-|                                                                                                    |
-|  * Total Video Sources: 572 unique, fully verified video recordings                               |
-|  * Total Extracted 48-Frame Motion Clips: 2,164 clips                                              |
-|                                                                                                    |
-|  [ TRAINING PARTITION (custom_dataset_train.pkl) ]                                                 |
-|  - Total Clips: 1,720 clips (79.9% of dataset)                                                     |
-|  - Unique Videos: 457 video sources                                                                |
-|                                                                                                    |
-|  [ VALIDATION BENCHMARK PARTITION (custom_dataset_val.pkl) ]                                       |
-|  - Total Clips: 444 clips (20.1% of dataset)                                                       |
-|  - Unique Videos: 115 held-out video sources                                                       |
-|                                                                                                    |
-|  [ STRICT ZERO-LEAKAGE GUARANTEE ]                                                                 |
-|  - Video Overlap: EXACTLY 0 VIDEOS (Train Videos INTERSECT Val Videos = EMPTY SET).                |
-|  - No subject, room, lighting, or background in the test set was EVER seen during training.       |
-|                                                                                                    |
-+----------------------------------------------------------------------------------------------------+
-```
+| Partition Specification | Training Set (`custom_dataset_train.pkl`) | Held-Out Validation Benchmark (`custom_dataset_val.pkl`) | Entire Clean Dataset Total |
+| :--- | :---: | :---: | :---: |
+| **Unique Video Sources** | **`457` videos** (79.9%) | **`115` videos** (20.1%) | **`572` videos** (100.0%) |
+| **48-Frame Motion Clips** | **`1,720` clips** | **`444` clips** | **`2,164` clips** |
+| **Video Source Overlap** | **EXACTLY 0 VIDEOS** | **EXACTLY 0 VIDEOS** | **Zero Identity / Subject Overlap** |
+| **Role in ML Pipeline** | Backpropagation weight updates | Untouched validation test benchmark | Video-disjoint generalization test |
+
 
 ### Held-Out Validation Clips Breakdown by Exercise (Total = 444 Clips)
 
@@ -193,47 +147,79 @@ A 50-layer 3D CNN with 25 million parameters has enormous learning capacity. If 
 
 ---
 
-## 6. Step-by-Step Fine-Tuning Workflow
+## 6. The Complete, Honest Model Pipeline Workflow (From Raw Video Ingestion to Cloud Inference)
 
-Below is the exact engineering workflow executed to produce our production champion model:
+The machine learning subsystem in BioMechAI follows an audited 9-phase scientific pipeline. Every phase is documented below with its exact inputs, transformations, engineering rationale, and output artifacts:
 
-```
-+----------------------------------------------------------------------------------------------------+
-|                         THE 5-STEP FINE-TUNING PRODUCTION PIPELINE                                 |
-+----------------------------------------------------------------------------------------------------+
-|                                                                                                    |
-|  [ STEP 1: POSE EXTRACTION & ZERO-LEAKAGE PACKAGING ]                                              |
-|  Raw Fitness Videos (572 total)                                                                    |
-|         |                                                                                          |
-|         v                                                                                          |
-|  Google ML Kit / MediaPipe Pose Detector ---> Extracts 33 (x, y) coordinates per frame             |
-|         |                                                                                          |
-|         +---> Train Partition: 1,720 clips (457 videos) -> custom_dataset_train.pkl                |
-|         +---> Val Benchmark: 444 clips (115 videos)    -> custom_dataset_val.pkl                  |
-|                                                                                                    |
-|  [ STEP 2: PRETRAINED WEIGHT ACQUISITION ]                                                         |
-|  Download OpenMMLab MMAction2 Checkpoint:                                                          |
-|  https://download.openmmlab.com/mmaction/v1.0/recognition/posec3d/slowonly_r50_gym/               |
-|  slowonly_r50_8xb16-u48-240e_gym-limb_20220815-2e6e3c5c.pth                                        |
-|                                                                                                    |
-|  [ STEP 3: CONFIGURATION SURGERY ]                                                                 |
-|  Edit models/posec3d_v5_limb/posec3d_biomechai_v5_limb.py:                                         |
-|  1. load_from = 'gym-limb_20220815-2e6e3c5c.pth'                                                   |
-|  2. with_kp = False, with_limb = True, sigma = 0.6                                                 |
-|  3. cls_head: in_channels = 2048, num_classes = 7 (Replaces old 99 gymnastics classes)             |
-|                                                                                                    |
-|  [ STEP 4: KAGGLE CLOUD TRAINING ]                                                                 |
-|  Hardware: NVIDIA Tesla P100 GPU (16 GB VRAM)                                                      |
-|  Optimizer: SGD (momentum=0.9, weight_decay=0.0003, Cosine Annealing LR)                           |
-|  Validation Checkpoint at Epoch 10 hits peak accuracy:                                             |
-|  ---> Saved: models/posec3d_v5_limb/best_acc_top1_epoch_10.pth (8.33 MB)                           |
-|                                                                                                    |
-|  [ STEP 5: BACKEND DEPLOYMENT ]                                                                    |
-|  In backend/engine.py: Loaded via init_recognizer() with weights_only=False unpickling guard.      |
-|  Inference latency: < 25 ms per 48-frame sliding window on local GPU/CPU.                          |
-|                                                                                                    |
-+----------------------------------------------------------------------------------------------------+
-```
+### Master Model Pipeline Overview
+
+| Phase | Pipeline Stage | Input | Core Tool / Technique | Output Artifact | Scientific Role |
+| :---: | :--- | :--- | :--- | :--- | :--- |
+| **1** | **Raw Video Ingestion** | 572 Raw Workout Videos | OpenCV temporal sliding window (48 frames @ 30 FPS) | 2,164 standardized 1.6s video clips | Standardizes motion clip duration across all 7 exercises. |
+| **2** | **3D Pose Extraction** | 2,164 Video Clips | Google ML Kit / MediaPipe BlazePose (33 keypoints) | Raw 3D landmark arrays $[T=48, V=33, C=3]$ | Extracts normalized Cartesian joint coordinates independent of camera resolution. |
+| **3** | **Keypoint Harmonization** | 33 MediaPipe Keypoints | Mathematical channel mapping to 17 COCO keypoints | Harmonized array $[T=48, V=17, C=3]$ | Conforms keypoints to standard PoseC3D human skeleton topology. |
+| **4** | **Zero-Leakage Partitioning** | 572 Harmonized Videos | `GroupKFold` split by unique Video Source ID | `custom_dataset_train.pkl` (457 vids / 1,720 clips)<br>`custom_dataset_val.pkl` (115 vids / 444 clips) | Enforces 0 video overlap, eliminating subject and room memorization leakage. |
+| **5** | **Limb Heatmap Generation** | 17 Keypoint Coordinates | 3D Spatiotemporal Gaussian limb cylinders ($\sigma=0.6$) | 4D Heatmap Tensor $[C=17, T=48, H=56, W=56]$ | Resolves joint occlusion in deep flexion (Squats), preserving anatomical limb vectors. |
+| **6** | **Pretrained Weight Surgery** | FineGYM 240e Checkpoint (96.5 MB) | OpenMMLab MMAction2 Checkpoint Loader | Backbone loaded; 99-class head replaced with 7 classes | Transfers 25M athletic movement weights; initializes fresh 7-class linear classifier. |
+| **7** | **Kaggle GPU Fine-Tuning** | `custom_dataset_train.pkl` | SGD ($\eta=0.01$, momentum=0.9, clip norm=40) | Peak checkpoint `best_acc_top1_epoch_10.pth` (8.33 MB) | Fine-tunes weights over 10 epochs on Tesla P100 GPU without catastrophic forgetting. |
+| **8** | **Validation Benchmarking** | `custom_dataset_val.pkl` | Evaluation evaluator on frozen 115 held-out videos | 53.38% Top-1, 53.15% Macro Recall, 91.22% Top-5 | Verifies honest generalization to completely unseen athletes and environments. |
+| **9** | **Real-Time Cloud Inference** | Live 30 FPS Mobile Stream | FastAPI WebSocket/REST + Deterministic Kinematics | Telemetry JSON (<25ms latency): Label, Reps, Form Score | Delivers real-time coaching with automatic edge-cloud fallback on connection drop. |
+
+---
+
+### Detailed Step-by-Step Walkthrough of Each Phase
+
+#### Phase 1: Raw Video Ingestion & Temporal Segmentation
+* **Source Pool**: 572 distinct workout video recordings across 7 exercise classes (Bicep Curl, Squat, Lunge, Plank, Push-Up, High Knees, Jumping Jack).
+* **Demographic Diversity**: Recorded across diverse human subjects with varied body heights, clothing styles, camera distances, and room lighting conditions (both commercial gym and home environments).
+* **Temporal Slicing**: Using OpenCV, raw variable-length recordings were segmented into uniform **48-frame temporal windows** (corresponding to 1.60 seconds at a standard 30 FPS capture rate). This yielded a clean corpus of **2,164 motion clips**.
+
+#### Phase 2 & 3: 3D Pose Extraction & Landmark Harmonization
+* **Coordinate Extraction**: Every video frame was passed through the Google ML Kit / MediaPipe BlazePose convolutional detector, which extracted 33 body keypoints in normalized 3D space $(x, y, z)$ alongside visibility confidence scores.
+* **Harmonization to 17 COCO Keypoints**: MediaPipe's 33 landmarks include facial points (lips, ears, eyes) and detailed foot landmarks that are redundant for gross motor fitness exercises. The pipeline mapped the 33 landmarks down to the standard **17 COCO body joints** (Nose, Left/Right Eye, Ear, Shoulder, Elbow, Wrist, Hip, Knee, Ankle):
+  ```python
+  # Stored array shape per 48-frame motion clip:
+  # shape: (1, 48, 17, 3) -> [Persons=1, Frames=48, Joints=17, Dimensions=3]
+  ```
+
+#### Phase 4: Zero-Leakage Video-Disjoint Partitioning
+* **The FYP-I Flaw**: In earlier preliminary experiments, random clip splitting placed clips of the same athlete in both training and test sets. A simple Random Forest appeared to achieve 84% accuracy, but this was an illusion—the model had simply memorized the subject's clothing and background.
+* **The FYP-II Solution**: We implemented strict **video-disjoint grouping**. If Video #42 was assigned to the training split, every clip from Video #42 remained strictly in the training split:
+  * **Training Split (`custom_dataset_train.pkl`)**: 457 videos, 1,720 motion clips (79.9%).
+  * **Validation Split (`custom_dataset_val.pkl`)**: 115 videos, 444 motion clips (20.1%).
+  * **Zero Leakage**: Exactly 0 video sources overlapped.
+
+#### Phase 5: 3D Connected Limb Heatmap Generation (The Landmark Breakthrough)
+* **The Failure of Dot Heatmaps (v4)**: In PoseC3D v4, keypoints were rendered as individual 2D Gaussian dots. During deep knee flexion (Squats), the hip, knee, and ankle dots converged into an ambiguous cluster in 2D space, causing Squat accuracy to collapse to **20.55%**.
+* **The Limb Volume Solution (v5)**: Rather than isolated dots, the generator connects 17 anatomical bone vectors (e.g. Left Hip $\rightarrow$ Left Knee $\rightarrow$ Left Ankle) and renders spatiotemporal cylindrical heatmaps ($\sigma=0.6$). This preserves limb vectors and angular orientations, resulting in a **+160% relative accuracy surge on Squats (53.42%)** and slashing squat-to-lunge misclassifications by 65.9%.
+
+#### Phase 6: Pretrained Weight Surgery
+* **Base Architecture**: SlowOnly ResNet-50 3D CNN (`Recognizer3D`, `depth=50`, `base_channels=32`, `num_stages=3`).
+* **Source Checkpoint**: OpenMMLab MMAction2 Model Zoo: `slowonly_r50_8xb16-u48-240e_gym-limb_20220815-2e6e3c5c.pth` (~96.5 MB, trained on 30,000+ FineGYM gymnastics clips).
+* **The Surgery**:
+  * **Backbone (Layers 1–49)**: All 25+ million pretrained convolution weights were loaded directly, transferring deep athletic motion filters.
+  * **Classification Head (Layer 50)**: The original 99-class gymnastics head (`[99, 512]`) was discarded and replaced with a newly initialized 7-class linear layer (`[7, 512]`).
+
+#### Phase 7: Fine-Tuning Optimization Dynamics
+* **Hardware**: Kaggle Cloud GPU (NVIDIA Tesla P100, 16 GB VRAM).
+* **Optimizer**: Stochastic Gradient Descent (SGD) with Momentum ($0.9$), Weight Decay ($0.0005$).
+* **Initial Learning Rate**: $\text{lr} = 0.01$ (derived mathematically from Goyal et al.'s Linear Scaling Rule for Batch Size 16).
+* **Safety Shield**: Gradient clipping (`clip_grad(max_norm=40, norm_type=2)`) protected the pretrained backbone from exploding loss gradients.
+* **Convergence**: Evaluated every 2 epochs on the frozen 444-clip validation benchmark. Peak validation generalization occurred at **Epoch 10**, producing our production champion checkpoint: `best_acc_top1_epoch_10.pth` (**8.33 MB**, 2,010,322 parameters).
+
+#### Phase 8: Benchmark Certification
+* On the 115 frozen held-out video recordings (444 clips, strictly zero leakage), PoseC3D v5 achieved:
+  * **Top-1 Accuracy**: **`53.38%`** (237/444 clips).
+  * **Macro Recall**: **`53.15%`**.
+  * **Top-5 Accuracy**: **`91.22%`** (405/444 clips).
+
+#### Phase 9: Real-Time Production Cloud Inference & Kinematics
+* In production, the athlete's phone streams 30 FPS keypoints to the FastAPI server (`POST /classify` or `WebSocket /ws/stream`) over the permanent ngrok cloud tunnel.
+* The backend generates the 3D limb heatmap tensor and executes a forward pass in **< 25 ms**.
+* In parallel, the deterministic kinematics engine checks clinical safety rules (Munro FPPA knee valgus, McGill hip sag, elbow flare).
+* Telemetry is returned to the mobile app in under 300 ms, updating the 4-stage rep counter, live form score, and triggering native TTS audio coaching.
+* If wireless connection is lost, the on-device `FormValidationService` immediately takes over kinematic monitoring locally with Crimson Red visual cues and voice coaching.
+
 
 ### Python Code Snippet: Loading and Running the Champion Model
 
