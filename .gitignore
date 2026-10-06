@@ -48,6 +48,7 @@ htmlcov/
 # ------------------------------------------------------------------------------
 data/raw_videos/
 data/raw_videos_batch2/
+data/raw_videos_batch3/
 *.mp4
 *.avi
 *.mov
@@ -56,6 +57,8 @@ data/raw_videos_batch2/
 *.flv
 *.part
 testing videos/
+model_training/**/epoch_*.pth
+
 
 # ------------------------------------------------------------------------------
 # 5. MASSIVE RAW LANDMARK DUMPS (Tens of thousands of raw JSONs)
