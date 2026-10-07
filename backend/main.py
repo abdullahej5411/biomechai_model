@@ -19,6 +19,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 from backend.config import (
+    ACTIVE_MODEL_VERSION,
     CLASSES,
     CLASS_DISPLAY_NAMES,
     COCO_MP_MAP,
@@ -43,7 +44,7 @@ from backend.kinematics import (
     evaluate_high_knees_form,
     VoiceCoachingEngine,
 )
-from backend.engine import PoseC3DEngine
+from backend.engine import create_engine
 
 app = FastAPI(
     title="BioMechAI Backend API",
@@ -60,8 +61,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Initialize Global PoseC3D AI Engine
-engine = PoseC3DEngine(device="cpu")
+# Initialize Global Exercise Recognition AI Engine
+engine = create_engine(device="cpu")
 
 # ------------------------------------------------------------------------------
 # Pydantic Request Models
@@ -108,6 +109,14 @@ def download_apk():
     if os.path.exists(apk_path):
         return FileResponse(apk_path, media_type="application/vnd.android.package-archive", filename="app-debug.apk")
     raise HTTPException(status_code=404, detail=f"APK not found at {apk_path}")
+
+@app.get("/download/app-release.apk", tags=["Download"])
+def download_release_apk():
+    """Serves the latest compiled Flutter release APK."""
+    apk_path = os.path.abspath(os.path.join(os.path.dirname(__file__), r"..\..\biomechai_flutter_latest\build\app\outputs\flutter-apk\app-release.apk"))
+    if os.path.exists(apk_path):
+        return FileResponse(apk_path, media_type="application/vnd.android.package-archive", filename="app-release.apk")
+    raise HTTPException(status_code=404, detail=f"Release APK not found at {apk_path}")
 
 @app.get("/api/pairing", tags=["Pairing"])
 def dynamic_pairing_config():
@@ -193,7 +202,7 @@ def mobile_pairing_qr_page():
 def health_check():
     return {
         "status": "healthy",
-        "model": "PoseC3D-v5-SlowOnly-R50",
+        "model": "RandomForest-84pct-Baseline" if ACTIVE_MODEL_VERSION in ["rf", "random_forest"] else f"PoseC3D-{ACTIVE_MODEL_VERSION}-SlowOnly-R50",
         "classes": CLASSES,
         "thresholds": {
             "bottom_depth_threshold": BOTTOM_DEPTH_THRESHOLD,
@@ -551,6 +560,7 @@ async def websocket_stream_endpoint(websocket: WebSocket):
                     current_coco[c_i, 1] = landmarks[mp_i][1] * h
 
                 engine.push_coco_keypoints(current_coco)
+                engine.push_landmarks(landmarks)
                 out_of_frame_streak = 0
 
                 # Trigger background PoseC3D inference asynchronously only when worker is idle

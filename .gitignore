@@ -100,3 +100,6 @@ mmaction2_repo/
 hf_space_deploy/
 huggingface_deployment/
 
+
+# Exclude large training dataset pickles
+model_training/**/*.pkl

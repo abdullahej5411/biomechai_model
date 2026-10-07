@@ -1,0 +1,495 @@
+{
+  "total_files_scanned": 1078,
+  "total_distinct_hashes": 603,
+  "same_exercise_duplicate_groups": 151,
+  "cross_exercise_duplicate_groups": 12,
+  "cross_exercise_details": [
+    {
+      "hash": "3202ba59243b83ec84652ab986161abd",
+      "exercises_involved": [
+        "high_knees",
+        "jumping_jack"
+      ],
+      "files": [
+        {
+          "exercise": "high_knees",
+          "filename": "high_knees_01_15.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_01_15.mp4",
+          "size": 1210466
+        },
+        {
+          "exercise": "jumping_jack",
+          "filename": "jumping_jack_01_06.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_01_06.mp4",
+          "size": 1210466
+        },
+        {
+          "exercise": "jumping_jack",
+          "filename": "jumping_jack_02.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_02.mp4",
+          "size": 1210466
+        },
+        {
+          "exercise": "jumping_jack",
+          "filename": "jumping_jack_02_03.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_02_03.mp4",
+          "size": 1210466
+        },
+        {
+          "exercise": "jumping_jack",
+          "filename": "jumping_jack_04_02.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_04_02.mp4",
+          "size": 1210466
+        },
+        {
+          "exercise": "jumping_jack",
+          "filename": "jumping_jack_05_01.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_05_01.mp4",
+          "size": 1210466
+        },
+        {
+          "exercise": "jumping_jack",
+          "filename": "jumping_jack_06_03.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_06_03.mp4",
+          "size": 1210466
+        },
+        {
+          "exercise": "jumping_jack",
+          "filename": "jumping_jack_08_02.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_08_02.mp4",
+          "size": 1210466
+        },
+        {
+          "exercise": "jumping_jack",
+          "filename": "jumping_jack_09.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_09.mp4",
+          "size": 1210466
+        },
+        {
+          "exercise": "jumping_jack",
+          "filename": "jumping_jack_09_01.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_09_01.mp4",
+          "size": 1210466
+        },
+        {
+          "exercise": "jumping_jack",
+          "filename": "jumping_jack_10.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_10.mp4",
+          "size": 1210466
+        },
+        {
+          "exercise": "jumping_jack",
+          "filename": "jumping_jack_10_01.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_10_01.mp4",
+          "size": 1210466
+        }
+      ]
+    },
+    {
+      "hash": "48a3ab4abc7e70723a908e157c5b91b0",
+      "exercises_involved": [
+        "high_knees",
+        "jumping_jack"
+      ],
+      "files": [
+        {
+          "exercise": "high_knees",
+          "filename": "high_knees_06_02.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_06_02.mp4",
+          "size": 45320775
+        },
+        {
+          "exercise": "jumping_jack",
+          "filename": "jumping_jack_05_06.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_05_06.mp4",
+          "size": 45320775
+        }
+      ]
+    },
+    {
+      "hash": "6ce75f4fd85e1a22568ab5b66d475eaa",
+      "exercises_involved": [
+        "high_knees",
+        "lunge"
+      ],
+      "files": [
+        {
+          "exercise": "high_knees",
+          "filename": "high_knees_06_09.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_06_09.mp4",
+          "size": 44707866
+        },
+        {
+          "exercise": "lunge",
+          "filename": "lunge_06_04.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_06_04.mp4",
+          "size": 44707866
+        }
+      ]
+    },
+    {
+      "hash": "6208b0ad5405e25918c644037d474e93",
+      "exercises_involved": [
+        "lunge",
+        "squat"
+      ],
+      "files": [
+        {
+          "exercise": "lunge",
+          "filename": "lunge_01_08.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_01_08.mp4",
+          "size": 1043655
+        },
+        {
+          "exercise": "lunge",
+          "filename": "lunge_05_11.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_05_11.mp4",
+          "size": 1043655
+        },
+        {
+          "exercise": "lunge",
+          "filename": "lunge_09_11.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_09_11.mp4",
+          "size": 1043655
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_01_15.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_01_15.mp4",
+          "size": 1043655
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_03_10.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_03_10.mp4",
+          "size": 1043655
+        }
+      ]
+    },
+    {
+      "hash": "7592a3ca4124a90b0dd31d0b729790a7",
+      "exercises_involved": [
+        "lunge",
+        "squat"
+      ],
+      "files": [
+        {
+          "exercise": "lunge",
+          "filename": "lunge_03_12.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_03_12.mp4",
+          "size": 3955196
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_05_13.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_05_13.mp4",
+          "size": 3955196
+        }
+      ]
+    },
+    {
+      "hash": "9d6ff79c37774d7df0c915757896cfe6",
+      "exercises_involved": [
+        "lunge",
+        "squat"
+      ],
+      "files": [
+        {
+          "exercise": "lunge",
+          "filename": "lunge_04_08.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_04_08.mp4",
+          "size": 8039945
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_01_02.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_01_02.mp4",
+          "size": 8039945
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_02_02.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_02_02.mp4",
+          "size": 8039945
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_03_02.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_03_02.mp4",
+          "size": 8039945
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_04_02.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_04_02.mp4",
+          "size": 8039945
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_05_02.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_05_02.mp4",
+          "size": 8039945
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_06_02.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_06_02.mp4",
+          "size": 8039945
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_08_04.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_08_04.mp4",
+          "size": 8039945
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_09_10.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_09_10.mp4",
+          "size": 8039945
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_10.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_10.mp4",
+          "size": 8039945
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_10_02.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_10_02.mp4",
+          "size": 8039945
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_b2_03.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos_batch2\\squat\\squat_b2_03.mp4",
+          "size": 8039945
+        }
+      ]
+    },
+    {
+      "hash": "67d2d046af9b10e009bd6f8790a81526",
+      "exercises_involved": [
+        "lunge",
+        "pushup",
+        "squat"
+      ],
+      "files": [
+        {
+          "exercise": "lunge",
+          "filename": "lunge_04_13.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_04_13.mp4",
+          "size": 3346017
+        },
+        {
+          "exercise": "lunge",
+          "filename": "lunge_09_10.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_09_10.mp4",
+          "size": 3346017
+        },
+        {
+          "exercise": "pushup",
+          "filename": "pushup_07_06.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_07_06.mp4",
+          "size": 3346017
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_01_06.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_01_06.mp4",
+          "size": 3346017
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_02_08.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_02_08.mp4",
+          "size": 3346017
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_03.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_03.mp4",
+          "size": 3346017
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_03_01.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_03_01.mp4",
+          "size": 3346017
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_04_12.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_04_12.mp4",
+          "size": 3346017
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_05.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_05.mp4",
+          "size": 3346017
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_05_01.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_05_01.mp4",
+          "size": 3346017
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_06_05.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_06_05.mp4",
+          "size": 3346017
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_07_13.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_07_13.mp4",
+          "size": 3346017
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_08_03.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_08_03.mp4",
+          "size": 3346017
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_10_01.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_10_01.mp4",
+          "size": 3346017
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_b2_04.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos_batch2\\squat\\squat_b2_04.mp4",
+          "size": 3346017
+        }
+      ]
+    },
+    {
+      "hash": "1fc4c96e29987e660ea4d609017011bf",
+      "exercises_involved": [
+        "lunge",
+        "plank"
+      ],
+      "files": [
+        {
+          "exercise": "lunge",
+          "filename": "lunge_06_07.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_06_07.mp4",
+          "size": 26994562
+        },
+        {
+          "exercise": "plank",
+          "filename": "plank_05_05.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_05_05.mp4",
+          "size": 26994562
+        }
+      ]
+    },
+    {
+      "hash": "b0a7640caa7d85f6a3aa824d0313297d",
+      "exercises_involved": [
+        "lunge",
+        "squat"
+      ],
+      "files": [
+        {
+          "exercise": "lunge",
+          "filename": "lunge_07_08.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_07_08.mp4",
+          "size": 6390843
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_03_14.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_03_14.mp4",
+          "size": 6390843
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_07_12.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_07_12.mp4",
+          "size": 6390843
+        }
+      ]
+    },
+    {
+      "hash": "352a487abfe7f33f9df59021d1342b23",
+      "exercises_involved": [
+        "lunge",
+        "squat"
+      ],
+      "files": [
+        {
+          "exercise": "lunge",
+          "filename": "lunge_07_09.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_07_09.mp4",
+          "size": 19482321
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_07_04.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_07_04.mp4",
+          "size": 19482321
+        }
+      ]
+    },
+    {
+      "hash": "65a8acfba06bc0678133db1d1c2c3dbd",
+      "exercises_involved": [
+        "lunge",
+        "squat"
+      ],
+      "files": [
+        {
+          "exercise": "lunge",
+          "filename": "lunge_07_11.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_07_11.mp4",
+          "size": 17475891
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_07_11.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_07_11.mp4",
+          "size": 17475891
+        }
+      ]
+    },
+    {
+      "hash": "ad8c89daadaaa2f802278dfc05dfeef2",
+      "exercises_involved": [
+        "lunge",
+        "squat"
+      ],
+      "files": [
+        {
+          "exercise": "lunge",
+          "filename": "lunge_09_03.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_09_03.mp4",
+          "size": 581266
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_01_13.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_01_13.mp4",
+          "size": 581266
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_04_06.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_04_06.mp4",
+          "size": 581266
+        },
+        {
+          "exercise": "squat",
+          "filename": "squat_08_15.mp4",
+          "path": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_08_15.mp4",
+          "size": 581266
+        }
+      ]
+    }
+  ]
+}

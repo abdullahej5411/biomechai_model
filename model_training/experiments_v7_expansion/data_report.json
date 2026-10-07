@@ -1,0 +1,46 @@
+{
+  "train_file": "/kaggle/input/datasets/abdullahej/biomechai-v7-data/custom_dataset_train_v7.pkl",
+  "val_file": "/kaggle/input/datasets/abdullahej/biomechai-v7-data/custom_dataset_val_frozen.pkl",
+  "removed": {
+    "train_exact_duplicates": 987,
+    "train_conflicting_label_copies": 0,
+    "train_exact_match_with_val": 4,
+    "train_same_video_id_as_val": 0,
+    "train_near_duplicate_of_val": 0,
+    "quality_filter": {
+      "too_many_fake_frames": 96,
+      "low_motion": 157,
+      "out_of_frame": 31
+    }
+  },
+  "val_full_clips": 444,
+  "val_unique_clips": 192,
+  "val_unique_per_class": [
+    39,
+    19,
+    33,
+    25,
+    28,
+    16,
+    32
+  ],
+  "train_clips_final": 3159,
+  "train_per_class_final": [
+    408,
+    425,
+    423,
+    573,
+    491,
+    381,
+    458
+  ],
+  "class_weights": [
+    1.1061,
+    1.0618,
+    1.0669,
+    0.7876,
+    0.9191,
+    1.1845,
+    0.9853
+  ]
+}

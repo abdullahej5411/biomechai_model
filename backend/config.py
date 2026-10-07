@@ -15,8 +15,27 @@ VALGUS_FPPA_THRESHOLD       = 165.0  # Deg: Munro et al. 2012 clinical diagnosti
 KNEE_FLEXION_SANITY_FLOOR   = 35.0   # Deg: Anatomical limit of human knee flexion; rejects 2D occlusion glitches
 
 # Model Weights & Config Paths
-POSEC3D_CONFIG = os.path.join(BASE_DIR, "models", "posec3d_v5_limb", "posec3d_biomechai_v5_limb.py")
-POSEC3D_CHECKPOINT = os.path.join(BASE_DIR, "models", "posec3d_v5_limb", "best_acc_top1_epoch_10.pth")
+# Active model version:
+#   'rf' -> Random Forest Baseline (Original FYP-I 84% tabular model)
+#   'v6' -> Phase v6 (Threshold 80, 54.05% Top-1 / 53.82% Macro Recall on 444 frozen benchmark)
+#   'v7' -> Phase v7 (63.54% Top-1 on distinct unique clips)
+#   'v5' -> Champion v5 baseline (53.38% Top-1 / 91.22% Top-5)
+ACTIVE_MODEL_VERSION = "v7"
+
+RF_MODEL_PATH = os.path.join(BASE_DIR, "models", "random_forest_baselines", "exercise_classifier.pkl")
+RF_SCALER_PATH = os.path.join(BASE_DIR, "models", "random_forest_baselines", "scaler.pkl")
+RF_LE_PATH = os.path.join(BASE_DIR, "models", "random_forest_baselines", "label_encoder.pkl")
+
+if ACTIVE_MODEL_VERSION == "v6":
+    POSEC3D_CONFIG = os.path.join(BASE_DIR, "models", "posec3d_v6_thr80", "posec3d_biomechai_v6_thr80.py")
+    POSEC3D_CHECKPOINT = os.path.join(BASE_DIR, "models", "posec3d_v6_thr80", "best_acc_top1_epoch_46.pth")
+elif ACTIVE_MODEL_VERSION == "v7":
+    POSEC3D_CONFIG = os.path.join(BASE_DIR, "models", "posec3d_v7_dedup", "posec3d_biomechai_v7_dedup.py")
+    POSEC3D_CHECKPOINT = os.path.join(BASE_DIR, "models", "posec3d_v7_dedup", "best_acc_top1_epoch_10.pth")
+else:
+    POSEC3D_CONFIG = os.path.join(BASE_DIR, "models", "posec3d_v5_limb", "posec3d_biomechai_v5_limb.py")
+    POSEC3D_CHECKPOINT = os.path.join(BASE_DIR, "models", "posec3d_v5_limb", "best_acc_top1_epoch_10.pth")
+
 MEDIAPIPE_TASK = os.path.join(BASE_DIR, "models", "mediapipe", "pose_landmarker_lite.task")
 
 # 7 Exercise Classes

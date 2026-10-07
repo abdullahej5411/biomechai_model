@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BioMechAI - The 9 Core Modules Presentation Guide</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 14mm 14mm 14mm 14mm;
+  }
+  
+  * {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    color: #1a202c;
+    background-color: #ffffff;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    font-size: 13pt;
+  }
+  
+  .header {
+    text-align: center;
+    border-bottom: 3px solid #2b6cb0;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    margin: 0 0 6px 0;
+    font-size: 26pt;
+    color: #1a365d;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+  
+  .header .subtitle {
+    font-size: 14pt;
+    color: #4a5568;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  .header .badge-bar {
+    display: inline-block;
+    background-color: #ebf8ff;
+    color: #2b6cb0;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 11pt;
+    font-weight: bold;
+    border: 1px solid #bee3f8;
+  }
+  
+  .module-card {
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 18px;
+    page-break-inside: avoid;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  }
+  
+  .module-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #edf2f7;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+  }
+  
+  .module-title {
+    font-size: 17pt;
+    font-weight: 800;
+    color: #2c5282;
+    margin: 0;
+  }
+  
+  .module-tag {
+    background-color: #2b6cb0;
+    color: #ffffff;
+    font-size: 10pt;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .simple-summary {
+    background-color: #f7fafc;
+    border-left: 5px solid #3182ce;
+    padding: 10px 14px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 12px;
+    font-size: 13pt;
+    font-weight: 600;
+    color: #2d3748;
+  }
+  
+  .section-label {
+    font-size: 11pt;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #718096;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+  }
+  
+  ul {
+    margin: 4px 0 10px 0;
+    padding-left: 22px;
+  }
+  
+  li {
+    margin-bottom: 4px;
+    font-size: 12pt;
+    color: #2d3748;
+  }
+  
+  li strong {
+    color: #1a202c;
+  }
+  
+  .defense-tip {
+    background-color: #f0fff4;
+    border: 1px solid #c6f6d5;
+    border-left: 5px solid #38a169;
+    padding: 8px 12px;
+    border-radius: 0 6px 6px 0;
+    font-size: 11.5pt;
+    color: #22543d;
+    margin-top: 8px;
+  }
+  
+  .defense-tip strong {
+    color: #1c4532;
+  }
+
+  .footer-note {
+    text-align: center;
+    font-size: 10pt;
+    color: #a0aec0;
+    margin-top: 20px;
+    border-top: 1px solid #edf2f7;
+    padding-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>BioMechAI: The 9 Official Modules</h1>
+  <div class="subtitle">Complete Quick-Reference Defense Guide for FYP-II Final Presentation</div>
+  <div class="badge-bar">Plain English Guide for Quick Answers to Evaluators and Panelists</div>
+</div>
+
+<!-- MODULE 1 -->
+<div class="module-card">
+  <div class="module-header">
+    <div class="module-title">Module 1: User Registration, Login & Role Security</div>
+    <div class="module-tag">Account System</div>
+  </div>
+  <div class="simple-summary">
+    In Simple Words: Secure sign-up and sign-in system that separates Athletes from Coaches and verifies real emails.
+  </div>
+  <div class="section-label">How It Works in the App</div>
+  <ul>
+    <li><strong>Role Separation:</strong> Athletes use the Flutter mobile application; coaches use the web portal.</li>
+    <li><strong>Email Verification Gatekeeper:</strong> When someone registers, Google sends a verification link. Unverified accounts cannot enter the app until they confirm their email.</li>
+    <li><strong>Cloud Database:</strong> Securely backed by Google Firebase Firestore, storing user settings and workout histories.</li>
+  </ul>
+  <div class="defense-tip">
+    <strong>Presentation Answer Tip:</strong> If asked, explain that user security is hardened with mandatory email verification to block fake accounts, and athletes are dynamically routed to their workout view while coaches enter the web analytics portal.
+  </div>
+</div>
+
+<!-- MODULE 2 -->
+<div class="module-card">
+  <div class="module-header">
+    <div class="module-title">Module 2: Real-Time 3D Pose Tracking</div>
+    <div class="module-tag">Vision Engine</div>
+  </div>
+  <div class="simple-summary">
+    In Simple Words: The phone camera tracks your body joints in 3D without requiring any sensors, wires, or wearable hardware.
+  </div>
+  <div class="section-label">How It Works in the App</div>
+  <ul>
+    <li><strong>30 Frames Per Second:</strong> Runs on-device using Google ML Kit Pose Detection at full video speed.</li>
+    <li><strong>33 Key Landmarks:</strong> Tracks nose, shoulders, elbows, wrists, hips, knees, and ankles in three dimensions (X, Y, and depth Z).</li>
+    <li><strong>Zero Wearables:</strong> Everything is calculated purely from normal smartphone camera video.</li>
+  </ul>
+  <div class="defense-tip">
+    <strong>Presentation Answer Tip:</strong> If asked why we chose on-device pose detection, explain that extracting 33 landmarks locally on the phone uses zero network bandwidth and runs smoothly even if internet drops.
+  </div>
+</div>
+
+<!-- MODULE 3 -->
+<div class="module-card">
+  <div class="module-header">
+    <div class="module-title">Module 3: AI Exercise Recognition & Classification</div>
+    <div class="module-tag">Deep Learning</div>
+  </div>
+  <div class="simple-summary">
+    In Simple Words: The AI automatically watches you and recognizes which exercise you are doing out of 7 different workouts.
+  </div>
+  <div class="section-label">How It Works in the App</div>
+  <ul>
+    <li><strong>7 Supported Exercises:</strong> Squat, Push-Up, Lunge, Bicep Curl, Plank, High Knees, and Jumping Jack.</li>
+    <li><strong>PoseC3D 3D Convolutional Neural Network:</strong> Connects joint points into spatiotemporal cylindrical limb heatmaps over time, capturing full movement trajectory curves.</li>
+    <li><strong>Stillness Guard:</strong> Does not guess randomly when you are standing still; only activates when you begin a genuine repetition.</li>
+  </ul>
+  <div class="defense-tip">
+    <strong>Presentation Answer Tip:</strong> If asked about accuracy, state clearly that PoseC3D achieved 63.54 percent Top-1 accuracy under strictly clean, deduplicated video evaluation, with near 98 percent live recognition confidence on Squats and Push-Ups.
+  </div>
+</div>
+
+<!-- MODULE 4 -->
+<div class="module-card">
+  <div class="module-header">
+    <div class="module-title">Module 4: Real-Time Repetition Counting</div>
+    <div class="module-tag">State Machine</div>
+  </div>
+  <div class="simple-summary">
+    In Simple Words: Counts your exercise repetitions automatically and rejects half-hearted, incomplete, or cheating reps.
+  </div>
+  <div class="section-label">How It Works in the App</div>
+  <ul>
+    <li><strong>4-Stage Closed State Machine:</strong> Tracks movement through Standing, Descending, Bottom Inflection, and Ascending phases.</li>
+    <li><strong>Valid vs Invalid Separation:</strong> Only awards a full repetition point if the joint passed the required depth angle (for example, knee angle below 115 degrees on squats).</li>
+    <li><strong>Plank Hold Timer:</strong> Automatically converts to a precision isometric hold timer for planks, counting seconds held.</li>
+  </ul>
+  <div class="defense-tip">
+    <strong>Presentation Answer Tip:</strong> If asked how cheating is prevented, explain that the finite state machine requires reaching the bottom inflection point before the rep counter increments. Half-reps are registered as invalid.
+  </div>
+</div>
+
+<!-- MODULE 5 -->
+<div class="module-card">
+  <div class="module-header">
+    <div class="module-title">Module 5: Posture Correctness & Live Form Scoring</div>
+    <div class="module-tag">Kinematic Rules</div>
+  </div>
+  <div class="simple-summary">
+    In Simple Words: Evaluates how well you perform each exercise and displays a live 0 to 100 percent form score on your screen.
+  </div>
+  <div class="section-label">How It Works in the App</div>
+  <ul>
+    <li><strong>Color-Coded Skeleton:</strong> Shows a bright green skeleton when form is excellent, and turns yellow or red when mistakes occur.</li>
+    <li><strong>Biomechanic Rule Checks:</strong> Measures back straightness, squat depth, arm swing, elbow position, and torso lean.</li>
+    <li><strong>Rep Breakdown:</strong> Every finished repetition receives an individual score and fault summary stored in your workout log.</li>
+  </ul>
+  <div class="defense-tip">
+    <strong>Presentation Answer Tip:</strong> If asked about the scoring formula, explain that every repetition begins at 100 percent and deducts points for specific kinematic deviations like torso lean or shallow depth.
+  </div>
+</div>
+
+<!-- MODULE 6 -->
+<div class="module-card">
+  <div class="module-header">
+    <div class="module-title">Module 6: Smart Body Scanner & Measurement Tracking</div>
+    <div class="module-tag">Anthropometry</div>
+  </div>
+  <div class="simple-summary">
+    In Simple Words: Measures your shoulder width, hip width, and arm span using the camera, and tracks weight transformation over time.
+  </div>
+  <div class="section-label">How It Works in the App</div>
+  <ul>
+    <li><strong>Smart Distance Guidance:</strong> Guides the user with on-screen voice and color cues (Move closer or Step back) until body height fills the ideal framing zone.</li>
+    <li><strong>Height Calibration Anchor:</strong> Uses user entered height to convert camera pixel distances into true real-world centimeters.</li>
+    <li><strong>Transformation Tracking:</strong> Logs weight, Body Mass Index gauge, Devine ideal weight range, and exports assessment PDF reports.</li>
+  </ul>
+  <div class="defense-tip">
+    <strong>Presentation Answer Tip:</strong> If asked if body measurements are fixed ratios, clarify that they are true monocular photogrammetry Euclidean measurements calibrated against user height.
+  </div>
+</div>
+
+<!-- MODULE 7 -->
+<div class="module-card">
+  <div class="module-header">
+    <div class="module-title">Module 7: Clinical Injury Prevention Across All 7 Exercises</div>
+    <div class="module-tag">Sports Medicine</div>
+  </div>
+  <div class="simple-summary">
+    In Simple Words: Detects dangerous exercise habits that cause joint damage and prevents injuries like ACL knee tears and back pain.
+  </div>
+  <div class="section-label">How It Works in the App</div>
+  <ul>
+    <li><strong>Knee Valgus (Squat & Lunge):</strong> Tracks knee inward collapse using the clinical Munro Frontal Plane Projection Angle to protect the ACL ligament.</li>
+    <li><strong>Hip Sag (Push-Up & Plank):</strong> Detects core collapse below the McGill 162 degree line to protect the lower lumbar spine.</li>
+    <li><strong>Elbow Flare (Push-Up):</strong> Detects elbows flaring out beyond 65 degrees to prevent shoulder rotator cuff tears.</li>
+    <li><strong>Torso Swing (Bicep Curl):</strong> Flags back swinging to prevent lower spine strain.</li>
+  </ul>
+  <div class="defense-tip">
+    <strong>Presentation Answer Tip:</strong> Emphasize to the panel that Module 7 covers clinical injury rules for ALL 7 exercises based on published orthopedic sports medicine standards, not just knee injuries.
+  </div>
+</div>
+
+<!-- MODULE 8 -->
+<div class="module-card">
+  <div class="module-header">
+    <div class="module-title">Module 8: Voice Coaching Companion</div>
+    <div class="module-tag">Audio Coaching</div>
+  </div>
+  <div class="simple-summary">
+    In Simple Words: An on-device audio personal trainer that talks to you, counts your reps aloud, and shouts safety corrections instantly.
+  </div>
+  <div class="section-label">How It Works in the App</div>
+  <ul>
+    <li><strong>Real-Time Speech:</strong> Speaks out loud: "Rep 1", "Rep 2", "Starting Squat", and "10 seconds held".</li>
+    <li><strong>Priority Safety Interrupt:</strong> If you perform a dangerous movement, it immediately cuts off rep counting and warns: "Push your knees outward!" or "Lift your hips!".</li>
+    <li><strong>Zero Lag:</strong> Runs directly through on-device native speech synthesis so you do not have to look at the screen while exercising.</li>
+  </ul>
+  <div class="defense-tip">
+    <strong>Presentation Answer Tip:</strong> If asked how audio spam is avoided, explain the three-tier priority hierarchy and cooldown debouncing that stops repetitive machine-gun audio while ensuring critical safety warnings take priority.
+  </div>
+</div>
+
+<!-- MODULE 9 -->
+<div class="module-card">
+  <div class="module-header">
+    <div class="module-title">Module 9: Coach Web Dashboard & Client Pairing</div>
+    <div class="module-tag">Web Portal</div>
+  </div>
+  <div class="simple-summary">
+    In Simple Words: A web portal for gym trainers to monitor multiple athletes, view workout calendars, and send feedback notes.
+  </div>
+  <div class="section-label">How It Works in the App</div>
+  <ul>
+    <li><strong>Two-Way Pairing:</strong> Coach invites an athlete by email; athlete taps Accept on their phone to securely connect.</li>
+    <li><strong>Analytics Portal:</strong> Displays monthly attendance calendars, score progression trend charts, and granular rep-by-rep fault logs.</li>
+    <li><strong>Instant Feedback & PDF:</strong> Trainer sends notes directly to the athlete's phone notifications and downloads clinical assessment PDF reports in one click.</li>
+  </ul>
+  <div class="defense-tip">
+    <strong>Presentation Answer Tip:</strong> If asked about multi-tenant privacy, explain that coaches can only view athletes who explicitly accepted their pairing invitation, keeping athlete workout records private and secure.
+  </div>
+</div>
+
+<div class="footer-note">
+  BioMechAI — Dual-Timescale Biomechanical Analysis & Clinical Injury Prevention System &bull; Final Year Project Defense
+</div>
+
+</body>
+</html>

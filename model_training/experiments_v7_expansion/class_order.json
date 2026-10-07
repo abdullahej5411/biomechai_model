@@ -1,0 +1,9 @@
+{
+  "bicep_curl": 0,
+  "high_knees": 1,
+  "jumping_jack": 2,
+  "lunge": 3,
+  "plank": 4,
+  "pushup": 5,
+  "squat": 6
+}

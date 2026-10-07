@@ -1,0 +1,3851 @@
+{
+  "bicep_curl": {
+    "unique_count": 64,
+    "clean_pool_before_dedup": 117,
+    "intra_backlog_duplicate_groups": 18,
+    "intra_backlog_duplicate_files_pruned": 53,
+    "unique_candidates": [
+      {
+        "filename": "bicep_curl_01_02.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_01_02.mp4",
+        "md5": "e3468b4109ab38c8edf4af4b30a069f6",
+        "filesize": 13229810
+      },
+      {
+        "filename": "bicep_curl_01_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_01_03.mp4",
+        "md5": "4807696e08b864e8a72d59b9c655ae9b",
+        "filesize": 1682496
+      },
+      {
+        "filename": "bicep_curl_01_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_01_05.mp4",
+        "md5": "72af12ce97f6f99f762aff2ea228ceef",
+        "filesize": 5422725
+      },
+      {
+        "filename": "bicep_curl_01_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_01_06.mp4",
+        "md5": "85f55a8adf23708c868c9a969fe7b538",
+        "filesize": 19079290
+      },
+      {
+        "filename": "bicep_curl_01_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_01_07.mp4",
+        "md5": "8bc30f6a08379b376088ae5fc956dac8",
+        "filesize": 5285997
+      },
+      {
+        "filename": "bicep_curl_01_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_01_08.mp4",
+        "md5": "e20ba42783dd3f3978e084ec8068aa58",
+        "filesize": 5830312
+      },
+      {
+        "filename": "bicep_curl_01_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_01_09.mp4",
+        "md5": "b3a68b1fa831e76c2bf5cebd729c79fe",
+        "filesize": 10192521
+      },
+      {
+        "filename": "bicep_curl_01_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_01_10.mp4",
+        "md5": "6770f4969384582bb882963efa799caa",
+        "filesize": 6601826
+      },
+      {
+        "filename": "bicep_curl_01_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_01_11.mp4",
+        "md5": "0eebf4624a918979057f86e20c3539c1",
+        "filesize": 29323691
+      },
+      {
+        "filename": "bicep_curl_01_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_01_13.mp4",
+        "md5": "8ab5d002befd5cc60bfd383a540919bd",
+        "filesize": 35136422
+      },
+      {
+        "filename": "bicep_curl_01_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_01_14.mp4",
+        "md5": "14881a959bd64cdf403949ccd6194aab",
+        "filesize": 7814473
+      },
+      {
+        "filename": "bicep_curl_01_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_01_15.mp4",
+        "md5": "4aaa97fbe2ec82b564ed5281bf932e2b",
+        "filesize": 1577814
+      },
+      {
+        "filename": "bicep_curl_02_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_02_08.mp4",
+        "md5": "2b725c36e4afa1b0b41f6553368c1ec1",
+        "filesize": 33214713
+      },
+      {
+        "filename": "bicep_curl_02_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_02_09.mp4",
+        "md5": "1ea208d1cd6933ee45faf01d52c88dbe",
+        "filesize": 741285
+      },
+      {
+        "filename": "bicep_curl_02_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_02_11.mp4",
+        "md5": "6965cca09a07521d669f73b03ac9b8f4",
+        "filesize": 24827855
+      },
+      {
+        "filename": "bicep_curl_02_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_02_12.mp4",
+        "md5": "b0fcc48f00f728993ff1a93ca760c2c3",
+        "filesize": 23818741
+      },
+      {
+        "filename": "bicep_curl_02_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_02_13.mp4",
+        "md5": "08d2c5971bffd0a84f5e1c98cb2b0680",
+        "filesize": 28314628
+      },
+      {
+        "filename": "bicep_curl_02_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_02_14.mp4",
+        "md5": "5bacafdf208027599f383bce40de32cf",
+        "filesize": 30732617
+      },
+      {
+        "filename": "bicep_curl_03_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_03_03.mp4",
+        "md5": "cb4203d2c2a12f86fa7588d4fd3356d3",
+        "filesize": 759339
+      },
+      {
+        "filename": "bicep_curl_03_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_03_05.mp4",
+        "md5": "efef0885a7e66edf086c3b40a3c26829",
+        "filesize": 1404331
+      },
+      {
+        "filename": "bicep_curl_03_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_03_06.mp4",
+        "md5": "7198fb9721df7b85efda86abe4cbe0af",
+        "filesize": 3724682
+      },
+      {
+        "filename": "bicep_curl_03_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_03_07.mp4",
+        "md5": "6e9f74a37cce456a7634d73175fee9bb",
+        "filesize": 3722587
+      },
+      {
+        "filename": "bicep_curl_03_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_03_08.mp4",
+        "md5": "bbcdd05bfa0439dd7997ccf07291c095",
+        "filesize": 2241701
+      },
+      {
+        "filename": "bicep_curl_03_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_03_13.mp4",
+        "md5": "f621269d0b4211df00c111b74dc42adf",
+        "filesize": 1161582
+      },
+      {
+        "filename": "bicep_curl_03_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_03_14.mp4",
+        "md5": "95401901a884d8fb84d1880dc2816d04",
+        "filesize": 638607
+      },
+      {
+        "filename": "bicep_curl_03_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_03_15.mp4",
+        "md5": "cb48ece4b180cfd7da37a6d301aaec33",
+        "filesize": 730418
+      },
+      {
+        "filename": "bicep_curl_04_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_04_06.mp4",
+        "md5": "152f0862189b361195b354f5244ac00c",
+        "filesize": 6342455
+      },
+      {
+        "filename": "bicep_curl_04_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_04_07.mp4",
+        "md5": "c8deb4f3123d2d6b0679298d58dbd4c6",
+        "filesize": 5504704
+      },
+      {
+        "filename": "bicep_curl_04_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_04_10.mp4",
+        "md5": "05e64ba01c3548f6f622e7316fd71d3f",
+        "filesize": 5656691
+      },
+      {
+        "filename": "bicep_curl_04_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_04_11.mp4",
+        "md5": "b5403f69c3066d3fb2f0f10ccfe61748",
+        "filesize": 5015743
+      },
+      {
+        "filename": "bicep_curl_04_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_04_14.mp4",
+        "md5": "42ef7021df4bf7b2074c3902766f824f",
+        "filesize": 14898849
+      },
+      {
+        "filename": "bicep_curl_05_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_05_03.mp4",
+        "md5": "fc0b87c23b03bddcacfefd8902eb01f3",
+        "filesize": 49453131
+      },
+      {
+        "filename": "bicep_curl_05_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_05_04.mp4",
+        "md5": "2db54e0f7cb3b5bb7623ea300b053ecc",
+        "filesize": 10359393
+      },
+      {
+        "filename": "bicep_curl_05_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_05_11.mp4",
+        "md5": "b268e2203cbe78f0da4cc78850ddad9b",
+        "filesize": 25413607
+      },
+      {
+        "filename": "bicep_curl_05_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_05_12.mp4",
+        "md5": "efb4aac5e8a4046e70c6afc4598c99b9",
+        "filesize": 47964251
+      },
+      {
+        "filename": "bicep_curl_05_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_05_14.mp4",
+        "md5": "f84c00b5ff70599f55a1c7ab3683324b",
+        "filesize": 8991171
+      },
+      {
+        "filename": "bicep_curl_06_02.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_06_02.mp4",
+        "md5": "2580239ce71ccdfdc5650042edb906d5",
+        "filesize": 9570250
+      },
+      {
+        "filename": "bicep_curl_06_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_06_07.mp4",
+        "md5": "83491d7513a91445c686acbfc3500111",
+        "filesize": 7978129
+      },
+      {
+        "filename": "bicep_curl_06_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_06_11.mp4",
+        "md5": "d526298c30f92919b455727d6d64c6a4",
+        "filesize": 3831450
+      },
+      {
+        "filename": "bicep_curl_06_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_06_14.mp4",
+        "md5": "6bb6cb08a880f9331931ce2a500572d9",
+        "filesize": 7548482
+      },
+      {
+        "filename": "bicep_curl_07_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_07_03.mp4",
+        "md5": "1df58fe79ffdad1e0d5bf64121def458",
+        "filesize": 9041887
+      },
+      {
+        "filename": "bicep_curl_07_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_07_04.mp4",
+        "md5": "e717485c48599fcc9e22f7f333bf60ba",
+        "filesize": 6184422
+      },
+      {
+        "filename": "bicep_curl_07_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_07_05.mp4",
+        "md5": "df16953a04c21b26bd2bb2b0f9adad83",
+        "filesize": 4406679
+      },
+      {
+        "filename": "bicep_curl_07_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_07_06.mp4",
+        "md5": "ba94f1b7b0ef27ffd98bc2badc6dd8f5",
+        "filesize": 1176054
+      },
+      {
+        "filename": "bicep_curl_07_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_07_07.mp4",
+        "md5": "bb0ac42a7ea059f7dadcb4941e65465e",
+        "filesize": 12713254
+      },
+      {
+        "filename": "bicep_curl_07_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_07_08.mp4",
+        "md5": "6b7b9305c6ed2fe9196e2f9e3b658b2c",
+        "filesize": 781831
+      },
+      {
+        "filename": "bicep_curl_07_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_07_09.mp4",
+        "md5": "4e4c050aa327ffe964aa79578804bb3a",
+        "filesize": 767256
+      },
+      {
+        "filename": "bicep_curl_07_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_07_11.mp4",
+        "md5": "25fa44cb25a9dd47349fc648c9a8d3dd",
+        "filesize": 1363320
+      },
+      {
+        "filename": "bicep_curl_07_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_07_13.mp4",
+        "md5": "313d789b6580cf064fc54ccd423ff357",
+        "filesize": 1173964
+      },
+      {
+        "filename": "bicep_curl_08_02.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_08_02.mp4",
+        "md5": "5140e836bb0181a8242f054f2cb2270a",
+        "filesize": 12010618
+      },
+      {
+        "filename": "bicep_curl_08_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_08_07.mp4",
+        "md5": "4c1cc68aae79000f9247b001d829a2bc",
+        "filesize": 51858639
+      },
+      {
+        "filename": "bicep_curl_08_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_08_08.mp4",
+        "md5": "d7e160b6d0af5cf0db563c0ad354c021",
+        "filesize": 3528170
+      },
+      {
+        "filename": "bicep_curl_08_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_08_09.mp4",
+        "md5": "0e3e6d1564c8b47f9cd9a0ddcf68b4c9",
+        "filesize": 5928260
+      },
+      {
+        "filename": "bicep_curl_08_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_08_13.mp4",
+        "md5": "a85ab63ef1c2c2f58da2959c2b6cb01a",
+        "filesize": 30577546
+      },
+      {
+        "filename": "bicep_curl_08_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_08_14.mp4",
+        "md5": "8b5d6bfb1b9a6cc35cca38638dd6e545",
+        "filesize": 16187693
+      },
+      {
+        "filename": "bicep_curl_08_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_08_15.mp4",
+        "md5": "65ca6fd134d9a390e035d5bbbc2fc653",
+        "filesize": 51992967
+      },
+      {
+        "filename": "bicep_curl_10_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_10_03.mp4",
+        "md5": "3bb74e74d0ca1bf1ed220a1be28bee50",
+        "filesize": 548639
+      },
+      {
+        "filename": "bicep_curl_10_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_10_04.mp4",
+        "md5": "9f9f8263df82ce74b5e177362012bae0",
+        "filesize": 3145070
+      },
+      {
+        "filename": "bicep_curl_10_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_10_05.mp4",
+        "md5": "e2bdc34e19a39fb295dcf51a35c5f7c7",
+        "filesize": 16311967
+      },
+      {
+        "filename": "bicep_curl_10_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_10_07.mp4",
+        "md5": "7b8b47516055cf8fdf544e8f8c15d201",
+        "filesize": 776564
+      },
+      {
+        "filename": "bicep_curl_10_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_10_09.mp4",
+        "md5": "fc4bfc4c3b4fc3dc5f79aa9e18ae9db0",
+        "filesize": 15943201
+      },
+      {
+        "filename": "bicep_curl_10_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_10_11.mp4",
+        "md5": "e8b03628e32802c950a73a3187d9fcea",
+        "filesize": 17746185
+      },
+      {
+        "filename": "bicep_curl_10_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_10_13.mp4",
+        "md5": "5f9e844e3ef623d5210b0aca5f049084",
+        "filesize": 2379817
+      },
+      {
+        "filename": "bicep_curl_10_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\bicep_curl\\bicep_curl_10_14.mp4",
+        "md5": "77b7384f125ff201189ea9d81b89486a",
+        "filesize": 2285295
+      }
+    ],
+    "duplicates_logged": [
+      {
+        "representative": "bicep_curl_01_02.mp4",
+        "md5": "e3468b4109ab38c8edf4af4b30a069f6",
+        "duplicates": [
+          "bicep_curl_02_01.mp4",
+          "bicep_curl_03_10.mp4",
+          "bicep_curl_04_04.mp4",
+          "bicep_curl_05_02.mp4",
+          "bicep_curl_07_02.mp4",
+          "bicep_curl_08_04.mp4",
+          "bicep_curl_09_02.mp4",
+          "bicep_curl_10_06.mp4"
+        ]
+      },
+      {
+        "representative": "bicep_curl_01_03.mp4",
+        "md5": "4807696e08b864e8a72d59b9c655ae9b",
+        "duplicates": [
+          "bicep_curl_02_04.mp4",
+          "bicep_curl_04_03.mp4",
+          "bicep_curl_05_09.mp4",
+          "bicep_curl_06_03.mp4",
+          "bicep_curl_09_04.mp4"
+        ]
+      },
+      {
+        "representative": "bicep_curl_01_05.mp4",
+        "md5": "72af12ce97f6f99f762aff2ea228ceef",
+        "duplicates": [
+          "bicep_curl_02_05.mp4",
+          "bicep_curl_04_02.mp4",
+          "bicep_curl_05_07.mp4",
+          "bicep_curl_06_06.mp4",
+          "bicep_curl_09_03.mp4"
+        ]
+      },
+      {
+        "representative": "bicep_curl_01_06.mp4",
+        "md5": "85f55a8adf23708c868c9a969fe7b538",
+        "duplicates": [
+          "bicep_curl_02_06.mp4",
+          "bicep_curl_03_12.mp4",
+          "bicep_curl_09_06.mp4"
+        ]
+      },
+      {
+        "representative": "bicep_curl_01_07.mp4",
+        "md5": "8bc30f6a08379b376088ae5fc956dac8",
+        "duplicates": [
+          "bicep_curl_02_10.mp4",
+          "bicep_curl_09_14.mp4"
+        ]
+      },
+      {
+        "representative": "bicep_curl_01_08.mp4",
+        "md5": "e20ba42783dd3f3978e084ec8068aa58",
+        "duplicates": [
+          "bicep_curl_05_13.mp4",
+          "bicep_curl_06_09.mp4",
+          "bicep_curl_09_09.mp4"
+        ]
+      },
+      {
+        "representative": "bicep_curl_01_09.mp4",
+        "md5": "b3a68b1fa831e76c2bf5cebd729c79fe",
+        "duplicates": [
+          "bicep_curl_05_08.mp4",
+          "bicep_curl_06_08.mp4",
+          "bicep_curl_08_03.mp4",
+          "bicep_curl_10_01.mp4"
+        ]
+      },
+      {
+        "representative": "bicep_curl_01_10.mp4",
+        "md5": "6770f4969384582bb882963efa799caa",
+        "duplicates": [
+          "bicep_curl_03_01.mp4",
+          "bicep_curl_04_08.mp4"
+        ]
+      },
+      {
+        "representative": "bicep_curl_01_11.mp4",
+        "md5": "0eebf4624a918979057f86e20c3539c1",
+        "duplicates": [
+          "bicep_curl_04_15.mp4"
+        ]
+      },
+      {
+        "representative": "bicep_curl_01_13.mp4",
+        "md5": "8ab5d002befd5cc60bfd383a540919bd",
+        "duplicates": [
+          "bicep_curl_05_06.mp4",
+          "bicep_curl_09_11.mp4"
+        ]
+      },
+      {
+        "representative": "bicep_curl_01_14.mp4",
+        "md5": "14881a959bd64cdf403949ccd6194aab",
+        "duplicates": [
+          "bicep_curl_04_12.mp4",
+          "bicep_curl_06_05.mp4"
+        ]
+      },
+      {
+        "representative": "bicep_curl_02_08.mp4",
+        "md5": "2b725c36e4afa1b0b41f6553368c1ec1",
+        "duplicates": [
+          "bicep_curl_05_15.mp4",
+          "bicep_curl_07_10.mp4",
+          "bicep_curl_09_10.mp4"
+        ]
+      },
+      {
+        "representative": "bicep_curl_02_11.mp4",
+        "md5": "6965cca09a07521d669f73b03ac9b8f4",
+        "duplicates": [
+          "bicep_curl_06_12.mp4",
+          "bicep_curl_07_14.mp4",
+          "bicep_curl_08_05.mp4",
+          "bicep_curl_09_15.mp4"
+        ]
+      },
+      {
+        "representative": "bicep_curl_02_12.mp4",
+        "md5": "b0fcc48f00f728993ff1a93ca760c2c3",
+        "duplicates": [
+          "bicep_curl_04_13.mp4",
+          "bicep_curl_09_13.mp4"
+        ]
+      },
+      {
+        "representative": "bicep_curl_02_13.mp4",
+        "md5": "08d2c5971bffd0a84f5e1c98cb2b0680",
+        "duplicates": [
+          "bicep_curl_04_09.mp4",
+          "bicep_curl_09_07.mp4"
+        ]
+      },
+      {
+        "representative": "bicep_curl_04_11.mp4",
+        "md5": "b5403f69c3066d3fb2f0f10ccfe61748",
+        "duplicates": [
+          "bicep_curl_06_13.mp4"
+        ]
+      },
+      {
+        "representative": "bicep_curl_05_11.mp4",
+        "md5": "b268e2203cbe78f0da4cc78850ddad9b",
+        "duplicates": [
+          "bicep_curl_08_11.mp4",
+          "bicep_curl_09_08.mp4",
+          "bicep_curl_10_15.mp4"
+        ]
+      },
+      {
+        "representative": "bicep_curl_07_03.mp4",
+        "md5": "1df58fe79ffdad1e0d5bf64121def458",
+        "duplicates": [
+          "bicep_curl_08_12.mp4"
+        ]
+      }
+    ]
+  },
+  "high_knees": {
+    "unique_count": 46,
+    "clean_pool_before_dedup": 57,
+    "intra_backlog_duplicate_groups": 8,
+    "intra_backlog_duplicate_files_pruned": 11,
+    "unique_candidates": [
+      {
+        "filename": "high_knees_01_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_01_03.mp4",
+        "md5": "5754aa0b1bdcf46c5a9dbe12d1910cee",
+        "filesize": 1305297
+      },
+      {
+        "filename": "high_knees_01_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_01_04.mp4",
+        "md5": "5142e3b326c44d3dcd4402b8bf276f2b",
+        "filesize": 2303123
+      },
+      {
+        "filename": "high_knees_01_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_01_05.mp4",
+        "md5": "075f033755eda1de947d86ebed1df4be",
+        "filesize": 1951680
+      },
+      {
+        "filename": "high_knees_01_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_01_06.mp4",
+        "md5": "55d5617d518c0a26d776837846144afd",
+        "filesize": 692014
+      },
+      {
+        "filename": "high_knees_01_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_01_07.mp4",
+        "md5": "3a2c2c7e576acaa488e9237ef5932f73",
+        "filesize": 1232784
+      },
+      {
+        "filename": "high_knees_01_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_01_08.mp4",
+        "md5": "83450f67096585da3c77b9a10dc523f9",
+        "filesize": 19129468
+      },
+      {
+        "filename": "high_knees_01_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_01_09.mp4",
+        "md5": "84bd03ca4852eab48f09ce5d2907f167",
+        "filesize": 22493472
+      },
+      {
+        "filename": "high_knees_01_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_01_12.mp4",
+        "md5": "3bce6a8b4ce8b974bf381364413f5336",
+        "filesize": 2705203
+      },
+      {
+        "filename": "high_knees_01_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_01_13.mp4",
+        "md5": "d22da93d1d9feaca6a701a58c9281c72",
+        "filesize": 2228094
+      },
+      {
+        "filename": "high_knees_01_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_01_14.mp4",
+        "md5": "cf00259bab290501aa9853f38e5150f1",
+        "filesize": 525815
+      },
+      {
+        "filename": "high_knees_01_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_01_15.mp4",
+        "md5": "3202ba59243b83ec84652ab986161abd",
+        "filesize": 1210466
+      },
+      {
+        "filename": "high_knees_02_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_02_06.mp4",
+        "md5": "9e997410ae6313c199cdd71178a2b9d2",
+        "filesize": 3165846
+      },
+      {
+        "filename": "high_knees_02_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_02_08.mp4",
+        "md5": "51c27e9a668cccb2258b67b0fed87745",
+        "filesize": 2324744
+      },
+      {
+        "filename": "high_knees_02_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_02_09.mp4",
+        "md5": "25ab926300c22e5e174d23bcf7057f62",
+        "filesize": 3670706
+      },
+      {
+        "filename": "high_knees_02_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_02_10.mp4",
+        "md5": "b04778c1c7f87fdf51dc8232e91e2bdb",
+        "filesize": 3561256
+      },
+      {
+        "filename": "high_knees_02_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_02_11.mp4",
+        "md5": "872fab06787b86d8303d23ac1232b9db",
+        "filesize": 3716711
+      },
+      {
+        "filename": "high_knees_02_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_02_12.mp4",
+        "md5": "485d4f57f4a6ddef465af37db4932307",
+        "filesize": 4157931
+      },
+      {
+        "filename": "high_knees_02_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_02_13.mp4",
+        "md5": "76050f0c7aff322c0f25accf4ee98eb2",
+        "filesize": 2620393
+      },
+      {
+        "filename": "high_knees_02_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_02_15.mp4",
+        "md5": "15c60f1d52a411bdcc6c94f245778600",
+        "filesize": 8684796
+      },
+      {
+        "filename": "high_knees_03_02.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_03_02.mp4",
+        "md5": "ec52da72ce28bf4b9ccf11c07b36d1a2",
+        "filesize": 761682
+      },
+      {
+        "filename": "high_knees_03_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_03_03.mp4",
+        "md5": "a411588f6b891d0284781f6ba6247937",
+        "filesize": 20703269
+      },
+      {
+        "filename": "high_knees_03_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_03_04.mp4",
+        "md5": "8f1ff5f9e9ae6b55865539f2abe35946",
+        "filesize": 953624
+      },
+      {
+        "filename": "high_knees_03_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_03_05.mp4",
+        "md5": "4c035a548acbfa437e4ebfe1f57080f0",
+        "filesize": 653530
+      },
+      {
+        "filename": "high_knees_03_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_03_06.mp4",
+        "md5": "e3bcbc8062b03c787101f21c59a955f3",
+        "filesize": 626956
+      },
+      {
+        "filename": "high_knees_03_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_03_08.mp4",
+        "md5": "7a7aabae3bb275e8481d7e7de5d75e59",
+        "filesize": 20031764
+      },
+      {
+        "filename": "high_knees_03_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_03_13.mp4",
+        "md5": "b42f9469b33ec1b5c7f058010f73ebee",
+        "filesize": 30523507
+      },
+      {
+        "filename": "high_knees_04_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_04_05.mp4",
+        "md5": "40b51cfcca4e3ab9ace4fa9fce0c9f9a",
+        "filesize": 1724445
+      },
+      {
+        "filename": "high_knees_04_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_04_13.mp4",
+        "md5": "11e9778961af5f94083e732ba9b4a96f",
+        "filesize": 44843570
+      },
+      {
+        "filename": "high_knees_04_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_04_15.mp4",
+        "md5": "cf6ec6f5427bdb62c5a41226739a21fe",
+        "filesize": 1842473
+      },
+      {
+        "filename": "high_knees_05_02.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_05_02.mp4",
+        "md5": "d4c8fe3d0667dceecb801d76eba2723c",
+        "filesize": 1227913
+      },
+      {
+        "filename": "high_knees_05_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_05_04.mp4",
+        "md5": "7070af49e14e85c6ae80a048ae884681",
+        "filesize": 1475739
+      },
+      {
+        "filename": "high_knees_05_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_05_06.mp4",
+        "md5": "4c17579e793cc237c2405a6c01b7133b",
+        "filesize": 21975418
+      },
+      {
+        "filename": "high_knees_05_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_05_07.mp4",
+        "md5": "d1bab5a06adf69bccea73c8d2b796f97",
+        "filesize": 1939008
+      },
+      {
+        "filename": "high_knees_05_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_05_08.mp4",
+        "md5": "5bd0d469c5d0940672eaa49bf4245688",
+        "filesize": 611537
+      },
+      {
+        "filename": "high_knees_05_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_05_10.mp4",
+        "md5": "1f72a9a619fdd1c39115b86edf537ac0",
+        "filesize": 794920
+      },
+      {
+        "filename": "high_knees_05_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_05_11.mp4",
+        "md5": "e09508691beb3c49ed8f41c7a3a0d5f8",
+        "filesize": 14406495
+      },
+      {
+        "filename": "high_knees_05_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_05_12.mp4",
+        "md5": "3ee3e7f569af17bdc4b540b37d37b2fd",
+        "filesize": 903287
+      },
+      {
+        "filename": "high_knees_05_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_05_13.mp4",
+        "md5": "3a8e612d8dd4df48ee6450486b741434",
+        "filesize": 3581914
+      },
+      {
+        "filename": "high_knees_05_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_05_14.mp4",
+        "md5": "28bf3e8525dcde2f6fe274fcdc96932e",
+        "filesize": 1259329
+      },
+      {
+        "filename": "high_knees_05_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_05_15.mp4",
+        "md5": "45870720dc46aa6a43adeb6a58bc6ced",
+        "filesize": 1202700
+      },
+      {
+        "filename": "high_knees_06_02.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_06_02.mp4",
+        "md5": "48a3ab4abc7e70723a908e157c5b91b0",
+        "filesize": 45320775
+      },
+      {
+        "filename": "high_knees_06_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_06_05.mp4",
+        "md5": "f18b82cda4ce3e19fdb3720b6f8959dc",
+        "filesize": 46373660
+      },
+      {
+        "filename": "high_knees_06_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_06_08.mp4",
+        "md5": "87fb90d44506d4640aad4e4009a41946",
+        "filesize": 27670765
+      },
+      {
+        "filename": "high_knees_06_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_06_09.mp4",
+        "md5": "6ce75f4fd85e1a22568ab5b66d475eaa",
+        "filesize": 44707866
+      },
+      {
+        "filename": "high_knees_06_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_06_12.mp4",
+        "md5": "d3ca81ffdd6f170babff8d1f78e0acd5",
+        "filesize": 31963210
+      },
+      {
+        "filename": "high_knees_07_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\high_knees\\high_knees_07_05.mp4",
+        "md5": "8ede6fc27ae94305aecfb2fc4612d64b",
+        "filesize": 37121855
+      }
+    ],
+    "duplicates_logged": [
+      {
+        "representative": "high_knees_01_03.mp4",
+        "md5": "5754aa0b1bdcf46c5a9dbe12d1910cee",
+        "duplicates": [
+          "high_knees_02_02.mp4",
+          "high_knees_04_04.mp4"
+        ]
+      },
+      {
+        "representative": "high_knees_01_05.mp4",
+        "md5": "075f033755eda1de947d86ebed1df4be",
+        "duplicates": [
+          "high_knees_02_05.mp4",
+          "high_knees_04_03.mp4"
+        ]
+      },
+      {
+        "representative": "high_knees_01_06.mp4",
+        "md5": "55d5617d518c0a26d776837846144afd",
+        "duplicates": [
+          "high_knees_02_07.mp4"
+        ]
+      },
+      {
+        "representative": "high_knees_01_07.mp4",
+        "md5": "3a2c2c7e576acaa488e9237ef5932f73",
+        "duplicates": [
+          "high_knees_05_03.mp4"
+        ]
+      },
+      {
+        "representative": "high_knees_01_08.mp4",
+        "md5": "83450f67096585da3c77b9a10dc523f9",
+        "duplicates": [
+          "high_knees_04_07.mp4"
+        ]
+      },
+      {
+        "representative": "high_knees_01_09.mp4",
+        "md5": "84bd03ca4852eab48f09ce5d2907f167",
+        "duplicates": [
+          "high_knees_02_04.mp4",
+          "high_knees_04_12.mp4"
+        ]
+      },
+      {
+        "representative": "high_knees_03_03.mp4",
+        "md5": "a411588f6b891d0284781f6ba6247937",
+        "duplicates": [
+          "high_knees_06_07.mp4"
+        ]
+      },
+      {
+        "representative": "high_knees_04_13.mp4",
+        "md5": "11e9778961af5f94083e732ba9b4a96f",
+        "duplicates": [
+          "high_knees_06_06.mp4"
+        ]
+      }
+    ]
+  },
+  "jumping_jack": {
+    "unique_count": 60,
+    "clean_pool_before_dedup": 97,
+    "intra_backlog_duplicate_groups": 13,
+    "intra_backlog_duplicate_files_pruned": 37,
+    "unique_candidates": [
+      {
+        "filename": "jumping_jack_01_02.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_01_02.mp4",
+        "md5": "0b8f34dfd362c13e966fae741a167842",
+        "filesize": 1985490
+      },
+      {
+        "filename": "jumping_jack_01_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_01_03.mp4",
+        "md5": "aff8b495d138b68c7002b71ee7375d8b",
+        "filesize": 561167
+      },
+      {
+        "filename": "jumping_jack_01_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_01_04.mp4",
+        "md5": "be89e2be4f1774c6e849bb56c70b2d28",
+        "filesize": 49421792
+      },
+      {
+        "filename": "jumping_jack_01_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_01_07.mp4",
+        "md5": "68bec8558480ccbc8578663e87820c45",
+        "filesize": 31379124
+      },
+      {
+        "filename": "jumping_jack_01_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_01_08.mp4",
+        "md5": "0a6d8207a0fc03b703cad62342ba1b56",
+        "filesize": 47680749
+      },
+      {
+        "filename": "jumping_jack_01_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_01_09.mp4",
+        "md5": "ce5ccf461b529802ada3c0548a87c10c",
+        "filesize": 41482762
+      },
+      {
+        "filename": "jumping_jack_01_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_01_10.mp4",
+        "md5": "6bc1b81b825aec3295eb117986a8de33",
+        "filesize": 3021409
+      },
+      {
+        "filename": "jumping_jack_01_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_01_11.mp4",
+        "md5": "906f57c7931024dde90417ba36b28b34",
+        "filesize": 8316994
+      },
+      {
+        "filename": "jumping_jack_01_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_01_12.mp4",
+        "md5": "d727ceec3278ff6a60bbc245161c31a2",
+        "filesize": 1387581
+      },
+      {
+        "filename": "jumping_jack_01_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_01_14.mp4",
+        "md5": "aef1cd580bc905f67671e3ac37b7728d",
+        "filesize": 848118
+      },
+      {
+        "filename": "jumping_jack_02_02.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_02_02.mp4",
+        "md5": "43b8ea1138d5db72510ec1722c08a42c",
+        "filesize": 3648151
+      },
+      {
+        "filename": "jumping_jack_02_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_02_04.mp4",
+        "md5": "0835de9baee580ece867abc6ea8ab345",
+        "filesize": 2900694
+      },
+      {
+        "filename": "jumping_jack_02_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_02_07.mp4",
+        "md5": "87b07c1fe613c6a311a2e191177cb9e2",
+        "filesize": 1394287
+      },
+      {
+        "filename": "jumping_jack_02_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_02_09.mp4",
+        "md5": "cba3062b2d455201c6a951f80e9f9323",
+        "filesize": 832778
+      },
+      {
+        "filename": "jumping_jack_02_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_02_10.mp4",
+        "md5": "bebe0511f6f11e18375b67488aa774f8",
+        "filesize": 1779073
+      },
+      {
+        "filename": "jumping_jack_02_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_02_11.mp4",
+        "md5": "de416e8e05289bc70099643a1ad81d7b",
+        "filesize": 2614036
+      },
+      {
+        "filename": "jumping_jack_02_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_02_13.mp4",
+        "md5": "68f593a6ec69e893d0955772e0a9e928",
+        "filesize": 2684920
+      },
+      {
+        "filename": "jumping_jack_02_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_02_14.mp4",
+        "md5": "25379f0ff25ceae7be883b93a10de684",
+        "filesize": 39694300
+      },
+      {
+        "filename": "jumping_jack_02_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_02_15.mp4",
+        "md5": "df52d32de0c835be13cd27d312e93a16",
+        "filesize": 5002444
+      },
+      {
+        "filename": "jumping_jack_03_02.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_03_02.mp4",
+        "md5": "87b7c6880860cc5990bee4df1484adee",
+        "filesize": 574364
+      },
+      {
+        "filename": "jumping_jack_03_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_03_05.mp4",
+        "md5": "b91805d6dca7278bee8b77a88221d50b",
+        "filesize": 1477267
+      },
+      {
+        "filename": "jumping_jack_03_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_03_06.mp4",
+        "md5": "e529f6835f863174a4d5572f21214189",
+        "filesize": 9715612
+      },
+      {
+        "filename": "jumping_jack_03_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_03_07.mp4",
+        "md5": "aa80d302e83ab3e33762bdfc456d2d80",
+        "filesize": 4058401
+      },
+      {
+        "filename": "jumping_jack_03_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_03_08.mp4",
+        "md5": "315f81946d4571747c4d4b4264de3527",
+        "filesize": 2914235
+      },
+      {
+        "filename": "jumping_jack_03_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_03_09.mp4",
+        "md5": "179ee47d96e2a614358e31f779674c7b",
+        "filesize": 3289021
+      },
+      {
+        "filename": "jumping_jack_03_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_03_10.mp4",
+        "md5": "a65d53e71bd73c250309b8cda01586ae",
+        "filesize": 1436737
+      },
+      {
+        "filename": "jumping_jack_03_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_03_11.mp4",
+        "md5": "ac308aab61067b9cb39c46ed49cc922f",
+        "filesize": 1943108
+      },
+      {
+        "filename": "jumping_jack_03_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_03_12.mp4",
+        "md5": "532f84d2d14c573c73883265264492ee",
+        "filesize": 4438356
+      },
+      {
+        "filename": "jumping_jack_03_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_03_13.mp4",
+        "md5": "b22f1b523291e2ddbf8023df4b83656c",
+        "filesize": 5278563
+      },
+      {
+        "filename": "jumping_jack_03_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_03_14.mp4",
+        "md5": "1f0657c2e24e6a8d668ab6fe5f408ec5",
+        "filesize": 17413495
+      },
+      {
+        "filename": "jumping_jack_03_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_03_15.mp4",
+        "md5": "2e91e8f1c1883754564f591f7d2d8364",
+        "filesize": 3728874
+      },
+      {
+        "filename": "jumping_jack_04_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_04_03.mp4",
+        "md5": "6b9ac5705f54671e5174451ac1c9878b",
+        "filesize": 4495690
+      },
+      {
+        "filename": "jumping_jack_04_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_04_06.mp4",
+        "md5": "95ab4d6b3e29d6d99381278206a78168",
+        "filesize": 11475397
+      },
+      {
+        "filename": "jumping_jack_04_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_04_07.mp4",
+        "md5": "8af715f54307def129f62d35435fc335",
+        "filesize": 1690129
+      },
+      {
+        "filename": "jumping_jack_04_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_04_10.mp4",
+        "md5": "8144b421f721689030d7461b8fe7ecbb",
+        "filesize": 1709829
+      },
+      {
+        "filename": "jumping_jack_04_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_04_12.mp4",
+        "md5": "0c7e32046d855043f02beffdbb12c823",
+        "filesize": 4002601
+      },
+      {
+        "filename": "jumping_jack_04_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_04_14.mp4",
+        "md5": "c9327467e8a830b746d344832b1e23ff",
+        "filesize": 15790125
+      },
+      {
+        "filename": "jumping_jack_05_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_05_06.mp4",
+        "md5": "48a3ab4abc7e70723a908e157c5b91b0",
+        "filesize": 45320775
+      },
+      {
+        "filename": "jumping_jack_05_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_05_12.mp4",
+        "md5": "c73e44d1d9af84dee15226220ef88b7b",
+        "filesize": 25952629
+      },
+      {
+        "filename": "jumping_jack_05_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_05_15.mp4",
+        "md5": "1b809de7042f9d5345c04c039e7a6872",
+        "filesize": 41601204
+      },
+      {
+        "filename": "jumping_jack_06_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_06_07.mp4",
+        "md5": "a384b5cd3d6d3c18fc97463b39df5315",
+        "filesize": 40114643
+      },
+      {
+        "filename": "jumping_jack_06_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_06_10.mp4",
+        "md5": "d8da2eda73cab944e37cff56dd19b486",
+        "filesize": 13919794
+      },
+      {
+        "filename": "jumping_jack_06_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_06_11.mp4",
+        "md5": "2d4fc5883690210f09128924f3f8d1a1",
+        "filesize": 44958903
+      },
+      {
+        "filename": "jumping_jack_06_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_06_13.mp4",
+        "md5": "c3bfb68948d966287f78272e9bccff6e",
+        "filesize": 31890400
+      },
+      {
+        "filename": "jumping_jack_06_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_06_14.mp4",
+        "md5": "4a538a8923518cb973d4669c318d4394",
+        "filesize": 5418111
+      },
+      {
+        "filename": "jumping_jack_07_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_07_04.mp4",
+        "md5": "0d0934f5b1769776134d50f725218143",
+        "filesize": 7082697
+      },
+      {
+        "filename": "jumping_jack_07_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_07_07.mp4",
+        "md5": "c04737d6ccdd94383dab3f76ea571750",
+        "filesize": 10548041
+      },
+      {
+        "filename": "jumping_jack_07_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_07_12.mp4",
+        "md5": "a78f574e632da2c81a12e628bb4be5c1",
+        "filesize": 2493492
+      },
+      {
+        "filename": "jumping_jack_07_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_07_15.mp4",
+        "md5": "1e71e19f7e1610cadff056763ead3e53",
+        "filesize": 3993941
+      },
+      {
+        "filename": "jumping_jack_08_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_08_05.mp4",
+        "md5": "36faec4b6eb2b895df3ad187dc1ba1f3",
+        "filesize": 3508036
+      },
+      {
+        "filename": "jumping_jack_08_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_08_07.mp4",
+        "md5": "1cbf4e4ab71ae43fc8efbe47ed680ce6",
+        "filesize": 1637653
+      },
+      {
+        "filename": "jumping_jack_08_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_08_08.mp4",
+        "md5": "d4bf5a1c83f62a4207778ce9c3e8b0f8",
+        "filesize": 1069635
+      },
+      {
+        "filename": "jumping_jack_08_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_08_09.mp4",
+        "md5": "309f9b5bfe0ea3f4ca44fc6e296a1e6d",
+        "filesize": 3150854
+      },
+      {
+        "filename": "jumping_jack_08_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_08_11.mp4",
+        "md5": "de65ec31a4b68ae946035f20323e1805",
+        "filesize": 1031596
+      },
+      {
+        "filename": "jumping_jack_08_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_08_12.mp4",
+        "md5": "b45b65fffa18c9f5c4673f0248ae8a74",
+        "filesize": 28028391
+      },
+      {
+        "filename": "jumping_jack_08_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_08_13.mp4",
+        "md5": "1e44c4e62ccff29fe482588d50ba431e",
+        "filesize": 9502192
+      },
+      {
+        "filename": "jumping_jack_08_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_08_14.mp4",
+        "md5": "21fa650d0964791e587c520701471106",
+        "filesize": 10217874
+      },
+      {
+        "filename": "jumping_jack_09_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_09_04.mp4",
+        "md5": "56b01ca93507f7a1d9232ce2268fbf0b",
+        "filesize": 34789364
+      },
+      {
+        "filename": "jumping_jack_09_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_09_12.mp4",
+        "md5": "e66970bfec89a53a49880db119a0984a",
+        "filesize": 46035306
+      },
+      {
+        "filename": "jumping_jack_10_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\jumping_jack\\jumping_jack_10_12.mp4",
+        "md5": "6ffc4e675896a1f7de035d04117a1941",
+        "filesize": 697326
+      }
+    ],
+    "duplicates_logged": [
+      {
+        "representative": "jumping_jack_01_02.mp4",
+        "md5": "0b8f34dfd362c13e966fae741a167842",
+        "duplicates": [
+          "jumping_jack_02_06.mp4",
+          "jumping_jack_04_08.mp4",
+          "jumping_jack_06_08.mp4",
+          "jumping_jack_07_02.mp4",
+          "jumping_jack_10_07.mp4"
+        ]
+      },
+      {
+        "representative": "jumping_jack_01_03.mp4",
+        "md5": "aff8b495d138b68c7002b71ee7375d8b",
+        "duplicates": [
+          "jumping_jack_02_01.mp4",
+          "jumping_jack_04_04.mp4",
+          "jumping_jack_07_14.mp4",
+          "jumping_jack_10_03.mp4"
+        ]
+      },
+      {
+        "representative": "jumping_jack_01_04.mp4",
+        "md5": "be89e2be4f1774c6e849bb56c70b2d28",
+        "duplicates": [
+          "jumping_jack_05_03.mp4",
+          "jumping_jack_07_06.mp4",
+          "jumping_jack_10_05.mp4"
+        ]
+      },
+      {
+        "representative": "jumping_jack_01_07.mp4",
+        "md5": "68bec8558480ccbc8578663e87820c45",
+        "duplicates": [
+          "jumping_jack_02_12.mp4",
+          "jumping_jack_06_06.mp4",
+          "jumping_jack_07_08.mp4",
+          "jumping_jack_09_13.mp4",
+          "jumping_jack_10_09.mp4"
+        ]
+      },
+      {
+        "representative": "jumping_jack_01_08.mp4",
+        "md5": "0a6d8207a0fc03b703cad62342ba1b56",
+        "duplicates": [
+          "jumping_jack_05_04.mp4",
+          "jumping_jack_10_08.mp4"
+        ]
+      },
+      {
+        "representative": "jumping_jack_01_09.mp4",
+        "md5": "ce5ccf461b529802ada3c0548a87c10c",
+        "duplicates": [
+          "jumping_jack_03_04.mp4",
+          "jumping_jack_05_14.mp4",
+          "jumping_jack_06_12.mp4",
+          "jumping_jack_07_05.mp4",
+          "jumping_jack_09_09.mp4",
+          "jumping_jack_10_11.mp4"
+        ]
+      },
+      {
+        "representative": "jumping_jack_01_10.mp4",
+        "md5": "6bc1b81b825aec3295eb117986a8de33",
+        "duplicates": [
+          "jumping_jack_04_13.mp4",
+          "jumping_jack_08_06.mp4"
+        ]
+      },
+      {
+        "representative": "jumping_jack_01_12.mp4",
+        "md5": "d727ceec3278ff6a60bbc245161c31a2",
+        "duplicates": [
+          "jumping_jack_04_11.mp4",
+          "jumping_jack_10_10.mp4"
+        ]
+      },
+      {
+        "representative": "jumping_jack_02_02.mp4",
+        "md5": "43b8ea1138d5db72510ec1722c08a42c",
+        "duplicates": [
+          "jumping_jack_04_05.mp4",
+          "jumping_jack_08_04.mp4"
+        ]
+      },
+      {
+        "representative": "jumping_jack_02_04.mp4",
+        "md5": "0835de9baee580ece867abc6ea8ab345",
+        "duplicates": [
+          "jumping_jack_04_09.mp4",
+          "jumping_jack_08_03.mp4"
+        ]
+      },
+      {
+        "representative": "jumping_jack_03_14.mp4",
+        "md5": "1f0657c2e24e6a8d668ab6fe5f408ec5",
+        "duplicates": [
+          "jumping_jack_05_13.mp4",
+          "jumping_jack_06_05.mp4"
+        ]
+      },
+      {
+        "representative": "jumping_jack_06_07.mp4",
+        "md5": "a384b5cd3d6d3c18fc97463b39df5315",
+        "duplicates": [
+          "jumping_jack_09_14.mp4"
+        ]
+      },
+      {
+        "representative": "jumping_jack_06_13.mp4",
+        "md5": "c3bfb68948d966287f78272e9bccff6e",
+        "duplicates": [
+          "jumping_jack_09_11.mp4"
+        ]
+      }
+    ]
+  },
+  "lunge": {
+    "unique_count": 87,
+    "clean_pool_before_dedup": 108,
+    "intra_backlog_duplicate_groups": 14,
+    "intra_backlog_duplicate_files_pruned": 21,
+    "unique_candidates": [
+      {
+        "filename": "lunge_01_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_01_04.mp4",
+        "md5": "5bfec6e4c7a303fab11075f1973c5a1f",
+        "filesize": 3589533
+      },
+      {
+        "filename": "lunge_01_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_01_06.mp4",
+        "md5": "3b2c875597283690a7034fea641744d3",
+        "filesize": 2723262
+      },
+      {
+        "filename": "lunge_01_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_01_07.mp4",
+        "md5": "73d4043ecaf22d931821faf6b48689d7",
+        "filesize": 9903505
+      },
+      {
+        "filename": "lunge_01_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_01_08.mp4",
+        "md5": "6208b0ad5405e25918c644037d474e93",
+        "filesize": 1043655
+      },
+      {
+        "filename": "lunge_01_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_01_09.mp4",
+        "md5": "533483b51e6407af14a77d4eb60f90c5",
+        "filesize": 11445764
+      },
+      {
+        "filename": "lunge_01_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_01_10.mp4",
+        "md5": "2d4f865de8ea54ff14c38d8160686d9e",
+        "filesize": 946166
+      },
+      {
+        "filename": "lunge_01_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_01_11.mp4",
+        "md5": "b2cb9aff57ba0f4bf63033ffd4320ad1",
+        "filesize": 2054988
+      },
+      {
+        "filename": "lunge_01_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_01_12.mp4",
+        "md5": "4de6de348c8b9581f298a0bdee4ae85a",
+        "filesize": 1718773
+      },
+      {
+        "filename": "lunge_01_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_01_14.mp4",
+        "md5": "4f02c3248089ae52df2d0eafa12135de",
+        "filesize": 2610027
+      },
+      {
+        "filename": "lunge_01_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_01_15.mp4",
+        "md5": "5ddfc28f6c1f66dbfaf38adf37677990",
+        "filesize": 1964547
+      },
+      {
+        "filename": "lunge_02_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_02_07.mp4",
+        "md5": "076ba9a635a114c4b8cf0f476d3d9107",
+        "filesize": 15144095
+      },
+      {
+        "filename": "lunge_02_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_02_08.mp4",
+        "md5": "23711f439094b339e59e4dfd29ce5477",
+        "filesize": 1088327
+      },
+      {
+        "filename": "lunge_02_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_02_09.mp4",
+        "md5": "ef339d47518f04684de3701a12859dc3",
+        "filesize": 25066662
+      },
+      {
+        "filename": "lunge_02_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_02_10.mp4",
+        "md5": "c4382a260883002f9927e73ee450a9e9",
+        "filesize": 2240504
+      },
+      {
+        "filename": "lunge_02_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_02_11.mp4",
+        "md5": "302a8bd8a63e9b6e9af45e2bc9887b8c",
+        "filesize": 4972301
+      },
+      {
+        "filename": "lunge_02_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_02_13.mp4",
+        "md5": "76adc78bb29f18c6d0fac6d287e06f4e",
+        "filesize": 17975045
+      },
+      {
+        "filename": "lunge_03_02.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_03_02.mp4",
+        "md5": "16fa263ece21ca4ca867b1142f8e7d47",
+        "filesize": 955875
+      },
+      {
+        "filename": "lunge_03_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_03_03.mp4",
+        "md5": "8f2937227f6933395e76cc2eb02dee09",
+        "filesize": 1315734
+      },
+      {
+        "filename": "lunge_03_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_03_04.mp4",
+        "md5": "0ffdeab7eb5fdb9e8d2d5e2c57411fa1",
+        "filesize": 806227
+      },
+      {
+        "filename": "lunge_03_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_03_06.mp4",
+        "md5": "305d72c377e4370b455cd13f69e3c9ec",
+        "filesize": 1501269
+      },
+      {
+        "filename": "lunge_03_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_03_07.mp4",
+        "md5": "bf2c72063910e620dd36a243986ad441",
+        "filesize": 1863750
+      },
+      {
+        "filename": "lunge_03_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_03_09.mp4",
+        "md5": "2d80d0349d2d9665f0a4da460f65c1ce",
+        "filesize": 8723281
+      },
+      {
+        "filename": "lunge_03_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_03_10.mp4",
+        "md5": "d723d7b5eeaac6687be94b8804ff2979",
+        "filesize": 1316974
+      },
+      {
+        "filename": "lunge_03_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_03_11.mp4",
+        "md5": "a08a95b2056baba1af09f425853725d5",
+        "filesize": 692858
+      },
+      {
+        "filename": "lunge_03_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_03_12.mp4",
+        "md5": "7592a3ca4124a90b0dd31d0b729790a7",
+        "filesize": 3955196
+      },
+      {
+        "filename": "lunge_03_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_03_14.mp4",
+        "md5": "d9c422d198674103194daa6a84053db4",
+        "filesize": 675421
+      },
+      {
+        "filename": "lunge_03_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_03_15.mp4",
+        "md5": "df6c53b41250c29c82ed460a92f6a141",
+        "filesize": 1900167
+      },
+      {
+        "filename": "lunge_04_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_04_05.mp4",
+        "md5": "cc0554b0fbf4fc56d1c38481ec4a5b6d",
+        "filesize": 22954907
+      },
+      {
+        "filename": "lunge_04_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_04_08.mp4",
+        "md5": "9d6ff79c37774d7df0c915757896cfe6",
+        "filesize": 8039945
+      },
+      {
+        "filename": "lunge_04_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_04_09.mp4",
+        "md5": "b997d98ce43b4ec630038bc600b49521",
+        "filesize": 5675315
+      },
+      {
+        "filename": "lunge_04_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_04_11.mp4",
+        "md5": "a9ea740c88f4faa6ea4ae75cab296809",
+        "filesize": 6893416
+      },
+      {
+        "filename": "lunge_04_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_04_13.mp4",
+        "md5": "67d2d046af9b10e009bd6f8790a81526",
+        "filesize": 3346017
+      },
+      {
+        "filename": "lunge_04_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_04_14.mp4",
+        "md5": "76ff57bcaf4e317044fb28da61e57db5",
+        "filesize": 8058357
+      },
+      {
+        "filename": "lunge_05_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_05_06.mp4",
+        "md5": "c4e81ed4c6ad9192e47eb0da41cc7e61",
+        "filesize": 751214
+      },
+      {
+        "filename": "lunge_05_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_05_07.mp4",
+        "md5": "0822505c35ba17cb12ae20801546c342",
+        "filesize": 895573
+      },
+      {
+        "filename": "lunge_05_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_05_13.mp4",
+        "md5": "1a2968f9fb48353d59f76f1818559941",
+        "filesize": 6349174
+      },
+      {
+        "filename": "lunge_05_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_05_14.mp4",
+        "md5": "3dcf53d06124b00708ec91781556872d",
+        "filesize": 13950880
+      },
+      {
+        "filename": "lunge_06_02.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_06_02.mp4",
+        "md5": "6cf99242b9ce4a2a5666f05cb82268a8",
+        "filesize": 8018934
+      },
+      {
+        "filename": "lunge_06_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_06_03.mp4",
+        "md5": "4c3d396199d6c428d85d83877165ac06",
+        "filesize": 46812579
+      },
+      {
+        "filename": "lunge_06_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_06_04.mp4",
+        "md5": "6ce75f4fd85e1a22568ab5b66d475eaa",
+        "filesize": 44707866
+      },
+      {
+        "filename": "lunge_06_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_06_05.mp4",
+        "md5": "5285d24580e17de56f1b7feaa1878d0d",
+        "filesize": 18412736
+      },
+      {
+        "filename": "lunge_06_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_06_06.mp4",
+        "md5": "80329f8032ec7afd8e5c2e4ada213329",
+        "filesize": 20260056
+      },
+      {
+        "filename": "lunge_06_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_06_07.mp4",
+        "md5": "1fc4c96e29987e660ea4d609017011bf",
+        "filesize": 26994562
+      },
+      {
+        "filename": "lunge_06_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_06_08.mp4",
+        "md5": "c5347b1944dcaf7c909f512adb93fd79",
+        "filesize": 12068744
+      },
+      {
+        "filename": "lunge_06_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_06_09.mp4",
+        "md5": "231fb6cc2c8a0274acfefa45ecdb8b56",
+        "filesize": 43988687
+      },
+      {
+        "filename": "lunge_06_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_06_10.mp4",
+        "md5": "89c6af78b3053fbc088b27bd2c54ac2e",
+        "filesize": 4890213
+      },
+      {
+        "filename": "lunge_06_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_06_11.mp4",
+        "md5": "30a70e2a034f2c5407467d2e26ec06d3",
+        "filesize": 22089394
+      },
+      {
+        "filename": "lunge_06_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_06_12.mp4",
+        "md5": "7541339af4450e285e538186b5e00ea6",
+        "filesize": 21656172
+      },
+      {
+        "filename": "lunge_06_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_06_13.mp4",
+        "md5": "0f4abe7cf9fafc079c6edd7e2e7f8d89",
+        "filesize": 26563018
+      },
+      {
+        "filename": "lunge_06_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_06_14.mp4",
+        "md5": "4645eea478f3c7af855dfbac306fd8ee",
+        "filesize": 35610218
+      },
+      {
+        "filename": "lunge_06_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_06_15.mp4",
+        "md5": "962b9d223004b598ed07323b5cc5e1a9",
+        "filesize": 32871205
+      },
+      {
+        "filename": "lunge_07_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_07_03.mp4",
+        "md5": "0595499ba5dab5df65323a3e5a74dff4",
+        "filesize": 3214703
+      },
+      {
+        "filename": "lunge_07_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_07_04.mp4",
+        "md5": "3329127125367ad66d6296aa960cd063",
+        "filesize": 3110325
+      },
+      {
+        "filename": "lunge_07_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_07_08.mp4",
+        "md5": "b0a7640caa7d85f6a3aa824d0313297d",
+        "filesize": 6390843
+      },
+      {
+        "filename": "lunge_07_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_07_09.mp4",
+        "md5": "352a487abfe7f33f9df59021d1342b23",
+        "filesize": 19482321
+      },
+      {
+        "filename": "lunge_07_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_07_10.mp4",
+        "md5": "b54cdb5e4d4b39cc1fc06f33997297af",
+        "filesize": 37638655
+      },
+      {
+        "filename": "lunge_07_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_07_11.mp4",
+        "md5": "65a8acfba06bc0678133db1d1c2c3dbd",
+        "filesize": 17475891
+      },
+      {
+        "filename": "lunge_07_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_07_12.mp4",
+        "md5": "a070e8e477c7964f6e1512991c7fd98e",
+        "filesize": 34663514
+      },
+      {
+        "filename": "lunge_07_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_07_13.mp4",
+        "md5": "4587c0786a5ca1646b61fbd312d581b2",
+        "filesize": 11239720
+      },
+      {
+        "filename": "lunge_08_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_08_04.mp4",
+        "md5": "aee6b0c0faef25baee09ac9f1464ebe7",
+        "filesize": 1415542
+      },
+      {
+        "filename": "lunge_08_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_08_05.mp4",
+        "md5": "83ea53d47a84b02a9e261fdf9ac25b88",
+        "filesize": 1208051
+      },
+      {
+        "filename": "lunge_08_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_08_06.mp4",
+        "md5": "877acffcd497697d182fb30fd70d136e",
+        "filesize": 1999750
+      },
+      {
+        "filename": "lunge_08_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_08_07.mp4",
+        "md5": "179fe669e1074ecfd7b3f52c7d13bf28",
+        "filesize": 920379
+      },
+      {
+        "filename": "lunge_08_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_08_08.mp4",
+        "md5": "b9104a8a4951638144ad7c71dec73e87",
+        "filesize": 639447
+      },
+      {
+        "filename": "lunge_08_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_08_09.mp4",
+        "md5": "2ffa94d7deb57dbb491e6e6acbf13c4f",
+        "filesize": 914875
+      },
+      {
+        "filename": "lunge_08_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_08_10.mp4",
+        "md5": "a09b2cfececb2c36db617f2fd4b2ab37",
+        "filesize": 699057
+      },
+      {
+        "filename": "lunge_08_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_08_11.mp4",
+        "md5": "0421c6da01acc77eb2a9d04e5f5aa29a",
+        "filesize": 842440
+      },
+      {
+        "filename": "lunge_08_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_08_12.mp4",
+        "md5": "84428c0cdee87383f55bbb6080113822",
+        "filesize": 735257
+      },
+      {
+        "filename": "lunge_08_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_08_13.mp4",
+        "md5": "2c0608e11adfac9983e0697c6f79835e",
+        "filesize": 7871791
+      },
+      {
+        "filename": "lunge_08_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_08_14.mp4",
+        "md5": "1bcd2db5de76ef1c4bd513435303aebc",
+        "filesize": 14620974
+      },
+      {
+        "filename": "lunge_08_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_08_15.mp4",
+        "md5": "da18e910587e6c96125a0c5b5144fccb",
+        "filesize": 846732
+      },
+      {
+        "filename": "lunge_09_02.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_09_02.mp4",
+        "md5": "d0f3df19d1d67a0ebfdab0e18151068d",
+        "filesize": 1600827
+      },
+      {
+        "filename": "lunge_09_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_09_03.mp4",
+        "md5": "ad8c89daadaaa2f802278dfc05dfeef2",
+        "filesize": 581266
+      },
+      {
+        "filename": "lunge_09_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_09_05.mp4",
+        "md5": "6296a2e00ea764e71d4310711cd3e842",
+        "filesize": 2027865
+      },
+      {
+        "filename": "lunge_09_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_09_08.mp4",
+        "md5": "81b532dcec84b8ebb4f78b76262091b8",
+        "filesize": 6125791
+      },
+      {
+        "filename": "lunge_09_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_09_09.mp4",
+        "md5": "7427c10d8286f20939946b161e4ba835",
+        "filesize": 1157782
+      },
+      {
+        "filename": "lunge_09_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_09_14.mp4",
+        "md5": "14a1035bcdade136a322bd9f52e42ac5",
+        "filesize": 748260
+      },
+      {
+        "filename": "lunge_09_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_09_15.mp4",
+        "md5": "1955637577bc109cc3741c7773feec59",
+        "filesize": 2290266
+      },
+      {
+        "filename": "lunge_10_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_10_03.mp4",
+        "md5": "5b0906f47779ae8b9df3cab4b0c146b7",
+        "filesize": 880832
+      },
+      {
+        "filename": "lunge_10_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_10_05.mp4",
+        "md5": "a104e7f95b42dbe90000ad43c117b10c",
+        "filesize": 3981323
+      },
+      {
+        "filename": "lunge_10_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_10_06.mp4",
+        "md5": "9075773212f431bf294a6efe6c2efa11",
+        "filesize": 4522091
+      },
+      {
+        "filename": "lunge_10_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_10_08.mp4",
+        "md5": "13fa0e9eb3c463b978cfef62b5c8ce16",
+        "filesize": 5381984
+      },
+      {
+        "filename": "lunge_10_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_10_10.mp4",
+        "md5": "2d98dcb6802eb4c91df3dcc520fb6111",
+        "filesize": 1136636
+      },
+      {
+        "filename": "lunge_10_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_10_11.mp4",
+        "md5": "040190786dcfdde7ad72bb458c5c7d2f",
+        "filesize": 11423466
+      },
+      {
+        "filename": "lunge_10_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_10_12.mp4",
+        "md5": "a6ce2c37de4f47cd3eeb7cb4e5452d44",
+        "filesize": 1752533
+      },
+      {
+        "filename": "lunge_10_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_10_13.mp4",
+        "md5": "d60e1ce62fc3eaefdbd2ccd4f34c01ec",
+        "filesize": 1739420
+      },
+      {
+        "filename": "lunge_10_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\lunge\\lunge_10_15.mp4",
+        "md5": "eb812b6b4d035b33a1740bbf1ce1fb92",
+        "filesize": 4025665
+      }
+    ],
+    "duplicates_logged": [
+      {
+        "representative": "lunge_01_04.mp4",
+        "md5": "5bfec6e4c7a303fab11075f1973c5a1f",
+        "duplicates": [
+          "lunge_02_03.mp4",
+          "lunge_04_03.mp4",
+          "lunge_05_03.mp4",
+          "lunge_07_14.mp4"
+        ]
+      },
+      {
+        "representative": "lunge_01_06.mp4",
+        "md5": "3b2c875597283690a7034fea641744d3",
+        "duplicates": [
+          "lunge_04_06.mp4"
+        ]
+      },
+      {
+        "representative": "lunge_01_07.mp4",
+        "md5": "73d4043ecaf22d931821faf6b48689d7",
+        "duplicates": [
+          "lunge_04_12.mp4",
+          "lunge_05_10.mp4"
+        ]
+      },
+      {
+        "representative": "lunge_01_08.mp4",
+        "md5": "6208b0ad5405e25918c644037d474e93",
+        "duplicates": [
+          "lunge_05_11.mp4",
+          "lunge_09_11.mp4"
+        ]
+      },
+      {
+        "representative": "lunge_01_09.mp4",
+        "md5": "533483b51e6407af14a77d4eb60f90c5",
+        "duplicates": [
+          "lunge_02_05.mp4",
+          "lunge_05_08.mp4"
+        ]
+      },
+      {
+        "representative": "lunge_01_10.mp4",
+        "md5": "2d4f865de8ea54ff14c38d8160686d9e",
+        "duplicates": [
+          "lunge_08_02.mp4"
+        ]
+      },
+      {
+        "representative": "lunge_01_11.mp4",
+        "md5": "b2cb9aff57ba0f4bf63033ffd4320ad1",
+        "duplicates": [
+          "lunge_05_15.mp4"
+        ]
+      },
+      {
+        "representative": "lunge_01_12.mp4",
+        "md5": "4de6de348c8b9581f298a0bdee4ae85a",
+        "duplicates": [
+          "lunge_04_15.mp4"
+        ]
+      },
+      {
+        "representative": "lunge_01_14.mp4",
+        "md5": "4f02c3248089ae52df2d0eafa12135de",
+        "duplicates": [
+          "lunge_02_12.mp4",
+          "lunge_05_12.mp4"
+        ]
+      },
+      {
+        "representative": "lunge_02_08.mp4",
+        "md5": "23711f439094b339e59e4dfd29ce5477",
+        "duplicates": [
+          "lunge_04_10.mp4"
+        ]
+      },
+      {
+        "representative": "lunge_03_02.mp4",
+        "md5": "16fa263ece21ca4ca867b1142f8e7d47",
+        "duplicates": [
+          "lunge_10_04.mp4"
+        ]
+      },
+      {
+        "representative": "lunge_03_07.mp4",
+        "md5": "bf2c72063910e620dd36a243986ad441",
+        "duplicates": [
+          "lunge_10_14.mp4"
+        ]
+      },
+      {
+        "representative": "lunge_04_13.mp4",
+        "md5": "67d2d046af9b10e009bd6f8790a81526",
+        "duplicates": [
+          "lunge_09_10.mp4"
+        ]
+      },
+      {
+        "representative": "lunge_06_06.mp4",
+        "md5": "80329f8032ec7afd8e5c2e4ada213329",
+        "duplicates": [
+          "lunge_07_05.mp4"
+        ]
+      }
+    ]
+  },
+  "plank": {
+    "unique_count": 85,
+    "clean_pool_before_dedup": 122,
+    "intra_backlog_duplicate_groups": 14,
+    "intra_backlog_duplicate_files_pruned": 37,
+    "unique_candidates": [
+      {
+        "filename": "plank_01_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_01_03.mp4",
+        "md5": "ee636a883184cb4d75780b1d18d2a632",
+        "filesize": 9601813
+      },
+      {
+        "filename": "plank_01_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_01_04.mp4",
+        "md5": "7a6984aaa9946783983e55efeb0e30cf",
+        "filesize": 11870563
+      },
+      {
+        "filename": "plank_01_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_01_05.mp4",
+        "md5": "f88cb0462ed4d82397c0fbe51e93239f",
+        "filesize": 11233871
+      },
+      {
+        "filename": "plank_01_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_01_06.mp4",
+        "md5": "a273c64a60034a2ff300865a5a42039a",
+        "filesize": 5007560
+      },
+      {
+        "filename": "plank_01_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_01_07.mp4",
+        "md5": "0a2a5b5ac968d39c36164329334a7af2",
+        "filesize": 9212799
+      },
+      {
+        "filename": "plank_01_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_01_08.mp4",
+        "md5": "3be688bd43a0c610235ed4e0a3a4a0cb",
+        "filesize": 4906420
+      },
+      {
+        "filename": "plank_01_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_01_09.mp4",
+        "md5": "329f9c802efd6a4718e4f375d0b3decb",
+        "filesize": 3052521
+      },
+      {
+        "filename": "plank_01_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_01_10.mp4",
+        "md5": "e0bff347ec5dba34afae58bc65913d30",
+        "filesize": 2651115
+      },
+      {
+        "filename": "plank_01_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_01_11.mp4",
+        "md5": "6dbe413a234507ee2a156acc17c046f5",
+        "filesize": 2176281
+      },
+      {
+        "filename": "plank_01_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_01_12.mp4",
+        "md5": "916b10255f78d7151b0117361a937236",
+        "filesize": 10836907
+      },
+      {
+        "filename": "plank_01_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_01_14.mp4",
+        "md5": "129bc3298bdfbc7985fe30ea3f538a5d",
+        "filesize": 11894920
+      },
+      {
+        "filename": "plank_02_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_02_06.mp4",
+        "md5": "63c8e29abf8c763b28c2254e7721a226",
+        "filesize": 4671438
+      },
+      {
+        "filename": "plank_02_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_02_08.mp4",
+        "md5": "ad88efa934ec9643fc257c17c06cda66",
+        "filesize": 9407860
+      },
+      {
+        "filename": "plank_02_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_02_12.mp4",
+        "md5": "03a1b96d25625f7ac9ec56b570008b15",
+        "filesize": 6936574
+      },
+      {
+        "filename": "plank_02_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_02_14.mp4",
+        "md5": "0fe8487747796f4508d9cc9274c04e2b",
+        "filesize": 882872
+      },
+      {
+        "filename": "plank_03_02.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_03_02.mp4",
+        "md5": "6e30cc3e7eb6b22992bb0bb177af15ad",
+        "filesize": 5164485
+      },
+      {
+        "filename": "plank_03_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_03_03.mp4",
+        "md5": "9c612759d4bd88ff5363922d821d9908",
+        "filesize": 2124576
+      },
+      {
+        "filename": "plank_03_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_03_04.mp4",
+        "md5": "6f9851ce6df259ff41da79c729d584e2",
+        "filesize": 2286775
+      },
+      {
+        "filename": "plank_03_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_03_05.mp4",
+        "md5": "8fa885587f8d3f0940cb4123e052a29b",
+        "filesize": 1983781
+      },
+      {
+        "filename": "plank_03_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_03_07.mp4",
+        "md5": "3faa7a8a4469cacfd62b15ed9a69c1d3",
+        "filesize": 1670764
+      },
+      {
+        "filename": "plank_03_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_03_08.mp4",
+        "md5": "a83def9d6edd459f2203ca43a9645aad",
+        "filesize": 10017360
+      },
+      {
+        "filename": "plank_03_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_03_09.mp4",
+        "md5": "22698ebefe7fdc774539e63be32dff5a",
+        "filesize": 5908197
+      },
+      {
+        "filename": "plank_03_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_03_10.mp4",
+        "md5": "f85f8e3754a4c13af2170380a5ccc8b0",
+        "filesize": 812669
+      },
+      {
+        "filename": "plank_03_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_03_11.mp4",
+        "md5": "3690a8fec158431550a4f7b860452305",
+        "filesize": 10375896
+      },
+      {
+        "filename": "plank_03_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_03_12.mp4",
+        "md5": "425a72cd98e7ee239a6009c8172c1d31",
+        "filesize": 749520
+      },
+      {
+        "filename": "plank_03_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_03_13.mp4",
+        "md5": "4abbb066a44a44adfe6551aac6a3da14",
+        "filesize": 1624013
+      },
+      {
+        "filename": "plank_03_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_03_14.mp4",
+        "md5": "3f0dcc733d36e54700d40fcf0650d004",
+        "filesize": 12312325
+      },
+      {
+        "filename": "plank_03_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_03_15.mp4",
+        "md5": "0e179846de52c732223ebd9781d8686b",
+        "filesize": 2101415
+      },
+      {
+        "filename": "plank_04_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_04_07.mp4",
+        "md5": "5d2d5d33e3c231cef9dd7bf5a15c7eb3",
+        "filesize": 7730850
+      },
+      {
+        "filename": "plank_04_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_04_11.mp4",
+        "md5": "234c611765693b23df6180750c09e313",
+        "filesize": 2529732
+      },
+      {
+        "filename": "plank_04_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_04_15.mp4",
+        "md5": "f4271bd5b39cd88621d77a80ad0da595",
+        "filesize": 3361675
+      },
+      {
+        "filename": "plank_05_01.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_05_01.mp4",
+        "md5": "a295efb94f2cffbd5f1689d66d9daf29",
+        "filesize": 34563121
+      },
+      {
+        "filename": "plank_05_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_05_03.mp4",
+        "md5": "71075e2f4daa82829f43096e8f8d9d70",
+        "filesize": 12854160
+      },
+      {
+        "filename": "plank_05_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_05_04.mp4",
+        "md5": "57edbcdf9e696b345f65e6ac6973e201",
+        "filesize": 30828229
+      },
+      {
+        "filename": "plank_05_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_05_05.mp4",
+        "md5": "1fc4c96e29987e660ea4d609017011bf",
+        "filesize": 26994562
+      },
+      {
+        "filename": "plank_05_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_05_06.mp4",
+        "md5": "8e59aa00b8b842de2129a0e7a53906cd",
+        "filesize": 41479281
+      },
+      {
+        "filename": "plank_05_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_05_07.mp4",
+        "md5": "24df88478e60b9da633f1a51636cc70e",
+        "filesize": 20591110
+      },
+      {
+        "filename": "plank_05_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_05_08.mp4",
+        "md5": "537a4bcc63350efed3e4efc341e779c8",
+        "filesize": 4190877
+      },
+      {
+        "filename": "plank_05_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_05_09.mp4",
+        "md5": "b7a3606eabd5bebec89cceccbb8e40a9",
+        "filesize": 42160425
+      },
+      {
+        "filename": "plank_05_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_05_11.mp4",
+        "md5": "ae6535e4ce97da9b9c10eb9e498fcbea",
+        "filesize": 4922206
+      },
+      {
+        "filename": "plank_05_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_05_12.mp4",
+        "md5": "4d80f3df6f87dcd782fb7e3d2e54082e",
+        "filesize": 43409203
+      },
+      {
+        "filename": "plank_05_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_05_13.mp4",
+        "md5": "398ce70581aa63d07b8f557b7b8669ad",
+        "filesize": 12113568
+      },
+      {
+        "filename": "plank_05_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_05_14.mp4",
+        "md5": "f846e5aa06b339d1a9f3031ba7a5c46c",
+        "filesize": 30222833
+      },
+      {
+        "filename": "plank_05_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_05_15.mp4",
+        "md5": "58b31600e59c3754a2489c3ce3d6dd9f",
+        "filesize": 35621656
+      },
+      {
+        "filename": "plank_06_02.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_06_02.mp4",
+        "md5": "204844735254773b41a80381b0902292",
+        "filesize": 21858365
+      },
+      {
+        "filename": "plank_06_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_06_03.mp4",
+        "md5": "34d474fa31a17836f15ecfe6555f5ab0",
+        "filesize": 22573307
+      },
+      {
+        "filename": "plank_06_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_06_04.mp4",
+        "md5": "05b4417f7edaace2605ca414bd714c6f",
+        "filesize": 9748748
+      },
+      {
+        "filename": "plank_06_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_06_05.mp4",
+        "md5": "75c6ea687f7d5d7da738a8aa531eee45",
+        "filesize": 13632858
+      },
+      {
+        "filename": "plank_06_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_06_06.mp4",
+        "md5": "b57e054fff408e925cc4b26bbc23edcc",
+        "filesize": 22965563
+      },
+      {
+        "filename": "plank_06_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_06_07.mp4",
+        "md5": "928086a93740bd3a603c8e062b4a6887",
+        "filesize": 28562530
+      },
+      {
+        "filename": "plank_06_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_06_08.mp4",
+        "md5": "98bb763067fa3f8243dbd94ee7df3b0b",
+        "filesize": 27430612
+      },
+      {
+        "filename": "plank_06_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_06_10.mp4",
+        "md5": "7055a21beee3d010b3045dfca3ce3da5",
+        "filesize": 18405865
+      },
+      {
+        "filename": "plank_06_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_06_11.mp4",
+        "md5": "a91f0575373ac616c7bc91a820cb9c7c",
+        "filesize": 16476865
+      },
+      {
+        "filename": "plank_06_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_06_13.mp4",
+        "md5": "dee57ceab55ce341df575011dd768632",
+        "filesize": 44179254
+      },
+      {
+        "filename": "plank_06_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_06_14.mp4",
+        "md5": "eeab7f8fc65b548d0010d482008a3aff",
+        "filesize": 28659113
+      },
+      {
+        "filename": "plank_06_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_06_15.mp4",
+        "md5": "164801bf69ca8d87596aeb45401eb1a2",
+        "filesize": 12866280
+      },
+      {
+        "filename": "plank_07_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_07_09.mp4",
+        "md5": "44ea80444c7a71dd666977da3edbe474",
+        "filesize": 3081501
+      },
+      {
+        "filename": "plank_07_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_07_10.mp4",
+        "md5": "4fdac0a81c9648f5621187ed8343681b",
+        "filesize": 4729306
+      },
+      {
+        "filename": "plank_07_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_07_11.mp4",
+        "md5": "1ec4818924b8daccf347cdd7be0fd1a5",
+        "filesize": 14734396
+      },
+      {
+        "filename": "plank_07_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_07_12.mp4",
+        "md5": "695f72b8dd1190bfdc7328d3e21350b4",
+        "filesize": 2008155
+      },
+      {
+        "filename": "plank_07_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_07_13.mp4",
+        "md5": "b1cdb6993fc97d932b920a70f91f51d4",
+        "filesize": 27978974
+      },
+      {
+        "filename": "plank_08_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_08_03.mp4",
+        "md5": "7f49c4fb4e3541c08dd2d98c72c5a22b",
+        "filesize": 4972058
+      },
+      {
+        "filename": "plank_08_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_08_05.mp4",
+        "md5": "58cdf40535a61e3108f614c236011b50",
+        "filesize": 11195647
+      },
+      {
+        "filename": "plank_08_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_08_07.mp4",
+        "md5": "3b9449e0519170157bc96f6b70379dc1",
+        "filesize": 3632195
+      },
+      {
+        "filename": "plank_08_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_08_08.mp4",
+        "md5": "08f4331e464915481b0ccef7dc8dbb70",
+        "filesize": 26852215
+      },
+      {
+        "filename": "plank_08_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_08_10.mp4",
+        "md5": "228db5ba8bc92034a0374655469a02b5",
+        "filesize": 22190999
+      },
+      {
+        "filename": "plank_08_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_08_13.mp4",
+        "md5": "3b3805bc285d92d2e7c22c8669ad7b29",
+        "filesize": 8265393
+      },
+      {
+        "filename": "plank_08_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_08_14.mp4",
+        "md5": "754c3fa1e721aaf371efb1dd6c97d4b5",
+        "filesize": 1044383
+      },
+      {
+        "filename": "plank_08_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_08_15.mp4",
+        "md5": "6a4c17f25cfef3aa62ca120a647556e5",
+        "filesize": 10901592
+      },
+      {
+        "filename": "plank_09_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_09_03.mp4",
+        "md5": "dbf8487072b471542047d8166a4c13e6",
+        "filesize": 3992488
+      },
+      {
+        "filename": "plank_09_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_09_05.mp4",
+        "md5": "519a76b4a563fe2a0f3d05e5b630b4d1",
+        "filesize": 4215882
+      },
+      {
+        "filename": "plank_09_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_09_06.mp4",
+        "md5": "5d10b97f01f488c1c181364cf8aeed8a",
+        "filesize": 2303550
+      },
+      {
+        "filename": "plank_09_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_09_11.mp4",
+        "md5": "2277f5b708a443810c1d40c97e23d8e6",
+        "filesize": 1785418
+      },
+      {
+        "filename": "plank_09_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_09_12.mp4",
+        "md5": "ba3252918f8d3fc1b29ae12c1065ea03",
+        "filesize": 4669666
+      },
+      {
+        "filename": "plank_09_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_09_13.mp4",
+        "md5": "c1dd990f3bb2ba500cfa7b2130e056a6",
+        "filesize": 8202085
+      },
+      {
+        "filename": "plank_10_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_10_03.mp4",
+        "md5": "dcdc575f6ab2dc2ea5a753b529497f25",
+        "filesize": 2554519
+      },
+      {
+        "filename": "plank_10_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_10_05.mp4",
+        "md5": "d3dbca5844cc619a9fadc3a9f764f404",
+        "filesize": 6596182
+      },
+      {
+        "filename": "plank_10_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_10_06.mp4",
+        "md5": "2e18a6fd3f580f77babc35825cbf2183",
+        "filesize": 661424
+      },
+      {
+        "filename": "plank_10_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_10_07.mp4",
+        "md5": "8e9d86e2656b2817815b2f340f96344e",
+        "filesize": 1389481
+      },
+      {
+        "filename": "plank_10_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_10_08.mp4",
+        "md5": "de07b8e31a818c053cb0447cb4807013",
+        "filesize": 4411900
+      },
+      {
+        "filename": "plank_10_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_10_09.mp4",
+        "md5": "04e3650024e019f8f09f7c22e375fe9f",
+        "filesize": 3051100
+      },
+      {
+        "filename": "plank_10_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_10_10.mp4",
+        "md5": "e13551f4e09c8dbe4f7f45df231640b7",
+        "filesize": 1502649
+      },
+      {
+        "filename": "plank_10_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_10_12.mp4",
+        "md5": "6871a8231f87d583d828367b44a140b9",
+        "filesize": 1621370
+      },
+      {
+        "filename": "plank_10_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_10_13.mp4",
+        "md5": "50d8d3cecd9cba0a8cc4e43271ea1ab8",
+        "filesize": 985643
+      },
+      {
+        "filename": "plank_10_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\plank\\plank_10_14.mp4",
+        "md5": "2e2ac51fcdaf02b642b1a33c6ad34e24",
+        "filesize": 1635172
+      }
+    ],
+    "duplicates_logged": [
+      {
+        "representative": "plank_01_03.mp4",
+        "md5": "ee636a883184cb4d75780b1d18d2a632",
+        "duplicates": [
+          "plank_02_09.mp4",
+          "plank_04_08.mp4",
+          "plank_07_05.mp4",
+          "plank_08_11.mp4",
+          "plank_09_08.mp4"
+        ]
+      },
+      {
+        "representative": "plank_01_04.mp4",
+        "md5": "7a6984aaa9946783983e55efeb0e30cf",
+        "duplicates": [
+          "plank_02_04.mp4",
+          "plank_04_09.mp4",
+          "plank_07_04.mp4",
+          "plank_09_10.mp4"
+        ]
+      },
+      {
+        "representative": "plank_01_05.mp4",
+        "md5": "f88cb0462ed4d82397c0fbe51e93239f",
+        "duplicates": [
+          "plank_02_07.mp4",
+          "plank_04_10.mp4",
+          "plank_07_03.mp4",
+          "plank_09_07.mp4"
+        ]
+      },
+      {
+        "representative": "plank_01_06.mp4",
+        "md5": "a273c64a60034a2ff300865a5a42039a",
+        "duplicates": [
+          "plank_02_03.mp4",
+          "plank_04_12.mp4",
+          "plank_07_08.mp4",
+          "plank_08_06.mp4"
+        ]
+      },
+      {
+        "representative": "plank_01_07.mp4",
+        "md5": "0a2a5b5ac968d39c36164329334a7af2",
+        "duplicates": [
+          "plank_02_05.mp4",
+          "plank_04_03.mp4",
+          "plank_08_02.mp4",
+          "plank_09_09.mp4"
+        ]
+      },
+      {
+        "representative": "plank_01_08.mp4",
+        "md5": "3be688bd43a0c610235ed4e0a3a4a0cb",
+        "duplicates": [
+          "plank_02_13.mp4",
+          "plank_04_05.mp4",
+          "plank_07_06.mp4"
+        ]
+      },
+      {
+        "representative": "plank_01_09.mp4",
+        "md5": "329f9c802efd6a4718e4f375d0b3decb",
+        "duplicates": [
+          "plank_02_10.mp4"
+        ]
+      },
+      {
+        "representative": "plank_01_11.mp4",
+        "md5": "6dbe413a234507ee2a156acc17c046f5",
+        "duplicates": [
+          "plank_02_15.mp4",
+          "plank_08_09.mp4"
+        ]
+      },
+      {
+        "representative": "plank_01_12.mp4",
+        "md5": "916b10255f78d7151b0117361a937236",
+        "duplicates": [
+          "plank_02_11.mp4",
+          "plank_04_04.mp4"
+        ]
+      },
+      {
+        "representative": "plank_02_06.mp4",
+        "md5": "63c8e29abf8c763b28c2254e7721a226",
+        "duplicates": [
+          "plank_04_02.mp4",
+          "plank_08_12.mp4",
+          "plank_09_14.mp4"
+        ]
+      },
+      {
+        "representative": "plank_03_02.mp4",
+        "md5": "6e30cc3e7eb6b22992bb0bb177af15ad",
+        "duplicates": [
+          "plank_10_02.mp4"
+        ]
+      },
+      {
+        "representative": "plank_03_08.mp4",
+        "md5": "a83def9d6edd459f2203ca43a9645aad",
+        "duplicates": [
+          "plank_04_14.mp4",
+          "plank_06_09.mp4"
+        ]
+      },
+      {
+        "representative": "plank_03_09.mp4",
+        "md5": "22698ebefe7fdc774539e63be32dff5a",
+        "duplicates": [
+          "plank_10_11.mp4"
+        ]
+      },
+      {
+        "representative": "plank_05_01.mp4",
+        "md5": "a295efb94f2cffbd5f1689d66d9daf29",
+        "duplicates": [
+          "plank_06_12.mp4"
+        ]
+      }
+    ]
+  },
+  "pushup": {
+    "unique_count": 74,
+    "clean_pool_before_dedup": 110,
+    "intra_backlog_duplicate_groups": 16,
+    "intra_backlog_duplicate_files_pruned": 36,
+    "unique_candidates": [
+      {
+        "filename": "pushup_01_02.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_01_02.mp4",
+        "md5": "a4c957afe6df13f6793d07de234151fe",
+        "filesize": 2098242
+      },
+      {
+        "filename": "pushup_01_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_01_03.mp4",
+        "md5": "a853a0f3418ef80dd57a969696b71d5d",
+        "filesize": 23043004
+      },
+      {
+        "filename": "pushup_01_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_01_06.mp4",
+        "md5": "2209d1465509839a5e893bb7e6433412",
+        "filesize": 25253970
+      },
+      {
+        "filename": "pushup_01_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_01_07.mp4",
+        "md5": "4d38a3ae4de212b20e118915591742ac",
+        "filesize": 3439866
+      },
+      {
+        "filename": "pushup_01_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_01_08.mp4",
+        "md5": "6c260d3f86e93cc1cf9e8d427d919796",
+        "filesize": 7142215
+      },
+      {
+        "filename": "pushup_01_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_01_09.mp4",
+        "md5": "fa458597ce91beeb4fa81319403a7696",
+        "filesize": 29236371
+      },
+      {
+        "filename": "pushup_01_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_01_11.mp4",
+        "md5": "4e979728f370619a49511d36e29dde82",
+        "filesize": 15075532
+      },
+      {
+        "filename": "pushup_01_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_01_12.mp4",
+        "md5": "68e2d0ad1c22983a6c8f40f0ecec6bde",
+        "filesize": 6268637
+      },
+      {
+        "filename": "pushup_01_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_01_13.mp4",
+        "md5": "6045b3b1a9212b4c31b286afd1726df4",
+        "filesize": 6329812
+      },
+      {
+        "filename": "pushup_01_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_01_14.mp4",
+        "md5": "73d13d10eddb49f97375aaf27e82ce44",
+        "filesize": 2767124
+      },
+      {
+        "filename": "pushup_01_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_01_15.mp4",
+        "md5": "3d3b0747d007486213b9a49dce31d490",
+        "filesize": 6205923
+      },
+      {
+        "filename": "pushup_02_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_02_06.mp4",
+        "md5": "9c40c1537f616476110aabfdce70ab61",
+        "filesize": 15643886
+      },
+      {
+        "filename": "pushup_02_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_02_08.mp4",
+        "md5": "53c0ea597a97f7400542175911bce431",
+        "filesize": 14282486
+      },
+      {
+        "filename": "pushup_02_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_02_10.mp4",
+        "md5": "2601274c07646726231296ae6eeefef8",
+        "filesize": 35539845
+      },
+      {
+        "filename": "pushup_02_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_02_12.mp4",
+        "md5": "89bcf2f30bc6e9452523146e7a24f1f7",
+        "filesize": 5779637
+      },
+      {
+        "filename": "pushup_02_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_02_13.mp4",
+        "md5": "7201ed91258f29a27db91b4d0181a97f",
+        "filesize": 2900896
+      },
+      {
+        "filename": "pushup_03_02.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_03_02.mp4",
+        "md5": "251ec2838cf74b883ed5cf4dc6b96690",
+        "filesize": 6923559
+      },
+      {
+        "filename": "pushup_03_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_03_04.mp4",
+        "md5": "dee32f7f5185a8b73031e1eaa1906ab0",
+        "filesize": 2637620
+      },
+      {
+        "filename": "pushup_03_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_03_06.mp4",
+        "md5": "c5e0caa02dbd73063d76447fc7c4048b",
+        "filesize": 12756077
+      },
+      {
+        "filename": "pushup_03_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_03_07.mp4",
+        "md5": "222fa80659de80999a9cbb680bea7993",
+        "filesize": 708966
+      },
+      {
+        "filename": "pushup_03_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_03_08.mp4",
+        "md5": "06a7e00a4fd8a05130c767a1c7e6cac4",
+        "filesize": 1698738
+      },
+      {
+        "filename": "pushup_03_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_03_09.mp4",
+        "md5": "34ec8122b4e3bd159b87b01b08c1d6a9",
+        "filesize": 7199079
+      },
+      {
+        "filename": "pushup_03_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_03_10.mp4",
+        "md5": "263361b15e5fe110bf8e811c69c7ba46",
+        "filesize": 4089435
+      },
+      {
+        "filename": "pushup_03_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_03_12.mp4",
+        "md5": "34eb2104566596aa0044db136df298ed",
+        "filesize": 988300
+      },
+      {
+        "filename": "pushup_03_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_03_13.mp4",
+        "md5": "929b04c5e9fe364fdc593cc74ec442b3",
+        "filesize": 2574935
+      },
+      {
+        "filename": "pushup_03_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_03_14.mp4",
+        "md5": "3d4a23a835fc43dbbab21352c753f50c",
+        "filesize": 50309067
+      },
+      {
+        "filename": "pushup_04_02.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_04_02.mp4",
+        "md5": "cb6bfa24efdc21b49ade0f477f8c36dd",
+        "filesize": 8568990
+      },
+      {
+        "filename": "pushup_04_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_04_07.mp4",
+        "md5": "3ee2a06fb6d23ecdb5f58acfee555be8",
+        "filesize": 7431709
+      },
+      {
+        "filename": "pushup_04_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_04_09.mp4",
+        "md5": "e3e3e1d74059c97440793bf391dceab5",
+        "filesize": 11455906
+      },
+      {
+        "filename": "pushup_04_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_04_11.mp4",
+        "md5": "5eb7c9183f644a202194a10853fef343",
+        "filesize": 27246192
+      },
+      {
+        "filename": "pushup_04_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_04_14.mp4",
+        "md5": "88107eece7520619b1a94c1a28495f57",
+        "filesize": 4221086
+      },
+      {
+        "filename": "pushup_04_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_04_15.mp4",
+        "md5": "298dd395ffd44f3300274aefbd77ffae",
+        "filesize": 47619859
+      },
+      {
+        "filename": "pushup_05_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_05_04.mp4",
+        "md5": "cb2832cf805fd502921800bc69d1a834",
+        "filesize": 28976885
+      },
+      {
+        "filename": "pushup_05_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_05_05.mp4",
+        "md5": "94848cf217a0a20f19b24ac5dc9a632c",
+        "filesize": 5283057
+      },
+      {
+        "filename": "pushup_05_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_05_06.mp4",
+        "md5": "790d91dbe7b7e11644eb1fe468e84045",
+        "filesize": 17197622
+      },
+      {
+        "filename": "pushup_05_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_05_07.mp4",
+        "md5": "95837073b3a487c57600c5d990da989c",
+        "filesize": 14119229
+      },
+      {
+        "filename": "pushup_05_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_05_08.mp4",
+        "md5": "bba9bd781be34d97c742d4a795865420",
+        "filesize": 17495124
+      },
+      {
+        "filename": "pushup_05_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_05_09.mp4",
+        "md5": "1d0b77f556b56ab5d5d117812a505880",
+        "filesize": 30285274
+      },
+      {
+        "filename": "pushup_05_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_05_10.mp4",
+        "md5": "d768009e340d3d821a63d702b3ae3bc5",
+        "filesize": 30727319
+      },
+      {
+        "filename": "pushup_05_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_05_11.mp4",
+        "md5": "39be979cea4cd2779500ec3b72f75db3",
+        "filesize": 27448857
+      },
+      {
+        "filename": "pushup_05_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_05_12.mp4",
+        "md5": "bff75a77cdfa2419ff3478acda223400",
+        "filesize": 6946994
+      },
+      {
+        "filename": "pushup_05_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_05_13.mp4",
+        "md5": "32723ede082603cc941ad877dd03c20a",
+        "filesize": 25301741
+      },
+      {
+        "filename": "pushup_05_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_05_14.mp4",
+        "md5": "83053a4ca38eda14f355712baa6a437d",
+        "filesize": 10398845
+      },
+      {
+        "filename": "pushup_06_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_06_03.mp4",
+        "md5": "c57675fa9b1cb4d55e92319a6adbda47",
+        "filesize": 23944419
+      },
+      {
+        "filename": "pushup_06_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_06_05.mp4",
+        "md5": "7184aae0ee5f8197a782282cdb9675b7",
+        "filesize": 18313288
+      },
+      {
+        "filename": "pushup_06_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_06_06.mp4",
+        "md5": "062877e41ded78a1ebdb5107db668605",
+        "filesize": 22930361
+      },
+      {
+        "filename": "pushup_06_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_06_07.mp4",
+        "md5": "7c503dab7943972e94ef277c92917107",
+        "filesize": 37206784
+      },
+      {
+        "filename": "pushup_06_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_06_09.mp4",
+        "md5": "51be90058b06be881c7cf0d2fd3b455c",
+        "filesize": 10275426
+      },
+      {
+        "filename": "pushup_06_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_06_12.mp4",
+        "md5": "f134d14efcd1339d34458f7e6b7878ac",
+        "filesize": 17387228
+      },
+      {
+        "filename": "pushup_06_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_06_13.mp4",
+        "md5": "b8c1d6ee16eb66cb1cc32f3eb4ad11fc",
+        "filesize": 5610399
+      },
+      {
+        "filename": "pushup_07_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_07_05.mp4",
+        "md5": "a27ac5de9acfb8599c1fef4445084c00",
+        "filesize": 4567757
+      },
+      {
+        "filename": "pushup_07_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_07_06.mp4",
+        "md5": "67d2d046af9b10e009bd6f8790a81526",
+        "filesize": 3346017
+      },
+      {
+        "filename": "pushup_07_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_07_08.mp4",
+        "md5": "aed9f224bcdb82e5fb87af6d8d9f3b30",
+        "filesize": 740051
+      },
+      {
+        "filename": "pushup_07_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_07_09.mp4",
+        "md5": "9e6c7c2dea32e4691efc6f8194781a9c",
+        "filesize": 674862
+      },
+      {
+        "filename": "pushup_07_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_07_10.mp4",
+        "md5": "33ed8f0cabd7d1668401759ab6f30200",
+        "filesize": 5787386
+      },
+      {
+        "filename": "pushup_07_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_07_11.mp4",
+        "md5": "122739a7aa6970315e6c1d6f450489e0",
+        "filesize": 4771123
+      },
+      {
+        "filename": "pushup_07_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_07_12.mp4",
+        "md5": "0961a5af6232b853e9fd590c1c3203a9",
+        "filesize": 872253
+      },
+      {
+        "filename": "pushup_07_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_07_13.mp4",
+        "md5": "d0f102d75ba3bc189d9f41a7564b4ac6",
+        "filesize": 2160027
+      },
+      {
+        "filename": "pushup_07_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_07_14.mp4",
+        "md5": "47e3d136ffe1c4ec46d1c5dcb6f0856d",
+        "filesize": 1668352
+      },
+      {
+        "filename": "pushup_08_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_08_05.mp4",
+        "md5": "64909acf78d930ed84e2f622a99a5f2d",
+        "filesize": 1008629
+      },
+      {
+        "filename": "pushup_08_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_08_08.mp4",
+        "md5": "f008209b7cd13777f3733b6af82ab5b5",
+        "filesize": 9194166
+      },
+      {
+        "filename": "pushup_08_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_08_11.mp4",
+        "md5": "bf48190615be7d4a3476b9168e4eb795",
+        "filesize": 18943255
+      },
+      {
+        "filename": "pushup_08_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_08_13.mp4",
+        "md5": "6ba0eef4485320a54921e307207c9888",
+        "filesize": 8827475
+      },
+      {
+        "filename": "pushup_08_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_08_15.mp4",
+        "md5": "a7826c694f547d3c9b12ec8486b48497",
+        "filesize": 6057155
+      },
+      {
+        "filename": "pushup_09_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_09_13.mp4",
+        "md5": "48b1af8923e4fa1b6a1eeca04cce3020",
+        "filesize": 2049119
+      },
+      {
+        "filename": "pushup_10_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_10_03.mp4",
+        "md5": "9a52e6a4df884c4925c61be300db67b8",
+        "filesize": 9296228
+      },
+      {
+        "filename": "pushup_10_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_10_04.mp4",
+        "md5": "e4f79961b4ef267e140dee2dc9f091f2",
+        "filesize": 7856139
+      },
+      {
+        "filename": "pushup_10_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_10_06.mp4",
+        "md5": "9bb7647640a2aa00903cd97087cd301f",
+        "filesize": 3703457
+      },
+      {
+        "filename": "pushup_10_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_10_07.mp4",
+        "md5": "953292d704444af4c2b870df5afa99ab",
+        "filesize": 21729140
+      },
+      {
+        "filename": "pushup_10_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_10_09.mp4",
+        "md5": "f8539c7b912fdafd5ee669c00da20a55",
+        "filesize": 11573414
+      },
+      {
+        "filename": "pushup_10_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_10_10.mp4",
+        "md5": "dbabc43e25913b8ec1f07a410903bdf3",
+        "filesize": 11249458
+      },
+      {
+        "filename": "pushup_10_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_10_12.mp4",
+        "md5": "51720a448403b0d00141fd4cbfa3ba88",
+        "filesize": 4151932
+      },
+      {
+        "filename": "pushup_10_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_10_13.mp4",
+        "md5": "b9f0d6a41de4df73ee9c0d940737c678",
+        "filesize": 6954267
+      },
+      {
+        "filename": "pushup_10_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\pushup\\pushup_10_14.mp4",
+        "md5": "41816579006fd153de2c19429b657f85",
+        "filesize": 5783453
+      }
+    ],
+    "duplicates_logged": [
+      {
+        "representative": "pushup_01_02.mp4",
+        "md5": "a4c957afe6df13f6793d07de234151fe",
+        "duplicates": [
+          "pushup_02_02.mp4"
+        ]
+      },
+      {
+        "representative": "pushup_01_03.mp4",
+        "md5": "a853a0f3418ef80dd57a969696b71d5d",
+        "duplicates": [
+          "pushup_02_05.mp4",
+          "pushup_06_04.mp4",
+          "pushup_08_09.mp4",
+          "pushup_09_06.mp4"
+        ]
+      },
+      {
+        "representative": "pushup_01_06.mp4",
+        "md5": "2209d1465509839a5e893bb7e6433412",
+        "duplicates": [
+          "pushup_02_09.mp4",
+          "pushup_04_06.mp4",
+          "pushup_06_15.mp4",
+          "pushup_08_06.mp4",
+          "pushup_09_07.mp4"
+        ]
+      },
+      {
+        "representative": "pushup_01_07.mp4",
+        "md5": "4d38a3ae4de212b20e118915591742ac",
+        "duplicates": [
+          "pushup_02_07.mp4",
+          "pushup_09_05.mp4"
+        ]
+      },
+      {
+        "representative": "pushup_01_09.mp4",
+        "md5": "fa458597ce91beeb4fa81319403a7696",
+        "duplicates": [
+          "pushup_02_11.mp4",
+          "pushup_04_12.mp4",
+          "pushup_06_11.mp4",
+          "pushup_09_14.mp4"
+        ]
+      },
+      {
+        "representative": "pushup_01_11.mp4",
+        "md5": "4e979728f370619a49511d36e29dde82",
+        "duplicates": [
+          "pushup_04_05.mp4",
+          "pushup_09_08.mp4"
+        ]
+      },
+      {
+        "representative": "pushup_01_12.mp4",
+        "md5": "68e2d0ad1c22983a6c8f40f0ecec6bde",
+        "duplicates": [
+          "pushup_02_14.mp4"
+        ]
+      },
+      {
+        "representative": "pushup_01_13.mp4",
+        "md5": "6045b3b1a9212b4c31b286afd1726df4",
+        "duplicates": [
+          "pushup_02_15.mp4",
+          "pushup_04_13.mp4",
+          "pushup_08_04.mp4",
+          "pushup_09_09.mp4"
+        ]
+      },
+      {
+        "representative": "pushup_01_15.mp4",
+        "md5": "3d3b0747d007486213b9a49dce31d490",
+        "duplicates": [
+          "pushup_04_10.mp4",
+          "pushup_09_10.mp4"
+        ]
+      },
+      {
+        "representative": "pushup_02_12.mp4",
+        "md5": "89bcf2f30bc6e9452523146e7a24f1f7",
+        "duplicates": [
+          "pushup_04_08.mp4"
+        ]
+      },
+      {
+        "representative": "pushup_02_13.mp4",
+        "md5": "7201ed91258f29a27db91b4d0181a97f",
+        "duplicates": [
+          "pushup_06_01.mp4",
+          "pushup_09_11.mp4"
+        ]
+      },
+      {
+        "representative": "pushup_03_04.mp4",
+        "md5": "dee32f7f5185a8b73031e1eaa1906ab0",
+        "duplicates": [
+          "pushup_07_03.mp4"
+        ]
+      },
+      {
+        "representative": "pushup_03_06.mp4",
+        "md5": "c5e0caa02dbd73063d76447fc7c4048b",
+        "duplicates": [
+          "pushup_05_03.mp4",
+          "pushup_08_07.mp4",
+          "pushup_09_12.mp4",
+          "pushup_10_11.mp4"
+        ]
+      },
+      {
+        "representative": "pushup_04_11.mp4",
+        "md5": "5eb7c9183f644a202194a10853fef343",
+        "duplicates": [
+          "pushup_08_12.mp4"
+        ]
+      },
+      {
+        "representative": "pushup_05_10.mp4",
+        "md5": "d768009e340d3d821a63d702b3ae3bc5",
+        "duplicates": [
+          "pushup_06_10.mp4"
+        ]
+      },
+      {
+        "representative": "pushup_05_11.mp4",
+        "md5": "39be979cea4cd2779500ec3b72f75db3",
+        "duplicates": [
+          "pushup_06_08.mp4"
+        ]
+      }
+    ]
+  },
+  "squat": {
+    "unique_count": 73,
+    "clean_pool_before_dedup": 111,
+    "intra_backlog_duplicate_groups": 19,
+    "intra_backlog_duplicate_files_pruned": 38,
+    "unique_candidates": [
+      {
+        "filename": "squat_01_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_01_03.mp4",
+        "md5": "2bcfb119add928a5709ec1d088ee53ab",
+        "filesize": 35496400
+      },
+      {
+        "filename": "squat_01_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_01_05.mp4",
+        "md5": "be694c590336fbbe0a966237e622d3b3",
+        "filesize": 1268079
+      },
+      {
+        "filename": "squat_01_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_01_07.mp4",
+        "md5": "bc3e4b3ca2e87e39d91db9407f5cbbb4",
+        "filesize": 6560838
+      },
+      {
+        "filename": "squat_01_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_01_08.mp4",
+        "md5": "48dc1292106b20510299b625ab77a9e4",
+        "filesize": 3269173
+      },
+      {
+        "filename": "squat_01_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_01_09.mp4",
+        "md5": "5387bdfe3673edb597283e8e998c7f34",
+        "filesize": 21378548
+      },
+      {
+        "filename": "squat_01_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_01_10.mp4",
+        "md5": "019fe5baec738fdde82ad2a995671894",
+        "filesize": 7752943
+      },
+      {
+        "filename": "squat_01_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_01_11.mp4",
+        "md5": "04f06ae047c7f6edb363f8d4bfb9e894",
+        "filesize": 907631
+      },
+      {
+        "filename": "squat_01_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_01_12.mp4",
+        "md5": "2c5095f9333c2d5a861fd28b9b12ecbb",
+        "filesize": 2107390
+      },
+      {
+        "filename": "squat_01_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_01_13.mp4",
+        "md5": "ad8c89daadaaa2f802278dfc05dfeef2",
+        "filesize": 581266
+      },
+      {
+        "filename": "squat_01_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_01_14.mp4",
+        "md5": "febc7e90ea0b879c2dffed73002a5df5",
+        "filesize": 15138499
+      },
+      {
+        "filename": "squat_01_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_01_15.mp4",
+        "md5": "6208b0ad5405e25918c644037d474e93",
+        "filesize": 1043655
+      },
+      {
+        "filename": "squat_02_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_02_06.mp4",
+        "md5": "618b13a3475e45169bf2bb429f6e58e6",
+        "filesize": 3507860
+      },
+      {
+        "filename": "squat_02_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_02_10.mp4",
+        "md5": "2a336d15fa5266f4645e360d4b48762a",
+        "filesize": 10449013
+      },
+      {
+        "filename": "squat_02_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_02_11.mp4",
+        "md5": "d0ea40150a2073e31574cf3fdb4ba2e6",
+        "filesize": 18790231
+      },
+      {
+        "filename": "squat_02_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_02_12.mp4",
+        "md5": "8ef0b3f71fb59155623004e6a99643b5",
+        "filesize": 17743657
+      },
+      {
+        "filename": "squat_02_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_02_13.mp4",
+        "md5": "bec388f9ccabcd5649e96c5f95cf1bba",
+        "filesize": 3968525
+      },
+      {
+        "filename": "squat_02_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_02_14.mp4",
+        "md5": "92f8a362ce8a86581809b019a63d90f7",
+        "filesize": 20930533
+      },
+      {
+        "filename": "squat_03_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_03_04.mp4",
+        "md5": "ed3719241d0c90e964a0475617caefb1",
+        "filesize": 3764519
+      },
+      {
+        "filename": "squat_03_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_03_05.mp4",
+        "md5": "988b94f01db642fb121185321f24c45b",
+        "filesize": 955363
+      },
+      {
+        "filename": "squat_03_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_03_07.mp4",
+        "md5": "7b1a5efb89decace0301d59605654ffd",
+        "filesize": 1992319
+      },
+      {
+        "filename": "squat_03_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_03_09.mp4",
+        "md5": "725d19728bd247afc5e1dfabe8f43f57",
+        "filesize": 1263172
+      },
+      {
+        "filename": "squat_03_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_03_11.mp4",
+        "md5": "bb6a7e0807b4df6c075d8ec6d27018af",
+        "filesize": 1172646
+      },
+      {
+        "filename": "squat_03_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_03_12.mp4",
+        "md5": "6ec488ba4773f728233aa90dd34b8f54",
+        "filesize": 6583887
+      },
+      {
+        "filename": "squat_03_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_03_13.mp4",
+        "md5": "6e7c9b323925779f0b3b6fd794c34ace",
+        "filesize": 1005598
+      },
+      {
+        "filename": "squat_03_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_03_14.mp4",
+        "md5": "b0a7640caa7d85f6a3aa824d0313297d",
+        "filesize": 6390843
+      },
+      {
+        "filename": "squat_04_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_04_04.mp4",
+        "md5": "c6288df7b3ff0408c1c1a43127bfb255",
+        "filesize": 3780690
+      },
+      {
+        "filename": "squat_04_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_04_05.mp4",
+        "md5": "31f21a09d1351b6e6982664b79f76100",
+        "filesize": 3052553
+      },
+      {
+        "filename": "squat_04_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_04_07.mp4",
+        "md5": "20ca58c8ed1ef3798de77ccbf901e4da",
+        "filesize": 836832
+      },
+      {
+        "filename": "squat_04_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_04_13.mp4",
+        "md5": "e2e11d121cab3a57e202ff38ccd7949c",
+        "filesize": 11439568
+      },
+      {
+        "filename": "squat_04_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_04_15.mp4",
+        "md5": "089181f5442e124087e4bece3f68de7e",
+        "filesize": 14208567
+      },
+      {
+        "filename": "squat_05_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_05_03.mp4",
+        "md5": "380de60089311f755d8be87ab4c332e8",
+        "filesize": 8985212
+      },
+      {
+        "filename": "squat_05_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_05_06.mp4",
+        "md5": "f754663a2d4d8d5942091a8e1e36e1ff",
+        "filesize": 26651403
+      },
+      {
+        "filename": "squat_05_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_05_07.mp4",
+        "md5": "96052df354f7053b425cdc4e3c7bc7f4",
+        "filesize": 14915177
+      },
+      {
+        "filename": "squat_05_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_05_10.mp4",
+        "md5": "1670824959017eed30961ff24c55dfb4",
+        "filesize": 10765051
+      },
+      {
+        "filename": "squat_05_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_05_11.mp4",
+        "md5": "d43fe1ee8f42241037a0669f700fe36d",
+        "filesize": 3358343
+      },
+      {
+        "filename": "squat_05_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_05_12.mp4",
+        "md5": "7bbc9d2493879d7409c9ea3b998b3384",
+        "filesize": 16592944
+      },
+      {
+        "filename": "squat_05_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_05_13.mp4",
+        "md5": "7592a3ca4124a90b0dd31d0b729790a7",
+        "filesize": 3955196
+      },
+      {
+        "filename": "squat_05_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_05_15.mp4",
+        "md5": "afc3a1e93328bc7bb488e518fee5ca79",
+        "filesize": 22019032
+      },
+      {
+        "filename": "squat_06_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_06_09.mp4",
+        "md5": "0bb9c404eb99f2f1c24d85599d183296",
+        "filesize": 22691119
+      },
+      {
+        "filename": "squat_06_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_06_11.mp4",
+        "md5": "e80252f2ee39b89ea693e759013fecdf",
+        "filesize": 2520580
+      },
+      {
+        "filename": "squat_07_01.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_07_01.mp4",
+        "md5": "8acf5fd495a6452bac59d140e8c23ce7",
+        "filesize": 6141027
+      },
+      {
+        "filename": "squat_07_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_07_03.mp4",
+        "md5": "4c96828929a8b01e2d439affb3527178",
+        "filesize": 5039233
+      },
+      {
+        "filename": "squat_07_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_07_04.mp4",
+        "md5": "352a487abfe7f33f9df59021d1342b23",
+        "filesize": 19482321
+      },
+      {
+        "filename": "squat_07_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_07_07.mp4",
+        "md5": "1adb7440941aa97bb71fd3bd311f2e96",
+        "filesize": 39104640
+      },
+      {
+        "filename": "squat_07_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_07_08.mp4",
+        "md5": "2374b2a3d6f14014d916dd6c238cde4e",
+        "filesize": 28250901
+      },
+      {
+        "filename": "squat_07_09.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_07_09.mp4",
+        "md5": "1da65dd76d135ee0ca5c0ee26ed945ee",
+        "filesize": 22714119
+      },
+      {
+        "filename": "squat_07_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_07_10.mp4",
+        "md5": "2791a8da73719aa578e94fb4f5e005e3",
+        "filesize": 31341351
+      },
+      {
+        "filename": "squat_07_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_07_11.mp4",
+        "md5": "65a8acfba06bc0678133db1d1c2c3dbd",
+        "filesize": 17475891
+      },
+      {
+        "filename": "squat_07_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_07_14.mp4",
+        "md5": "a7fbaa0ee92ab285c1a45b0b04540b81",
+        "filesize": 28463254
+      },
+      {
+        "filename": "squat_08_02.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_08_02.mp4",
+        "md5": "4d25c23432f320f3314bd5e325e1d50b",
+        "filesize": 28031477
+      },
+      {
+        "filename": "squat_08_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_08_05.mp4",
+        "md5": "746cad0282fa573c71b3e80cd9795aab",
+        "filesize": 545917
+      },
+      {
+        "filename": "squat_08_06.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_08_06.mp4",
+        "md5": "0295631d55370545441f740aaeee2d7b",
+        "filesize": 11277169
+      },
+      {
+        "filename": "squat_08_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_08_08.mp4",
+        "md5": "59d615d3880d001502b6ed184f463444",
+        "filesize": 2909089
+      },
+      {
+        "filename": "squat_08_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_08_10.mp4",
+        "md5": "2e791284f9ae84f415fc20892ccc893a",
+        "filesize": 33212644
+      },
+      {
+        "filename": "squat_08_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_08_11.mp4",
+        "md5": "77843947ca7d7f0c8d3dd01a8a193bbc",
+        "filesize": 5378731
+      },
+      {
+        "filename": "squat_08_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_08_12.mp4",
+        "md5": "f585a5d5f59bffbad7dcc34a3c15bb2c",
+        "filesize": 2019742
+      },
+      {
+        "filename": "squat_08_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_08_14.mp4",
+        "md5": "8ee1e9505659a907241572dfd6f4186e",
+        "filesize": 4731625
+      },
+      {
+        "filename": "squat_09_07.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_09_07.mp4",
+        "md5": "ef8055893e49b85839d0e6937f2df4df",
+        "filesize": 36713724
+      },
+      {
+        "filename": "squat_09_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_09_08.mp4",
+        "md5": "a230abcaf5070138ae13a561a19e9e56",
+        "filesize": 17347033
+      },
+      {
+        "filename": "squat_09_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_09_11.mp4",
+        "md5": "2e067203e6a30055c947a145828161c8",
+        "filesize": 10505211
+      },
+      {
+        "filename": "squat_09_12.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_09_12.mp4",
+        "md5": "1ace7f0f79a83a165cb5e1df2396493b",
+        "filesize": 46726877
+      },
+      {
+        "filename": "squat_09_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_09_13.mp4",
+        "md5": "04dc2fb73163d1dad96715f256361e4a",
+        "filesize": 18399223
+      },
+      {
+        "filename": "squat_09_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_09_14.mp4",
+        "md5": "5bd684b15abf5e65816fc2f484041c95",
+        "filesize": 17385953
+      },
+      {
+        "filename": "squat_09_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_09_15.mp4",
+        "md5": "00da5ff29a79b3fdf3d5ce80e3d2986d",
+        "filesize": 14061575
+      },
+      {
+        "filename": "squat_10_03.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_10_03.mp4",
+        "md5": "46a13e16539ff2854ae9523748e8474f",
+        "filesize": 574392
+      },
+      {
+        "filename": "squat_10_04.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_10_04.mp4",
+        "md5": "725294335e0c39b54513df70b16c715c",
+        "filesize": 751155
+      },
+      {
+        "filename": "squat_10_05.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_10_05.mp4",
+        "md5": "12bc03116ee698a8372afb8502d62c9a",
+        "filesize": 3235242
+      },
+      {
+        "filename": "squat_10_08.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_10_08.mp4",
+        "md5": "81952644c994501baab635d6c408b421",
+        "filesize": 782598
+      },
+      {
+        "filename": "squat_10_10.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_10_10.mp4",
+        "md5": "8dd4ffae87c683680b7f2a9e6a0403c6",
+        "filesize": 1182424
+      },
+      {
+        "filename": "squat_10_11.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_10_11.mp4",
+        "md5": "cbdf2eba791c569ee0cf2931eda30f0a",
+        "filesize": 548279
+      },
+      {
+        "filename": "squat_10_13.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_10_13.mp4",
+        "md5": "20b09703e5222d255b4ae1a7b9c29fd4",
+        "filesize": 1461575
+      },
+      {
+        "filename": "squat_10_14.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_10_14.mp4",
+        "md5": "ed96fc94f85f1d0c037b5edceb88adb8",
+        "filesize": 1466125
+      },
+      {
+        "filename": "squat_10_15.mp4",
+        "filepath": "d:\\Study Folder\\Semester 8\\FYP-I\\Final Evaluation\\fypbiomechai\\biomechai_model\\data\\raw_videos\\squat\\squat_10_15.mp4",
+        "md5": "03e14dceafbaeb2de5b31c2a6aa06ee9",
+        "filesize": 831098
+      }
+    ],
+    "duplicates_logged": [
+      {
+        "representative": "squat_01_03.mp4",
+        "md5": "2bcfb119add928a5709ec1d088ee53ab",
+        "duplicates": [
+          "squat_02_05.mp4",
+          "squat_05_14.mp4",
+          "squat_06_06.mp4",
+          "squat_09_06.mp4"
+        ]
+      },
+      {
+        "representative": "squat_01_07.mp4",
+        "md5": "bc3e4b3ca2e87e39d91db9407f5cbbb4",
+        "duplicates": [
+          "squat_03_08.mp4",
+          "squat_06_07.mp4",
+          "squat_09_05.mp4"
+        ]
+      },
+      {
+        "representative": "squat_01_08.mp4",
+        "md5": "48dc1292106b20510299b625ab77a9e4",
+        "duplicates": [
+          "squat_02_04.mp4",
+          "squat_04_09.mp4",
+          "squat_06_03.mp4"
+        ]
+      },
+      {
+        "representative": "squat_01_09.mp4",
+        "md5": "5387bdfe3673edb597283e8e998c7f34",
+        "duplicates": [
+          "squat_02_09.mp4"
+        ]
+      },
+      {
+        "representative": "squat_01_10.mp4",
+        "md5": "019fe5baec738fdde82ad2a995671894",
+        "duplicates": [
+          "squat_02_07.mp4"
+        ]
+      },
+      {
+        "representative": "squat_01_11.mp4",
+        "md5": "04f06ae047c7f6edb363f8d4bfb9e894",
+        "duplicates": [
+          "squat_06_15.mp4",
+          "squat_08_13.mp4"
+        ]
+      },
+      {
+        "representative": "squat_01_12.mp4",
+        "md5": "2c5095f9333c2d5a861fd28b9b12ecbb",
+        "duplicates": [
+          "squat_04_03.mp4",
+          "squat_06_13.mp4"
+        ]
+      },
+      {
+        "representative": "squat_01_13.mp4",
+        "md5": "ad8c89daadaaa2f802278dfc05dfeef2",
+        "duplicates": [
+          "squat_04_06.mp4",
+          "squat_08_15.mp4"
+        ]
+      },
+      {
+        "representative": "squat_01_14.mp4",
+        "md5": "febc7e90ea0b879c2dffed73002a5df5",
+        "duplicates": [
+          "squat_03_03.mp4",
+          "squat_04_10.mp4",
+          "squat_05_08.mp4",
+          "squat_06_04.mp4",
+          "squat_09_03.mp4",
+          "squat_10_12.mp4"
+        ]
+      },
+      {
+        "representative": "squat_01_15.mp4",
+        "md5": "6208b0ad5405e25918c644037d474e93",
+        "duplicates": [
+          "squat_03_10.mp4"
+        ]
+      },
+      {
+        "representative": "squat_02_10.mp4",
+        "md5": "2a336d15fa5266f4645e360d4b48762a",
+        "duplicates": [
+          "squat_03_15.mp4",
+          "squat_04_08.mp4",
+          "squat_05_05.mp4",
+          "squat_06_08.mp4",
+          "squat_09_04.mp4"
+        ]
+      },
+      {
+        "representative": "squat_02_12.mp4",
+        "md5": "8ef0b3f71fb59155623004e6a99643b5",
+        "duplicates": [
+          "squat_04_11.mp4"
+        ]
+      },
+      {
+        "representative": "squat_03_07.mp4",
+        "md5": "7b1a5efb89decace0301d59605654ffd",
+        "duplicates": [
+          "squat_10_07.mp4"
+        ]
+      },
+      {
+        "representative": "squat_03_14.mp4",
+        "md5": "b0a7640caa7d85f6a3aa824d0313297d",
+        "duplicates": [
+          "squat_07_12.mp4"
+        ]
+      },
+      {
+        "representative": "squat_04_04.mp4",
+        "md5": "c6288df7b3ff0408c1c1a43127bfb255",
+        "duplicates": [
+          "squat_06_12.mp4"
+        ]
+      },
+      {
+        "representative": "squat_05_03.mp4",
+        "md5": "380de60089311f755d8be87ab4c332e8",
+        "duplicates": [
+          "squat_10_09.mp4"
+        ]
+      },
+      {
+        "representative": "squat_05_06.mp4",
+        "md5": "f754663a2d4d8d5942091a8e1e36e1ff",
+        "duplicates": [
+          "squat_09_09.mp4"
+        ]
+      },
+      {
+        "representative": "squat_05_07.mp4",
+        "md5": "96052df354f7053b425cdc4e3c7bc7f4",
+        "duplicates": [
+          "squat_07_02.mp4"
+        ]
+      },
+      {
+        "representative": "squat_05_10.mp4",
+        "md5": "1670824959017eed30961ff24c55dfb4",
+        "duplicates": [
+          "squat_07_06.mp4"
+        ]
+      }
+    ]
+  }
+}

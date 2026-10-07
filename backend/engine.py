@@ -21,6 +21,7 @@ torch.set_num_threads(2)
 
 from backend.config import (
     BASE_DIR,
+    ACTIVE_MODEL_VERSION,
     POSEC3D_CONFIG,
     POSEC3D_CHECKPOINT,
     CLASSES,
@@ -28,7 +29,8 @@ from backend.config import (
     COCO_MP_MAP
 )
 
-# Insert model directory into sys.path
+# Insert model directories into sys.path
+sys.path.insert(0, os.path.dirname(POSEC3D_CONFIG))
 sys.path.insert(0, os.path.join(BASE_DIR, "models", "posec3d_v5_limb"))
 sys.path.insert(0, os.path.join(BASE_DIR, "mmaction2_repo"))
 
@@ -38,7 +40,8 @@ from mmengine.registry import init_default_scope
 
 class PoseC3DEngine:
     def __init__(self, device: str = "cpu"):
-        print(f"[PoseC3DEngine] Initializing PoseC3D v5 model on {device}...")
+        print(f"[PoseC3DEngine] Initializing PoseC3D ({ACTIVE_MODEL_VERSION}) model on {device}...")
+        print(f"[PoseC3DEngine] Loading checkpoint: {POSEC3D_CHECKPOINT}")
         init_default_scope("mmaction")
         self.model = init_recognizer(POSEC3D_CONFIG, POSEC3D_CHECKPOINT, device=device)
         self.cfg = self.model.cfg
@@ -55,6 +58,10 @@ class PoseC3DEngine:
     def push_coco_keypoints(self, keypoints_17_2d: np.ndarray):
         """Pushes a (17, 2) array of normalized or pixel coordinates into the rolling buffer."""
         self.frame_buffer.append(keypoints_17_2d.astype(np.float32))
+
+    def push_landmarks(self, landmarks_33: List[List[float]]):
+        """No-op for PoseC3D engine which consumes COCO-17 keypoints."""
+        pass
 
     def is_buffer_full(self) -> bool:
         return len(self.frame_buffer) == self.buffer_size
@@ -235,3 +242,122 @@ class PoseC3DEngine:
             "confidence": round(conf, 4),
             "probabilities": all_probs
         }
+
+
+# ==============================================================================
+# Historical Random Forest Baseline Engine (FYP-I 84% Tabular Model)
+# ==============================================================================
+def extract_rf_features(landmarks: List[Any]) -> np.ndarray:
+    """
+    Extracts 50 tabular biomechanical features matching the original FYP-I 84% Random Forest model.
+    Landmarks shape: (T, 33, 3) or (T, 33, 2).
+    """
+    lm = np.array(landmarks, dtype=np.float32)
+    def angle(a, b, c):
+        ba = lm[:, a, :2] - lm[:, b, :2]
+        bc = lm[:, c, :2] - lm[:, b, :2]
+        cos = np.sum(ba * bc, axis=1) / (np.linalg.norm(ba, axis=1) * np.linalg.norm(bc, axis=1) + 1e-9)
+        return np.degrees(np.arccos(np.clip(cos, -1.0, 1.0)))
+
+    angle_seqs = {
+        'knee_l': angle(23, 25, 27), 'knee_r': angle(24, 26, 28),
+        'elbow_l': angle(11, 13, 15), 'elbow_r': angle(12, 14, 16),
+        'hip_l': angle(11, 23, 25), 'hip_r': angle(12, 24, 26),
+        'shoulder_l': angle(13, 11, 23), 'shoulder_r': angle(14, 12, 24)
+    }
+    feats = []
+    for name, seq in angle_seqs.items():
+        feats.extend([
+            float(np.mean(seq)),
+            float(np.std(seq)),
+            float(np.min(seq)),
+            float(np.max(seq)),
+            float(np.max(seq) - np.min(seq))
+        ])
+    for name, seq in angle_seqs.items():
+        vel = np.diff(seq)
+        feats.append(float(np.mean(np.abs(vel))) if len(vel) > 0 else 0.0)
+    feats.append(float(np.mean(np.abs(angle_seqs['knee_l'] - angle_seqs['knee_r']))))
+    feats.append(float(np.mean(np.abs(angle_seqs['shoulder_l'] - angle_seqs['shoulder_r']))))
+    return np.array(feats, dtype=np.float32)
+
+
+class RandomForestEngine:
+    def __init__(self):
+        import joblib
+        from backend.config import RF_MODEL_PATH, RF_SCALER_PATH, RF_LE_PATH
+        print(f"[RandomForestEngine] Initializing 84% Random Forest baseline model...")
+        print(f"[RandomForestEngine] Loading model: {RF_MODEL_PATH}")
+        self.model = joblib.load(RF_MODEL_PATH)
+        self.scaler = joblib.load(RF_SCALER_PATH)
+        self.le = joblib.load(RF_LE_PATH)
+        self.buffer_size = 60
+        self.frame_buffer = deque(maxlen=self.buffer_size)
+        self.last_prediction = {"exercise": "buffering", "display_name": "Buffering...", "confidence": 0.0, "probabilities": {}}
+        self.is_inferring = False
+        print(f"[RandomForestEngine] Model loaded and ready! Classes: {list(self.le.classes_)}")
+
+    def push_coco_keypoints(self, keypoints_17_2d: np.ndarray):
+        pass
+
+    def push_landmarks(self, landmarks_33: List[List[float]]):
+        self.frame_buffer.append(landmarks_33)
+
+    def is_buffer_full(self) -> bool:
+        return len(self.frame_buffer) >= 25
+
+    def clear_buffer(self):
+        self.frame_buffer.clear()
+        self.last_prediction = {
+            "exercise": "out_of_frame",
+            "display_name": "Step into Frame",
+            "confidence": 0.0,
+            "buffer_pct": 0.0,
+            "probabilities": {}
+        }
+
+    async def trigger_async_inference(self, img_shape: Tuple[int, int] = (480, 640)):
+        if self.is_inferring or len(self.frame_buffer) < 25:
+            return
+        self.is_inferring = True
+        try:
+            snapshot = list(self.frame_buffer)
+            pred = await asyncio.to_thread(self.predict_from_landmarks_sequence, snapshot, img_shape)
+            self.last_prediction = pred
+        except Exception as e:
+            print(f"[RandomForestEngine Async Inference Error]: {e}")
+        finally:
+            self.is_inferring = False
+
+    def predict_from_landmarks_sequence(self, raw_sequence: List[List[List[float]]], img_shape: Tuple[int, int] = (480, 640)) -> Dict[str, Any]:
+        if not raw_sequence or len(raw_sequence) < 16:
+            return {
+                "exercise": "Waiting for Athlete...",
+                "raw_class": "unknown",
+                "display_name": "Waiting for Athlete...",
+                "confidence": 0.0,
+                "probabilities": {}
+            }
+
+        feats = extract_rf_features(raw_sequence)
+        scaled = self.scaler.transform([feats])
+        probs = self.model.predict_proba(scaled)[0]
+        top_idx = int(np.argmax(probs))
+        raw_cls = str(self.le.classes_[top_idx])
+        conf = float(probs[top_idx])
+
+        all_probs = {str(c): round(float(p), 4) for c, p in zip(self.le.classes_, probs)}
+        return {
+            "exercise": CLASS_DISPLAY_NAMES.get(raw_cls, raw_cls),
+            "raw_class": raw_cls,
+            "confidence": round(conf, 4),
+            "probabilities": all_probs
+        }
+
+
+def create_engine(device: str = "cpu"):
+    """Unified engine factory routing to the active model architecture."""
+    if ACTIVE_MODEL_VERSION in ["rf", "random_forest"]:
+        return RandomForestEngine()
+    return PoseC3DEngine(device=device)
+
