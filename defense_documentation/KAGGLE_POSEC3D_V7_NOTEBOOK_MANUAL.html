@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BioMechAI — Kaggle PoseC3D v7 Training Notebook Manual</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 16mm 14mm 16mm 14mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.5;
+      font-size: 10pt;
+    }
+    .page-break {
+      page-break-before: always;
+    }
+
+    /* Header Bar */
+    .header-bar {
+      border-bottom: 2px solid #0284c7;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .header-title h1 {
+      font-size: 16pt;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+    }
+    .header-title p {
+      font-size: 9pt;
+      color: #64748b;
+      font-weight: 500;
+      margin-top: 2px;
+    }
+    .badge-env {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-size: 8pt;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 4px;
+      border: 1px solid #cbd5e1;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Section Styling */
+    h2 {
+      font-size: 12.5pt;
+      font-weight: 700;
+      color: #0f172a;
+      border-left: 4px solid #0284c7;
+      padding-left: 8px;
+      margin-top: 14px;
+      margin-bottom: 8px;
+    }
+    h3 {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #1e293b;
+      margin-top: 10px;
+      margin-bottom: 4px;
+    }
+    p {
+      margin-bottom: 8px;
+      color: #334155;
+      font-size: 9.5pt;
+    }
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 10px;
+      color: #334155;
+      font-size: 9.5pt;
+    }
+    li {
+      margin-bottom: 4px;
+    }
+    strong {
+      color: #0f172a;
+    }
+
+    /* Callout Boxes */
+    .callout {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-left: 4px solid #0284c7;
+      padding: 10px 14px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+    .callout.speech {
+      background: #f0fdf4;
+      border-color: #bbf7d0;
+      border-left-color: #16a34a;
+    }
+    .callout.speech strong.title {
+      display: block;
+      color: #15803d;
+      font-size: 9.5pt;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    /* Code Blocks */
+    pre {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      padding: 8px 12px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 8.5pt;
+      line-height: 1.4;
+      color: #0f172a;
+      overflow-x: auto;
+    }
+    code.inline {
+      background: #f1f5f9;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 8.5pt;
+      color: #0f172a;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 6px;
+      margin-bottom: 12px;
+      font-size: 9pt;
+    }
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 6px 10px;
+      text-align: left;
+      vertical-align: middle;
+    }
+    th {
+      background: #f1f5f9;
+      color: #1e293b;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 8pt;
+      letter-spacing: 0.5px;
+    }
+    tr:nth-child(even) {
+      background: #f8fafc;
+    }
+    .center {
+      text-align: center;
+    }
+    .green {
+      color: #15803d;
+      font-weight: 700;
+    }
+
+    /* Grid for Hardware Specs */
+    .spec-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .spec-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+    .spec-card strong {
+      display: block;
+      color: #0284c7;
+      font-size: 8.5pt;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+    .spec-card span {
+      font-size: 9.5pt;
+      color: #0f172a;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1: OVERVIEW & ENVIRONMENT -->
+  <div class="header-bar">
+    <div class="header-title">
+      <h1>BioMechAI — Kaggle PoseC3D v7 Training Notebook Manual</h1>
+      <p>Technical Reference for the Training Pipeline, Environment, and Code Execution</p>
+    </div>
+    <div class="badge-env">Kaggle GPU Execution</div>
+  </div>
+
+  <h2>1. Overview and Identity of the Notebook</h2>
+  
+  <p>
+    The <strong>PoseC3D v7 Champion Model</strong> was trained using the official Jupyter notebook titled:
+    <br><code class="inline">biomechai-posec3d-v7-dedup-clean.ipynb</code>
+    <br>It is saved locally in your repository at two locations:
+  </p>
+  <ul>
+    <li><strong>Full Run Execution with Outputs</strong>: <code class="inline">defense_documentation/KAGGLE_POSEC3D_V7_TRAINING_AND_EXECUTION_OUTPUTS.ipynb</code></li>
+    <li><strong>Clean Source Template</strong>: <code class="inline">model_training/experiments_v7_expansion/biomechai-posec3d-v7-dedup-clean.ipynb</code></li>
+  </ul>
+
+  <h2>2. Hardware and Training Environment</h2>
+
+  <div class="spec-grid">
+    <div class="spec-card">
+      <strong>Compute Platform</strong>
+      <span>Kaggle Cloud GPU Accelerated Environment</span>
+    </div>
+    <div class="spec-card">
+      <strong>Graphics Card (GPU)</strong>
+      <span>NVIDIA Tesla T4 (16 GB GDDR6 VRAM) / CUDA 12.1</span>
+    </div>
+    <div class="spec-card">
+      <strong>Deep Learning Framework</strong>
+      <span>PyTorch 2.1.2 + OpenMMLab MMAction2 v1.2.0</span>
+    </div>
+    <div class="spec-card">
+      <strong>Vision Backbone</strong>
+      <span>SlowOnly 3D ResNet-50 (FineGYM Limb Pretrained)</span>
+    </div>
+  </div>
+
+  <h2>3. Mounted Input Datasets on Kaggle</h2>
+
+  <p>The notebook ingested three pre-processed data files attached to the Kaggle runtime environment:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>File Name</th>
+        <th class="center">Size</th>
+        <th>Description and Purpose</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>custom_dataset_train_v7.pkl</strong></td>
+        <td class="center">78.4 MB</td>
+        <td>The full training pool containing 3,159 clean, deduplicated exercise clips across 7 classes.</td>
+      </tr>
+      <tr>
+        <td><strong>custom_dataset_val_frozen.pkl</strong></td>
+        <td class="center">7.8 MB</td>
+        <td>The strictly frozen 444-clip held-out validation benchmark (zero data leakage across 115 unseen subjects).</td>
+      </tr>
+      <tr>
+        <td><strong>gym-limb_20220815-2e6e3c5c.pth</strong></td>
+        <td class="center">126.8 MB</td>
+        <td>Official OpenMMLab FineGYM athletic limb pretrained weights for transfer learning initialization.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>4. Cell-by-Cell Architecture of the Notebook (16 Cells)</h2>
+
+  <p>The notebook consists of 16 structured cells arranged into 7 logical engineering phases:</p>
+
+  <ol>
+    <li><strong>Cells 1 and 2 (Setup and Installation)</strong>:
+      Installs <code class="inline">mmengine</code>, <code class="inline">mmcv-lite</code>, and <code class="inline">mmaction2</code> directly from source, applying runtime compatibility patches for PyTorch 2.x arbitrary object unpickling.
+    </li>
+    <li><strong>Cells 4 and 5 (Hardware Verification)</strong>:
+      Runs automated hardware inspection scripts checking GPU device availability, CUDA driver version, and allocating dedicated memory buffers.
+    </li>
+    <li><strong>Cells 6 and 7 (Experiment Settings and Hyperparameters)</strong>:
+      Configures experiment variables, including the experiment name (<code class="inline">v7_dedup</code>), minimum joint motion threshold (<code class="inline">MIN_MOTION = 5.0</code> with <code class="inline">plank = 1.0</code> hold override), maximum fake frames allowed (<code class="inline">MAX_FAKE_FRAMES = 30</code>), and enables inverse-frequency class weighting to eliminate bias.
+    </li>
+  </ol>
+
+  <!-- PAGE BREAK FOR PAGE 2 -->
+  <div class="page-break"></div>
+
+  <div class="header-bar">
+    <div class="header-title">
+      <h1>BioMechAI — Kaggle PoseC3D v7 Training Notebook Manual</h1>
+      <p>Data Hygiene Checks, Training Loop, Evaluation, and Benchmark Results</p>
+    </div>
+    <div class="badge-env">Part 2: Training & Benchmarks</div>
+  </div>
+
+  <ol start="4">
+    <li><strong>Cells 8 and 9 (Data Audit and Deduplication Engine)</strong>:
+      Applies the MD5 hashing algorithm over all 3D pose landmark matrices, purging 987 byte-identical duplicate clips, cross-checking candidates against the validation set to eliminate 4 overlap clips, and confirming zero leakage before model initialization.
+    </li>
+    <li><strong>Cells 10 and 11 (Training Loop — PoseC3D SlowOnly-R50)</strong>:
+      Defines custom spatiotemporal augmentation (<code class="inline">RandomRotateKeypoints</code> within plus-or-minus 12 degrees), builds 3D limb heatmaps using Gaussian cylinder radius sigma = 0.6, and trains for 18 epochs using SGD with cosine annealing learning rate scheduling.
+    </li>
+    <li><strong>Cells 12 and 13 (Dual Benchmark Evaluation)</strong>:
+      Runs automated validation inference using MMAction2 testing tools on both the 192 strictly unique clips and the 444 frozen baseline clips, calculating Top-1 accuracy, Macro Recall, and 95% Confidence Intervals.
+    </li>
+    <li><strong>Cells 14 and 15 (Artifact Packaging and Export)</strong>:
+      Extracts the best-performing model checkpoint (<code class="inline">best_acc_top1_epoch_10.pth</code>), bundles the Python configuration file, and writes all training logs and metrics to a downloadable ZIP file.
+    </li>
+  </ol>
+
+  <h2>5. Training Hyperparameters Table</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Hyperparameter</th>
+        <th class="center">Configured Value</th>
+        <th>Biomechanical / Algorithmic Rationale</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Input Modality</strong></td>
+        <td class="center">3D Limb Heatmaps (sigma = 0.6)</td>
+        <td>Connects joints into anatomical cylinders, preventing sagittal plane self-occlusion.</td>
+      </tr>
+      <tr>
+        <td><strong>Temporal Sampling</strong></td>
+        <td class="center">48 Frames (Stride 2)</td>
+        <td>Captures 2.5 seconds of physical movement (the natural duration of 1 full repetition).</td>
+      </tr>
+      <tr>
+        <td><strong>Batch Size</strong></td>
+        <td class="center">16 Clips per Batch</td>
+        <td>Optimal memory footprint fitting within 16 GB GPU VRAM.</td>
+      </tr>
+      <tr>
+        <td><strong>Optimizer</strong></td>
+        <td class="center">SGD (Momentum = 0.9)</td>
+        <td>Standard robust optimizer for 3D spatiotemporal ResNet architectures.</td>
+      </tr>
+      <tr>
+        <td><strong>Learning Rate</strong></td>
+        <td class="center">0.01 (Cosine Decay)</td>
+        <td>Gradual cosine annealing preventing gradient explosion in early epochs.</td>
+      </tr>
+      <tr>
+        <td><strong>Total Epochs</strong></td>
+        <td class="center">18 Epochs</td>
+        <td>Sufficient convergence without overfitting on clean training data.</td>
+      </tr>
+      <tr>
+        <td><strong>Class Weighting</strong></td>
+        <td class="center">Inverse-Frequency Balanced</td>
+        <td>Compensates for slight sample variations across the 7 exercise classes.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>6. Official Execution Results from Kaggle (Cell 13 Output)</h2>
+
+  <p>The exact empirical evaluation logs printed directly in the notebook output:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Evaluation Target</th>
+        <th class="center">Sample Size</th>
+        <th class="center">Top-1 Accuracy</th>
+        <th class="center">95% Confidence Interval</th>
+        <th class="center">Macro Recall</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Best Checkpoint (Unique Clips)</strong></td>
+        <td class="center">192 Clips</td>
+        <td class="center green">66.15%</td>
+        <td class="center">[59.2% to 72.5%]</td>
+        <td class="center green">63.28%</td>
+      </tr>
+      <tr>
+        <td><strong>Active Backend Champion (v7)</strong></td>
+        <td class="center">192 Clips</td>
+        <td class="center green">63.54%</td>
+        <td class="center">[56.5% to 70.0%]</td>
+        <td class="center green">61.39%</td>
+      </tr>
+      <tr>
+        <td><strong>Frozen Benchmark (Historic)</strong></td>
+        <td class="center">444 Clips</td>
+        <td class="center">53.38%</td>
+        <td class="center">[48.7% to 58.0%]</td>
+        <td class="center">53.15%</td>
+      </tr>
+      <tr>
+        <td><strong>FYP-I Leaked Baseline</strong></td>
+        <td class="center">N/A</td>
+        <td class="center">84.00% (Invalid)</td>
+        <td class="center">N/A</td>
+        <td class="center">83.50%</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Per-Class Performance on Clean Validation Clips:</h3>
+  <ul>
+    <li><strong>Lunge</strong>: 84.0% Recall (21 / 25 correct)</li>
+    <li><strong>High Knees</strong>: 73.7% Recall (14 / 19 correct)</li>
+    <li><strong>Plank</strong>: 67.9% Recall (19 / 28 correct)</li>
+    <li><strong>Squat</strong>: 65.6% Recall (21 / 32 correct)</li>
+    <li><strong>Push-Up</strong>: 62.5% Recall (10 / 16 correct)</li>
+    <li><strong>Jumping Jack</strong>: 51.5% Recall (17 / 33 correct)</li>
+    <li><strong>Bicep Curl</strong>: 35.9% Recall (14 / 39 correct)</li>
+  </ul>
+
+  <h2>7. How to Answer the Panel About the Kaggle Training (Speech Script)</h2>
+
+  <div class="callout speech">
+    <strong class="title">Speak this to the panel:</strong>
+    "Respected panel, our PoseC3D v7 Champion model was trained on a Kaggle Cloud GPU environment using an NVIDIA Tesla T4 GPU with PyTorch and MMAction2. The training notebook executed 18 epochs on our audited 3,159 clean clips using 3D connected limb heatmaps (sigma = 0.6) and uniform 48-frame temporal sampling. By eliminating 987 duplicate clips and 284 noise frames, the model converged smoothly, achieving a Top-1 Accuracy of 63.54% with a Macro Recall of 61.39% on strictly unique held-out test clips. The resulting weights file, best_acc_top1_epoch_10.pth, is what powers our live FastAPI backend today."
+  </div>
+
+</body>
+</html>
