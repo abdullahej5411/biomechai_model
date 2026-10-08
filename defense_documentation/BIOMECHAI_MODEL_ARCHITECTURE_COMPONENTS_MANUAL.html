@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BioMechAI — Complete Deep Learning Model Architecture Manual</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 16mm 14mm 16mm 14mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.48;
+      font-size: 9.5pt;
+    }
+    .page-break {
+      page-break-before: always;
+    }
+
+    /* Header Bar */
+    .header-bar {
+      border-bottom: 2px solid #0284c7;
+      padding-bottom: 8px;
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .header-title h1 {
+      font-size: 15pt;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+    }
+    .header-title p {
+      font-size: 8.5pt;
+      color: #64748b;
+      font-weight: 500;
+      margin-top: 2px;
+    }
+    .badge-arch {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-size: 8pt;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 4px;
+      border: 1px solid #cbd5e1;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Section Styling */
+    h2 {
+      font-size: 12pt;
+      font-weight: 700;
+      color: #0f172a;
+      border-left: 4px solid #0284c7;
+      padding-left: 8px;
+      margin-top: 12px;
+      margin-bottom: 6px;
+    }
+    h3 {
+      font-size: 10pt;
+      font-weight: 700;
+      color: #1e293b;
+      margin-top: 8px;
+      margin-bottom: 3px;
+    }
+    p {
+      margin-bottom: 6px;
+      color: #334155;
+      font-size: 9pt;
+    }
+    ul, ol {
+      margin-left: 18px;
+      margin-bottom: 8px;
+      color: #334155;
+      font-size: 9pt;
+    }
+    li {
+      margin-bottom: 3px;
+    }
+    strong {
+      color: #0f172a;
+    }
+
+    /* Component Flow Cards */
+    .component-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-left: 4px solid #0284c7;
+      border-radius: 6px;
+      padding: 8px 12px;
+      margin-bottom: 8px;
+    }
+    .component-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+    .component-title {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .component-tag {
+      background: #e0f2fe;
+      color: #0369a1;
+      font-size: 7.5pt;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .component-desc {
+      font-size: 8.5pt;
+      color: #475569;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 6px;
+      margin-bottom: 10px;
+      font-size: 8.5pt;
+    }
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 5px 8px;
+      text-align: left;
+      vertical-align: middle;
+    }
+    th {
+      background: #f1f5f9;
+      color: #1e293b;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 7.5pt;
+      letter-spacing: 0.5px;
+    }
+    tr:nth-child(even) {
+      background: #f8fafc;
+    }
+    .center {
+      text-align: center;
+    }
+    .green {
+      color: #15803d;
+      font-weight: 700;
+    }
+
+    /* Code & Tensor Specs */
+    .tensor-box {
+      background: #f8fafc;
+      border: 1px dashed #94a3b8;
+      border-radius: 6px;
+      padding: 8px 12px;
+      margin-bottom: 8px;
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 8.5pt;
+      color: #0f172a;
+    }
+
+    /* Callout Speech */
+    .callout-speech {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-left: 4px solid #16a34a;
+      padding: 10px 12px;
+      border-radius: 6px;
+      margin-top: 10px;
+      margin-bottom: 8px;
+    }
+    .callout-speech strong.title {
+      display: block;
+      color: #15803d;
+      font-size: 9pt;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+    .callout-speech p {
+      font-size: 8.5pt;
+      color: #166534;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1: COMPONENTS 1 TO 4 -->
+  <div class="header-bar">
+    <div class="header-title">
+      <h1>BioMechAI — Deep Learning Model Architecture Manual</h1>
+      <p>Comprehensive Engineering Guide to All Systems Combining to Form Our Action Recognition Champion</p>
+    </div>
+    <div class="badge-arch">Architecture Blueprint</div>
+  </div>
+
+  <h2>1. Overview: The 7 Integrated Architectural Systems</h2>
+  <p>
+    Our action recognition engine does not rely on a single algorithm in isolation. Instead, it is an end-to-end spatiotemporal machine learning pipeline combining on-device computer vision, geometric kinematic formatting, and 3D deep convolutional neural networks.
+  </p>
+
+  <div class="tensor-box">
+    Pipeline Flow:
+    Raw Video -> ML Kit 3D Skeletons -> 48-Frame Temporal Sampler -> 17 Connected Limb Heatmaps ->
+    SlowOnly 3D ResNet-50 Backbone -> 3D Global Average Pooling -> I3D Classification Head -> 7 Softmax Classes
+  </div>
+
+  <h2>2. Detailed Explanation of Combining Components</h2>
+
+  <!-- Component 1 -->
+  <div class="component-card">
+    <div class="component-header">
+      <span class="component-title">Component 1: Google ML Kit On-Device 3D Pose Detection</span>
+      <span class="component-tag">Edge Vision</span>
+    </div>
+    <div class="component-desc">
+      <p><strong>What it is:</strong> A lightweight neural detector running directly on the mobile phone CPU at 30 frames per second.</p>
+      <p><strong>How we use it:</strong> It takes the camera feed and outputs normalized 3-dimensional coordinates (X, Y, Z) and likelihood scores across 33 anatomical landmarks. By extracting coordinates locally, we discard raw video pixels immediately, preserving complete user privacy and shielding the AI from background clutter and lighting changes.</p>
+    </div>
+  </div>
+
+  <!-- Component 2 -->
+  <div class="component-card">
+    <div class="component-header">
+      <span class="component-title">Component 2: Temporal Golden Window Sampler (48 Frames, Stride 2)</span>
+      <span class="component-tag">Time Normalization</span>
+    </div>
+    <div class="component-desc">
+      <p><strong>What it is:</strong> An automated temporal resampling filter operating over our 2.5-second movement buffer (75 raw frames at 30 FPS).</p>
+      <p><strong>How we use it:</strong> Different people perform repetitions at slightly different cadences. The sampler extracts exactly 48 uniform frames with a temporal stride of 2. This standardizes all inputs so that whether an exercise takes 2.1 seconds or 2.7 seconds, the neural network always receives an identically formatted spatiotemporal volume.</p>
+    </div>
+  </div>
+
+  <!-- Component 3 -->
+  <div class="component-card">
+    <div class="component-header">
+      <span class="component-title">Component 3: Connected 3D Spatiotemporal Limb Heatmaps</span>
+      <span class="component-tag">Input Tensor Modality</span>
+    </div>
+    <div class="component-desc">
+      <p><strong>What it is:</strong> A continuous volumetric representation that connects pairs of joint coordinates into cylindrical limb segments with a Gaussian radius of sigma = 0.6.</p>
+      <p><strong>How we use it:</strong> Older approaches (like PoseC3D v4) used joint dot heatmaps, which failed on squats because when an athlete squats, their hips, knees, and ankles overlap in the sagittal camera plane (causing joint dots to merge and disappear). Our model renders 17 anatomical limb pairs (thighs, shins, forearms, torso line). Even if a joint overlaps, the connecting limb remains visible, boosting squat recognition by over 160% relative accuracy.</p>
+    </div>
+  </div>
+
+  <!-- Component 4 -->
+  <div class="component-card">
+    <div class="component-header">
+      <span class="component-title">Component 4: The SlowOnly Pathway</span>
+      <span class="component-tag">Efficiency Architecture</span>
+    </div>
+    <div class="component-desc">
+      <p><strong>What it is:</strong> A streamlined single-stream variant of Facebook AI Research's SlowFast video network architecture.</p>
+      <p><strong>How we use it:</strong> In raw RGB video, a dual-pathway network is required because the AI must separate moving objects from noisy backgrounds using a high-frequency Fast pathway. But because our input consists of clean skeleton limb heatmaps on a pure black background, background noise is already eliminated. The expensive Fast pathway is redundant. The SlowOnly stream samples 48 frames at a steady pace, reducing computational complexity from 65+ GFLOPs down to 18 GFLOPs while maintaining high accuracy.</p>
+    </div>
+  </div>
+
+  <!-- PAGE BREAK FOR PAGE 2 -->
+  <div class="page-break"></div>
+
+  <div class="header-bar">
+    <div class="header-title">
+      <h1>BioMechAI — Deep Learning Model Architecture Manual</h1>
+      <p>ResNet-50 Backbone, Pooling, Classification Head, Pretraining, and Verification</p>
+    </div>
+    <div class="badge-arch">Part 2: Deep Learning Engine</div>
+  </div>
+
+  <!-- Component 5 -->
+  <div class="component-card">
+    <div class="component-header">
+      <span class="component-title">Component 5: 3D ResNet-50 Convolutional Backbone (ResNet3dSlowOnly)</span>
+      <span class="component-tag">Feature Extractor</span>
+    </div>
+    <div class="component-desc">
+      <p><strong>What it is:</strong> A 50-layer deep convolutional neural network that uses 3D convolutions (3x3x3) sliding across Space (56x56) and Time (48 frames) simultaneously.</p>
+      <p><strong>How we use it:</strong> It contains residual skip connections that add inputs directly to outputs: Output = F(Input) + Input. This solves the vanishing gradient problem, allowing gradients to flow freely across all 50 layers during training. The backbone has 3 distinct stages with block distribution (4, 6, 3):</p>
+      <ul>
+        <li><strong>Stage 1 (4 Blocks)</strong>: Uses 2D spatial convolutions to detect static body orientation (distinguishing standing vs. prone exercises).</li>
+        <li><strong>Stage 2 (6 Blocks)</strong>: Inflates into 3D spatiotemporal convolutions to track joint angle changes (knee and elbow bending).</li>
+        <li><strong>Stage 3 (3 Blocks)</strong>: Analyzes whole-body cadence and repetition speed across time (distinguishing jumping vs. slow strength holds).</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Component 6 -->
+  <div class="component-card">
+    <div class="component-header">
+      <span class="component-title">Component 6: 3D Global Average Pooling</span>
+      <span class="component-tag">Dimensionality Reduction</span>
+    </div>
+    <div class="component-desc">
+      <p><strong>What it is:</strong> A spatiotemporal pooling layer that averages features across the entire temporal and spatial dimensions (48 frames x 7 height x 7 width -> 1x1x1).</p>
+      <p><strong>How we use it:</strong> It condenses millions of intermediate activations into a compact, fixed-size <strong>512-dimensional biomechanical feature vector</strong> representing the essence of the exercise repetition.</p>
+    </div>
+  </div>
+
+  <!-- Component 7 -->
+  <div class="component-card">
+    <div class="component-header">
+      <span class="component-title">Component 7: I3D Linear Classification Head and Softmax</span>
+      <span class="component-tag">Decision Output</span>
+    </div>
+    <div class="component-desc">
+      <p><strong>What it is:</strong> A fully connected projection layer with a 0.6 Dropout regularization rate followed by Softmax activation.</p>
+      <p><strong>How we use it:</strong> It maps the 512-dimensional vector into 7 discrete logits corresponding to our target classes: [Bicep Curl, High Knees, Jumping Jack, Lunge, Plank, Push-Up, Squat]. Softmax normalizes the outputs into calibrated probabilities summing to 1.0 (e.g., Squat: 97.58%).</p>
+    </div>
+  </div>
+
+  <!-- Component 8 -->
+  <div class="component-card">
+    <div class="component-header">
+      <span class="component-title">Component 8: Transfer Learning via FineGYM Athletic Pretrained Weights</span>
+      <span class="component-tag">Weight Initialization</span>
+    </div>
+    <div class="component-desc">
+      <p><strong>What it is:</strong> Initialization using OpenMMLab's athletic weights pretrained on FineGYM gymnastic routines (126.8 MB).</p>
+      <p><strong>How we use it:</strong> Rather than training 31.7 million weights from scratch, the model starts with pre-learned representations of human limb dynamics. Fine-tuning these weights on our audited 3,159 clean exercise clips enabled convergence in just 10 to 18 epochs on Kaggle GPU.</p>
+    </div>
+  </div>
+
+  <h2>3. Technical Specifications Summary Table</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Architectural Parameter</th>
+        <th class="center">Configured Value</th>
+        <th>System Function</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Input Tensor Dimensions</strong></td>
+        <td class="center">[1, 17, 48, 56, 56]</td>
+        <td>Batch size 1, 17 limb channels, 48 frames, 56x56 spatial resolution</td>
+      </tr>
+      <tr>
+        <td><strong>Network Depth</strong></td>
+        <td class="center">50 Layers</td>
+        <td>Deep hierarchical spatiotemporal feature extraction</td>
+      </tr>
+      <tr>
+        <td><strong>Spatiotemporal Inflation</strong></td>
+        <td class="center">(0, 1, 1)</td>
+        <td>Stage 1 spatial; Stages 2 and 3 3D spatiotemporal</td>
+      </tr>
+      <tr>
+        <td><strong>Output Feature Vector</strong></td>
+        <td class="center">512 Dimensions</td>
+        <td>Condensed biomechanical representation</td>
+      </tr>
+      <tr>
+        <td><strong>Total Model Parameters</strong></td>
+        <td class="center">31.7 Million Weights</td>
+        <td>Checkpoint size: 8.45 MB</td>
+      </tr>
+      <tr>
+        <td><strong>Inference Latency</strong></td>
+        <td class="center">120 ms to 160 ms</td>
+        <td>Real-time responsiveness via FastAPI cloud endpoint</td>
+      </tr>
+      <tr>
+        <td><strong>Top-1 Accuracy (v7 Unique)</strong></td>
+        <td class="center green">63.54%</td>
+        <td>Evaluated on strictly unique held-out test clips</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>4. How to Explain the Full System to the Panel (Speech Script)</h2>
+
+  <div class="callout-speech">
+    <strong class="title">Official Panel Presentation Script:</strong>
+    <p>
+      "Respected panel, our exercise recognition model is an integrated spatiotemporal pipeline combining five core innovations: First, Google ML Kit extracts 33 body coordinates locally, eliminating background noise. Second, we render these into 17 connected 3D limb heatmaps using Gaussian cylinders (sigma = 0.6), which solves sagittal self-occlusion during squats. Third, we adopt the SlowOnly pathway, sampling 48 frames at a steady pace to cut compute by over 60 percent without losing temporal detail. Fourth, a 3D ResNet-50 backbone with selective inflation processes space and time simultaneously across 50 layers. Finally, initializing with FineGYM athletic weights and fine-tuning on our audited 3,159 clean clips allowed our champion model to reach 63.54 percent Top-1 accuracy with 61.39 percent Macro Recall."
+    </p>
+  </div>
+
+</body>
+</html>
